@@ -1,4 +1,4 @@
-baseurl = "http://qq.haskellchina.com/"
+baseurl = "http://qq.haskellchina.org/"
 languageCode = "en-us"
 title = "QQGroup Log of HaskellChina"
 theme = "hugo-lithium-theme"
