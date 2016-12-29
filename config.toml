@@ -1,0 +1,27 @@
+baseurl = "http://qq.haskellchina.com/"
+languageCode = "en-us"
+title = "QQGroup Log of HaskellChina"
+theme = "hugo-lithium-theme"
+#googleAnalytics = ""
+disqusShortname = "binjoy"
+
+[permalinks]
+    post = "/:year/:month/:day/:title/"
+    page = "/:title/"
+
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+[[menu.main]]
+    name = "GitHub"
+    url = "https://github.com/gingerhot/QQLog-HaskellChina"
+
+[params]
+    description = ""
+
+    [params.logo]
+    url = "logo.png"
+    width = 50
+    height = 50
+    alt = "Logo"
+

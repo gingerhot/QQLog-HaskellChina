@@ -1,0 +1,17 @@
+{
+  "date": "[% date %]",
+  "languageCode": "zh-cn",
+  "keywords": "Haskell, HaskellChina",
+  "tags": [
+    [% tags %]
+  ],
+  "title": "[% title %]"
+}
+
+[% FOREACH p = posts %]
+
+#### [% p.sender %] :
+
+<code>[% p.msg_time %]</code> [% p.content %]
+
+[% END %]
