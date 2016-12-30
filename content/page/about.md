@@ -16,6 +16,7 @@ tags = [
 
 >
 > host: irc.haskellchina.org
+>
 >       irc.haskellchina.com
 >
 > port: 7979 / 9090
