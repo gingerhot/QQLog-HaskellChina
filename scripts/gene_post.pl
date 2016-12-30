@@ -12,9 +12,9 @@ my $dist_dir = "../content/post/";
 my $mongo;
 conn_mongo();
 my $yesterday = _yesterday();
-my $cursor = $mongo->find({date: $yesterday})->sort({msg_time: 1});
+my $cursor = $mongo->find({date => $yesterday})->sort({msg_time => 1});
 my @posts = $cursor->all;
-@posts = map { $_->{msg}{msg_time} = sprintf "%s", Time::Date->new_epoch($_->{msg}{msg_time}) } @posts;
+@posts = map { $_->{msg}{msg_time} = sprintf "%s", Time::Date->new_epoch($_->{msg}{msg_time}); $_->{msg} } @posts;
 
 process_tmpl();
 
@@ -35,7 +35,7 @@ sub process_tmpl {
     $vars->{tags} = join ",", map { '"'.$_.'"' } @tags;
 
     my $template = Template->new({RELATIVE => 1, ENCODING => 'utf8'});
-    my $file = $dist_dir . "qq-group-log-" . time() . ".md";
+    my $file = $dist_dir . "qq-group-log-" . $yesterday . ".md";
     $template->process($tmpl, $vars, $file) || die $template->error();
 }
 
@@ -43,6 +43,6 @@ sub _yesterday {
     my $fmt = shift || "%Y%m%d";
     my $d = Time::Date->now;
     $d->{epoch} -= 60 * 60 * 24;
-    $s->strftime($fmt);
+    $d->strftime($fmt);
 }
 
