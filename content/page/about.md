@@ -11,3 +11,14 @@ tags = [
 欢迎加入：
 
 [ Haskell 函数式编程]  QQ 群: 72874436
+
+加入后可以使用 IRC 连接本群：
+
+>
+> host: irc.haskellchina.org
+>       irc.haskellchina.com
+>
+> port: 7979 / 9090
+>
+> 使用 QQ 号作为用户名，无需密码
+>
