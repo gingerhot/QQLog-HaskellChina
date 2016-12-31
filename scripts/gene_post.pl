@@ -29,7 +29,7 @@ sub process_tmpl {
     $vars->{title}   = "QQ Group Log of HaskellChina: $yesterday";
     $vars->{date} = sprintf "%sT00:55:32+08:00", _yesterday("%Y-%m-%d");
     $vars->{posts} = \@posts;
-    my @tags = ($yesterday);
+    my @tags = (_yesterday("%Y-%m"));
     $vars->{tags} = join ",", map { '"'.$_.'"' } @tags;
 
     my $template = Template->new({RELATIVE => 1, ENCODING => 'utf8'});
