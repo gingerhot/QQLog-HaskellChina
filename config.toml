@@ -9,7 +9,7 @@ disqusShortname = "binjoy"
     post = "/:year/:month/:day/:title/"
     page = "/:title/"
 
-[[params.menu]]
+[[menu.main]]
     name = "Tags"
     url  = "tags/"
 
