@@ -9,6 +9,10 @@ disqusShortname = "binjoy"
     post = "/:year/:month/:day/:title/"
     page = "/:title/"
 
+[taxonomies]
+    category = "categories"
+    tag = "tags"
+
 [[menu.main]]
     name = "Tags"
     url  = "/tags/"
