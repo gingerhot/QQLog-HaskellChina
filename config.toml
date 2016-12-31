@@ -9,12 +9,17 @@ disqusShortname = "binjoy"
     post = "/:year/:month/:day/:title/"
     page = "/:title/"
 
+[[params.menu]]
+    name = "Tags"
+    url  = "tags/"
+
 [[menu.main]]
     name = "About"
-    url = "/about/"
+    url  = "/about/"
+
 [[menu.main]]
     name = "GitHub"
-    url = "https://github.com/gingerhot/QQLog-HaskellChina"
+    url  = "https://github.com/gingerhot/QQLog-HaskellChina"
 
 [params]
     description = ""
