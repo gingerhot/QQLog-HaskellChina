@@ -14,10 +14,6 @@ disqusShortname = "binjoy"
     tag = "tags"
 
 [[menu.main]]
-    name = "Tags"
-    url  = "/tags/"
-
-[[menu.main]]
     name = "About"
     url  = "/about/"
 
