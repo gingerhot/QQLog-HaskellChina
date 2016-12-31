@@ -26,6 +26,17 @@ sub save_msg {
         });
 }
 
+sub check_msg {
+    my $msg = shift;
+    if ($msg->type eq "group_message" and $msg->group->gnumber eq $group_number) {
+        my $m = {};
+        $m->{msg_time} = $msg->msg_time;
+        $m->{sender}   = decode("utf8", $msg->sender->nick);
+        $m->{content}  = decode("utf8", $msg->content);
+        save_msg($m);
+    }
+}
+
 # 设置我需要处理的群的群号
 my $group_number = 72874436;
 
@@ -49,20 +60,19 @@ my $client=Mojo::Webqq->new(
 #客户端加载ShowMsg插件，用于打印发送和接收的消息到终端
 $client->load("ShowMsg");
 
-#设置接收消息事件的回调函数
-$client->on(receive_message => sub {
-    my ($client,$msg) = @_;
-    $msg->dump();
-    if ($msg->type eq "group_message") {
-        if ($msg->group->gnumber eq $group_number) {
-            my $m = {};
-            $m->{msg_time} = $msg->msg_time;
-            $m->{sender}   = decode("utf8", $msg->sender->nick);
-            $m->{content}  = decode("utf8", $msg->content);
-            save_msg($m);
-        }
+#设置收发消息事件的回调函数
+$client->on(
+    receive_message => sub {
+        my ($client,$msg) = @_;
+        $msg->dump();
+        check_msg($msg);
+    },
+    send_message => sub {
+        my ($client,$msg) = @_;
+        $msg->dump();
+        check_msg($msg);
     }
-});
+);
 
 #ready事件触发时 表示客户端一切准备就绪：已经成功登录、已经加载完个人/好友/群信息等
 #你的代码建议尽量写在 ready 事件中
