@@ -6,37 +6,6 @@ use MongoDB;
 use Time::Date;
 use Encode qw(decode);
 
-# 设置存消息的数据库
-my $mongo;
-conn_mongo();
-
-sub conn_mongo {
-    my $client = MongoDB->connect('mongodb://localhost:27017/qqgroups');
-    my $db = $client->get_database('qqgroups');
-    $mongo = $db->get_collection('haskell');
-}
-
-sub save_msg {
-    my $msg = shift;
-    conn_mongo() unless $mongo;
-    $mongo->insert_one({
-            "date" => get_today(),
-            "msg_time" => $msg->{msg_time},
-            "msg"  => $msg,
-        });
-}
-
-sub check_msg {
-    my $msg = shift;
-    if ($msg->type eq "group_message" and $msg->group->gnumber eq $group_number) {
-        my $m = {};
-        $m->{msg_time} = $msg->msg_time;
-        $m->{sender}   = decode("utf8", $msg->sender->nick);
-        $m->{content}  = decode("utf8", $msg->content);
-        save_msg($m);
-    }
-}
-
 # 设置我需要处理的群的群号
 my $group_number = 72874436;
 
@@ -95,6 +64,37 @@ $client->load("IRCShell",data => {
 sub get_today {
     my $s = Time::Date->now;
     return $s->strftime("%Y%m%d");
+}
+
+# 设置存消息的数据库
+my $mongo;
+conn_mongo();
+
+sub conn_mongo {
+    my $client = MongoDB->connect('mongodb://localhost:27017/qqgroups');
+    my $db = $client->get_database('qqgroups');
+    $mongo = $db->get_collection('haskell');
+}
+
+sub save_msg {
+    my $msg = shift;
+    conn_mongo() unless $mongo;
+    $mongo->insert_one({
+            "date" => get_today(),
+            "msg_time" => $msg->{msg_time},
+            "msg"  => $msg,
+        });
+}
+
+sub check_msg {
+    my $msg = shift;
+    if ($msg->type eq "group_message" and $msg->group->gnumber eq $group_number) {
+        my $m = {};
+        $m->{msg_time} = $msg->msg_time;
+        $m->{sender}   = decode("utf8", $msg->sender->nick);
+        $m->{content}  = decode("utf8", $msg->content);
+        save_msg($m);
+    }
 }
 
 #客户端开始运行
