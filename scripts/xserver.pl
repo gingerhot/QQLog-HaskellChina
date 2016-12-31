@@ -15,7 +15,7 @@ my $pwd = "your password";     #使用帐号密码方式登录时需要
 my $pwd_md5 = md5_sum($pwd);   #得到原始密码的32位长度md5
 
 #初始化一个客户端对象，设置登录的qq号
-my $client=Mojo::Webqq->new(
+my $client = Mojo::Webqq->new(
     ua_debug    =>  0,         #是否打印详细的debug信息
     log_level   =>  "info",    #日志打印级别，debug|info|warn|error|fatal
     qq          =>  $qq,       #必选，登录的qq帐号，用于帐号密码登录或保存登录cookie使用
@@ -51,7 +51,7 @@ $client->on(ready => sub{
 });
 
 # 启动一个 IRC 服务，和 QQ 群对接
-$client->load("IRCShell",data => {
+$client->load("IRCShell", data => {
     # 可选，IRC服务器监听的地址+端口，默认0.0.0.0:6667
     listen => [
         { host => "0.0.0.0", port => 7979 },
