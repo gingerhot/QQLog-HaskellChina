@@ -76,15 +76,15 @@ $client->on(
 
 #ready事件触发时 表示客户端一切准备就绪：已经成功登录、已经加载完个人/好友/群信息等
 #你的代码建议尽量写在 ready 事件中
-$client->on(ready=>sub{
+$client->on(ready => sub{
     my $client = shift;
     #你的代码写在此处
 });
 
 # 启动一个 IRC 服务，和 QQ 群对接
-$client->load("IRCShell",data=>{
+$client->load("IRCShell",data => {
     # 可选，IRC服务器监听的地址+端口，默认0.0.0.0:6667
-    listen=>[
+    listen => [
         { host => "0.0.0.0", port => 7979 },
         { host => "0.0.0.0", port => 9090 }
     ],
