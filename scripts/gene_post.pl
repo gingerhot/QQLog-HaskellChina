@@ -14,7 +14,7 @@ my $cursor = $mongo->find({date => $yesterday})->sort({msg_time => 1});
 my @posts = $cursor->all;
 @posts = map { $_->{msg}{msg_time} = sprintf "%s", Time::Date->new_epoch($_->{msg}{msg_time}); $_->{msg} } @posts;
 
-process_tmpl();
+process_tmpl() if @posts;
 
 #####################
 
