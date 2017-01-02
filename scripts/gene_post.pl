@@ -12,7 +12,11 @@ conn_mongo();
 my $yesterday = _yesterday();
 my $cursor = $mongo->find({date => $yesterday})->sort({msg_time => 1});
 my @posts = $cursor->all;
-@posts = map { $_->{msg}{msg_time} = sprintf "%s", Time::Date->new_epoch($_->{msg}{msg_time}); $_->{msg} } @posts;
+@posts = map {
+        $_->{msg}{msg_time} = sprintf "%s", Time::Date->new_epoch($_->{msg}{msg_time});
+        $_->{msg}{content}  =~ s{\n}{<br />}g;
+        $_->{msg}
+    } @posts;
 
 process_tmpl() if @posts;
 
