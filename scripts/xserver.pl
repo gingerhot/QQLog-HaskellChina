@@ -1,3 +1,4 @@
+#! /usr/bin/perl
 use v5.10;
 use Mojo::Webqq;
 use Mojo::Util qw(md5_sum);
