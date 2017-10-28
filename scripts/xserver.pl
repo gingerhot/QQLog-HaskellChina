@@ -2,6 +2,7 @@ use v5.10;
 use Mojo::Webqq;
 use Mojo::Util qw(md5_sum);
 use Mojo::Webqq::Plugin::IRCShell;
+use Mojo::Webqq::Plugin::PostQRcode;
 use MongoDB;
 use Time::Date;
 use Encode qw(decode);
