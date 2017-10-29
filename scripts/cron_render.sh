@@ -11,5 +11,5 @@ GOPATH=/home/ubuntu/go
 cd $QQLOG_HOME/scripts && /usr/bin/perl gene_post.pl
 cd $QQLOG_HOME && \
 $GOPATH/bin/hugo --theme=hugo-lithium-theme && \
-(cd $QQLOG_HOME/content/post; git add --all; git commit -m 'add qqlog post'; git push -f origin master) && \
+(cd $QQLOG_HOME; git add ./content/post/*; git commit -m 'add qqlog post'; git push -f origin master) && \
 (cd $QQLOG_HOME/public; git add --all; git commit -m 'auto-deploy qqlog post'; git push -f origin gh-pages)
