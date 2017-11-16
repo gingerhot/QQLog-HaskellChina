@@ -1,7 +1,7 @@
 use v5.10;
 use MongoDB;
 use Template;
-use Smart::Comments;
+#use Smart::Comments;
 use Time::Date;
 use utf8;
 
