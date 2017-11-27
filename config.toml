@@ -14,7 +14,11 @@ disqusShortname = "binjoy"
     tag = "tags"
 
 [[menu.main]]
-    name = "About"
+    name = "社区首页"
+    url  = "http://haskellchina.org/"
+
+[[menu.main]]
+    name = "关于"
     url  = "/about/"
 
 [[menu.main]]
