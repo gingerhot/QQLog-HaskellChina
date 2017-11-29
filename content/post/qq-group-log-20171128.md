@@ -2544,5 +2544,5 @@ js里的promise算不算一种控制流？
 
 
 
-以上内容来自 [Haskell函数式编程] QQ 群。
+以上内容来自 [[Haskell函数式编程](http://qq.haskellchina.org/about/)] QQ 群。
 
