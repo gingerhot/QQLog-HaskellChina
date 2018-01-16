@@ -1,0 +1,2747 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.30.2" />
+
+
+<title>QQ Group Log of HaskellChina: 20170417 - QQGroup Log of HaskellChina</title>
+<meta property="og:title" content="QQ Group Log of HaskellChina: 20170417 - QQGroup Log of HaskellChina">
+
+
+
+  
+
+
+
+<meta property="keywords" content ="Haskell,, HaskellChina">
+
+
+
+
+<link rel="stylesheet" href="http://qq.haskellchina.org/css/main.css" media="all">
+<link rel="stylesheet" href="//fonts.lug.ustc.edu.cn/css?family=Merriweather:400|Lato:400,400italic,700">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="http://qq.haskellchina.org/" class="nav-logo">
+    <img src="http://qq.haskellchina.org/images/logo.png" 
+         width="50" 
+         height="50" 
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="https://github.com/gingerhot/QQLog-HaskellChina">GitHub</a></li>
+    
+    <li><a href="/about/">关于</a></li>
+    
+    <li><a href="http://haskellchina.org/">社区首页</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">10 min read</span>
+    
+
+    <h1 class="article-title">QQ Group Log of HaskellChina: 20170417</h1>
+
+    
+    <span class="article-date">April 17, 2017</span>
+    
+
+    <div class="article-content">
+      
+
+<h4 id="toc_0">[[[[[[[[[[[[[[[[[[[[[[[[ :</h4>
+
+<p><span class="article-duration">2017-04-17 05:53:57</span></p>
+
+<p>对于这种形式的type class应该如何简化书写呢？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever">forever :</h4>
+
+<p><span class="article-duration">2017-04-17 07:36:44</span></p>
+
+<p>data Location<br />    = Location<br />    { &hellip;<br />    }<br /><br />class HasLocation a where<br />    toLocation :: a -&gt; Location</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_2">[[[[[[[[[[[[[[[[[[[[[[[[ :</h4>
+
+<p><span class="article-duration">2017-04-17 07:55:04</span></p>
+
+<p>除此以外呢 就没有什么特殊type class可以套吗 类似reify之类的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-1">forever :</h4>
+
+<p><span class="article-duration">2017-04-17 08:00:11</span></p>
+
+<p>你想简化成什么样</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-2">forever :</h4>
+
+<p><span class="article-duration">2017-04-17 08:00:25</span></p>
+
+<p>哦，等等，R 是什么意思？取长度？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_5">[[[[[[[[[[[[[[[[[[[[[[[[ :</h4>
+
+<p><span class="article-duration">2017-04-17 08:00:37</span></p>
+
+<p>Rotation而已</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-3">forever :</h4>
+
+<p><span class="article-duration">2017-04-17 08:00:44</span></p>
+
+<p>哦哦</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-4">forever :</h4>
+
+<p><span class="article-duration">2017-04-17 08:00:50</span></p>
+
+<p>你想简化成什么样</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_8">[[[[[[[[[[[[[[[[[[[[[[[[ :</h4>
+
+<p><span class="article-duration">2017-04-17 08:02:46</span></p>
+
+<p>我觉得每个里面都有通用部分 应该可以套上某种type class 比如 Has Location a</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_9">[[[[[[[[[[[[[[[[[[[[[[[[ :</h4>
+
+<p><span class="article-duration">2017-04-17 08:03:05</span></p>
+
+<p>Has :: Type</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_10">[[[[[[[[[[[[[[[[[[[[[[[[ :</h4>
+
+<p><span class="article-duration">2017-04-17 08:03:44</span></p>
+
+<p>Has :: Type -&gt; Type -&gt; Contraints</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_11">[[[[[[[[[[[[[[[[[[[[[[[[ :</h4>
+
+<p><span class="article-duration">2017-04-17 08:06:15</span></p>
+
+<p>好吧 估计这优化价值也不大 多谢了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-5">forever :</h4>
+
+<p><span class="article-duration">2017-04-17 08:07:29</span></p>
+
+<p>这。。这基本没法做类型推导</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_13">[[[[[[[[[[[[[[[[[[[[[[[[ :</h4>
+
+<p><span class="article-duration">2017-04-17 08:08:25</span></p>
+
+<p>是啊 老是觉得reify那套好像可以搬过来</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-6">forever :</h4>
+
+<p><span class="article-duration">2017-04-17 08:08:28</span></p>
+
+<p>另外我一般觉得这种 typeclass 意义也不大，没有实现什么通用功能</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_15">[[[[[[[[[[[[[[[[[[[[[[[[ :</h4>
+
+<p><span class="article-duration">2017-04-17 08:12:32</span></p>
+
+<p>是啊 对啊如果我把Float全换成double会对性能有何影响  我看wiki上performance建议都换成double</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_16">[[[[[[[[[[[[[[[[[[[[[[[[ :</h4>
+
+<p><span class="article-duration">2017-04-17 08:13:25</span></p>
+
+<p>说float除了unbox占有内存小一些 在64位机器上与double并无差别</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="the-fool">The Fool  :</h4>
+
+<p><span class="article-duration">2017-04-17 08:13:58</span></p>
+
+<p>六十四位机算double和float几乎是一样的速度</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="the-fool-1">The Fool  :</h4>
+
+<p><span class="article-duration">2017-04-17 08:14:15</span></p>
+
+<p>内存占用不敏感的话就double吧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_19">[[[[[[[[[[[[[[[[[[[[[[[[ :</h4>
+
+<p><span class="article-duration">2017-04-17 08:18:30</span></p>
+
+<p>哦哦多谢了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="benluo">benluo :</h4>
+
+<p><span class="article-duration">2017-04-17 09:11:48</span></p>
+
+<p>我觉得要看编译器吧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="benluo-1">benluo :</h4>
+
+<p><span class="article-duration">2017-04-17 09:12:15</span></p>
+
+<p>如果能合并计算，float和double还是有区别的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="再顾">再顾 :</h4>
+
+<p><span class="article-duration">2017-04-17 09:50:47</span></p>
+
+<p>对于一群没接触过gaskell的人，什么样深度的介绍回打动他们</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="再顾-1">再顾 :</h4>
+
+<p><span class="article-duration">2017-04-17 09:56:45</span></p>
+
+<p>ha</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="边走边看">边走边看 :</h4>
+
+<p><span class="article-duration">2017-04-17 09:58:27</span></p>
+
+<p>觉得自己有脑子吗？<br />没，学Haskell去。<br />有，学Haskell去。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="再顾-2">再顾 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:00:21</span></p>
+
+<p>◑▂◑</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="张智城">张智城 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:00:23</span></p>
+
+<p>我是被fp吸引了，看了黑客与画家和程序员的呐喊  都在夸LISP  当时挺好奇的  然后想学一学  上quora 他们都介绍Haskell</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="hyrious">hyrious :</h4>
+
+<p><span class="article-duration">2017-04-17 10:00:47</span></p>
+
+<p>可以先试试scheme</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页">第七页 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:01:13</span></p>
+
+<p>lisp 面向表达式 + 恰到好处的宏编程  = 。。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-7">forever :</h4>
+
+<p><span class="article-duration">2017-04-17 10:03:59</span></p>
+
+<p>并不容易推啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="再顾-3">再顾 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:07:27</span></p>
+
+<p>是的，想了很多种方式，然后更沮丧了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-8">forever :</h4>
+
+<p><span class="article-duration">2017-04-17 10:13:52</span></p>
+
+<p>比如你给别人讲函数式编程的好处。。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-9">forever :</h4>
+
+<p><span class="article-duration">2017-04-17 10:14:08</span></p>
+
+<p>我觉得肯定第一反应都是“这 tm 是编程么”</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="雨婷">雨婷 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:21:47</span></p>
+
+<p>函数式有什么好处？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="张智城-1">张智城 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:22:15</span></p>
+
+<p>有人喜欢往深度发展，有人喜欢广度，我是属于JAVA没学精，然后想找到编程兴趣[呲牙]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="雨婷-1">雨婷 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:22:49</span></p>
+
+<p>我喜欢跟人讲非函数式的好处</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="雨婷-2">雨婷 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:22:54</span></p>
+
+<p>但是函数式的人听不进去</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-10">forever :</h4>
+
+<p><span class="article-duration">2017-04-17 10:23:14</span></p>
+
+<p>函数式写代码清楚啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="雨婷-3">雨婷 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:23:37</span></p>
+
+<p>哪里清楚了？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-11">forever :</h4>
+
+<p><span class="article-duration">2017-04-17 10:23:42</span></p>
+
+<p>一看类型就把依赖的东西都弄清楚了啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-12">forever :</h4>
+
+<p><span class="article-duration">2017-04-17 10:23:53</span></p>
+
+<p>传参数拿返回值就好了啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="雨婷-4">雨婷 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:23:55</span></p>
+
+<p>你贴一段Haskell去给你同事问问他这干什么的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-1">第七页 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:23:56</span></p>
+
+<p>非函数式的好处 是  状态是廉价的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="雨婷-5">雨婷 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:23:59</span></p>
+
+<p>你再贴个Java</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_44">▽ :</h4>
+
+<p><span class="article-duration">2017-04-17 10:24:07</span></p>
+
+<p>看不懂java</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-13">forever :</h4>
+
+<p><span class="article-duration">2017-04-17 10:24:14</span></p>
+
+<p>@/zt呜呜  你这不对啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-14">forever :</h4>
+
+<p><span class="article-duration">2017-04-17 10:24:23</span></p>
+
+<p>你说你给同事贴段中文</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-15">forever :</h4>
+
+<p><span class="article-duration">2017-04-17 10:24:30</span></p>
+
+<p>再贴段意大利语</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_48">:</h4>
+
+<p><span class="article-duration">2017-04-17 10:24:35</span></p>
+
+<p>清楚是对懂的人来说的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-16">forever :</h4>
+
+<p><span class="article-duration">2017-04-17 10:24:39</span></p>
+
+<p>你觉得哪个清楚？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_50">:</h4>
+
+<p><span class="article-duration">2017-04-17 10:24:47</span></p>
+
+<p>不懂的人什么都不清楚</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="雨婷-6">雨婷 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:24:54</span></p>
+
+<p>那不是废话嘛，你这也没办法证明函数式到底清楚在哪</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_52">:</h4>
+
+<p><span class="article-duration">2017-04-17 10:24:56</span></p>
+
+<p>你这是搞事</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="雨婷-7">雨婷 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:25:02</span></p>
+
+<p>不要看了两本书和软文就人云亦云</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="雨婷-8">雨婷 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:25:25</span></p>
+
+<p>做什么事情就要用什么工具，不要追求所谓高大上用一些刁钻的技术</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="wayne">Wayne :</h4>
+
+<p><span class="article-duration">2017-04-17 10:25:48</span></p>
+
+<p>语言没你想的那么玄乎</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="wayne-1">Wayne :</h4>
+
+<p><span class="article-duration">2017-04-17 10:25:54</span></p>
+
+<p>都是工具而已</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="wayne-2">Wayne :</h4>
+
+<p><span class="article-duration">2017-04-17 10:26:04</span></p>
+
+<p>一些场景下好用</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往">随心所往 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:26:06</span></p>
+
+<p><a href="https://github.com/typelead/eta">https://github.com/typelead/eta</a></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="wayne-3">Wayne :</h4>
+
+<p><span class="article-duration">2017-04-17 10:26:08</span></p>
+
+<p>一些场景下不好用</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="wayne-4">Wayne :</h4>
+
+<p><span class="article-duration">2017-04-17 10:26:10</span></p>
+
+<p>都是会有的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-1">随心所往 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:26:13</span></p>
+
+<p>有人用过这个eta吗？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_62">. :</h4>
+
+<p><span class="article-duration">2017-04-17 10:26:14</span></p>
+
+<p>工具也不是死的，也是在发展的，前面那个观点是机械唯物主义</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_63">. :</h4>
+
+<p><span class="article-duration">2017-04-17 10:26:43</span></p>
+
+<p>不搞辩证唯物主义的别水</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="雨婷-9">雨婷 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:26:46</span></p>
+
+<p>非函数式在很多场景都是好用的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="雨婷-10">雨婷 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:26:52</span></p>
+
+<p>这是事实</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="雨婷-11">雨婷 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:27:02</span></p>
+
+<p>不信打开拉勾，看看大家都在招什么</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_67">. :</h4>
+
+<p><span class="article-duration">2017-04-17 10:27:07</span></p>
+
+<p>死的事实  别水了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-17">forever :</h4>
+
+<p><span class="article-duration">2017-04-17 10:27:10</span></p>
+
+<p>@东风谷草田  那你那种语言、库、运行时分离的做法属于孤立的形而上学观点</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_69">. :</h4>
+
+<p><span class="article-duration">2017-04-17 10:27:20</span></p>
+
+<p>我是说呜呜</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-18">forever :</h4>
+
+<p><span class="article-duration">2017-04-17 10:27:27</span></p>
+
+<p>@/zt呜呜  对啊好使啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-19">forever :</h4>
+
+<p><span class="article-duration">2017-04-17 10:27:44</span></p>
+
+<p>so?</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="张智城-2">张智城 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:27:52</span></p>
+
+<p>JAVA在分布式上的成就还是挺高的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-2">随心所往 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:27:59</span></p>
+
+<p>[流汗]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="liango">liango :</h4>
+
+<p><span class="article-duration">2017-04-17 10:28:08</span></p>
+
+<p>拉勾很多假信息啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="雨婷-12">雨婷 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:28:31</span></p>
+
+<p>你的意思是没有职位和公司这件事情本身是假的？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="雨婷-13">雨婷 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:28:39</span></p>
+
+<p>那什么公司招Haskell</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="liango-1">liango :</h4>
+
+<p><span class="article-duration">2017-04-17 10:28:42</span></p>
+
+<p>不是</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="雨婷-14">雨婷 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:28:43</span></p>
+
+<p>告诉我</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-20">forever :</h4>
+
+<p><span class="article-duration">2017-04-17 10:29:00</span></p>
+
+<p>那这个和函数式语言好不好使有什么关系</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="liango-2">liango :</h4>
+
+<p><span class="article-duration">2017-04-17 10:29:05</span></p>
+
+<p>我不说</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-3">随心所往 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:30:02</span></p>
+
+<p>昏，haskell有没有人招聘和haskell好不好用没有任何关联关系好吗？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-21">forever :</h4>
+
+<p><span class="article-duration">2017-04-17 10:30:11</span></p>
+
+<p>“诉诸群众”没有用啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_83">. :</h4>
+
+<p><span class="article-duration">2017-04-17 10:30:17</span></p>
+
+<p>其实机械唯物主义和形而上学是一个意思</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="雨婷-15">雨婷 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:30:18</span></p>
+
+<p>那么好用的东西居然没有公司用……</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="雨婷-16">雨婷 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:30:20</span></p>
+
+<p>也是奇怪了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-4">随心所往 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:30:30</span></p>
+
+<p>凡是社区小的语言，往往不走公开招聘渠道</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_87">. :</h4>
+
+<p><span class="article-duration">2017-04-17 10:30:33</span></p>
+
+<p>我就是说呜呜这种没有发展的观点</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="yaegaki-erika">Yaegaki Erika :</h4>
+
+<p><span class="article-duration">2017-04-17 10:30:41</span></p>
+
+<p>噢 难怪</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-5">随心所往 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:30:42</span></p>
+
+<p>不仅仅是haskell</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_90">. :</h4>
+
+<p><span class="article-duration">2017-04-17 10:30:43</span></p>
+
+<p>已经有现成的对策了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="yaegaki-erika-1">Yaegaki Erika :</h4>
+
+<p><span class="article-duration">2017-04-17 10:30:54</span></p>
+
+<p>原来我屏蔽了那个troll啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_92">. :</h4>
+
+<p><span class="article-duration">2017-04-17 10:31:00</span></p>
+
+<p>有解就行了懒得写过程</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-2">第七页 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:31:31</span></p>
+
+<p>haskell  全是封装[阴险]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_94">:</h4>
+
+<p><span class="article-duration">2017-04-17 10:33:10</span></p>
+
+<p>大家招什么用什么就一定是好的？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_95">. :</h4>
+
+<p><span class="article-duration">2017-04-17 10:33:12</span></p>
+
+<p>其实语言库运行时分离的意思最主要是隔离语言战争狂热(</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_96">:</h4>
+
+<p><span class="article-duration">2017-04-17 10:33:28</span></p>
+
+<p>群众眼睛是雪亮的？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_97">:</h4>
+
+<p><span class="article-duration">2017-04-17 10:33:39</span></p>
+
+<p>郭敬明：说的不错！</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="雨婷-17">雨婷 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:33:40</span></p>
+
+<p>对的，群众眼睛是雪亮的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_99">. :</h4>
+
+<p><span class="article-duration">2017-04-17 10:33:43</span></p>
+
+<p>他们彼此争论范围不同  因此无法同心协力吵起来</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="the-fool-2">The Fool  :</h4>
+
+<p><span class="article-duration">2017-04-17 10:33:51</span></p>
+
+<p>原来你国公司代表世界领先水平，你招聘网代表世界一流人才市场。在一个Haskell群放群嘲，不知道你是什么心态。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="雨婷-18">雨婷 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:34:09</span></p>
+
+<p>你告诉我哪国代表世界领先水平</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="雨婷-19">雨婷 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:34:21</span></p>
+
+<p>美国？招聘网站帮我统计一下Haskell和Java对比</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:34:46</span></p>
+
+<p>别争了同志们，帮我看一个算法超时的问题。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-1">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:34:53</span></p>
+
+<p><a href="http://lpaste.net/354664">http://lpaste.net/354664</a></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="the-fool-3">The Fool  :</h4>
+
+<p><span class="article-duration">2017-04-17 10:34:54</span></p>
+
+<p>需要复习汉语么？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="雨婷-20">雨婷 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:35:46</span></p>
+
+<p>我觉得我们中国高大上，你既然称我的祖国&ndash;中国不代表领先水平，那你国是哪国？用什么招聘网站，贴一下对比</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="举个栗子">举个栗子 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:35:59</span></p>
+
+<p>。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="举个栗子-1">举个栗子 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:36:05</span></p>
+
+<p>在讨论什么</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_109">:</h4>
+
+<p><span class="article-duration">2017-04-17 10:36:14</span></p>
+
+<p>以流行程度作为评判标准本来就不对</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-22">forever :</h4>
+
+<p><span class="article-duration">2017-04-17 10:36:20</span></p>
+
+<p>“为什么函数式语言不好使”</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="举个栗子-2">举个栗子 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:36:48</span></p>
+
+<p>可是java一直在吸取函数式的东西啊，比如java8的东西</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="举个栗子-3">举个栗子 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:37:09</span></p>
+
+<p>Option,Stream API</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="举个栗子-4">举个栗子 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:37:14</span></p>
+
+<p>不好用吗？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="the-fool-4">The Fool  :</h4>
+
+<p><span class="article-duration">2017-04-17 10:37:30</span></p>
+
+<p>如果不喜欢这个语言可以自觉退群，我不认为我有和一个认识如此神奇的人争吵的必要。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_115">:</h4>
+
+<p><span class="article-duration">2017-04-17 10:37:50</span></p>
+
+<p>Linux Mac是什么东西？Windows才是主流。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="雨婷-21">雨婷 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:38:07</span></p>
+
+<p>你还别说，Windows确实先进确实高大上……</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-2">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:38:14</span></p>
+
+<p>有没有人愿意帮我看看算法超时的问题</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-3">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:38:20</span></p>
+
+<p>。。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_119">:</h4>
+
+<p><span class="article-duration">2017-04-17 10:38:21</span></p>
+
+<p>Chrome Firefox是什么东西？IE才是主流。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-4">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:38:26</span></p>
+
+<p>大早上的吵个毛线</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-6">随心所往 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:38:34</span></p>
+
+<p>@The Fool   You are right</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_122">:</h4>
+
+<p><span class="article-duration">2017-04-17 10:38:55</span></p>
+
+<p>你说先进就先进？你说高大上就高大上？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="wayne-5">Wayne :</h4>
+
+<p><span class="article-duration">2017-04-17 10:39:09</span></p>
+
+<p>。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-7">随心所往 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:39:16</span></p>
+
+<p>@雨婷 瞧不上haskell就退了吧，我们不打扰您了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="雨婷-22">雨婷 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:39:20</span></p>
+
+<p>我听了半天，还是没听到你们说函数式好，好在哪</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="wayne-6">Wayne :</h4>
+
+<p><span class="article-duration">2017-04-17 10:39:22</span></p>
+
+<p>好无聊啊你们。。。自己喜欢、好用就行。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_127">:</h4>
+
+<p><span class="article-duration">2017-04-17 10:39:32</span></p>
+
+<p>Vim Emacs是什么东西？ Eclipse才是王道。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="雨婷-23">雨婷 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:39:45</span></p>
+
+<p>只说了Java也有你们函数式的东西，那我为啥不用Java</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="wayne-7">Wayne :</h4>
+
+<p><span class="article-duration">2017-04-17 10:40:01</span></p>
+
+<p>函数式有很多好用的地方</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="举个栗子-5">举个栗子 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:40:06</span></p>
+
+<p>因为他只有一部分</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="wayne-8">Wayne :</h4>
+
+<p><span class="article-duration">2017-04-17 10:40:15</span></p>
+
+<p>在并发、程序稳健性上有很大的特点</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="雨婷-24">雨婷 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:40:19</span></p>
+
+<p>我几句话你们内心都能动摇，那说明你们信仰的东西根本站不住脚</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="wayne-9">Wayne :</h4>
+
+<p><span class="article-duration">2017-04-17 10:40:26</span></p>
+
+<p>java 8那个只是受限的lambda而已</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="wayne-10">Wayne :</h4>
+
+<p><span class="article-duration">2017-04-17 10:40:34</span></p>
+
+<p>跟函数式没有任何关系</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="wayne-11">Wayne :</h4>
+
+<p><span class="article-duration">2017-04-17 10:40:47</span></p>
+
+<p>函数式的理念在于无副作用</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_136">:</h4>
+
+<p><span class="article-duration">2017-04-17 10:40:49</span></p>
+
+<p>tex pdf是什么鬼，都给我用word。必须是ms word。libre什么都是小众，垃圾。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="wayne-12">Wayne :</h4>
+
+<p><span class="article-duration">2017-04-17 10:40:56</span></p>
+
+<p>这是一种编程的理念，跟语言没有关系</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-8">随心所往 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:41:08</span></p>
+
+<p>[偷笑]您不是真觉得我们会动摇吧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="wayne-13">Wayne :</h4>
+
+<p><span class="article-duration">2017-04-17 10:41:08</span></p>
+
+<p>haskell天生在语言层面上支持这一特性</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="wayne-14">Wayne :</h4>
+
+<p><span class="article-duration">2017-04-17 10:41:22</span></p>
+
+<p>类似于Scala这样的语言则需要按照一定的原则才能实现函数式</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-9">随心所往 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:41:22</span></p>
+
+<p>说的我们不会java一样</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="雨婷-25">雨婷 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:41:27</span></p>
+
+<p>你的这种所谓“理念”，我们所有人都在用，但是从来不强调</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="wayne-15">Wayne :</h4>
+
+<p><span class="article-duration">2017-04-17 10:41:35</span></p>
+
+<p>嘿嘿</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="举个栗子-6">举个栗子 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:41:38</span></p>
+
+<p>是吗？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="举个栗子-7">举个栗子 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:41:50</span></p>
+
+<p>java8自带不可变数据结构吗？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="wayne-16">Wayne :</h4>
+
+<p><span class="article-duration">2017-04-17 10:41:53</span></p>
+
+<p>所有人都在用？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="张智城-3">张智城 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:41:56</span></p>
+
+<p>有人讨论才好  接受批评  JAVA也是有人骂有人说  JAVA8才加入函数式的[呲牙]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="举个栗子-8">举个栗子 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:41:57</span></p>
+
+<p>我怎么不知道</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="雨婷-26">雨婷 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:42:07</span></p>
+
+<p>你不去改变它不就“不可变”了？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-10">随心所往 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:42:13</span></p>
+
+<p>[擦汗]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_151">:</h4>
+
+<p><span class="article-duration">2017-04-17 10:42:16</span></p>
+
+<p>你用过啥？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="wayne-17">Wayne :</h4>
+
+<p><span class="article-duration">2017-04-17 10:42:24</span></p>
+
+<p>不明白你想表达什么</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="举个栗子-9">举个栗子 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:42:38</span></p>
+
+<p>很强，不改变就是不可变</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="wayne-18">Wayne :</h4>
+
+<p><span class="article-duration">2017-04-17 10:42:41</span></p>
+
+<p>不明白你在这里的用意是啥。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_155">:</h4>
+
+<p><span class="article-duration">2017-04-17 10:42:46</span></p>
+
+<p>很强，不改变就是不可变</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-11">随心所往 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:42:52</span></p>
+
+<p>布道java？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="wayne-19">Wayne :</h4>
+
+<p><span class="article-duration">2017-04-17 10:42:57</span></p>
+
+<p>就是个啥都不知道的小朋友在这里乱说话罢了。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="雨婷-27">雨婷 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:42:58</span></p>
+
+<p>你连final都没见过还敢说用过Java？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_159">:</h4>
+
+<p><span class="article-duration">2017-04-17 10:43:15</span></p>
+
+<p>“ 你的这种所谓“理念”，我们所有人都在用，但是从来不强调 ”<br />“ 你不去改变它不就“不可变”了？ ”<br />脸疼不疼？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-12">随心所往 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:43:16</span></p>
+
+<p>[疑问]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="举个栗子-10">举个栗子 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:43:24</span></p>
+
+<p>哦你说final，我猜你八成不知道final在内存模型下的语义</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="雨婷-28">雨婷 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:43:33</span></p>
+
+<p>不知道，你说说看</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="举个栗子-11">举个栗子 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:43:48</span></p>
+
+<p>你水平太低了 我不惜的讲</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="雨婷-29">雨婷 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:43:54</span></p>
+
+<p>哦，那就是你也不知道</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="the-fool-5">The Fool  :</h4>
+
+<p><span class="article-duration">2017-04-17 10:44:00</span></p>
+
+<p>所谓不与夏虫语寒，不与曲人语道</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="雨婷-30">雨婷 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:44:17</span></p>
+
+<p>不然我也可以说你水平太低，我不屑于讲</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="the-fool-6">The Fool  :</h4>
+
+<p><span class="article-duration">2017-04-17 10:44:48</span></p>
+
+<p>先生请回，这里是一个Haskell技术群，若您觉得我们是夏虫，您何必劳烦口舌布道？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-13">随心所往 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:45:17</span></p>
+
+<p>对啊，就让我们在你心目中错误的道路上越行越远吧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="雨婷-31">雨婷 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:45:22</span></p>
+
+<p>群里有人说函数式有好处，我是来学习的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="雨婷-32">雨婷 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:45:31</span></p>
+
+<p>结果学了半天，还是没听出你们这好处在哪</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-14">随心所往 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:45:39</span></p>
+
+<p>你这是学习的逻辑？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_172">:</h4>
+
+<p><span class="article-duration">2017-04-17 10:45:53</span></p>
+
+<p>你这姿态还谈学习？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-15">随心所往 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:46:01</span></p>
+
+<p>先弄清楚一下haskell是什么好吗？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="雨婷-33">雨婷 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:46:08</span></p>
+
+<p>那要什么姿态，跪舔大神的姿态？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_175">:</h4>
+
+<p><span class="article-duration">2017-04-17 10:46:11</span></p>
+
+<p>你还有啥不会的？还用得着学习？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="雨婷-34">雨婷 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:46:34</span></p>
+
+<p>跪舔也可以，得你们真是大神啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_177">:</h4>
+
+<p><span class="article-duration">2017-04-17 10:46:38</span></p>
+
+<p>什么你都可以钦定，还有什么需要学的？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="雨婷-35">雨婷 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:46:47</span></p>
+
+<p>说了半天还没说清楚函数式好处在哪，不太神啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:47:16</span></p>
+
+<p>我好像赶上了一场撕B大战？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="举个栗子-12">举个栗子 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:47:26</span></p>
+
+<p>说不说是别人的问题，听不懂是你自己的问题啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="雨婷-36">雨婷 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:47:41</span></p>
+
+<p>哈哈哈，你都没说我听懂什么</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_182">？ :</h4>
+
+<p><span class="article-duration">2017-04-17 10:47:47</span></p>
+
+<p>钓鱼大战。。估计要禁言了。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="the-fool-7">The Fool  :</h4>
+
+<p><span class="article-duration">2017-04-17 10:49:01</span></p>
+
+<p>各位别说了，白费口舌。该讨论什么讨论什么吧，之前不是还有道题。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-5">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:49:28</span></p>
+
+<p>终于还有人惦记着我的题。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-16">随心所往 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:49:30</span></p>
+
+<p>@雨婷 你真想学习，我建议你去看看 《Haskell design pattern》看看多少java里面需要通过设计模式甚至框架解决的问题在haskell里面，语言基础特性就覆盖了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_186">。 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:49:43</span></p>
+
+<p>金坷垃好处都有啥……</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="hzy-naupio">HZY(Naupio) :</h4>
+
+<p><span class="article-duration">2017-04-17 10:49:56</span></p>
+
+<p><a href="https://www.cs.kent.ac.uk/people/staff/dat/miranda/whyfp90.pdf@/zt呜呜">https://www.cs.kent.ac.uk/people/staff/dat/miranda/whyfp90.pdf@/zt呜呜</a></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-6">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:50:15</span></p>
+
+<p>原题是这个。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-7">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:50:27</span></p>
+
+<p>有一个测试用例是最大N，就是10万条数据</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="the-fool-8">The Fool  :</h4>
+
+<p><span class="article-duration">2017-04-17 10:51:01</span></p>
+
+<p>传说中的反转链表&hellip;</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-8">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:51:03</span></p>
+
+<p>我发现我读入之后不做任何处理直接接链表顺序输出就超时</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-9">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:51:21</span></p>
+
+<p><a href="http://lpaste.net/354664">http://lpaste.net/354664</a></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-10">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:51:28</span></p>
+
+<p>用最暴力的IOArray</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-11">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:51:42</span></p>
+
+<p>内存使用也很夸张</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_195">:</h4>
+
+<p><span class="article-duration">2017-04-17 10:51:45</span></p>
+
+<p>这是哪的题？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-12">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:52:20</span></p>
+
+<p>浙大数据结构的课程，163上的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="再顾-4">再顾 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:52:26</span></p>
+
+<p>阿，你说的情况貌似我也刚遇到</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-23">forever :</h4>
+
+<p><span class="article-duration">2017-04-17 10:52:46</span></p>
+
+<p>@橙月雪离子  你自己做一个最大的数据要跑多长时间？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_199">:</h4>
+
+<p><span class="article-duration">2017-04-17 10:52:47</span></p>
+
+<p>有木有传送门？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="再顾-5">再顾 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:52:52</span></p>
+
+<p>我用的编译参数也是n开到最大</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-24">forever :</h4>
+
+<p><span class="article-duration">2017-04-17 10:53:08</span></p>
+
+<p>@此间少年有BUG  并不是那个 +RTS -N</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="再顾-6">再顾 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:53:12</span></p>
+
+<p>让后服务器cpu占用100%</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="再顾-7">再顾 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:53:32</span></p>
+
+<p>啥都没做</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-13">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:53:35</span></p>
+
+<p>@dram 嫌麻烦并没有做最大测试用例。。。然而如果仅输入和计算，最后大概300多ms，属于正常范围</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-25">forever :</h4>
+
+<p><span class="article-duration">2017-04-17 10:53:56</span></p>
+
+<p>有木有传送门？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-14">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:54:16</span></p>
+
+<p>课程要注册的。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-17">随心所往 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:54:20</span></p>
+
+<p>有做过profiling吗？看看慢在哪个环节</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-15">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:55:19</span></p>
+
+<p>还没，得自己手工做一个比较大的测试用例</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-18">随心所往 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:55:31</span></p>
+
+<p>反正我的经验每次profiling发现的瓶颈都和自己猜测的不一样</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-16">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:56:05</span></p>
+
+<p>嗯，如果不能一眼看出问题的话，我觉得我还是去profile一下</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-26">forever :</h4>
+
+<p><span class="article-duration">2017-04-17 10:57:03</span></p>
+
+<p>就是先确定一下没有死循环什么的吧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-17">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:57:40</span></p>
+
+<p>好的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-19">随心所往 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:59:48</span></p>
+
+<p>另外你有考虑使用交流吗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-18">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:59:51</span></p>
+
+<p>要是能把测试用例拿到就好了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-20">随心所往 :</h4>
+
+<p><span class="article-duration">2017-04-17 10:59:54</span></p>
+
+<p>流</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-19">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-17 11:00:08</span></p>
+
+<p>OJ系统很烂的啥玩意没有</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-20">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-17 11:00:19</span></p>
+
+<p>Data.ByteString.Builder都没</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="安静">安静 :</h4>
+
+<p><span class="article-duration">2017-04-17 11:09:45</span></p>
+
+<p>我觉得haskell做oj问题很吃亏。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="安静-1">安静 :</h4>
+
+<p><span class="article-duration">2017-04-17 11:10:06</span></p>
+
+<p>ghc版本太低，啥都没有</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-21">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-17 11:16:17</span></p>
+
+<p>[饥饿]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-22">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-17 11:16:20</span></p>
+
+<p>都看见了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="安静-2">安静 :</h4>
+
+<p><span class="article-duration">2017-04-17 12:18:17</span></p>
+
+<p>请教大家个问题。<br />Data.Matrix实现了Applicative的接口，但是我觉得它的语意很别扭，想改一下。我该怎么办？<br />newtype包起来然后重新定义一大堆函数？这个方法好麻烦，有没有更简洁一些的方法？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="cj">CJ :</h4>
+
+<p><span class="article-duration">2017-04-17 12:20:30</span></p>
+
+<p>可以直接 derive Maxtrix已经实现的class，然后只有 applicative 自己实现，其它更简单的方法我就不知道了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="安静-3">安静 :</h4>
+
+<p><span class="article-duration">2017-04-17 12:23:03</span></p>
+
+<p>昂，这个可以省很多代码</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-21">随心所往 :</h4>
+
+<p><span class="article-duration">2017-04-17 12:49:00</span></p>
+
+<p>对了，大家有人用过 <a href="https://github.com/typelead/eta">https://github.com/typelead/eta</a> 吗？和ghc7.10.3兼容</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_226">:</h4>
+
+<p><span class="article-duration">2017-04-17 12:50:08</span></p>
+
+<p>听说过但木有用过。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_227">:</h4>
+
+<p><span class="article-duration">2017-04-17 12:51:16</span></p>
+
+<p>jvm上该怎么实现尾调用优化。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-22">随心所往 :</h4>
+
+<p><span class="article-duration">2017-04-17 12:51:52</span></p>
+
+<p>编译的时候转换为循环吧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-23">随心所往 :</h4>
+
+<p><span class="article-duration">2017-04-17 12:51:58</span></p>
+
+<p>都是这样做的吧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-27">forever :</h4>
+
+<p><span class="article-duration">2017-04-17 12:52:49</span></p>
+
+<p>听说用 trampoline。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-28">forever :</h4>
+
+<p><span class="article-duration">2017-04-17 12:53:07</span></p>
+
+<p>从一定程度上来说 Haskell 也是 trampoline 的。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_232">:</h4>
+
+<p><span class="article-duration">2017-04-17 12:55:05</span></p>
+
+<p>任意尾调用。。。不一定是直接尾递归。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="jin">Jin :</h4>
+
+<p><span class="article-duration">2017-04-17 14:02:59</span></p>
+
+<p>看了irdris的语法，感觉爽的不行啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="jin-1">Jin :</h4>
+
+<p><span class="article-duration">2017-04-17 14:03:45</span></p>
+
+<p>解决了好多haskell的瑕疵</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-24">随心所往 :</h4>
+
+<p><span class="article-duration">2017-04-17 14:09:19</span></p>
+
+<p>库和生态怎么样了啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-3">第七页 :</h4>
+
+<p><span class="article-duration">2017-04-17 14:10:37</span></p>
+
+<p>type-driven overloading resolution <br /><br />这个 类型重载解决方案 怎么理解？  跟java那样 ？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-29">forever :</h4>
+
+<p><span class="article-duration">2017-04-17 14:13:53</span></p>
+
+<p>对</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-4">第七页 :</h4>
+
+<p><span class="article-duration">2017-04-17 14:14:20</span></p>
+
+<p>一个函数可以不同参数 类型？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-30">forever :</h4>
+
+<p><span class="article-duration">2017-04-17 14:14:55</span></p>
+
+<p>就是，已经不是同一个函数了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-31">forever :</h4>
+
+<p><span class="article-duration">2017-04-17 14:15:09</span></p>
+
+<p>Vector.(++) 和 List.(++) 可以同时在当前 scope 里</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-5">第七页 :</h4>
+
+<p><span class="article-duration">2017-04-17 14:15:44</span></p>
+
+<p>++ 为什么不做为一个 class method?</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-32">forever :</h4>
+
+<p><span class="article-duration">2017-04-17 14:16:17</span></p>
+
+<p>因为有 Semigroup 的 &lt;&gt; 啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-33">forever :</h4>
+
+<p><span class="article-duration">2017-04-17 14:16:35</span></p>
+
+<p>那个说的 overload 就是真的 overload</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-34">forever :</h4>
+
+<p><span class="article-duration">2017-04-17 14:16:44</span></p>
+
+<p>比如不能用泛型什么的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="今天休息">☺今天休息 :</h4>
+
+<p><span class="article-duration">2017-04-17 14:20:05</span></p>
+
+<p>@Jin 对呀对呀, 来玩啊, 有个idris群的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="jin-2">Jin :</h4>
+
+<p><span class="article-duration">2017-04-17 14:20:15</span></p>
+
+<p>求群号？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="今天休息-1">☺今天休息 :</h4>
+
+<p><span class="article-duration">2017-04-17 14:20:27</span></p>
+
+<p>直接搜索idris呀, 也没几个</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="jin-3">Jin :</h4>
+
+<p><span class="article-duration">2017-04-17 14:20:35</span></p>
+
+<p>好</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="今天休息-2">☺今天休息 :</h4>
+
+<p><span class="article-duration">2017-04-17 14:21:01</span></p>
+
+<p>翻了一下聊天记录, 发现自己好像错过了什么&hellip;</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-25">随心所往 :</h4>
+
+<p><span class="article-duration">2017-04-17 14:21:16</span></p>
+
+<p>[偷笑]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="aha">aha :</h4>
+
+<p><span class="article-duration">2017-04-17 14:43:16</span></p>
+
+<p>isPrime 1 = TrueisPrime 2 = TrueisPrime 3 = TrueisPrime n     | len &gt; 0   = True    | otherwise = False    where divn = (floor $ sqrt n) :: Int          xs = ([2..divn]) :: [Int]          len = length $ map (div (fromIntegral n)) xs*Main Prelude&gt; isPrime 19<interactive>:249:1: error:    ? Ambiguous type variable ‘a0’ arising from a use of ‘isPrime’      prevents the constraint ‘(Integral a0)’ from being solved.      Probable fix: use a type annotation to specify what ‘a0’ should be.      These potential instances exist:        instance Integral Integer &ndash; Defined in ‘GHC.Real’        instance Integral Int &ndash; Defined in ‘GHC.Real’        instance In</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="aha-1">aha :</h4>
+
+<p><span class="article-duration">2017-04-17 14:43:16</span></p>
+
+<p>tegral Word &ndash; Defined in ‘GHC.Real’    ? In the expression: isPrime 19      In an equation for ‘it’: it = isPrime 19知道是类型错误，但不知道怎么改，可否告知</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-35">forever :</h4>
+
+<p><span class="article-duration">2017-04-17 14:43:51</span></p>
+
+<p>isPrime (19 :: Int)</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-26">随心所往 :</h4>
+
+<p><span class="article-duration">2017-04-17 14:44:29</span></p>
+
+<p>你定义函数的时候应该指定类型</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="aha-2">aha :</h4>
+
+<p><span class="article-duration">2017-04-17 14:45:26</span></p>
+
+<p>*Main Prelude&gt; isPrime (19 :: Int)<interactive>:252:1: error:    ? No instance for (Floating Int) arising from a use of ‘isPrime’    ? In the expression: isPrime (19 :: Int)      In an equation for ‘it’: it = isPrime (19 :: Int)</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="aha-3">aha :</h4>
+
+<p><span class="article-duration">2017-04-17 14:46:05</span></p>
+
+<p>我如果指定isPrime :: Int -&gt; Bool，也会报类型错误，所以想让ghc自己定义</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-36">forever :</h4>
+
+<p><span class="article-duration">2017-04-17 14:46:30</span></p>
+
+<p>sqrt n 那里不行</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-37">forever :</h4>
+
+<p><span class="article-duration">2017-04-17 14:46:39</span></p>
+
+<p>必须 sqrt (fromIntegral n)</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="aha-4">aha :</h4>
+
+<p><span class="article-duration">2017-04-17 14:47:09</span></p>
+
+<p>Cool</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="aha-5">aha :</h4>
+
+<p><span class="article-duration">2017-04-17 14:47:11</span></p>
+
+<p>果然是</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="aha-6">aha :</h4>
+
+<p><span class="article-duration">2017-04-17 14:47:40</span></p>
+
+<p>@dram 感谢！</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="aha-7">aha :</h4>
+
+<p><span class="article-duration">2017-04-17 14:48:21</span></p>
+
+<p>明白了，是因为sqrt的参数是floating，所以不能接收Integer参数</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="aha-8">aha :</h4>
+
+<p><span class="article-duration">2017-04-17 14:48:24</span></p>
+
+<p>感谢</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-38">forever :</h4>
+
+<p><span class="article-duration">2017-04-17 14:49:52</span></p>
+
+<p>你那个推导出来的类型应该是<br />(Floating a, Integral a) =&gt; a -&gt; Bool</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-39">forever :</h4>
+
+<p><span class="article-duration">2017-04-17 14:49:57</span></p>
+
+<p>当然没有 instance 老</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-40">forever :</h4>
+
+<p><span class="article-duration">2017-04-17 14:50:00</span></p>
+
+<p>*了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="aha-9">aha :</h4>
+
+<p><span class="article-duration">2017-04-17 14:53:33</span></p>
+
+<p>不好意思，还是不懂。是不是因为没有理解type和typeclass引起的？如果是，我再好好看看那几章</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-41">forever :</h4>
+
+<p><span class="article-duration">2017-04-17 14:54:07</span></p>
+
+<p>你懂 Floating 和 Integral 么</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-42">forever :</h4>
+
+<p><span class="article-duration">2017-04-17 14:54:21</span></p>
+
+<p>这个你看得懂么？<br />(Floating a, Integral a) =&gt; a -&gt; Bool</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="aha-10">aha :</h4>
+
+<p><span class="article-duration">2017-04-17 14:54:31</span></p>
+
+<p>这个我看得懂</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-43">forever :</h4>
+
+<p><span class="article-duration">2017-04-17 14:55:04</span></p>
+
+<p>那就没事啦</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="aha-11">aha :</h4>
+
+<p><span class="article-duration">2017-04-17 14:55:06</span></p>
+
+<p>就是说   参数必须是float或者Integral类型的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="aha-12">aha :</h4>
+
+<p><span class="article-duration">2017-04-17 14:55:09</span></p>
+
+<p>然后返回bool</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-44">forever :</h4>
+
+<p><span class="article-duration">2017-04-17 14:55:11</span></p>
+
+<p>并不是</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-45">forever :</h4>
+
+<p><span class="article-duration">2017-04-17 14:55:22</span></p>
+
+<p>说的是参数必须是float和Integral类型的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="aha-13">aha :</h4>
+
+<p><span class="article-duration">2017-04-17 14:55:57</span></p>
+
+<p>是 与 关系啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-27">随心所往 :</h4>
+
+<p><span class="article-duration">2017-04-17 14:56:11</span></p>
+
+<p>对是 and</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-28">随心所往 :</h4>
+
+<p><span class="article-duration">2017-04-17 14:56:15</span></p>
+
+<p>所以满足不了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-29">随心所往 :</h4>
+
+<p><span class="article-duration">2017-04-17 14:56:40</span></p>
+
+<p>其实你还是应该加函数类型签名，这样报错就会指向sqrt了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="aha-14">aha :</h4>
+
+<p><span class="article-duration">2017-04-17 14:57:13</span></p>
+
+<p>我加上试试</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="aha-15">aha :</h4>
+
+<p><span class="article-duration">2017-04-17 14:59:23</span></p>
+
+<p>? No instance for (Floating Integer) arising from a use of ‘sqrt’</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="aha-16">aha :</h4>
+
+<p><span class="article-duration">2017-04-17 14:59:24</span></p>
+
+<p>是的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-30">随心所往 :</h4>
+
+<p><span class="article-duration">2017-04-17 14:59:55</span></p>
+
+<p>ghc报错信息还是比较明确的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="aha-17">aha :</h4>
+
+<p><span class="article-duration">2017-04-17 14:59:55</span></p>
+
+<p>谢谢！</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="aha-18">aha :</h4>
+
+<p><span class="article-duration">2017-04-17 15:01:12</span></p>
+
+<p>嗯，够简洁</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="e-s-x-m">E.S.X.M :</h4>
+
+<p><span class="article-duration">2017-04-17 22:57:11</span></p>
+
+<p>有人面过janestreet吗？我现在到第三轮了，感觉面试和网上说的有点出入啊，有没前辈给点指点啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="泉彼方">泉彼方 :</h4>
+
+<p><span class="article-duration">2017-04-17 22:57:56</span></p>
+
+<p>好强（</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="泉彼方-1">泉彼方 :</h4>
+
+<p><span class="article-duration">2017-04-17 22:58:15</span></p>
+
+<p>前两轮是什么样的大概</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="e-s-x-m-1">E.S.X.M :</h4>
+
+<p><span class="article-duration">2017-04-17 22:58:28</span></p>
+
+<p>先是HR面</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="e-s-x-m-2">E.S.X.M :</h4>
+
+<p><span class="article-duration">2017-04-17 22:58:59</span></p>
+
+<p>然后第一轮和第二轮我个人觉得不是很难，但是坑很多，你要把题目问清楚，edge cases蛮多</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="e-s-x-m-3">E.S.X.M :</h4>
+
+<p><span class="article-duration">2017-04-17 22:59:14</span></p>
+
+<p>pure technical coding questions</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="泉彼方-2">泉彼方 :</h4>
+
+<p><span class="article-duration">2017-04-17 22:59:16</span></p>
+
+<p>问算法题？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="泉彼方-3">泉彼方 :</h4>
+
+<p><span class="article-duration">2017-04-17 22:59:25</span></p>
+
+<p>噗 实现题？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="泉彼方-4">泉彼方 :</h4>
+
+<p><span class="article-duration">2017-04-17 22:59:32</span></p>
+
+<p>都是ocaml吗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="e-s-x-m-4">E.S.X.M :</h4>
+
+<p><span class="article-duration">2017-04-17 22:59:39</span></p>
+
+<p>不用</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="e-s-x-m-5">E.S.X.M :</h4>
+
+<p><span class="article-duration">2017-04-17 23:00:04</span></p>
+
+<p>不要求ocaml，using the most comfortable language</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="泉彼方-5">泉彼方 :</h4>
+
+<p><span class="article-duration">2017-04-17 23:00:11</span></p>
+
+<p>嗷</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="泉彼方-6">泉彼方 :</h4>
+
+<p><span class="article-duration">2017-04-17 23:00:19</span></p>
+
+<p>那他会根据你的语言出题？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="e-s-x-m-6">E.S.X.M :</h4>
+
+<p><span class="article-duration">2017-04-17 23:00:22</span></p>
+
+<p>算算法题</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="e-s-x-m-7">E.S.X.M :</h4>
+
+<p><span class="article-duration">2017-04-17 23:00:25</span></p>
+
+<p>不会</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="e-s-x-m-8">E.S.X.M :</h4>
+
+<p><span class="article-duration">2017-04-17 23:00:30</span></p>
+
+<p>题目非常开发</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="泉彼方-7">泉彼方 :</h4>
+
+<p><span class="article-duration">2017-04-17 23:00:36</span></p>
+
+<p>还是出了题你再随便用方便的语言</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="泉彼方-8">泉彼方 :</h4>
+
+<p><span class="article-duration">2017-04-17 23:00:38</span></p>
+
+<p>嗯</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="e-s-x-m-9">E.S.X.M :</h4>
+
+<p><span class="article-duration">2017-04-17 23:00:39</span></p>
+
+<p>input type什么的都是你自己定</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="e-s-x-m-10">E.S.X.M :</h4>
+
+<p><span class="article-duration">2017-04-17 23:00:45</span></p>
+
+<p>题目非常开放</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="泉彼方-9">泉彼方 :</h4>
+
+<p><span class="article-duration">2017-04-17 23:00:49</span></p>
+
+<p>哇…</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="e-s-x-m-11">E.S.X.M :</h4>
+
+<p><span class="article-duration">2017-04-17 23:01:29</span></p>
+
+<p>题目给的并不是很清楚，我感觉是故意的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="e-s-x-m-12">E.S.X.M :</h4>
+
+<p><span class="article-duration">2017-04-17 23:01:39</span></p>
+
+<p>必须和面试官沟通</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="风吹过的冬天">风吹过的冬天 :</h4>
+
+<p><span class="article-duration">2017-04-17 23:03:29</span></p>
+
+<p>群里有人会prolog吗？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="风吹过的冬天-1">风吹过的冬天 :</h4>
+
+<p><span class="article-duration">2017-04-17 23:03:36</span></p>
+
+<p>一直报错，作业</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="e-s-x-m-13">E.S.X.M :</h4>
+
+<p><span class="article-duration">2017-04-17 23:05:44</span></p>
+
+<p>prolog AI的assignment吧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="风吹过的冬天-2">风吹过的冬天 :</h4>
+
+<p><span class="article-duration">2017-04-17 23:07:14</span></p>
+
+<p>对哈。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="风吹过的冬天-3">风吹过的冬天 :</h4>
+
+<p><span class="article-duration">2017-04-17 23:08:58</span></p>
+
+<p>我做完后一直报错</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="e-s-x-m-14">E.S.X.M :</h4>
+
+<p><span class="article-duration">2017-04-17 23:09:14</span></p>
+
+<p>你IC的？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="风吹过的冬天-4">风吹过的冬天 :</h4>
+
+<p><span class="article-duration">2017-04-17 23:09:23</span></p>
+
+<p>学生。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="风吹过的冬天-5">风吹过的冬天 :</h4>
+
+<p><span class="article-duration">2017-04-17 23:09:28</span></p>
+
+<p>刚学prolog</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="风吹过的冬天-6">风吹过的冬天 :</h4>
+
+<p><span class="article-duration">2017-04-17 23:09:33</span></p>
+
+<p>就讲了一节课。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="chy">chy :</h4>
+
+<p><span class="article-duration">2017-04-17 23:17:22</span></p>
+
+<p>nixos的材料快准备完了，虽然还有点没搞明白，需要继续看paper</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="chy-1">chy :</h4>
+
+<p><span class="article-duration">2017-04-17 23:18:02</span></p>
+
+<p>@阅千人而惜知己 所有，每个人大概讲多久？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-23">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-17 23:48:48</span></p>
+
+<p>我还是弄了个100000的测试用例</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-24">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-17 23:48:55</span></p>
+
+<p>貌似都花在IO上</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-25">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-17 23:49:46</span></p>
+
+<p>[系统表情]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="the-fool-9">The Fool  :</h4>
+
+<p><span class="article-duration">2017-04-17 23:52:27</span></p>
+
+<p>Haskell的IE充满了坑</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="the-fool-10">The Fool  :</h4>
+
+<p><span class="article-duration">2017-04-17 23:53:02</span></p>
+
+<p>*IO</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-26">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-17 23:54:11</span></p>
+
+<p>total alloc 800多m</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-27">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-17 23:54:30</span></p>
+
+<p>我手工格式化加putStr</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-28">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-17 23:54:45</span></p>
+
+<p>用Text.Printf涨到了1.4G</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-29">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-17 23:55:40</span></p>
+
+<p>时间从0.49涨到0.88</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<p>以上内容来自 [Haskell函数式编程] QQ 群。</p>
+
+    </div>
+  </article>
+
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "binjoy" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="http://qq.haskellchina.org/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="http://qq.haskellchina.org/images/hugo-logo.png" width="22" height="22"></a>
+            <div style="display:none">
+                <script src="http://s95.cnzz.com/stat.php?id=1261078931&web_id=1261078931" language="JavaScript"></script>
+            </div>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
+

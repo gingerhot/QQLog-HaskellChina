@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.30.2" />
+
+
+<title>QQ Group Log of HaskellChina: 20170104 - QQGroup Log of HaskellChina</title>
+<meta property="og:title" content="QQ Group Log of HaskellChina: 20170104 - QQGroup Log of HaskellChina">
+
+
+
+  
+
+
+
+<meta property="keywords" content ="Haskell,, HaskellChina">
+
+
+
+
+<link rel="stylesheet" href="http://qq.haskellchina.org/css/main.css" media="all">
+<link rel="stylesheet" href="//fonts.lug.ustc.edu.cn/css?family=Merriweather:400|Lato:400,400italic,700">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="http://qq.haskellchina.org/" class="nav-logo">
+    <img src="http://qq.haskellchina.org/images/logo.png" 
+         width="50" 
+         height="50" 
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="https://github.com/gingerhot/QQLog-HaskellChina">GitHub</a></li>
+    
+    <li><a href="/about/">关于</a></li>
+    
+    <li><a href="http://haskellchina.org/">社区首页</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">3 min read</span>
+    
+
+    <h1 class="article-title">QQ Group Log of HaskellChina: 20170104</h1>
+
+    
+    <span class="article-date">January 4, 2017</span>
+    
+
+    <div class="article-content">
+      
+
+<h4 id="vritser">vritser :</h4>
+
+<p><span class="article-duration">2017-01-04 08:23:25</span></p>
+
+<p>factorial n﹦product [1..n]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="vritser-1">vritser :</h4>
+
+<p><span class="article-duration">2017-01-04 08:23:48</span></p>
+
+<p>这叫做等式？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_2">. :</h4>
+
+<p><span class="article-duration">2017-01-04 08:27:17</span></p>
+
+<p>当然是等式</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_3">. :</h4>
+
+<p><span class="article-duration">2017-01-04 08:27:41</span></p>
+
+<p>factorial n的出现可以用product [1..n]来替换</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_4">. :</h4>
+
+<p><span class="article-duration">2017-01-04 08:27:45</span></p>
+
+<p>反过来也一样</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_5">. :</h4>
+
+<p><span class="article-duration">2017-01-04 08:27:56</span></p>
+
+<p>当然factorial必须是相同scope含义</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="vritser-2">vritser :</h4>
+
+<p><span class="article-duration">2017-01-04 08:28:32</span></p>
+
+<p>哦，谢谢</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="logic">Logic :</h4>
+
+<p><span class="article-duration">2017-01-04 09:59:44</span></p>
+
+<p>叫做绑定和约束感觉更好一点</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="logic-1">Logic :</h4>
+
+<p><span class="article-duration">2017-01-04 10:00:14</span></p>
+
+<p>和-&gt;或</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="senge">senge :</h4>
+
+<p><span class="article-duration">2017-01-04 11:23:24</span></p>
+
+<p>捆绑和束缚</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="naivehgz">naivehgz :</h4>
+
+<p><span class="article-duration">2017-01-04 15:52:23</span></p>
+
+<p>请问这个class是啥意思？那个 | 怎么理解？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="汪先森-づ">汪先森 づ :</h4>
+
+<p><span class="article-duration">2017-01-04 15:55:58</span></p>
+
+<p>这个是functional dependency？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="naivehgz-1">naivehgz :</h4>
+
+<p><span class="article-duration">2017-01-04 15:56:47</span></p>
+
+<p>{-# LANGUAGE CPP #-}{-# LANGUAGE MultiParamTypeClasses, FunctionalDependencies, FlexibleInstances, UndecidableInstances #-}#if <strong>GLASGOW_HASKELL</strong> &gt;= 702{-# LANGUAGE Safe #-}#endif#if <strong>GLASGOW_HASKELL</strong> &gt;= 710{-# LANGUAGE AutoDeriveTypeable #-}#endif</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="荀固-徒之">荀固（徒之） :</h4>
+
+<p><span class="article-duration">2017-01-04 15:57:08</span></p>
+
+<p><a href="http://cnhaskell.com/chp/15.html#separating-interface-from-implementation">http://cnhaskell.com/chp/15.html#separating-interface-from-implementation</a></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="naivehgz-2">naivehgz :</h4>
+
+<p><span class="article-duration">2017-01-04 15:58:42</span></p>
+
+<p>是这段吧功能依赖现在让我们回头看之前被忽略的代码段， | m -&gt; s 是一个功能依赖，通常被称作 fundep 。我们可以将竖线 | 读作 “这样”，将箭头 -&gt; 读作“唯一确定”。我们的功能依赖建立了 m 和 s 之间的关系。功能依赖由 FunctionalDependencies 语言编译指令管理。多谢</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="zhu">zhu~ :</h4>
+
+<p><span class="article-duration">2017-01-04 18:59:49</span></p>
+
+<p>今天跟同事讨论一个Java的问题：public <u extends="extends" number="number"> void inspect(U u)public void inspect(Number u)这两种函数签名到底有没有区别。到最后也没能达成共识，求大神指点</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="zhu-1">zhu~ :</h4>
+
+<p><span class="article-duration">2017-01-04 19:00:36</span></p>
+
+<p>我觉得第一种写法很愚蠢，画蛇添足</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="zhu-2">zhu~ :</h4>
+
+<p><span class="article-duration">2017-01-04 19:01:13</span></p>
+
+<p>但是java docs上有这种写法，叫：Bounded Type Parameters</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="飞翔的蘑菇">☆飞翔的蘑菇 :</h4>
+
+<p><span class="article-duration">2017-01-04 19:01:33</span></p>
+
+<p>static dispatch和dynamic dispatch（？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="飞翔的蘑菇-1">☆飞翔的蘑菇 :</h4>
+
+<p><span class="article-duration">2017-01-04 19:01:54</span></p>
+
+<p>不懂java，但是某些语言里是这样的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="zhu-3">zhu~ :</h4>
+
+<p><span class="article-duration">2017-01-04 19:02:16</span></p>
+
+<p>两种应该都不是static得吧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="飞翔的蘑菇-2">☆飞翔的蘑菇 :</h4>
+
+<p><span class="article-duration">2017-01-04 19:02:55</span></p>
+
+<p>算了，我一开始还以为这里是rust群（逃</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="zhu-4">zhu~ :</h4>
+
+<p><span class="article-duration">2017-01-04 19:03:23</span></p>
+
+<p>求不（逃</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="姜涛">姜涛 :</h4>
+
+<p><span class="article-duration">2017-01-04 19:06:49</span></p>
+
+<p>这个你看下编译出来的bytecode就知道了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="zhu-5">zhu~ :</h4>
+
+<p><span class="article-duration">2017-01-04 19:07:16</span></p>
+
+<p>有道理</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="老农">老农 :</h4>
+
+<p><span class="article-duration">2017-01-04 19:07:33</span></p>
+
+<p>第一个写法可以把原来的类型传给里面的函数，例如U result = pow<u>(u, 2)</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="老农-1">老农 :</h4>
+
+<p><span class="article-duration">2017-01-04 19:08:11</span></p>
+
+<p>第二种写法你就生成个一样类型的result就比较麻烦了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_27">　 :</h4>
+
+<p><span class="article-duration">2017-01-04 19:09:07</span></p>
+
+<p>没啥区别，你写在一起编译不过</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-01-04 19:11:04</span></p>
+
+<p>不知道有没有区别，不过Bounded Type Parameter这样bound有卵用</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever">forever :</h4>
+
+<p><span class="article-duration">2017-01-04 19:11:17</span></p>
+
+<p>it really depends&hellip;</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="老农-2">老农 :</h4>
+
+<p><span class="article-duration">2017-01-04 19:12:17</span></p>
+
+<p>如果返回类型不是void而是U你就一下子能看出来有木有用了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-1">forever :</h4>
+
+<p><span class="article-duration">2017-01-04 19:12:19</span></p>
+
+<p>诶</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-2">forever :</h4>
+
+<p><span class="article-duration">2017-01-04 19:12:29</span></p>
+
+<p>这里应该是没有区别的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="mr-w">Mr.W :</h4>
+
+<p><span class="article-duration">2017-01-04 19:13:01</span></p>
+
+<p>没啥区别</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="zhu-6">zhu~ :</h4>
+
+<p><span class="article-duration">2017-01-04 19:13:28</span></p>
+
+<p>他为了说服我有区别把java docs链接搬出来了<a href="https://docs.oracle.com/javase/tutorial/java/generics/bounded.html">https://docs.oracle.com/javase/tutorial/java/generics/bounded.html</a></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="zhu-7">zhu~ :</h4>
+
+<p><span class="article-duration">2017-01-04 19:13:34</span></p>
+
+<p>我也是一脸懵逼</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="老农-3">老农 :</h4>
+
+<p><span class="article-duration">2017-01-04 19:14:50</span></p>
+
+<p>不熟悉泛型的人的确看不出啥区别</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-3">forever :</h4>
+
+<p><span class="article-duration">2017-01-04 19:16:21</span></p>
+
+<p>java 里 String 能传给接受 Number 的？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="老农-4">老农 :</h4>
+
+<p><span class="article-duration">2017-01-04 19:16:27</span></p>
+
+<p>上面的木有看见？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="老农-5">老农 :</h4>
+
+<p><span class="article-duration">2017-01-04 19:17:02</span></p>
+
+<p>传U进去你就能用这个U，不传进去只能靠反射</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-4">forever :</h4>
+
+<p><span class="article-duration">2017-01-04 19:17:11</span></p>
+
+<p>@老农 我说的是这个 inspect</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="老农-6">老农 :</h4>
+
+<p><span class="article-duration">2017-01-04 19:17:31</span></p>
+
+<p>我说写法是有意义的，例子可能木有</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-5">forever :</h4>
+
+<p><span class="article-duration">2017-01-04 19:18:20</span></p>
+
+<p>@zhu~ 你问问他想搞什么事情</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-6">forever :</h4>
+
+<p><span class="article-duration">2017-01-04 19:18:27</span></p>
+
+<p>还是已经下班了找不到了？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="老农-7">老农 :</h4>
+
+<p><span class="article-duration">2017-01-04 19:21:08</span></p>
+
+<p>还可以看下stackoverflow 2721390</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="e-1-137">E#<sup>1</sup>&frasl;<sub>137</sub> :</h4>
+
+<p><span class="article-duration">2017-01-04 19:35:54</span></p>
+
+<p>那样写没什么意思，稍微改换一下写法就有意思了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="zhu-8">zhu~ :</h4>
+
+<p><span class="article-duration">2017-01-04 19:36:18</span></p>
+
+<p>我只是觉得这种写法没有什么意义</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="zhu-9">zhu~ :</h4>
+
+<p><span class="article-duration">2017-01-04 19:36:22</span></p>
+
+<p>画蛇添足</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="zhu-10">zhu~ :</h4>
+
+<p><span class="article-duration">2017-01-04 19:37:05</span></p>
+
+<p>@dram</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="jin">Jin :</h4>
+
+<p><span class="article-duration">2017-01-04 19:37:08</span></p>
+
+<p>自然有它适用的场景</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="jin-1">Jin :</h4>
+
+<p><span class="article-duration">2017-01-04 19:37:24</span></p>
+
+<p>老农说得挺明白</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="e-1-137-1">E#<sup>1</sup>&frasl;<sub>137</sub> :</h4>
+
+<p><span class="article-duration">2017-01-04 19:37:26</span></p>
+
+<p>泛型搭配多态才能看到第一种写法的强大之处</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="老农-8">老农 :</h4>
+
+<p><span class="article-duration">2017-01-04 19:40:48</span></p>
+
+<p>看到crtp了[呲牙]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="monsoon">monsoon :</h4>
+
+<p><span class="article-duration">2017-01-04 20:02:37</span></p>
+
+<p>那个例子这样写的确没用，如果你方法里有用到U，或者那个U是来自其他外层的scope还是蛮有用的。就像在Java里可以给private加上final关键字，虽然这一点也没有，但是并不是说明final这个关键字没有，只是final和private的正交性很差，有冗余。（当然这是我个人的看法）</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="monsoon-1">monsoon :</h4>
+
+<p><span class="article-duration">2017-01-04 20:03:47</span></p>
+
+<p>没有-&gt;没用</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="explorer">:Explorer: :</h4>
+
+<p><span class="article-duration">2017-01-04 21:27:48</span></p>
+
+<p>有没有用不好说，至少是有区别的吧，比如new ArrayList<u>里面是不能随便放Number的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-1">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-01-04 21:28:57</span></p>
+
+<p>等下，两个接口直接不是存在一个很显而易见的isomorphism吗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="explorer-1">:Explorer: :</h4>
+
+<p><span class="article-duration">2017-01-04 21:30:21</span></p>
+
+<p>那List<u> l=new ArrayList&lt;&gt;();l.add(u);在第二种声明下怎么写？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-2">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-01-04 21:31:29</span></p>
+
+<p>我说的是isomorphism不是code trans不过要写的话，List<number> l=new ArrayList&lt;&gt;();l.add(u);</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="explorer-2">:Explorer: :</h4>
+
+<p><span class="article-duration">2017-01-04 21:33:24</span></p>
+
+<p>那至少这两个l不一样啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="zhu-11">zhu~ :</h4>
+
+<p><span class="article-duration">2017-01-04 21:33:25</span></p>
+
+<p>这边返回值没有用到U，如果用到了，应该就属于Type Inference了吧，其他的还真看不出差别</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="explorer-3">:Explorer: :</h4>
+
+<p><span class="article-duration">2017-01-04 21:33:34</span></p>
+
+<p>第一种不能写l.add(0)而第二种可以</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-3">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-01-04 21:34:20</span></p>
+
+<p>你这是codetrans，属于内部代码，没有人能改</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="explorer-4">:Explorer: :</h4>
+
+<p><span class="article-duration">2017-01-04 21:35:44</span></p>
+
+<p>那什么是isomorphism？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-4">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-01-04 21:36:56</span></p>
+
+<p>（这不是isomorphism的formal def，我只是借来用）</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="explorer-5">:Explorer: :</h4>
+
+<p><span class="article-duration">2017-01-04 21:40:03</span></p>
+
+<p>求稍微formal一点的定义</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-5">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-01-04 21:44:28</span></p>
+
+<p>set/type A B是isomorphic的iff存在一一对应关系</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="explorer-6">:Explorer: :</h4>
+
+<p><span class="article-duration">2017-01-04 21:47:25</span></p>
+
+<p>所以只是双射的意思？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-6">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-01-04 21:47:51</span></p>
+
+<p>Y</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="explorer-7">:Explorer: :</h4>
+
+<p><span class="article-duration">2017-01-04 21:48:48</span></p>
+
+<p>那这里关心的是两种接口下的表达能力是否一样吧，换句话说就是内部实现的问题，isomorphism的概念在这个问题上有什么应用吗？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-7">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-01-04 21:49:16</span></p>
+
+<p>我提isomorphic的意思是说给出任何一个接口都能搞出另一个</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="explorer-8">:Explorer: :</h4>
+
+<p><span class="article-duration">2017-01-04 21:49:45</span></p>
+
+<p>哦这样</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="explorer-9">:Explorer: :</h4>
+
+<p><span class="article-duration">2017-01-04 21:50:20</span></p>
+
+<p>所以你的意思是两种写法对外没有区别？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-8">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-01-04 21:50:58</span></p>
+
+<p>有也是很pointless的区别因为可以一行实现另一个接口</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="此人已放弃治疗">此人已放弃治疗 :</h4>
+
+<p><span class="article-duration">2017-01-04 21:53:12</span></p>
+
+<p>我发现</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="此人已放弃治疗-1">此人已放弃治疗 :</h4>
+
+<p><span class="article-duration">2017-01-04 21:53:27</span></p>
+
+<p>c语言中的各种名词</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="此人已放弃治疗-2">此人已放弃治疗 :</h4>
+
+<p><span class="article-duration">2017-01-04 21:53:46</span></p>
+
+<p>如果没有计算机基础的话，解释起来真的很费劲</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="此人已放弃治疗-3">此人已放弃治疗 :</h4>
+
+<p><span class="article-duration">2017-01-04 21:54:39</span></p>
+
+<p>果然还是让编程入门还是函数式编程好，有微积分基础好了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-9">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-01-04 21:55:02</span></p>
+
+<p>FP跟微积分没关系啊。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-7">forever :</h4>
+
+<p><span class="article-duration">2017-01-04 21:58:53</span></p>
+
+<p>会写积分符号的话，你肯定要知道变量作用域的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="饼干">饼干 :</h4>
+
+<p><span class="article-duration">2017-01-04 22:01:04</span></p>
+
+<p>我分享了这个网站－－机器码农：深度学习自动编程 - 极客头条 - CSDN.NET，分享自@欧朋浏览器<a href="http://geek.csdn.net/news/detail/132686">http://geek.csdn.net/news/detail/132686</a></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="饼干-1">饼干 :</h4>
+
+<p><span class="article-duration">2017-01-04 22:01:16</span></p>
+
+<p>大家怎么看。。我突然觉得失业了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-10">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-01-04 22:02:09</span></p>
+
+<p>怕什么怕，Neural Coder只是hype，arxiv上一篇DeepCoder只能解最基础acm</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="monsoon-2">monsoon :</h4>
+
+<p><span class="article-duration">2017-01-04 22:02:37</span></p>
+
+<p>不会的拉，没有银弹。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="饼干-2">饼干 :</h4>
+
+<p><span class="article-duration">2017-01-04 22:03:02</span></p>
+
+<p>@魔理沙 你预计多久计算机能解八皇后算法</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-11">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-01-04 22:03:35</span></p>
+
+<p>8皇后早就能解了，不明白</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="monsoon-3">monsoon :</h4>
+
+<p><span class="article-duration">2017-01-04 22:04:16</span></p>
+
+<p>什么时候编程人员下岗了，那么人类的绝大部分岗位都已经失业了。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="mislanka-nova">Mislanka Nova :</h4>
+
+<p><span class="article-duration">2017-01-04 22:04:52</span></p>
+
+<p>莎莎那个该怎么说…</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="explorer-10">:Explorer: :</h4>
+
+<p><span class="article-duration">2017-01-04 22:05:05</span></p>
+
+<p>我没看懂，这里自动编程的意思是对大量testcase做回归？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="explorer-11">:Explorer: :</h4>
+
+<p><span class="article-duration">2017-01-04 22:05:38</span></p>
+
+<p>这有什么意义吗？不需要对问题本身做formal的描述吗？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="explorer-12">:Explorer: :</h4>
+
+<p><span class="article-duration">2017-01-04 22:06:27</span></p>
+
+<p>要是用来学习的代码片段中没有用来解这个问题的，那回归出来不也保证不了什么么。要是有，那不就是作弊么。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-8">forever :</h4>
+
+<p><span class="article-duration">2017-01-04 22:07:19</span></p>
+
+<p>有通用的方法的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-9">forever :</h4>
+
+<p><span class="article-duration">2017-01-04 22:07:32</span></p>
+
+<p>叫通用是因为它比传统方法通用</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-10">forever :</h4>
+
+<p><span class="article-duration">2017-01-04 22:08:02</span></p>
+
+<p>但是毕竟还是一小类的可以“学习”的问题</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-12">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-01-04 22:08:56</span></p>
+
+<p>？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="mislanka-nova-1">Mislanka Nova :</h4>
+
+<p><span class="article-duration">2017-01-04 22:09:21</span></p>
+
+<p>那段知乎评论…</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-11">forever :</h4>
+
+<p><span class="article-duration">2017-01-04 22:09:30</span></p>
+
+<p>等等，这个是 haskell 大群？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-12">forever :</h4>
+
+<p><span class="article-duration">2017-01-04 22:09:35</span></p>
+
+<p>sorry</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="explorer-13">:Explorer: :</h4>
+
+<p><span class="article-duration">2017-01-04 22:10:56</span></p>
+
+<p>好吧&hellip; 我就是这个意思</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="explorer-14">:Explorer: :</h4>
+
+<p><span class="article-duration">2017-01-04 22:13:38</span></p>
+
+<p>所以这就是个高级一点的压缩算法&hellip;.?</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-13">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-01-04 22:17:37</span></p>
+
+<p>@Mislanka Nova 怎么了？还是没懂</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-13">forever :</h4>
+
+<p><span class="article-duration">2017-01-04 22:18:53</span></p>
+
+<p>嗯，可以不用讨论机器学习了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<p>以上内容来自 [Haskell函数式编程] QQ 群。</p>
+
+    </div>
+  </article>
+
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "binjoy" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="http://qq.haskellchina.org/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="http://qq.haskellchina.org/images/hugo-logo.png" width="22" height="22"></a>
+            <div style="display:none">
+                <script src="http://s95.cnzz.com/stat.php?id=1261078931&web_id=1261078931" language="JavaScript"></script>
+            </div>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
+

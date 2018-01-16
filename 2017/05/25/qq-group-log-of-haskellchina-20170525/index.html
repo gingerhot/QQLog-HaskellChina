@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.30.2" />
+
+
+<title>QQ Group Log of HaskellChina: 20170525 - QQGroup Log of HaskellChina</title>
+<meta property="og:title" content="QQ Group Log of HaskellChina: 20170525 - QQGroup Log of HaskellChina">
+
+
+
+  
+
+
+
+<meta property="keywords" content ="Haskell,, HaskellChina">
+
+
+
+
+<link rel="stylesheet" href="http://qq.haskellchina.org/css/main.css" media="all">
+<link rel="stylesheet" href="//fonts.lug.ustc.edu.cn/css?family=Merriweather:400|Lato:400,400italic,700">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="http://qq.haskellchina.org/" class="nav-logo">
+    <img src="http://qq.haskellchina.org/images/logo.png" 
+         width="50" 
+         height="50" 
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="https://github.com/gingerhot/QQLog-HaskellChina">GitHub</a></li>
+    
+    <li><a href="/about/">关于</a></li>
+    
+    <li><a href="http://haskellchina.org/">社区首页</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">5 min read</span>
+    
+
+    <h1 class="article-title">QQ Group Log of HaskellChina: 20170525</h1>
+
+    
+    <span class="article-date">May 25, 2017</span>
+    
+
+    <div class="article-content">
+      
+
+<h4 id="hrvvi">HrvvI :</h4>
+
+<p><span class="article-duration">2017-05-25 14:12:31</span></p>
+
+<p>碰到一个关于Integral与Int的问题，如下图，请问是什么原因</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="hrvvi-1">HrvvI :</h4>
+
+<p><span class="article-duration">2017-05-25 14:13:16</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大衍">大衍 :</h4>
+
+<p><span class="article-duration">2017-05-25 14:31:57</span></p>
+
+<p>xs是怎么弄出来的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="hrvvi-2">HrvvI :</h4>
+
+<p><span class="article-duration">2017-05-25 14:33:17</span></p>
+
+<p>不在电脑前，不好贴图，是从一个scanl的结果take出来的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="jin">Jin :</h4>
+
+<p><span class="article-duration">2017-05-25 14:34:00</span></p>
+
+<p>神奇</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大衍-1">大衍 :</h4>
+
+<p><span class="article-duration">2017-05-25 14:34:20</span></p>
+
+<p>神奇，想看看代码</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="hrvvi-3">HrvvI :</h4>
+
+<p><span class="article-duration">2017-05-25 14:35:08</span></p>
+
+<p>我等下到电脑前，贴完整的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="hrvvi-4">HrvvI :</h4>
+
+<p><span class="article-duration">2017-05-25 14:38:31</span></p>
+
+<p>是在做HackerRank的<a href="https://www.hackerrank.com/challenges/summing-pieces时碰到的">https://www.hackerrank.com/challenges/summing-pieces时碰到的</a></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="hrvvi-5">HrvvI :</h4>
+
+<p><span class="article-duration">2017-05-25 16:04:58</span></p>
+
+<p>问题应该与类型推导有关，可简化如下<a href="https://paste.ofcode.org/mVSezAqDVtVD6j4c8H9ftr">https://paste.ofcode.org/mVSezAqDVtVD6j4c8H9ftr</a></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="hrvvi-6">HrvvI :</h4>
+
+<p><span class="article-duration">2017-05-25 16:05:15</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="sqd">sqd :</h4>
+
+<p><span class="article-duration">2017-05-25 16:18:50</span></p>
+
+<p>2^79溢出了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大衍-2">大衍 :</h4>
+
+<p><span class="article-duration">2017-05-25 16:51:39</span></p>
+
+<p>如果你把base申明为Int，你中间的全部都是Int</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大衍-3">大衍 :</h4>
+
+<p><span class="article-duration">2017-05-25 16:52:09</span></p>
+
+<p>一步溢出了就溢出了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大衍-4">大衍 :</h4>
+
+<p><span class="article-duration">2017-05-25 16:53:19</span></p>
+
+<p>爪机无力。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 16:53:32</span></p>
+
+<p>-&gt;</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="f">f :</h4>
+
+<p><span class="article-duration">2017-05-25 16:53:33</span></p>
+
+<p>integer就不会了吧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="f-1">f :</h4>
+
+<p><span class="article-duration">2017-05-25 16:53:57</span></p>
+
+<p>我记得integer与计算机能力有关</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-1">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 16:54:06</span></p>
+
+<p>高精度</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-2">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 16:54:08</span></p>
+
+<p>压位</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大衍-5">大衍 :</h4>
+
+<p><span class="article-duration">2017-05-25 16:54:10</span></p>
+
+<p>等于为true是因为等于把两边都变成了integer</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大衍-6">大衍 :</h4>
+
+<p><span class="article-duration">2017-05-25 16:54:49</span></p>
+
+<p>如果里面没有显示申明签名，由于惰性求值的关系每次都会重新求</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大衍-7">大衍 :</h4>
+
+<p><span class="article-duration">2017-05-25 16:56:00</span></p>
+
+<p>integer可以看做无限长的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页">第七页 :</h4>
+
+<p><span class="article-duration">2017-05-25 21:06:37</span></p>
+
+<p>有没有大神愿意做一个 frp的 教程  ，，，，资料好少啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="荀固-徒之">荀固（徒之） :</h4>
+
+<p><span class="article-duration">2017-05-25 21:09:13</span></p>
+
+<p>reactive-banana?</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-1">第七页 :</h4>
+
+<p><span class="article-duration">2017-05-25 21:18:58</span></p>
+
+<p>能讲明白frp的精髓就行</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="今天休息">☺今天休息 :</h4>
+
+<p><span class="article-duration">2017-05-25 22:46:21</span></p>
+
+<p>谁能聊聊怎么看the new language problem？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-3">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 22:46:56</span></p>
+
+<p>大家好，本垃圾来问个问题</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-4">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 22:47:14</span></p>
+
+<p>我有 data Nat = Zero | Succ Nat</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-5">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 22:47:45</span></p>
+
+<p>我需要声明一个函数take</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-6">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 22:47:55</span></p>
+
+<p>take的第一个参数是Nat</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-7">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 22:48:02</span></p>
+
+<p>我该怎么写constraint</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-05-25 22:48:29</span></p>
+
+<p>這個take是幹啥的啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-8">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 22:48:37</span></p>
+
+<p>我想的是，写一个take Zero ls和一个take (Succ n) ls</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="饼干先生">饼干先生 :</h4>
+
+<p><span class="article-duration">2017-05-25 22:48:40</span></p>
+
+<p>take::Nat-&gt;</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-9">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 22:48:46</span></p>
+
+<p>就是take n个元素</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-10">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 22:48:47</span></p>
+
+<p>诶</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-11">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 22:48:49</span></p>
+
+<p>可以这样的吗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-12">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 22:48:51</span></p>
+
+<p>我试试</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever">forever :</h4>
+
+<p><span class="article-duration">2017-05-25 22:49:04</span></p>
+
+<p>你需要一个 nat singleton</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-13">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 22:49:31</span></p>
+
+<p>我感觉我完全没搞懂这一套东西</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-1">forever :</h4>
+
+<p><span class="article-duration">2017-05-25 22:49:48</span></p>
+
+<p>你有 nat singleton 么</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-14">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 22:49:52</span></p>
+
+<p>我甚至不知道这个Add和Sub写对没有</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-15">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 22:50:03</span></p>
+
+<p>不知道</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-16">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 22:50:29</span></p>
+
+<p>这是CW上的一个水题</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-2">forever :</h4>
+
+<p><span class="article-duration">2017-05-25 22:50:31</span></p>
+
+<p>假的吧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-1">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-05-25 22:50:33</span></p>
+
+<p>哦 你在做PA那題啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-2">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-05-25 22:50:42</span></p>
+
+<p>反正那題有test(</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-3">forever :</h4>
+
+<p><span class="article-duration">2017-05-25 22:50:44</span></p>
+
+<p>take 的类型让你自己写？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-17">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 22:50:58</span></p>
+
+<p>是的，very large</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-4">forever :</h4>
+
+<p><span class="article-duration">2017-05-25 22:51:13</span></p>
+
+<p>我慌了，为什么</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-18">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 22:51:17</span></p>
+
+<p>测试就一个 1 <code>shouldBe</code> 1 ，就是类型检查</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-3">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-05-25 22:51:25</span></p>
+
+<p>233</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-4">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-05-25 22:51:32</span></p>
+
+<p>是時候自己寫測試了(</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_53">. :</h4>
+
+<p><span class="article-duration">2017-05-25 22:51:34</span></p>
+
+<p>cw上这么个题或者类似的题</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_54">. :</h4>
+
+<p><span class="article-duration">2017-05-25 22:51:44</span></p>
+
+<p>我用它入门了typeclass</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-5">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-05-25 22:51:58</span></p>
+
+<p>想jhoffner的題 全部不提供example test</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-5">forever :</h4>
+
+<p><span class="article-duration">2017-05-25 22:52:01</span></p>
+
+<p>给我发个链接</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-6">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-05-25 22:52:07</span></p>
+
+<p>想要測試的話 要自己寫</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-19">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 22:52:09</span></p>
+
+<p><a href="https://www.codewars.com/kata/singletons/train/haskell">https://www.codewars.com/kata/singletons/train/haskell</a></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-20">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 22:52:13</span></p>
+
+<p>题目就叫Singleton</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-21">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 22:52:16</span></p>
+
+<p>s</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-6">forever :</h4>
+
+<p><span class="article-duration">2017-05-25 22:52:57</span></p>
+
+<p>你看到那个 snat 了么？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-22">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 22:53:30</span></p>
+
+<p>那不是定长数组吗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-23">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 22:53:49</span></p>
+
+<p>我一开始使用了SNat 没什么问题 编译也过了 然后发现我的使用方式完全就是错的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-7">forever :</h4>
+
+<p><span class="article-duration">2017-05-25 22:54:05</span></p>
+
+<p>Vec 是定长数组</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-24">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 22:54:06</span></p>
+
+<p>Take就应该第一个参数是Nat第二个是Vec</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-25">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 22:54:11</span></p>
+
+<p>&amp;￥%……&amp;×（</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-26">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 22:54:15</span></p>
+
+<p>那SNat是啥</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-8">forever :</h4>
+
+<p><span class="article-duration">2017-05-25 22:54:17</span></p>
+
+<p>SNat 是定长自然数</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-27">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 22:54:27</span></p>
+
+<p>大整数？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-28">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 22:54:48</span></p>
+
+<p>我突然发现List就是定长数组</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-9">forever :</h4>
+
+<p><span class="article-duration">2017-05-25 22:54:56</span></p>
+
+<ol>
+<li>SNat (Succ (Succ Zero)) 有哪些值？2. replicate 你怎么写的</li>
+</ol>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-10">forever :</h4>
+
+<p><span class="article-duration">2017-05-25 22:55:28</span></p>
+
+<p>肯定不能只接受 nat，因为返回列表的长度和传入两个参数都有关</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-29">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 22:55:31</span></p>
+
+<p>第一个 类型都没构造完啊 不是两个参数吗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-11">forever :</h4>
+
+<p><span class="article-duration">2017-05-25 22:55:52</span></p>
+
+<p>眼神</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-30">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 22:55:59</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-12">forever :</h4>
+
+<p><span class="article-duration">2017-05-25 22:56:08</span></p>
+
+<p>你仔细看下我写的是 SNat</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-31">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 22:56:49</span></p>
+
+<p>我猜下</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-32">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 22:57:16</span></p>
+
+<p>是不是等于 SSucc 2</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-13">forever :</h4>
+
+<p><span class="article-duration">2017-05-25 22:57:32</span></p>
+
+<p>？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-33">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 22:58:05</span></p>
+
+<p>2=(Succ $ Succ Zero)</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-14">forever :</h4>
+
+<p><span class="article-duration">2017-05-25 22:58:13</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-34">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 22:58:36</span></p>
+
+<p>错了吗。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-15">forever :</h4>
+
+<p><span class="article-duration">2017-05-25 22:58:37</span></p>
+
+<p>replicate 类型里的两个 a 是怎么联系上的？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-35">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 22:59:10</span></p>
+
+<p>他们是长度，长度得一样</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-16">forever :</h4>
+
+<p><span class="article-duration">2017-05-25 22:59:18</span></p>
+
+<p>吼啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-36">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 22:59:21</span></p>
+
+<p>是不是</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-37">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 22:59:31</span></p>
+
+<p>是不是啊 是不是啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-17">forever :</h4>
+
+<p><span class="article-duration">2017-05-25 22:59:44</span></p>
+
+<p>take :: SNat m -&gt; Vec s n -&gt; Vec s (???)</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-18">forever :</h4>
+
+<p><span class="article-duration">2017-05-25 22:59:54</span></p>
+
+<p>??? 和 m n 有关</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-38">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 23:00:22</span></p>
+
+<p>m是当前位吗。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-39">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 23:00:36</span></p>
+
+<p>我又感觉我蒙圈了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-19">forever :</h4>
+
+<p><span class="article-duration">2017-05-25 23:00:36</span></p>
+
+<p>第一个参数是个 Nat</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-20">forever :</h4>
+
+<p><span class="article-duration">2017-05-25 23:00:47</span></p>
+
+<p>但是你需要在类型里知道这个 Nat 多大啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-40">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 23:00:53</span></p>
+
+<p>对啊对啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-41">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 23:01:05</span></p>
+
+<p>是不是因为我有(Add Nat Nat)</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-21">forever :</h4>
+
+<p><span class="article-duration">2017-05-25 23:01:12</span></p>
+
+<p>所以 SNat m 你就知道是 m 了啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-42">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 23:01:12</span></p>
+
+<p>反正 ++ 我知道咋整</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-43">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 23:01:28</span></p>
+
+<p>雾草白天我写那个是对的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-22">forever :</h4>
+
+<p><span class="article-duration">2017-05-25 23:01:35</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-23">forever :</h4>
+
+<p><span class="article-duration">2017-05-25 23:02:24</span></p>
+
+<p>记那个 (???) 为 k<br />m = 3, n = 5, k = ?<br />m = 0, n = 4, k = ?<br />m = 7, n = 7, k = ?<br />m = 7, n = 3, k = ?</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-44">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 23:02:34</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-45">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 23:02:39</span></p>
+
+<p>那么就应该这样对比</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-46">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 23:02:40</span></p>
+
+<p>吧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-47">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 23:02:57</span></p>
+
+<p>@dram 其实是等于 min m n是不是</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-24">forever :</h4>
+
+<p><span class="article-duration">2017-05-25 23:03:02</span></p>
+
+<p>吼啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-48">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 23:03:12</span></p>
+
+<p>但是我觉得它应该不会给我m&gt;n的数据</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_107">. :</h4>
+
+<p><span class="article-duration">2017-05-25 23:03:16</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-49">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 23:03:33</span></p>
+
+<p>我需不需要再加个 &gt;: 什么的限制，我没看懂这个</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-25">forever :</h4>
+
+<p><span class="article-duration">2017-05-25 23:03:33</span></p>
+
+<p>@大笨蛋千里冰封 naive！</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-50">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 23:03:39</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-26">forever :</h4>
+
+<p><span class="article-duration">2017-05-25 23:03:42</span></p>
+
+<p>不要加那个限制，就是 min</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-51">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 23:04:02</span></p>
+
+<p>我知道了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-7">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-05-25 23:04:06</span></p>
+
+<p>不是已經min了嘛</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-8">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-05-25 23:04:13</span></p>
+
+<p>為啥還要限m&gt;n(</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-52">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 23:04:42</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-53">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 23:04:49</span></p>
+
+<p>莱克贼死？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-27">forever :</h4>
+
+<p><span class="article-duration">2017-05-25 23:05:11</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-54">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 23:05:30</span></p>
+
+<p>什么</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-28">forever :</h4>
+
+<p><span class="article-duration">2017-05-25 23:05:57</span></p>
+
+<p>min</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-55">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 23:06:03</span></p>
+
+<p>马上</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-29">forever :</h4>
+
+<p><span class="article-duration">2017-05-25 23:06:18</span></p>
+
+<p>你那个 sub 有类似的问题</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-30">forever :</h4>
+
+<p><span class="article-duration">2017-05-25 23:06:21</span></p>
+
+<p>不行我去睡觉了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-31">forever :</h4>
+
+<p><span class="article-duration">2017-05-25 23:06:23</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_124">. :</h4>
+
+<p><span class="article-duration">2017-05-25 23:06:37</span></p>
+
+<p>sub其实还好 不够减=0</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-9">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-05-25 23:07:29</span></p>
+
+<p>其實最好的方法是</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-10">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-05-25 23:07:42</span></p>
+
+<p>調用題的測試</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-11">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-05-25 23:07:47</span></p>
+
+<p>看看題目預想你要怎麼寫(</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-56">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 23:08:07</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_129">. :</h4>
+
+<p><span class="article-duration">2017-05-25 23:08:14</span></p>
+
+<p>其实这题就这样</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-57">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 23:08:15</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-58">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 23:08:19</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_132">. :</h4>
+
+<p><span class="article-duration">2017-05-25 23:08:21</span></p>
+
+<p>你编译通过就过了一半了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_133">. :</h4>
+
+<p><span class="article-duration">2017-05-25 23:08:35</span></p>
+
+<p>不排除你逻辑写错了然后死在了submit final前的用例</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-59">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 23:09:44</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_135">. :</h4>
+
+<p><span class="article-duration">2017-05-25 23:13:09</span></p>
+
+<p>但是我这么一看</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_136">. :</h4>
+
+<p><span class="article-duration">2017-05-25 23:13:10</span></p>
+
+<p>这题</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_137">. :</h4>
+
+<p><span class="article-duration">2017-05-25 23:13:17</span></p>
+
+<p>能怎么写测试</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_138">. :</h4>
+
+<p><span class="article-duration">2017-05-25 23:14:10</span></p>
+
+<p>哦我知道了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-60">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 23:15:30</span></p>
+
+<p>什么SB玩意，后面报错一堆发现是Sub写错了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-61">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 23:15:47</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-62">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 23:15:48</span></p>
+
+<p>得这样</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-63">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 23:16:39</span></p>
+
+<p>为什么CW要用GHC 7.6呢</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-12">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-05-25 23:19:46</span></p>
+
+<p>這個是CW已知問題</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-13">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-05-25 23:20:11</span></p>
+
+<p>目前docker只能prebuild一個image然後投放上去 這樣才有一個語言版本可用</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-64">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 23:25:55</span></p>
+
+<p>我今天学到了好多大学</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-65">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-05-25 23:25:56</span></p>
+
+<p>东西</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<p>以上内容来自 [Haskell函数式编程] QQ 群。</p>
+
+    </div>
+  </article>
+
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "binjoy" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="http://qq.haskellchina.org/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="http://qq.haskellchina.org/images/hugo-logo.png" width="22" height="22"></a>
+            <div style="display:none">
+                <script src="http://s95.cnzz.com/stat.php?id=1261078931&web_id=1261078931" language="JavaScript"></script>
+            </div>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
+

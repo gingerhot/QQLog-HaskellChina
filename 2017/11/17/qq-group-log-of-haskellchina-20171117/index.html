@@ -1,0 +1,1585 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.30.2" />
+
+
+<title>QQ Group Log of HaskellChina: 20171117 - QQGroup Log of HaskellChina</title>
+<meta property="og:title" content="QQ Group Log of HaskellChina: 20171117 - QQGroup Log of HaskellChina">
+
+
+
+  
+
+
+
+<meta property="keywords" content ="Haskell,, HaskellChina">
+
+
+
+
+<link rel="stylesheet" href="http://qq.haskellchina.org/css/main.css" media="all">
+<link rel="stylesheet" href="//fonts.lug.ustc.edu.cn/css?family=Merriweather:400|Lato:400,400italic,700">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="http://qq.haskellchina.org/" class="nav-logo">
+    <img src="http://qq.haskellchina.org/images/logo.png" 
+         width="50" 
+         height="50" 
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="https://github.com/gingerhot/QQLog-HaskellChina">GitHub</a></li>
+    
+    <li><a href="/about/">关于</a></li>
+    
+    <li><a href="http://haskellchina.org/">社区首页</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">5 min read</span>
+    
+
+    <h1 class="article-title">QQ Group Log of HaskellChina: 20171117</h1>
+
+    
+    <span class="article-date">November 17, 2017</span>
+    
+
+    <div class="article-content">
+      
+
+<h4 id="zrt">zrt :</h4>
+
+<p><span class="article-duration">2017-11-17 08:24:23</span></p>
+
+<p>大佬们啊我最近想用haskell写个最简单的类似一个web framework的DSL，然后我好像卡在router的实现上了有什么好的idea可以帮帮我么QAQ</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="zrt-1">zrt :</h4>
+
+<p><span class="article-duration">2017-11-17 08:26:40</span></p>
+
+<p>ideally就是有一个registerHandler的function，input是一个名字（比如&rdquo;hello&rdquo;）和一个string-&gt;string的function，想要做到的是编译完以后可以直接在argument上加之前register的名字就可以执行之前input的那个函数zzz</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="zrt-2">zrt :</h4>
+
+<p><span class="article-duration">2017-11-17 08:27:11</span></p>
+
+<p>想了半天也不知道除了metaprogramming有啥好的实现方法OTL</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="三七二十">三七二十‭ :</h4>
+
+<p><span class="article-duration">2017-11-17 08:28:37</span></p>
+
+<p>map么</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="zrt-3">zrt :</h4>
+
+<p><span class="article-duration">2017-11-17 08:29:28</span></p>
+
+<p>我想过这个</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="zrt-4">zrt :</h4>
+
+<p><span class="article-duration">2017-11-17 08:29:45</span></p>
+
+<p>但是这个map是要在编译的时候生成的，并不了解该怎么写zz</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-11-17 08:31:53</span></p>
+
+<p>Map String (String -&gt; String)</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-1">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-11-17 08:32:08</span></p>
+
+<p>first class就行了 不需要元編程</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="三七二十-1">三七二十‭ :</h4>
+
+<p><span class="article-duration">2017-11-17 08:34:17</span></p>
+
+<p>为啥要编译期就存在</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="zrt-5">zrt :</h4>
+
+<p><span class="article-duration">2017-11-17 08:35:38</span></p>
+
+<p>就是你需要register哪些function在编译的时候就已经可以确定了嘛</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="三七二十-2">三七二十‭ :</h4>
+
+<p><span class="article-duration">2017-11-17 08:35:48</span></p>
+
+<p>map = [(&ldquo;a&rdquo;,(++&ldquo;b&rdquo;))]这种算编译期确定么</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="zrt-6">zrt :</h4>
+
+<p><span class="article-duration">2017-11-17 08:36:24</span></p>
+
+<p>额算吧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="三七二十-3">三七二十‭ :</h4>
+
+<p><span class="article-duration">2017-11-17 08:37:20</span></p>
+
+<p>就直接写上，反正不可变，你用这个map，只要你自己不换一个，整个程序运行的时候就还是这一个map</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="zrt-7">zrt :</h4>
+
+<p><span class="article-duration">2017-11-17 08:37:50</span></p>
+
+<p>啊其实我是想写个hadoop的DSL</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="三七二十-4">三七二十‭ :</h4>
+
+<p><span class="article-duration">2017-11-17 08:38:03</span></p>
+
+<p>不懂hadoop</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="zrt-8">zrt :</h4>
+
+<p><span class="article-duration">2017-11-17 08:38:26</span></p>
+
+<p>就是mapreduce嘛</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="zrt-9">zrt :</h4>
+
+<p><span class="article-duration">2017-11-17 08:38:40</span></p>
+
+<p>我希望能用haskell的syntax去define mapper和reducer</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="zrt-10">zrt :</h4>
+
+<p><span class="article-duration">2017-11-17 08:39:32</span></p>
+
+<p>所以要register哪些function是arbitrary的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-2">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-11-17 08:45:04</span></p>
+
+<p>所以Map String (String -&gt; String) 有甚麼問題</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="zrt-11">zrt :</h4>
+
+<p><span class="article-duration">2017-11-17 08:48:22</span></p>
+
+<p>额就是这个map是要在runtime的时候才能被建立起来的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="zrt-12">zrt :</h4>
+
+<p><span class="article-duration">2017-11-17 08:49:04</span></p>
+
+<p>我在想怎么把这个map放到compile time里去</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-11-17 10:07:35</span></p>
+
+<p>templateHaskell</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-1">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-11-17 10:08:45</span></p>
+
+<p>或者把(&ndash;&gt;)占掉，用来做application，就丑一点点，不过比你那简单/robust得多</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_23">:</h4>
+
+<p><span class="article-duration">2017-11-17 11:46:11</span></p>
+
+<p>呃，即使编译期产生了<br />&gt;&gt; map = [(&ldquo;a&rdquo;,(++&ldquo;b&rdquo;))]<br />这样的代码，运行时（还是说加载时？）还是有开销的。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_24">:</h4>
+
+<p><span class="article-duration">2017-11-17 11:53:35</span></p>
+
+<p>从最简单的说。。。<br />x = 0x1122 :: Int<br />先不管它是编译时产生了这样的ast node，还是直接手写成这样子。<br /><br />我记得是会在可执行文件的rdata部分分配一块空间，里面的内容（假设小端）是0x22 0x11 &hellip;<br /><br />然后进行一次*内存分配*，把它*复制*到gc管理的内存里。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_25">. :</h4>
+
+<p><span class="article-duration">2017-11-17 11:56:23</span></p>
+
+<p>int的话(</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_26">:</h4>
+
+<p><span class="article-duration">2017-11-17 11:58:42</span></p>
+
+<p>然后，<br />cs = &ldquo;[Char]&rdquo;<br /><br />&rdquo;&hellip;&ldquo;其实是字符literal &lsquo;c&rsquo;和列表构造函数(:)和空列表[]的语法糖。<br /><br />加载时要分配的数据就很多了。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-11-17 11:58:57</span></p>
+
+<p>[惊讶]list好像不太一样</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-1">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-11-17 11:59:27</span></p>
+
+<p>我恍惚记得看过一个文章说list在二进制文件中有特殊的表示法</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-2">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-11-17 11:59:34</span></p>
+
+<p>还是string来着。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_30">:</h4>
+
+<p><span class="article-duration">2017-11-17 12:00:24</span></p>
+
+<p>然后<br />bs = BS.pack &ldquo;ByteString&rdquo;<br />或者有个overloadstring的扩展。可以不写pack</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-3">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-11-17 12:00:54</span></p>
+
+<p>[惊讶]hmmm</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-4">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-11-17 12:01:06</span></p>
+
+<p>stgheader是写在二进制里的吗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_33">:</h4>
+
+<p><span class="article-duration">2017-11-17 12:01:37</span></p>
+
+<p>&ldquo;ByteString&rdquo;这几个字符，会被分配到rdata里。<br />但bs自己还是要从rdata里pack一次。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_34">:</h4>
+
+<p><span class="article-duration">2017-11-17 12:05:18</span></p>
+
+<p>这些是我很早前实验的。。。ghc 7.4？ghc 7.2？<br />很有可能有些细节记错了。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_35">:</h4>
+
+<p><span class="article-duration">2017-11-17 12:06:29</span></p>
+
+<p>而且那时候还是个萌新（说得好像现在就不是一样），不知道怎么“调教”ghc。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_36">:</h4>
+
+<p><span class="article-duration">2017-11-17 12:08:12</span></p>
+
+<p>现在的ghc可能有一些办法，对一些数据类型，能做到加载后直接利用rdata。或者至少只分配header？复用content。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_37">:</h4>
+
+<p><span class="article-duration">2017-11-17 12:09:40</span></p>
+
+<p>但数据类型越复杂，这个事情就越现实。。。<br />Int？ByteString？Integer？List？<br />感觉就像打怪升级越来越难。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-5">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-11-17 12:09:58</span></p>
+
+<p>[惊讶]貌似</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-6">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-11-17 12:10:16</span></p>
+
+<p>storable的东西可以编译的时候直接塞进去</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_40">:</h4>
+
+<p><span class="article-duration">2017-11-17 12:10:20</span></p>
+
+<p>然后op的实际要求是Map。。。这个。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-7">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-11-17 12:10:38</span></p>
+
+<p>反正function这玩意编译期肯定塞不进去</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_42">:</h4>
+
+<p><span class="article-duration">2017-11-17 12:10:43</span></p>
+
+<p>那个时候我不会这个[惊讶]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_43">:</h4>
+
+<p><span class="article-duration">2017-11-17 12:11:02</span></p>
+
+<p>嗯，而且value还是closure。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-8">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-11-17 12:11:03</span></p>
+
+<p>塞进去感觉也意义不大= =</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-9">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-11-17 12:11:30</span></p>
+
+<p>因为肯定都是一个常数function带一堆数据</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-3">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-11-17 12:12:12</span></p>
+
+<p>編譯期塞進去?</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-4">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-11-17 12:12:25</span></p>
+
+<p>這不HS</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_48">:</h4>
+
+<p><span class="article-duration">2017-11-17 12:14:47</span></p>
+
+<p>但hs会怎么编译case。。。不清楚。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_49">:</h4>
+
+<p><span class="article-duration">2017-11-17 12:15:48</span></p>
+
+<p>而且一般来说closure这个东西。。。感觉加载时的开销很难干掉。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_50">:</h4>
+
+<p><span class="article-duration">2017-11-17 12:16:31</span></p>
+
+<p>define hs？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_51">:</h4>
+
+<p><span class="article-duration">2017-11-17 12:16:44</span></p>
+
+<p>define “是hs”？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_52">:</h4>
+
+<p><span class="article-duration">2017-11-17 12:24:19</span></p>
+
+<p>呃，也许可以把“case后返回closure”，改成把那些closure inline到case里。。。<br />不过这样子可能反而会影响效率。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-5">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-11-17 12:37:42</span></p>
+
+<p>想太多</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-6">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-11-17 12:37:58</span></p>
+
+<p>總究不夠ffi跑C/C++快的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_55">:</h4>
+
+<p><span class="article-duration">2017-11-17 12:42:42</span></p>
+
+<p>所以研究ski“才是hs”咯？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_56">:</h4>
+
+<p><span class="article-duration">2017-11-17 12:43:46</span></p>
+
+<p>“想太多<br />终究不够明抢暗骗来钱快”</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-7">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-11-17 12:46:01</span></p>
+
+<p>我研究ski又不是為了研究hs的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-8">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-11-17 12:46:31</span></p>
+
+<p>本來就是你自己一個勁在說開銷甚麼的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-9">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-11-17 12:46:48</span></p>
+
+<p>人家都沒遇到性能瓶頸呢</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-10">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-11-17 12:47:03</span></p>
+
+<p>這不是預優化是甚麼 當然想多啦</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_61">:</h4>
+
+<p><span class="article-duration">2017-11-17 12:49:50</span></p>
+
+<p>hs就是门语言，ghc就是个实现。爱怎么用你管得着吗？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_62">:</h4>
+
+<p><span class="article-duration">2017-11-17 12:51:05</span></p>
+
+<p>只有你的玩法（研究）才是hs。一不合自己胃口就跳出来戳一句“这不hs”？<br />hs是你定义的吗？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_63">:</h4>
+
+<p><span class="article-duration">2017-11-17 12:51:39</span></p>
+
+<p>“我研究归研究又没说实际代码就该这么写”</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_64">:</h4>
+
+<p><span class="article-duration">2017-11-17 12:52:10</span></p>
+
+<p>“本来就是你一天到晚吹ski”</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_65">:</h4>
+
+<p><span class="article-duration">2017-11-17 12:52:31</span></p>
+
+<p>“人家冰冰搭理你了吗”[偷笑]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_66">&rdquo;&rsquo; ⃢・ ・ ⃢&rdquo;&rsquo; :</h4>
+
+<p><span class="article-duration">2017-11-17 12:52:32</span></p>
+
+<p>这不清真</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-11">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-11-17 12:56:02</span></p>
+
+<p>你看看你 都不講道理了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_68">:</h4>
+
+<p><span class="article-duration">2017-11-17 12:57:23</span></p>
+
+<p>呵呵，又开始定义“不讲道理”了。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_69">:</h4>
+
+<p><span class="article-duration">2017-11-17 12:59:56</span></p>
+
+<p>s/定义/钦定/</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-2">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-11-17 13:44:50</span></p>
+
+<p>@zrt 看过servant吗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-3">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-11-17 13:45:03</span></p>
+
+<p>@ownwaterloo 冰冰是啥？这是HS群</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-11-17 13:48:52</span></p>
+
+<p>@ownwaterloo 我是因为前两天赶ddl没时间刷题啊[惊讶]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-1">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-11-17 13:49:08</span></p>
+
+<p>[惊讶]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_74">:</h4>
+
+<p><span class="article-duration">2017-11-17 13:51:07</span></p>
+
+<p>我只是在模仿他的套路而已</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-4">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-11-17 13:52:14</span></p>
+
+<p>管你模仿谁，谈论HS</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_76">:</h4>
+
+<p><span class="article-duration">2017-11-17 13:52:37</span></p>
+
+<p>我怎么就不是在谈论hs了？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-5">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-11-17 13:53:04</span></p>
+
+<p>因为冰冰不是HS特性</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_78">:</h4>
+
+<p><span class="article-duration">2017-11-17 13:53:06</span></p>
+
+<p>是有人跳出来说我不是在谈论hs才有后续一堆破事的好吗？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="0vo">0vo :</h4>
+
+<p><span class="article-duration">2017-11-17 19:43:51</span></p>
+
+<p>有个问题我想了两天了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="0vo-1">0vo :</h4>
+
+<p><span class="article-duration">2017-11-17 19:44:12</span></p>
+
+<p>foldl是不是只能以迭代的逻辑实现？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-10">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-11-17 19:44:57</span></p>
+
+<p>[惊讶]啥？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-11">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-11-17 19:45:07</span></p>
+
+<p>那你想怎么实现？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="0vo-2">0vo :</h4>
+
+<p><span class="article-duration">2017-11-17 19:45:18</span></p>
+
+<p>等一下，我写一下</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="0vo-3">0vo :</h4>
+
+<p><span class="article-duration">2017-11-17 19:47:59</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="0vo-4">0vo :</h4>
+
+<p><span class="article-duration">2017-11-17 19:48:16</span></p>
+
+<p>大概这样的话…这两个问号该怎么填？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-2">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-11-17 19:48:52</span></p>
+
+<p>C-c C-l</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-3">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-11-17 19:49:09</span></p>
+
+<p>然后C-c C-r或者C-c C-a</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-4">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-11-17 19:49:13</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="0vo-5">0vo :</h4>
+
+<p><span class="article-duration">2017-11-17 19:49:23</span></p>
+
+<p>？？？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="0vo-6">0vo :</h4>
+
+<p><span class="article-duration">2017-11-17 19:49:36</span></p>
+
+<p>伪vim党一脸懵逼</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="翩翩少年">翩翩少年 :</h4>
+
+<p><span class="article-duration">2017-11-17 19:49:46</span></p>
+
+<p>哈哈 emacs的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="0vo-7">0vo :</h4>
+
+<p><span class="article-duration">2017-11-17 19:51:02</span></p>
+
+<p>总之这种…非尾递归的逻辑我称为递归的实现逻辑，忘了SICP里叫什么了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="0vo-8">0vo :</h4>
+
+<p><span class="article-duration">2017-11-17 19:51:30</span></p>
+
+<p>我知道可以写一个帮助函数把结果放在参数上，还能尾递归美滋滋</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="0vo-9">0vo :</h4>
+
+<p><span class="article-duration">2017-11-17 19:51:53</span></p>
+
+<p>但如果不那样做就写不出foldl对吗？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-12">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-11-17 19:52:40</span></p>
+
+<p>[惊讶]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-13">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-11-17 19:52:57</span></p>
+
+<p>hmmm</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="0vo-10">0vo :</h4>
+
+<p><span class="article-duration">2017-11-17 19:53:09</span></p>
+
+<p>（我已经想了两天这俩问号填什么了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-14">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-11-17 19:53:11</span></p>
+
+<p>布吉岛</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="0vo-11">0vo :</h4>
+
+<p><span class="article-duration">2017-11-17 19:53:31</span></p>
+
+<p>（英语渣不知道怎么问Google</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="0vo-12">0vo :</h4>
+
+<p><span class="article-duration">2017-11-17 19:55:06</span></p>
+
+<p>所以对比抱有一丝信心，只是太菜了不知道怎么把奇技淫巧用在我的问题上</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-15">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-11-17 19:55:47</span></p>
+
+<p>先reverse</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-16">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-11-17 19:55:48</span></p>
+
+<p>误</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-17">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-11-17 19:55:57</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="xyzt-toe">Xyzt Toe :</h4>
+
+<p><span class="article-duration">2017-11-17 19:56:05</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="0vo-13">0vo :</h4>
+
+<p><span class="article-duration">2017-11-17 19:56:35</span></p>
+
+<p>那不过是把复杂度转移到了reverse内部</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="0vo-14">0vo :</h4>
+
+<p><span class="article-duration">2017-11-17 19:56:52</span></p>
+
+<p>有没有…不逃避问题的办法？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="unexpectable">Unexpectable :</h4>
+
+<p><span class="article-duration">2017-11-17 20:03:45</span></p>
+
+<p>[惊讶]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="unexpectable-1">Unexpectable :</h4>
+
+<p><span class="article-duration">2017-11-17 20:07:37</span></p>
+
+<p>foldl(list.slice(1), func, func(init, list[0]))</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="xyzt-toe-1">Xyzt Toe :</h4>
+
+<p><span class="article-duration">2017-11-17 20:07:38</span></p>
+
+<p>？还有不reserve的办法？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="0vo-15">0vo :</h4>
+
+<p><span class="article-duration">2017-11-17 20:08:44</span></p>
+
+<p>好像…非常有道理…</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="0vo-16">0vo :</h4>
+
+<p><span class="article-duration">2017-11-17 20:09:40</span></p>
+
+<p>是我的问题提的不好，我试着描述一下原本的问题</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="0vo-17">0vo :</h4>
+
+<p><span class="article-duration">2017-11-17 20:15:32</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="0vo-18">0vo :</h4>
+
+<p><span class="article-duration">2017-11-17 20:15:35</span></p>
+
+<p>这回呢？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_114">@ :</h4>
+
+<p><span class="article-duration">2017-11-17 20:17:31</span></p>
+
+<p>类比foldr的实现，你这里应该处理的是foldl得返回值和list［-1］</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="unexpectable-2">Unexpectable :</h4>
+
+<p><span class="article-duration">2017-11-17 20:18:07</span></p>
+
+<p>[流汗]那样如果是cons你就得reverse了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="0vo-19">0vo :</h4>
+
+<p><span class="article-duration">2017-11-17 20:19:07</span></p>
+
+<p>@@ 问题在于，foldr的时候，对tail作foldr刚好是acc，而foldl不是</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="0vo-20">0vo :</h4>
+
+<p><span class="article-duration">2017-11-17 20:19:41</span></p>
+
+<p>你把func用减法试一试</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="0vo-21">0vo :</h4>
+
+<p><span class="article-duration">2017-11-17 20:20:02</span></p>
+
+<p>@Kabie 所以…没办法了？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="0vo-22">0vo :</h4>
+
+<p><span class="article-duration">2017-11-17 20:20:32</span></p>
+
+<p>（以及能不能教教我怎么把这个问题用人类的语言表达出来，我再问问google</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-18">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-11-17 20:20:46</span></p>
+
+<p>[惊讶]我都不知道你的问题是啥</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-19">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-11-17 20:20:48</span></p>
+
+<p>再说</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-20">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-11-17 20:20:56</span></p>
+
+<p>你为啥不去stackoverflow问呢</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="0vo-23">0vo :</h4>
+
+<p><span class="article-duration">2017-11-17 20:21:21</span></p>
+
+<p>我不知道怎么表达这个问题，搜的结果和我想要的没关系</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="0vo-24">0vo :</h4>
+
+<p><span class="article-duration">2017-11-17 20:21:32</span></p>
+
+<p>我的问题是</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="0vo-25">0vo :</h4>
+
+<p><span class="article-duration">2017-11-17 20:21:42</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="0vo-26">0vo :</h4>
+
+<p><span class="article-duration">2017-11-17 20:22:02</span></p>
+
+<p>这里，我可以不用定义辅助函数就实现foldr0，</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="0vo-27">0vo :</h4>
+
+<p><span class="article-duration">2017-11-17 20:22:18</span></p>
+
+<p>如何不定义辅助函数实现foldl0？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="b1nj0y">B1nj0y :</h4>
+
+<p><span class="article-duration">2017-11-17 20:22:36</span></p>
+
+<p>这个问题我录入在这里了，大家可以 track 这个 issue： <a href="https://github.com/hskll/community/issues/2">https://github.com/hskll/community/issues/2</a></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="b1nj0y-1">B1nj0y :</h4>
+
+<p><span class="article-duration">2017-11-17 20:23:10</span></p>
+
+<p>希望群里有价值的讨论可以被存档出来～</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-21">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-11-17 20:23:14</span></p>
+
+<p>ww</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-22">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-11-17 20:23:18</span></p>
+
+<p>这啥</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-23">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-11-17 20:23:26</span></p>
+
+<p>拿github当论坛用吗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="0vo-28">0vo :</h4>
+
+<p><span class="article-duration">2017-11-17 20:23:42</span></p>
+
+<p>老哥你这个录入的方式还真…总之多谢了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="b1nj0y-2">B1nj0y :</h4>
+
+<p><span class="article-duration">2017-11-17 20:23:44</span></p>
+
+<p>嗯</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_135">. :</h4>
+
+<p><span class="article-duration">2017-11-17 20:23:54</span></p>
+
+<p>感觉不安全</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="0vo-29">0vo :</h4>
+
+<p><span class="article-duration">2017-11-17 20:24:15</span></p>
+
+<p>唔…突然觉得去so上提个问题才是正道</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-24">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-11-17 20:24:23</span></p>
+
+<p>+1</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-25">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-11-17 20:25:23</span></p>
+
+<p>老哥会玩</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="b1nj0y-3">B1nj0y :</h4>
+
+<p><span class="article-duration">2017-11-17 20:26:30</span></p>
+
+<p>感觉群里很多有价值的问题很快都消失了很可惜啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="0vo-30">0vo :</h4>
+
+<p><span class="article-duration">2017-11-17 20:28:52</span></p>
+
+<p>so有foldleft标签却没有foldright…</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_141">. :</h4>
+
+<p><span class="article-duration">2017-11-17 20:28:55</span></p>
+
+<p>开群消息漫游就好了啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="0vo-31">0vo :</h4>
+
+<p><span class="article-duration">2017-11-17 20:29:09</span></p>
+
+<p>作为一个foldr党非常不爽</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_143">. :</h4>
+
+<p><span class="article-duration">2017-11-17 20:29:09</span></p>
+
+<p>转载到gh的话可见性都变了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="b1nj0y-4">B1nj0y :</h4>
+
+<p><span class="article-duration">2017-11-17 20:33:20</span></p>
+
+<p>只是拿这个问题做个例子提供一个方式辅助群里的讨论，不会继续转载的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="三七二十-5">三七二十‭ :</h4>
+
+<p><span class="article-duration">2017-11-17 20:34:08</span></p>
+
+<p>为啥不用for循环</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="三七二十-6">三七二十‭ :</h4>
+
+<p><span class="article-duration">2017-11-17 20:34:14</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="0vo-32">0vo :</h4>
+
+<p><span class="article-duration">2017-11-17 20:34:39</span></p>
+
+<p>我现在就是写了个while true，太丑了…</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-26">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-11-17 20:34:48</span></p>
+
+<p>+1</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-27">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-11-17 20:35:02</span></p>
+
+<p>js为何非要递归？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="unexpectable-3">Unexpectable :</h4>
+
+<p><span class="article-duration">2017-11-17 20:35:07</span></p>
+
+<p>&hellip;不是挺好吗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="0vo-33">0vo :</h4>
+
+<p><span class="article-duration">2017-11-17 20:35:37</span></p>
+
+<p>不是，我只是用js写着顺手，这个和从解释器实现里抽象出来的问题</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="0vo-34">0vo :</h4>
+
+<p><span class="article-duration">2017-11-17 20:36:15</span></p>
+
+<p>词法/语法分析器是递归的世界啊…我是指递归逻辑，不是表面上的形式</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="0vo-35">0vo :</h4>
+
+<p><span class="article-duration">2017-11-17 20:37:01</span></p>
+
+<p>最核心的部分却要用迭代，浑身难受</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="三七二十-7">三七二十‭ :</h4>
+
+<p><span class="article-duration">2017-11-17 20:37:03</span></p>
+
+<p>是while(true)的地盘</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="三七二十-8">三七二十‭ :</h4>
+
+<p><span class="article-duration">2017-11-17 20:37:42</span></p>
+
+<p>时不时还break label</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="0vo-36">0vo :</h4>
+
+<p><span class="article-duration">2017-11-17 20:38:11</span></p>
+
+<p>用C的弱渣不知道你在说什么…</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="三七二十-9">三七二十‭ :</h4>
+
+<p><span class="article-duration">2017-11-17 20:38:22</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="0vo-37">0vo :</h4>
+
+<p><span class="article-duration">2017-11-17 20:38:23</span></p>
+
+<p>（拒绝goto</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="0vo-38">0vo :</h4>
+
+<p><span class="article-duration">2017-11-17 20:39:47</span></p>
+
+<p>如果感兴趣的话欢迎围观futaba的0.1版本（现在已经删空了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="0vo-39">0vo :</h4>
+
+<p><span class="article-duration">2017-11-17 20:40:17</span></p>
+
+<p>每一层都是递归逻辑，还算…精致吧大概</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="0vo-40">0vo :</h4>
+
+<p><span class="article-duration">2017-11-17 20:42:26</span></p>
+
+<p><a href="https://github.com/lifta42/project-mitsuha/tree/8040fde97aed9c80f95704d56fc08d34d5ce84f1">https://github.com/lifta42/project-mitsuha/tree/8040fde97aed9c80f95704d56fc08d34d5ce84f1</a></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="三七二十-10">三七二十‭ :</h4>
+
+<p><span class="article-duration">2017-11-17 20:43:30</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="six-edge">Six Edge :</h4>
+
+<p><span class="article-duration">2017-11-17 21:02:13</span></p>
+
+<p>教&hellip;教我</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="six-edge-1">Six Edge :</h4>
+
+<p><span class="article-duration">2017-11-17 21:02:26</span></p>
+
+<p>想学，无处下手</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="0vo-41">0vo :</h4>
+
+<p><span class="article-duration">2017-11-17 21:02:57</span></p>
+
+<p>诶，上一集（出差）结尾的截图吗？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="six-edge-2">Six Edge :</h4>
+
+<p><span class="article-duration">2017-11-17 21:16:22</span></p>
+
+<p>刚刚的 lisp 实现链接，有教程吗？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_167">:</h4>
+
+<p><span class="article-duration">2017-11-17 21:35:36</span></p>
+
+<p>sicp里用“procedure”这个术语表示“代码写成什么样”。<br />比如里面的fact，不管是不是尾递归的版本，都是“recursive procedure”，表示代码里是递归调用自己。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_168">:</h4>
+
+<p><span class="article-duration">2017-11-17 21:37:13</span></p>
+
+<p>它用“process”表示“代码实际运行状况”，“实际描述了怎样的计算过程”。<br />比如非尾递归的版本，就是recursive process。<br />而尾递归的版本就是iterative process。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_169">:</h4>
+
+<p><span class="article-duration">2017-11-17 21:37:46</span></p>
+
+<p>iterative process在运行的时候，只语言固定数量的状态。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_170">:</h4>
+
+<p><span class="article-duration">2017-11-17 21:37:57</span></p>
+
+<p>iterative process在运行的时候，只需要固定数量的状态。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_171">:</h4>
+
+<p><span class="article-duration">2017-11-17 21:40:53</span></p>
+
+<p>So，foldl0是不是需要辅助函数？<br />需要。<br />因为实际要描述的那个process，是iterative的，它的状态里还有一个acc。<br /><br />用iterative procedure描述它，可以自己初始化这个状态。<br />用recursive procedure描述它，就要添加参数。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="0vo-42">0vo :</h4>
+
+<p><span class="article-duration">2017-11-17 21:44:26</span></p>
+
+<p>我们有一个func可以存状态呀</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="0vo-43">0vo :</h4>
+
+<p><span class="article-duration">2017-11-17 21:44:36</span></p>
+
+<p>就像用foldr写foldl那样</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_174">:</h4>
+
+<p><span class="article-duration">2017-11-17 21:46:05</span></p>
+
+<p>function fact(n)<br />{<br />  for ( var p = 1 /* here */<br />      ; n &gt; 1; &ndash;n)<br />    p *= n<br />  return p;<br />}</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_175">:</h4>
+
+<p><span class="article-duration">2017-11-17 21:46:54</span></p>
+
+<p>循环的时候，这个累乘是添加在注释那个地方的。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_176">:</h4>
+
+<p><span class="article-duration">2017-11-17 21:48:32</span></p>
+
+<p>描述计算阶乘这个过程，需要累乘和计数器。<br />循环可以自己添加累乘这个状态。<br />计数器也可以顺便添加，也可以利用参数。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_177">:</h4>
+
+<p><span class="article-duration">2017-11-17 21:49:00</span></p>
+
+<p>递归就要通过添加参数的方式添加这个状态了。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_178">:</h4>
+
+<p><span class="article-duration">2017-11-17 21:50:31</span></p>
+
+<p>你用循环的方式写foldl和foldl0看看。<br />看foldl里for的init部分是不是可以是空的？<br />而foldl0里的init部分要添加个累加器？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_179">:</h4>
+
+<p><span class="article-duration">2017-11-17 21:54:56</span></p>
+
+<p>js好像是把尾递归消除写进标准了。<br />但只有苹果那个浏览器实际实现了。<br />practical一点的做法，能循环就循环了。<br />要追求用尾递归实现循环，追求精致，就不要用js写啊。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_180">:</h4>
+
+<p><span class="article-duration">2017-11-17 21:58:17</span></p>
+
+<p>嗯？用c写的？那现在的编译器应该能把尾调用优化掉。只是不保证。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="仄仄">仄仄 :</h4>
+
+<p><span class="article-duration">2017-11-17 22:53:18</span></p>
+
+<p>Monid和Semigroup的区别是啥子</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="six-edge-3">Six Edge :</h4>
+
+<p><span class="article-duration">2017-11-17 22:56:59</span></p>
+
+<p>没有单位元</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="six-edge-4">Six Edge :</h4>
+
+<p><span class="article-duration">2017-11-17 22:57:12</span></p>
+
+<p>monoid 是有单位元的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="三七二十-11">三七二十‭ :</h4>
+
+<p><span class="article-duration">2017-11-17 22:57:25</span></p>
+
+<p>半裙，幺半群</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="six-edge-5">Six Edge :</h4>
+
+<p><span class="article-duration">2017-11-17 23:01:10</span></p>
+
+<p>Semigroup 是 8.x 新加的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<p>以上内容来自 [Haskell函数式编程] QQ 群。</p>
+
+    </div>
+  </article>
+
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "binjoy" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="http://qq.haskellchina.org/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="http://qq.haskellchina.org/images/hugo-logo.png" width="22" height="22"></a>
+            <div style="display:none">
+                <script src="http://s95.cnzz.com/stat.php?id=1261078931&web_id=1261078931" language="JavaScript"></script>
+            </div>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
+

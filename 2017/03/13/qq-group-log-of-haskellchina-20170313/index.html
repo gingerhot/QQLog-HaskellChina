@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.30.2" />
+
+
+<title>QQ Group Log of HaskellChina: 20170313 - QQGroup Log of HaskellChina</title>
+<meta property="og:title" content="QQ Group Log of HaskellChina: 20170313 - QQGroup Log of HaskellChina">
+
+
+
+  
+
+
+
+<meta property="keywords" content ="Haskell,, HaskellChina">
+
+
+
+
+<link rel="stylesheet" href="http://qq.haskellchina.org/css/main.css" media="all">
+<link rel="stylesheet" href="//fonts.lug.ustc.edu.cn/css?family=Merriweather:400|Lato:400,400italic,700">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="http://qq.haskellchina.org/" class="nav-logo">
+    <img src="http://qq.haskellchina.org/images/logo.png" 
+         width="50" 
+         height="50" 
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="https://github.com/gingerhot/QQLog-HaskellChina">GitHub</a></li>
+    
+    <li><a href="/about/">关于</a></li>
+    
+    <li><a href="http://haskellchina.org/">社区首页</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">QQ Group Log of HaskellChina: 20170313</h1>
+
+    
+    <span class="article-date">March 13, 2017</span>
+    
+
+    <div class="article-content">
+      
+
+<h4 id="昰生娃">昰生娃 :</h4>
+
+<p><span class="article-duration">2017-03-13 10:16:27</span></p>
+
+<p>函数是I</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页">第七页 :</h4>
+
+<p><span class="article-duration">2017-03-13 10:19:47</span></p>
+
+<p>如何能看到 haskell 中内置类型的源码 比如 bool</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="miyo-17-16-嗨">miyo.👉🏻[17|16|嗨] :</h4>
+
+<p><span class="article-duration">2017-03-13 10:23:28</span></p>
+
+<p>data Bool =True|False</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="balternotz">BalterNotz :</h4>
+
+<p><span class="article-duration">2017-03-13 10:23:45</span></p>
+
+<p>@第七页 这个要去看ghc源码</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-1">第七页 :</h4>
+
+<p><span class="article-duration">2017-03-13 10:23:46</span></p>
+
+<p>我要看它怎么 instance Typeable 的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-13 10:27:19</span></p>
+
+<p>猜想一下不是内置的就是用Generics实现的吧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="寒东">寒东 :</h4>
+
+<p><span class="article-duration">2017-03-13 10:41:53</span></p>
+
+<p>Typeable的实例都必须是空的 实现是编译器来填的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="寒东-1">寒东 :</h4>
+
+<p><span class="article-duration">2017-03-13 10:42:32</span></p>
+
+<p>fingerprint这种东西用户也提供不来</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-2">第七页 :</h4>
+
+<p><span class="article-duration">2017-03-13 10:52:29</span></p>
+
+<p>恩，</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever">forever :</h4>
+
+<p><span class="article-duration">2017-03-13 11:37:29</span></p>
+
+<p>用 typeclass 实现的 rtti</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-1">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-13 12:03:47</span></p>
+
+<p>这种代码有没有办法自动生成</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-2">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-13 12:06:44</span></p>
+
+<p>比如自动搜索代码中的mk<strong><em>Driver，然后生成</em></strong> -&gt; toDynamicDriver (mk***Driver (fromJust path))</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_12">- -  :</h4>
+
+<p><span class="article-duration">2017-03-13 12:37:14</span></p>
+
+<p>form表单提交到php文件，可以action再指定方法吗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-3">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-13 12:38:20</span></p>
+
+<p>not  sure what you mean. also notice this is the haskell group</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="安静">安静 :</h4>
+
+<p><span class="article-duration">2017-03-13 12:54:33</span></p>
+
+<p>请教大家个问题。<br />在内存里保存一大块数据会拖慢整个程序的速度吗？<br />有个问题，我试了两种方法，一种是stream的思路，输入一个值就输出一个值。另一种是先把所有值都输进去，然后建一个线段树，再输出结果。前一种方法只要半秒，后面一种要7秒</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-1">forever :</h4>
+
+<p><span class="article-duration">2017-03-13 12:58:03</span></p>
+
+<p>程序活跃数据越少 gc 越快</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="鬼见愁">鬼见愁 :</h4>
+
+<p><span class="article-duration">2017-03-13 12:58:29</span></p>
+
+<p>如果数据越多自然是stream了，而且stream更好抽象及并行化</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-3">第七页 :</h4>
+
+<p><span class="article-duration">2017-03-13 12:58:55</span></p>
+
+<p>其实有一个问题的 <br />haskell 要求 [a] list里面所有类型都必须是a</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-4">第七页 :</h4>
+
+<p><span class="article-duration">2017-03-13 12:59:29</span></p>
+
+<p>如果你的参数 可以是 String  也可以是 [1,2,3]  这样的函数怎么写？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-2">forever :</h4>
+
+<p><span class="article-duration">2017-03-13 12:59:39</span></p>
+
+<p>不能</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-5">第七页 :</h4>
+
+<p><span class="article-duration">2017-03-13 13:00:00</span></p>
+
+<p>只能自己data一个类型 多个构造器</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-3">forever :</h4>
+
+<p><span class="article-duration">2017-03-13 13:00:41</span></p>
+
+<p>最好考虑设计成符合 haskell 类型系统的样子</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-6">第七页 :</h4>
+
+<p><span class="article-duration">2017-03-13 13:01:39</span></p>
+
+<p>写class String 会和 [a] 冲突 需要开扩展</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-4">forever :</h4>
+
+<p><span class="article-duration">2017-03-13 13:04:40</span></p>
+
+<p>如果是我的话会定义个<br />newtype JStr = JStr { getJStr :: String }</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-7">第七页 :</h4>
+
+<p><span class="article-duration">2017-03-13 13:07:51</span></p>
+
+<p>恩 包一层啥都好说</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-4">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-13 13:30:36</span></p>
+
+<p>扩展嘛，开就开咯</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-5">forever :</h4>
+
+<p><span class="article-duration">2017-03-13 13:39:05</span></p>
+
+<p>明明是把程序设计好更重要</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-5">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-13 15:24:33</span></p>
+
+<p>有用过这货的么</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="昰生娃-1">昰生娃 :</h4>
+
+<p><span class="article-duration">2017-03-13 15:35:23</span></p>
+
+<p>请教各位，这个怎样转写成lambda的形式呢？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="昰生娃-2">昰生娃 :</h4>
+
+<p><span class="article-duration">2017-03-13 15:37:01</span></p>
+
+<p>就是这个</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="yaegaki-erika">Yaegaki Erika :</h4>
+
+<p><span class="article-duration">2017-03-13 15:38:13</span></p>
+
+<p>\ade a bcd b c -&gt; ade a (bcd b c)</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="昰生娃-3">昰生娃 :</h4>
+
+<p><span class="article-duration">2017-03-13 15:40:17</span></p>
+
+<p>和正确形式不同？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-6">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-13 15:40:38</span></p>
+
+<p>这俩不一样的么</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="昰生娃-4">昰生娃 :</h4>
+
+<p><span class="article-duration">2017-03-13 15:41:00</span></p>
+
+<p>\ abcde.ab(cde)</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-7">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-13 15:45:59</span></p>
+
+<p>艹</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="啥也不会的小黑黑">啥也不会的小黑黑 :</h4>
+
+<p><span class="article-duration">2017-03-13 19:08:42</span></p>
+
+<p>大家好，我来学习haskell，顺便求一本real world haskell</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-8">第七页 :</h4>
+
+<p><span class="article-duration">2017-03-13 19:09:17</span></p>
+
+<p>网上有</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="啥也不会的小黑黑-1">啥也不会的小黑黑 :</h4>
+
+<p><span class="article-duration">2017-03-13 19:09:27</span></p>
+
+<p>下载不下来啊，，，</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="啥也不会的小黑黑-2">啥也不会的小黑黑 :</h4>
+
+<p><span class="article-duration">2017-03-13 19:09:44</span></p>
+
+<p>只找到了微盘里面有，，，</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-9">第七页 :</h4>
+
+<p><span class="article-duration">2017-03-13 19:10:23</span></p>
+
+<p>有在线的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="yaegaki-erika-1">Yaegaki Erika :</h4>
+
+<p><span class="article-duration">2017-03-13 19:10:30</span></p>
+
+<p>有在线的html</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-6">forever :</h4>
+
+<p><span class="article-duration">2017-03-13 19:10:31</span></p>
+
+<p><a href="http://book.realworldhaskell.org">http://book.realworldhaskell.org</a></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="啥也不会的小黑黑-3">啥也不会的小黑黑 :</h4>
+
+<p><span class="article-duration">2017-03-13 19:10:59</span></p>
+
+<p>中文版的有吗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="neuromancer">Neuromancer :</h4>
+
+<p><span class="article-duration">2017-03-13 19:11:10</span></p>
+
+<p>github有cnhaskell</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="春华非华">春华非华 :</h4>
+
+<p><span class="article-duration">2017-03-13 19:21:38</span></p>
+
+<p>_%课闽赣小炒米宝宝便xo<br />当-</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<p>以上内容来自 [Haskell函数式编程] QQ 群。</p>
+
+    </div>
+  </article>
+
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "binjoy" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="http://qq.haskellchina.org/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="http://qq.haskellchina.org/images/hugo-logo.png" width="22" height="22"></a>
+            <div style="display:none">
+                <script src="http://s95.cnzz.com/stat.php?id=1261078931&web_id=1261078931" language="JavaScript"></script>
+            </div>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
+

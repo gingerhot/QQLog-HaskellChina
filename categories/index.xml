@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on QQGroup Log of HaskellChina</title>
+    <link>http://qq.haskellchina.org/categories/</link>
+    <description>Recent content in Categories on QQGroup Log of HaskellChina</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://qq.haskellchina.org/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Haskellchina</title>
+      <link>http://qq.haskellchina.org/categories/haskellchina/</link>
+      <pubDate>Mon, 01 Jan 2018 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/categories/haskellchina/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Qqlog</title>
+      <link>http://qq.haskellchina.org/categories/qqlog/</link>
+      <pubDate>Mon, 01 Jan 2018 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/categories/qqlog/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

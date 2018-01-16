@@ -1,0 +1,1629 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.30.2" />
+
+
+<title>QQ Group Log of HaskellChina: 20170731 - QQGroup Log of HaskellChina</title>
+<meta property="og:title" content="QQ Group Log of HaskellChina: 20170731 - QQGroup Log of HaskellChina">
+
+
+
+  
+
+
+
+<meta property="keywords" content ="Haskell,, HaskellChina">
+
+
+
+
+<link rel="stylesheet" href="http://qq.haskellchina.org/css/main.css" media="all">
+<link rel="stylesheet" href="//fonts.lug.ustc.edu.cn/css?family=Merriweather:400|Lato:400,400italic,700">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="http://qq.haskellchina.org/" class="nav-logo">
+    <img src="http://qq.haskellchina.org/images/logo.png" 
+         width="50" 
+         height="50" 
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="https://github.com/gingerhot/QQLog-HaskellChina">GitHub</a></li>
+    
+    <li><a href="/about/">关于</a></li>
+    
+    <li><a href="http://haskellchina.org/">社区首页</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">6 min read</span>
+    
+
+    <h1 class="article-title">QQ Group Log of HaskellChina: 20170731</h1>
+
+    
+    <span class="article-date">July 31, 2017</span>
+    
+
+    <div class="article-content">
+      
+
+<h4 id="hitchhiker">hitchhiker :</h4>
+
+<p><span class="article-duration">2017-07-31 14:27:04</span></p>
+
+<p>@寒东 我稍微看了一下whnf，一般haskell对于表达式的eval就到whnf为止。然后cons (:)对于两个参数都不进行eval到whnf的过程，所以是对它们lazy，并且t</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="hitchhiker-1">hitchhiker :</h4>
+
+<p><span class="article-duration">2017-07-31 14:27:40</span></p>
+
+<p>sorry 手抖[衰]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="hitchhiker-2">hitchhiker :</h4>
+
+<p><span class="article-duration">2017-07-31 14:28:02</span></p>
+
+<p>好烦 手机打字</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="hitchhiker-3">hitchhiker :</h4>
+
+<p><span class="article-duration">2017-07-31 14:50:42</span></p>
+
+<p>take 3 [1..]应该只会被eval成 1 : take (3-1) [2..]吧？如果按照(:)对两个参数都lazy。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="寒东">寒东 :</h4>
+
+<p><span class="article-duration">2017-07-31 14:51:22</span></p>
+
+<p>对的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="hitchhiker-4">hitchhiker :</h4>
+
+<p><span class="article-duration">2017-07-31 14:51:57</span></p>
+
+<p>厉害了。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="hitchhiker-5">hitchhiker :</h4>
+
+<p><span class="article-duration">2017-07-31 14:52:15</span></p>
+
+<p>嗯 谢谢</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="入">入 :</h4>
+
+<p><span class="article-duration">2017-07-31 15:26:33</span></p>
+
+<p>不知道，都装了些什么东西进去，</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_8">_ :</h4>
+
+<p><span class="article-duration">2017-07-31 15:35:52</span></p>
+
+<p>无所谓的 一般而已就是.stack 文件夹变大一点</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="dram">dram :</h4>
+
+<p><span class="article-duration">2017-07-31 15:35:57</span></p>
+
+<p>把 .stack-work 删掉就行了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="dram-1">dram :</h4>
+
+<p><span class="article-duration">2017-07-31 15:36:26</span></p>
+
+<p>ghc 的话是装在另一个地方的，具体不太记得……</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="心情压抑拿猫撒气">心情压抑拿猫撒气 :</h4>
+
+<p><span class="article-duration">2017-07-31 16:23:01</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="心情压抑拿猫撒气-1">心情压抑拿猫撒气 :</h4>
+
+<p><span class="article-duration">2017-07-31 16:23:07</span></p>
+
+<p>但是那句</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="心情压抑拿猫撒气-2">心情压抑拿猫撒气 :</h4>
+
+<p><span class="article-duration">2017-07-31 16:23:23</span></p>
+
+<p>为啥后面两个不是析取项？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="心情压抑拿猫撒气-3">心情压抑拿猫撒气 :</h4>
+
+<p><span class="article-duration">2017-07-31 16:24:17</span></p>
+
+<p>p -&gt; q不是可以转换成!p V q么</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-07-31 16:31:01</span></p>
+
+<p>Haskell如果几个模块有循环引用怎么解决啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-1">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-07-31 16:31:13</span></p>
+
+<p>难道我要写进同一个文件</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-2">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-07-31 16:31:16</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-07-31 16:31:48</span></p>
+
+<p>@大笨蛋千里冰封 有个 hs-boot 的机制可以用来搞循环引用</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-3">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-07-31 16:32:00</span></p>
+
+<p>我好像查到了，我先看看</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-4">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-07-31 16:32:03</span></p>
+
+<p>谢谢</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="嶺上アイドルcosmia">嶺上アイドルCosmia :</h4>
+
+<p><span class="article-duration">2017-07-31 16:32:21</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-1">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-07-31 16:32:41</span></p>
+
+<p><a href="https://downloads.haskell.org/~ghc/8.2.1/docs/html/users_guide/separate_compilation.html#how-to-compile-mutually-recursive-modules">https://downloads.haskell.org/~ghc/8.2.1/docs/html/users_guide/separate_compilation.html#how-to-compile-mutually-recursive-modules</a></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="嶺上アイドルcosmia-1">嶺上アイドルCosmia :</h4>
+
+<p><span class="article-duration">2017-07-31 16:33:18</span></p>
+
+<p>这点还是C最好了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-5">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-07-31 16:34:40</span></p>
+
+<p>@Felis sapiens 我就是查到了这个，SO上给的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-6">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-07-31 16:34:43</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-7">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-07-31 16:34:50</span></p>
+
+<p>@嶺上アイドルCosmia Java</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="心情压抑拿猫撒气-4">心情压抑拿猫撒气 :</h4>
+
+<p><span class="article-duration">2017-07-31 16:34:51</span></p>
+
+<p>其实相比hs-boot，为什么不是在同一个文件里搞个pragma</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="心情压抑拿猫撒气-5">心情压抑拿猫撒气 :</h4>
+
+<p><span class="article-duration">2017-07-31 16:35:02</span></p>
+
+<p>我tm相当于维护两份代码</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="嶺上アイドルcosmia-2">嶺上アイドルCosmia :</h4>
+
+<p><span class="article-duration">2017-07-31 16:35:20</span></p>
+
+<p>[惊讶]+1</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="嶺上アイドルcosmia-3">嶺上アイドルCosmia :</h4>
+
+<p><span class="article-duration">2017-07-31 16:36:12</span></p>
+
+<p>编译器应该去猜哪些exposed value可以不依赖</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="心情压抑拿猫撒气-6">心情压抑拿猫撒气 :</h4>
+
+<p><span class="article-duration">2017-07-31 16:37:45</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="心情压抑拿猫撒气-7">心情压抑拿猫撒气 :</h4>
+
+<p><span class="article-duration">2017-07-31 16:37:55</span></p>
+
+<p>这尼玛时间</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="嶺上アイドルcosmia-4">嶺上アイドルCosmia :</h4>
+
+<p><span class="article-duration">2017-07-31 16:38:13</span></p>
+
+<p>诈尸了？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="心情压抑拿猫撒气-8">心情压抑拿猫撒气 :</h4>
+
+<p><span class="article-duration">2017-07-31 16:38:52</span></p>
+
+<p>真诈尸</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="心情压抑拿猫撒气-9">心情压抑拿猫撒气 :</h4>
+
+<p><span class="article-duration">2017-07-31 16:39:11</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-8">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-07-31 16:44:12</span></p>
+
+<p>还行，感觉在写C了hhhhh</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-9">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-07-31 16:44:15</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-2">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-07-31 17:15:26</span></p>
+
+<p>Java 任意类居然转回 Any 以后还能无损序列化/toString。。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-3">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-07-31 17:15:52</span></p>
+
+<p>没有 Typeable 和 Binary constraint。。Haskeller 写得想撞墙</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="寒东-1">寒东 :</h4>
+
+<p><span class="article-duration">2017-07-31 17:38:20</span></p>
+
+<p>这也直接造成了java支持闭包的种种困难</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="寒东-2">寒东 :</h4>
+
+<p><span class="article-duration">2017-07-31 17:38:22</span></p>
+
+<p>😂</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="嶺上アイドルcosmia-5">嶺上アイドルCosmia :</h4>
+
+<p><span class="article-duration">2017-07-31 18:45:42</span></p>
+
+<p>[惊讶]java不是已经支持闭包了么？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="行者">行者 :</h4>
+
+<p><span class="article-duration">2017-07-31 18:47:44</span></p>
+
+<p>java支持闭包啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="刑天">/:;刑天 :</h4>
+
+<p><span class="article-duration">2017-07-31 18:48:17</span></p>
+
+<p>[惊讶]从来没在java中用过闭包</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="寒东-3">寒东 :</h4>
+
+<p><span class="article-duration">2017-07-31 18:48:19</span></p>
+
+<p>是啊 最后通过匿名类实现的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="行者-1">行者 :</h4>
+
+<p><span class="article-duration">2017-07-31 18:48:42</span></p>
+
+<p>用的还是满爽的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="寒东-4">寒东 :</h4>
+
+<p><span class="article-duration">2017-07-31 18:48:42</span></p>
+
+<p>可谓曲线救国了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="嶺上アイドルcosmia-6">嶺上アイドルCosmia :</h4>
+
+<p><span class="article-duration">2017-07-31 18:48:50</span></p>
+
+<p>你管他怎么实现的实现不就得了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="嶺上アイドルcosmia-7">嶺上アイドルCosmia :</h4>
+
+<p><span class="article-duration">2017-07-31 18:48:58</span></p>
+
+<p>讲道理</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="嶺上アイドルcosmia-8">嶺上アイドルCosmia :</h4>
+
+<p><span class="article-duration">2017-07-31 18:49:08</span></p>
+
+<p>匿名类的实现闭包算是标准做法吧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="嶺上アイドルcosmia-9">嶺上アイドルCosmia :</h4>
+
+<p><span class="article-duration">2017-07-31 18:49:18</span></p>
+
+<p>apple的clang的那个block</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="嶺上アイドルcosmia-10">嶺上アイドルCosmia :</h4>
+
+<p><span class="article-duration">2017-07-31 18:49:23</span></p>
+
+<p>就是这么搞的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="寒东-5">寒东 :</h4>
+
+<p><span class="article-duration">2017-07-31 18:49:27</span></p>
+
+<p>😂😂😂define 标准</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="嶺上アイドルcosmia-11">嶺上アイドルCosmia :</h4>
+
+<p><span class="article-duration">2017-07-31 18:50:07</span></p>
+
+<p>我一开始还以为apple高出什么黑科技能搞一个函数类型的闭包</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="嶺上アイドルcosmia-12">嶺上アイドルCosmia :</h4>
+
+<p><span class="article-duration">2017-07-31 18:50:20</span></p>
+
+<p>果然是不可能的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="嶺上アイドルcosmia-13">嶺上アイドルCosmia :</h4>
+
+<p><span class="article-duration">2017-07-31 18:52:28</span></p>
+
+<p>当然C是没有类的，struct和函数塞一起传其实和匿名类也差不多了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-10">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-07-31 18:58:53</span></p>
+
+<p>Kotlin在语义上的函数是专门的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-11">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-07-31 18:59:12</span></p>
+
+<p>你可以写专门的语法来表达Lambda，以及它的类型</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="心神合一">心神合一 :</h4>
+
+<p><span class="article-duration">2017-07-31 19:12:15</span></p>
+
+<p>Java的闭包需要是常量</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-07-31 19:13:00</span></p>
+
+<p>不止Java，Object Calculus就是Object模拟lambda，不过lambda模拟Object就很难（</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="心神合一-1">心神合一 :</h4>
+
+<p><span class="article-duration">2017-07-31 19:15:14</span></p>
+
+<p>有本事做个命令式到函数式的编译器</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-1">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-07-31 19:16:18</span></p>
+
+<p>早就做过了啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pl">PL :</h4>
+
+<p><span class="article-duration">2017-07-31 19:16:32</span></p>
+
+<p>sicp里不就有lambda模拟cond么</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-2">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-07-31 19:16:40</span></p>
+
+<p>lambda the ultimate imperative</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-3">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-07-31 19:17:28</span></p>
+
+<p>landin 65年也搞过algol &lt;-&gt; lc</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="心神合一-2">心神合一 :</h4>
+
+<p><span class="article-duration">2017-07-31 19:18:02</span></p>
+
+<p>⊙∀⊙！</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="土豆薄饼">土豆薄饼 :</h4>
+
+<p><span class="article-duration">2017-07-31 19:45:55</span></p>
+
+<p>sel4项目中也有一个，用了一些技巧，论文略难懂；</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-4">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-07-31 20:18:48</span></p>
+
+<p>lambda 模拟 object 有什么问题吗。。一个 lambda 对应一个 method，所有 lambda 所捕获的自由变量共享，作为 member variable @魔理沙</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="dram-2">dram :</h4>
+
+<p><span class="article-duration">2017-07-31 20:19:38</span></p>
+
+<p><a href="https://hackage.haskell.org/package/oo-prototypes-0.1.0.0/docs/src/Data-Prototype.html#.-%3E">https://hackage.haskell.org/package/oo-prototypes-0.1.0.0/docs/src/Data-Prototype.html#.-%3E</a></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-5">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-07-31 20:20:53</span></p>
+
+<p>搞什么 prototype，不如搞 inline-javascript</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="dram-3">dram :</h4>
+
+<p><span class="article-duration">2017-07-31 20:22:00</span></p>
+
+<p>[惊讶]然而我觉得 haskell 从 oo 最多拿个 x.f(a) 就差不多了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="嶺上アイドルcosmia-14">嶺上アイドルCosmia :</h4>
+
+<p><span class="article-duration">2017-07-31 20:22:21</span></p>
+
+<p>[惊讶]有啥用呢？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="嶺上アイドルcosmia-15">嶺上アイドルCosmia :</h4>
+
+<p><span class="article-duration">2017-07-31 20:22:32</span></p>
+
+<p>f o a不是一回事= =</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="dram-4">dram :</h4>
+
+<p><span class="article-duration">2017-07-31 20:22:55</span></p>
+
+<p>field can overload</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="dram-5">dram :</h4>
+
+<p><span class="article-duration">2017-07-31 20:23:03</span></p>
+
+<p>可以有两个都叫 name 的 field</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="嶺上アイドルcosmia-16">嶺上アイドルCosmia :</h4>
+
+<p><span class="article-duration">2017-07-31 20:23:49</span></p>
+
+<p>[惊讶]手动维护虚函数表（泥垢</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="嶺上アイドルcosmia-17">嶺上アイドルCosmia :</h4>
+
+<p><span class="article-duration">2017-07-31 20:25:00</span></p>
+
+<p>反正oo也是这么搞的= =</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_78">_ :</h4>
+
+<p><span class="article-duration">2017-07-31 20:28:51</span></p>
+
+<p>觉得hs里模拟oo用distributed process也挺带感 send message 模拟方法调用 每个 processId 就是一个对象 方法调用就是remote call之类的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_79">. :</h4>
+
+<p><span class="article-duration">2017-07-31 20:30:02</span></p>
+
+<p>我觉得用send message已经不是模拟程度了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="卐卍">卐卍 :</h4>
+
+<p><span class="article-duration">2017-07-31 20:37:27</span></p>
+
+<p>haskell定义变量加不加let有什么区别？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="嶺上アイドルcosmia-18">嶺上アイドルCosmia :</h4>
+
+<p><span class="article-duration">2017-07-31 20:37:39</span></p>
+
+<p>。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="嶺上アイドルcosmia-19">嶺上アイドルCosmia :</h4>
+
+<p><span class="article-duration">2017-07-31 20:37:42</span></p>
+
+<p>完全不一样。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="嶺上アイドルcosmia-20">嶺上アイドルCosmia :</h4>
+
+<p><span class="article-duration">2017-07-31 20:38:01</span></p>
+
+<p>没有let的是top level binding</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="f">f :</h4>
+
+<p><span class="article-duration">2017-07-31 20:38:41</span></p>
+
+<p>有 let 呢？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="嶺上アイドルcosmia-21">嶺上アイドルCosmia :</h4>
+
+<p><span class="article-duration">2017-07-31 20:39:25</span></p>
+
+<p>let不是呗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="f-1">f :</h4>
+
+<p><span class="article-duration">2017-07-31 20:39:48</span></p>
+
+<p>不是说 haskell 没有变量咩</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="dram-6">dram :</h4>
+
+<p><span class="article-duration">2017-07-31 20:40:03</span></p>
+
+<p>[惊讶]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-12">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-07-31 20:40:04</span></p>
+
+<p>那只是起个名字吧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="dram-7">dram :</h4>
+
+<p><span class="article-duration">2017-07-31 20:40:34</span></p>
+
+<p>[惊讶]你可以认为是变量不能赋值</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-13">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-07-31 20:40:34</span></p>
+
+<p>fun a b = xxx<br />a b 照你这么说也是变量咯</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-14">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-07-31 20:40:37</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="f-2">f :</h4>
+
+<p><span class="article-duration">2017-07-31 20:40:49</span></p>
+
+<p>那是参数</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-15">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-07-31 20:41:04</span></p>
+
+<p>无fuck说</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="嶺上アイドルcosmia-22">嶺上アイドルCosmia :</h4>
+
+<p><span class="article-duration">2017-07-31 20:41:04</span></p>
+
+<p>[惊讶]那就是常量绑定</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="嶺上アイドルcosmia-23">嶺上アイドルCosmia :</h4>
+
+<p><span class="article-duration">2017-07-31 20:41:06</span></p>
+
+<p>行了吧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="f-3">f :</h4>
+
+<p><span class="article-duration">2017-07-31 20:41:09</span></p>
+
+<p>😂看完书再跟你们讨论发现都不一样。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-16">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-07-31 20:41:13</span></p>
+
+<p>你看看Scheme里面的let</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="f-4">f :</h4>
+
+<p><span class="article-duration">2017-07-31 20:41:20</span></p>
+
+<p>没学</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-17">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-07-31 20:41:25</span></p>
+
+<p>和Haskell作用一样的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="dram-8">dram :</h4>
+
+<p><span class="article-duration">2017-07-31 20:41:25</span></p>
+
+<p>定义的名字都是 final 的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="嶺上アイドルcosmia-24">嶺上アイドルCosmia :</h4>
+
+<p><span class="article-duration">2017-07-31 20:41:30</span></p>
+
+<p>你裙就我不会lisp。jpg</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-18">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-07-31 20:41:36</span></p>
+
+<p>但是Scheme的let是库函数实现的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-19">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-07-31 20:41:50</span></p>
+
+<p>不不不 let就是个库函数</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="f-5">f :</h4>
+
+<p><span class="article-duration">2017-07-31 20:41:56</span></p>
+
+<p>哟</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="f-6">f :</h4>
+
+<p><span class="article-duration">2017-07-31 20:42:00</span></p>
+
+<p>这种操作</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="f-7">f :</h4>
+
+<p><span class="article-duration">2017-07-31 20:42:09</span></p>
+
+<p>好纯</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="嶺上アイドルcosmia-25">嶺上アイドルCosmia :</h4>
+
+<p><span class="article-duration">2017-07-31 20:42:13</span></p>
+
+<p>[惊讶]连final都出来了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-20">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-07-31 20:42:14</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="嶺上アイドルcosmia-26">嶺上アイドルCosmia :</h4>
+
+<p><span class="article-duration">2017-07-31 20:42:26</span></p>
+
+<p>丢人，你褪裙吧。jpg</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-21">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-07-31 20:42:27</span></p>
+
+<p>@嶺上アイドルCosmia Java, Java</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-22">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-07-31 20:42:31</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="dram-9">dram :</h4>
+
+<p><span class="article-duration">2017-07-31 20:44:10</span></p>
+
+<p>真是的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="dram-10">dram :</h4>
+
+<p><span class="article-duration">2017-07-31 20:44:40</span></p>
+
+<p>你还说呢，我觉得写 java 的肯定一下就明白 unboxed Int# 是干啥的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="嶺上アイドルcosmia-27">嶺上アイドルCosmia :</h4>
+
+<p><span class="article-duration">2017-07-31 20:44:56</span></p>
+
+<p>primitive type？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="嶺上アイドルcosmia-28">嶺上アイドルCosmia :</h4>
+
+<p><span class="article-duration">2017-07-31 20:45:13</span></p>
+
+<p>嘛，确实Int#也是primitive type就是了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="f-8">f :</h4>
+
+<p><span class="article-duration">2017-07-31 20:48:23</span></p>
+
+<p>刚看了一个 java 实现惰性求值“数组”的，就是 tail 变成函数</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="f-9">f :</h4>
+
+<p><span class="article-duration">2017-07-31 20:48:29</span></p>
+
+<p>[惊讶]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_118">‬ :</h4>
+
+<p><span class="article-duration">2017-07-31 22:47:25</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_119">‬ :</h4>
+
+<p><span class="article-duration">2017-07-31 22:47:32</span></p>
+
+<p>haskell坑好深，查个名词差点就要看论文了[惊讶]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="dram-11">dram :</h4>
+
+<p><span class="article-duration">2017-07-31 22:47:49</span></p>
+
+<p>看论文咋了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="dram-12">dram :</h4>
+
+<p><span class="article-duration">2017-07-31 22:48:05</span></p>
+
+<p>人家写书赚钱，写论文赚引用</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="brambles">brambles :</h4>
+
+<p><span class="article-duration">2017-07-31 22:48:36</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="brambles-1">brambles :</h4>
+
+<p><span class="article-duration">2017-07-31 22:48:37</span></p>
+
+<p>Haskell 的很多库都不带文档但带论文的…</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_124">‬ :</h4>
+
+<p><span class="article-duration">2017-07-31 22:48:57</span></p>
+
+<p>我还是不求甚解吧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="dram-13">dram :</h4>
+
+<p><span class="article-duration">2017-07-31 22:49:05</span></p>
+
+<p>没，别怕啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="dram-14">dram :</h4>
+
+<p><span class="article-duration">2017-07-31 22:49:18</span></p>
+
+<p>你就当 tutorial 看不就行了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_127">‬ :</h4>
+
+<p><span class="article-duration">2017-07-31 22:49:35</span></p>
+
+<p>[强]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="dram-15">dram :</h4>
+
+<p><span class="article-duration">2017-07-31 22:50:08</span></p>
+
+<p>Simon PJ 写的论文一般都比较好懂</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="brambles-2">brambles :</h4>
+
+<p><span class="article-duration">2017-07-31 22:50:58</span></p>
+
+<p>最烦得就是看完了论文，明白了这库的设计思想和理念…然后…大佬你没教我怎么用啊！</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="嶺上アイドルcosmia-29">嶺上アイドルCosmia :</h4>
+
+<p><span class="article-duration">2017-07-31 22:51:11</span></p>
+
+<p>那显然是你没看懂啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="dram-16">dram :</h4>
+
+<p><span class="article-duration">2017-07-31 22:51:17</span></p>
+
+<p>诶</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_132">. :</h4>
+
+<p><span class="article-duration">2017-07-31 22:51:21</span></p>
+
+<p>你看cw上面对论文出题的那些</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="brambles-3">brambles :</h4>
+
+<p><span class="article-duration">2017-07-31 22:51:44</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="brambles-4">brambles :</h4>
+
+<p><span class="article-duration">2017-07-31 22:51:47</span></p>
+
+<p>心塞</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-23">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-07-31 22:52:19</span></p>
+
+<p>@东风谷草田 对这是理解论文的好方法</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-24">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-07-31 22:52:21</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="ryan-j-k">Ryan J.K. :</h4>
+
+<p><span class="article-duration">2017-07-31 22:54:03</span></p>
+
+<p>提问，FRP based on lamport timestamp，是不是就等价于类似CSP之类的东西了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="ryan-j-k-1">Ryan J.K. :</h4>
+
+<p><span class="article-duration">2017-07-31 22:55:09</span></p>
+
+<p>咦，不确定CSP包不包含时序&hellip;&hellip;.Actor model什么的&hellip;..</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-4">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-07-31 23:39:18</span></p>
+
+<p>@Felis sapiens object as record of lambda会继承爆炸</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-5">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-07-31 23:41:19</span></p>
+
+<p>a = {  x() = &ldquo;meow&rdquo;  xx() = x() ++ x()}b = a with x = () -&gt; &ldquo;woof&rdquo;xx()爆炸</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="dram-17">dram :</h4>
+
+<p><span class="article-duration">2017-07-31 23:41:39</span></p>
+
+<p>[惊讶]所以那个 oo-prototype 行不行</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="dram-18">dram :</h4>
+
+<p><span class="article-duration">2017-07-31 23:41:51</span></p>
+
+<p>加个 self 参数然后取不动点</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-6">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-07-31 23:42:26</span></p>
+
+<p>对，这样做疼，但是可以</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-7">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-07-31 23:42:41</span></p>
+
+<p>要模拟object, lambda不够格，还要recursive type</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_145">_ :</h4>
+
+<p><span class="article-duration">2017-07-31 23:44:19</span></p>
+
+<p>为何要用lambda模拟oo 。。愈发觉得actor mode才是真正模拟oo</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="dram-19">dram :</h4>
+
+<p><span class="article-duration">2017-07-31 23:44:29</span></p>
+
+<p>[惊讶]等，等下</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="dram-20">dram :</h4>
+
+<p><span class="article-duration">2017-07-31 23:44:53</span></p>
+
+<p>为什么我觉得那人直接<br />newtype Proto a = Proto (a -&gt; a)<br />就搞定了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="dram-21">dram :</h4>
+
+<p><span class="article-duration">2017-07-31 23:45:46</span></p>
+
+<p>[惊讶]哦，你还想要 structural type 吧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-8">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-07-31 23:46:25</span></p>
+
+<p>actor就是OO界出来的啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-9">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-07-31 23:46:34</span></p>
+
+<p>那不是模拟OO，是正宗OO子孙</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-6">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-07-31 23:48:14</span></p>
+
+<p>@魔理沙 为啥爆炸了。。x 是虚方法的话，不是应该放 IORef 里然后 xx 里面 readIORef 吗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="dram-22">dram :</h4>
+
+<p><span class="article-duration">2017-07-31 23:48:52</span></p>
+
+<p>[惊讶]诶，一开始我就是跟莎莎这么说的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="dram-23">dram :</h4>
+
+<p><span class="article-duration">2017-07-31 23:49:06</span></p>
+
+<p>但是莎莎表示这只是 override 不是 mutablr</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="dram-24">dram :</h4>
+
+<p><span class="article-duration">2017-07-31 23:49:09</span></p>
+
+<p>*mutable</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-7">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-07-31 23:49:41</span></p>
+
+<p>没理解。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="dram-25">dram :</h4>
+
+<p><span class="article-duration">2017-07-31 23:50:08</span></p>
+
+<p>这些东西并不是 reference</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-8">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-07-31 23:50:24</span></p>
+
+<p>不是 ref 不代表不能用啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-10">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-07-31 23:50:32</span></p>
+
+<p>那IORef是啥</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="dram-26">dram :</h4>
+
+<p><span class="article-duration">2017-07-31 23:50:50</span></p>
+
+<p>[惊讶]这不清真</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-9">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-07-31 23:51:16</span></p>
+
+<p>我只是提供自动修改 xx 里面自由变量的 quick n dirty 方案</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="dram-27">dram :</h4>
+
+<p><span class="article-duration">2017-07-31 23:51:30</span></p>
+
+<p>[惊讶]司机</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="dram-28">dram :</h4>
+
+<p><span class="article-duration">2017-07-31 23:51:56</span></p>
+
+<p>司机你变了（感觉可能“其实一开始我也是这么想的”的 dram 没有资格说这个</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-11">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-07-31 23:52:23</span></p>
+
+<p>杨博是一种传染性病毒</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-10">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-07-31 23:52:42</span></p>
+
+<p>这跟杨总有毛线关系</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="dram-29">dram :</h4>
+
+<p><span class="article-duration">2017-07-31 23:52:44</span></p>
+
+<p>[惊讶]哎，还是不模拟 oop 好</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-12">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-07-31 23:53:28</span></p>
+
+<p>杨总就很喜欢hack的。。（没贬义，你这样说他他还会很高兴，就像他骂我走火入魔我觉得很高兴一样）</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-11">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-07-31 23:53:31</span></p>
+
+<p>我只知道我写 hs 从未遇到过需要 oo 的地方</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="dram-30">dram :</h4>
+
+<p><span class="article-duration">2017-07-31 23:53:40</span></p>
+
+<p>我只知道我写 hs 从未遇到过需要 oo 的地方</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="dram-31">dram :</h4>
+
+<p><span class="article-duration">2017-07-31 23:53:48</span></p>
+
+<p>就是这么简单……</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-13">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-07-31 23:53:54</span></p>
+
+<p>我也不需要过我只是说OO不是lambda能模拟出来的东西</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-12">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-07-31 23:54:08</span></p>
+
+<p>我只是说能</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="dram-32">dram :</h4>
+
+<p><span class="article-duration">2017-07-31 23:54:15</span></p>
+
+<p>我只是说能</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-14">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-07-31 23:54:36</span></p>
+
+<p>不能啊，你模拟override啊，至少得上recursive type</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-13">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-07-31 23:54:46</span></p>
+
+<p>所以上 ref 啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-15">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-07-31 23:55:00</span></p>
+
+<p>ref也不是lambda能模拟的啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="dram-33">dram :</h4>
+
+<p><span class="article-duration">2017-07-31 23:55:01</span></p>
+
+<p>[惊讶]isorecursive 行吧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-14">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-07-31 23:55:06</span></p>
+
+<p>我不理解用 ref 有什么问题</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="dram-34">dram :</h4>
+
+<p><span class="article-duration">2017-07-31 23:55:17</span></p>
+
+<p>xtlc 可能不行但是 haskell 有 isorec 啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-15">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-07-31 23:55:35</span></p>
+
+<p>ref 你硬要说能不能模拟</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-16">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-07-31 23:55:40</span></p>
+
+<p>我要说能</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-17">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-07-31 23:55:49</span></p>
+
+<p>手写 environment store。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="dram-35">dram :</h4>
+
+<p><span class="article-duration">2017-07-31 23:55:58</span></p>
+
+<p>[惊讶]oo monad，可能做成，做成 actor 会好</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-18">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-07-31 23:55:59</span></p>
+
+<p>手写 state passing。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-16">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-07-31 23:56:02</span></p>
+
+<p>那你把刚刚override例子ref模拟给我看看啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="dram-36">dram :</h4>
+
+<p><span class="article-duration">2017-07-31 23:56:47</span></p>
+
+<p><a href="https://hackage.haskell.org/package/oo-prototypes-0.1.0.0/docs/src/Data-Prototype.html">https://hackage.haskell.org/package/oo-prototypes-0.1.0.0/docs/src/Data-Prototype.html</a><br />@魔理沙 Which part of this are you not satisfied about?</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-17">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-07-31 23:58:17</span></p>
+
+<p>这就是用recursive type啊我从没说过haskell做不到，我就看过overlooked object system，比现有大部分OO系统都漂亮啊我只是说lambda模拟不出啊，有啥问题吗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="dram-37">dram :</h4>
+
+<p><span class="article-duration">2017-07-31 23:58:42</span></p>
+
+<p>[惊讶]啥 lambda</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="dram-38">dram :</h4>
+
+<p><span class="article-duration">2017-07-31 23:58:54</span></p>
+
+<p>[惊讶]是不是对你来说 utlc 不算 lambda</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-18">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-07-31 23:59:03</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-19">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-07-31 23:59:08</span></p>
+
+<p>object calculus也有type</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="dram-39">dram :</h4>
+
+<p><span class="article-duration">2017-07-31 23:59:45</span></p>
+
+<p>[惊讶]一个 fix 毁全场系列</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-20">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-07-31 23:59:50</span></p>
+
+<p>你不看type，utlc当然能模拟一大推东西，啥callcc照样模拟，反正大不了写个cek machine啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<p>以上内容来自 [Haskell函数式编程] QQ 群。</p>
+
+    </div>
+  </article>
+
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "binjoy" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="http://qq.haskellchina.org/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="http://qq.haskellchina.org/images/hugo-logo.png" width="22" height="22"></a>
+            <div style="display:none">
+                <script src="http://s95.cnzz.com/stat.php?id=1261078931&web_id=1261078931" language="JavaScript"></script>
+            </div>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
+

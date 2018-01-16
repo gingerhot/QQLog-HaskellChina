@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2017 02 on QQGroup Log of HaskellChina</title>
+    <link>http://qq.haskellchina.org/tags/2017-02/</link>
+    <description>Recent content in 2017 02 on QQGroup Log of HaskellChina</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 24 Feb 2017 00:55:32 +0800</lastBuildDate>
+    
+	<atom:link href="http://qq.haskellchina.org/tags/2017-02/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170224</title>
+      <link>http://qq.haskellchina.org/2017/02/24/qq-group-log-of-haskellchina-20170224/</link>
+      <pubDate>Fri, 24 Feb 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/02/24/qq-group-log-of-haskellchina-20170224/</guid>
+      <description>Glow : 2017-02-24 00:00:41
+用stack和haskell platform安装有什么区别吗？
+zy : 2017-02-24 07:06:47
+NOTE: GHC will be installed to your global stack root directory, so calling ghc on the command line won&amp;rsquo;t work. See the stack exec, stack ghc, and stack runghc commands below for more information.
+此人已放弃治疗 : 2017-02-24 07:07:20
+[系统表情]
+mushroom : 2017-02-24 09:26:33
+calling ghc on the command line won&amp;rsquo;t work?
+mushroom : 2017-02-24 09:26:41
+really?
+mushroom : 2017-02-24 09:28:08</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170223</title>
+      <link>http://qq.haskellchina.org/2017/02/23/qq-group-log-of-haskellchina-20170223/</link>
+      <pubDate>Thu, 23 Feb 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/02/23/qq-group-log-of-haskellchina-20170223/</guid>
+      <description>☺今天休息 : 2017-02-23 00:49:09
+这问题咋解决啊? 我已经 stack upgrade &amp;ndash;git 了, 还是没用
+☺今天休息 : 2017-02-23 00:49:54
+https://github.com/commercialhaskell/stack/issues/1758因为有人在这里说
+☺今天休息 : 2017-02-23 00:54:53
+发现似乎有人Ubuntu也出现类似问题, 看起来不像是windows的原因 https://github.com/joeyh/github-backup/issues/63
+☺今天休息 : 2017-02-23 00:57:00
+@Canto Ostinato 还有, 为什么说 urls 是不识别的配置字段啊?
+☺今天休息 : 2017-02-23 01:51:06
+我逗逼了&amp;hellip; 这个坑了我好久.. 发现真相的瞬间泪流满面
+(:з」∠) : 2017-02-23 05:54:21
+你是不是用stack更新了stack
+mushroom : 2017-02-23 09:11:07
+我也是在用xmonad,真是最好用的wm,没有之一
+97 : 2017-02-23 09:30:14
+xmonad 可以mac上用么?
+mushroom : 2017-02-23 09:31:04
+应该可以吧,npm一下看看
+mushroom : 2017-02-23 09:31:33
+mac 不是npm,用其他的安装工具
+☺今天休息 : 2017-02-23 09:33:13</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170222</title>
+      <link>http://qq.haskellchina.org/2017/02/22/qq-group-log-of-haskellchina-20170222/</link>
+      <pubDate>Wed, 22 Feb 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/02/22/qq-group-log-of-haskellchina-20170222/</guid>
+      <description>mushroom : 2017-02-22 10:39:43
+这个显示乱码,各位有没有喷到过?
+wuli华华 : 2017-02-22 10:47:53
+没有
+wuli华华 : 2017-02-22 10:50:55
+chcp 936?
+mushroom : 2017-02-22 10:51:50
+用的是mintty
+NULL : 2017-02-22 11:01:48
+你看一下你mintty的字体配置- -这个问题和haskell应该没有关系
+mushroom : 2017-02-22 11:02:47
+是的,跟haskell肯定没有关系,在windows, cmd下面显示是正常的
+BalterNotz : 2017-02-22 11:02:59
+一般有两个步骤。
+BalterNotz : 2017-02-22 11:03:05
+第一是编码要选对。
+BalterNotz : 2017-02-22 11:03:10
+第二是，字体要选对。
+mushroom : 2017-02-22 11:03:17
+中文显示正常
+BalterNotz : 2017-02-22 11:03:21
+编码对，字体不对，也会乱码。
+mushroom : 2017-02-22 11:04:53
+字体一般用consolas
+mushroom : 2017-02-22 11:05:04
+这个字体感觉比较好看 点</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170214</title>
+      <link>http://qq.haskellchina.org/2017/02/14/qq-group-log-of-haskellchina-20170214/</link>
+      <pubDate>Tue, 14 Feb 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/02/14/qq-group-log-of-haskellchina-20170214/</guid>
+      <description>&amp;rdquo;&amp;rsquo; ⃢・ ・ ⃢&amp;rdquo;&amp;rsquo; : 2017-02-14 01:21:07
+若子的校友👀
+forever : 2017-02-14 01:21:13
+这位同学能说明一下情况么？
+（眼神不好列表里没找到。。。）
+Mislanka Nova : 2017-02-14 01:21:54
+i
+负一の平方根 : 2017-02-14 01:28:32
+大家好，我是负一の平方根。
+？ : 2017-02-14 08:12:55
+活捉一只涵神
+？ : 2017-02-14 08:16:21
+话说用stack+tuna源装ghc，下载msys2时校验失败是什么情况👀
+Jo Jo : 2017-02-14 13:00:53
+curry 这函数有什么作用
+[[[[[[[[[[[[[[[[[[[[[[[[ : 2017-02-14 16:47:57
+多了，理论上讲curry是closed category 的基础性质。实践上讲，arrow中函数组合，ffi绑定，等都有用到
+☺今天休息 : 2017-02-14 17:36:52
+请问, 用stack安装某些包失败后该怎么办? 我尝试安装 stack install vacuum-cairo 和 stack install SourceGraph 都没有成功
+☺今天休息 : 2017-02-14 17:37:15
+用的是最新的LTS, win10系统</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170213</title>
+      <link>http://qq.haskellchina.org/2017/02/13/qq-group-log-of-haskellchina-20170213/</link>
+      <pubDate>Mon, 13 Feb 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/02/13/qq-group-log-of-haskellchina-20170213/</guid>
+      <description>饼干 : 2017-02-13 08:56:21
+欢迎新人
+高佳欣 : 2017-02-13 10:10:46
+重回Haskell
+MarshR : 2017-02-13 10:32:48
+大家好&amp;hellip;
+MarshR : 2017-02-13 10:33:06
+刚学haskell, 很好玩, 找组织打酱油&amp;hellip;
+L喵 : 2017-02-13 10:33:33
+…… 你好
+MarshR : 2017-02-13 10:34:20
+~.~
+mushroom : 2017-02-13 10:35:39
+[鼓掌]
+mushroom : 2017-02-13 10:36:39
+有什么问题就放出来吧
+mushroom : 2017-02-13 10:36:57
+有什么建议就提出来吧
+mushroom : 2017-02-13 10:37:06
+有什么想法就说出来吧
+第七页 : 2017-02-13 10:42:06
+有这样一个场景
+封装一个类型A 包括以下功能
+传入数据 可以渲染出UI
+UI的功能可以进行定制
+跟UI的交互可以执行响应（跟事件系统类似）
+A的instance之间可以进行组合
+如果存在haskell中这样的场景 应该会如何设计？
+forever : 2017-02-13 10:48:50</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170208</title>
+      <link>http://qq.haskellchina.org/2017/02/08/qq-group-log-of-haskellchina-20170208/</link>
+      <pubDate>Wed, 08 Feb 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/02/08/qq-group-log-of-haskellchina-20170208/</guid>
+      <description>BalterNotz : 2017-02-08 00:37:48
+(&amp;lt;$) 函数，的实现 (&amp;lt;$) = fmap . const 给人的第一感觉是这样子的：(&amp;lt;$) = \x y -&amp;gt; fmap (const x y) 但，实际是：(&amp;lt;$) = \x y -&amp;gt; fmap (const x) y 这里有点理解不了。GHC是怎样做到的？
+BalterNotz : 2017-02-08 00:39:18
+就是根据，fmap的类型 ：： (a-&amp;gt;b) -&amp;gt; f a -&amp;gt; f b，就推断出，const函数应当只应用第一个参数x，而不是将两个参数x y都应用到const上面？
+forever : 2017-02-08 00:39:26
+对
+forever : 2017-02-08 00:39:35
+f x y = (f x) y
+BalterNotz : 2017-02-08 00:39:50
+好神奇
+forever : 2017-02-08 00:40:03</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170207</title>
+      <link>http://qq.haskellchina.org/2017/02/07/qq-group-log-of-haskellchina-20170207/</link>
+      <pubDate>Tue, 07 Feb 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/02/07/qq-group-log-of-haskellchina-20170207/</guid>
+      <description>pigeon_t : 2017-02-07 00:22:33
+那这句话中的algebraic data type又是什么呢，我意思是说和里面的List Int有啥区别美
+大魔头 : 2017-02-07 00:28:38
+仔细阅读我发的链接
+pigeon_t : 2017-02-07 00:34:33
+看了这个，不过没明白。你的意思是说algebraic data type就是在hs里面可以实现abstract的一种是吗
+forever : 2017-02-07 00:37:45
+这两个概念没关系
+pigeon_t : 2017-02-07 00:38:36
+那这个不对？
+forever : 2017-02-07 00:38:48
+没说这个不对啊
+forever : 2017-02-07 00:39:12
+“中国”和“米饭”没关系不代表中国人不吃米饭
+pigeon_t : 2017-02-07 00:39:58
+我可不可以这样理解，是一个东西的两种描述？
+forever : 2017-02-07 00:40:12
+根本就是两个东西
+pigeon_t : 2017-02-07 00:40:12
+一个从代数，一个从抽象数据
+pigeon_t : 2017-02-07 00:40:21
+比如Stack
+pigeon_t : 2017-02-07 00:40:33
+在cpp可以定义为一个adt
+pigeon_t : 2017-02-07 00:40:37</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170206</title>
+      <link>http://qq.haskellchina.org/2017/02/06/qq-group-log-of-haskellchina-20170206/</link>
+      <pubDate>Mon, 06 Feb 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/02/06/qq-group-log-of-haskellchina-20170206/</guid>
+      <description>Jin : 2017-02-05 11:13:08
+值编程？
+左新宇 : 2017-02-06 22:52:53
+lex&amp;rsquo;::[Token] -&amp;gt; String -&amp;gt; [Token]lex ::[Token] -&amp;gt; String -&amp;gt; [Token]lex tokens st = reverse $ lex&amp;rsquo; tokens st这样怎么化简呢？
+大魔头 : 2017-02-06 23:12:28
+
+很多地方都看到这两个词替换着用
+大魔头 : 2017-02-06 23:14:59
+https://wiki.haskell.org/Abstract_data_type
+根据这个文档的说法抽象数据类型是相对于具体数据类型(concrete data type)的。
+大魔头 : 2017-02-06 23:15:19
+举例来说就是那些带类型参数的类型
+大魔头 : 2017-02-06 23:15:35
+比如List是个抽象类型 List Int才是具体类型
+大魔头 : 2017-02-06 23:16:25
+只是在haskell里经常用algebraic data type来实现abstract data type
+大魔头 : 2017-02-06 23:17:00
+https://wiki.haskell.org/Algebraic_data_type
+Silent TNT : 2017-02-06 23:18:30</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170205</title>
+      <link>http://qq.haskellchina.org/2017/02/05/qq-group-log-of-haskellchina-20170205/</link>
+      <pubDate>Sun, 05 Feb 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/02/05/qq-group-log-of-haskellchina-20170205/</guid>
+      <description>寒东 : 2017-02-05 00:00:01
+记得syb有个slide上还嘲讽Generics是for phd来着。。。
+Silent TNT : 2017-02-05 00:00:23
+syb那个类型签名好难读的
+阅千人而惜知己 : 2017-02-05 00:00:32
+是的，它的那个gfoldl绝逼不是一般人能想出来的。
+寒东 : 2017-02-05 00:00:44
+必须推荐那个slide啊
+Silent TNT : 2017-02-05 00:00:52
+Generics for phd？lmao
+寒东 : 2017-02-05 00:00:53
+我翻翻 讲的特别好
+Silent TNT : 2017-02-05 00:02:03
+嘛Generics还比较弱。。GADT，existential，contravariant datatype都搞不了
+阅千人而惜知己 : 2017-02-05 00:02:42
+contravariant datatype需要加:-&amp;gt;:，以后会有。
+阅千人而惜知己 : 2017-02-05 00:02:50
+如果我没记错。
+Silent TNT : 2017-02-05 00:03:00
+恩，有个ticket
+阅千人而惜知己 : 2017-02-05 00:03:03
+@寒东 发我看看。
+寒东 : 2017-02-05 00:04:33</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170204</title>
+      <link>http://qq.haskellchina.org/2017/02/04/qq-group-log-of-haskellchina-20170204/</link>
+      <pubDate>Sat, 04 Feb 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/02/04/qq-group-log-of-haskellchina-20170204/</guid>
+      <description>forever : 2017-02-04 00:43:37
+a b c 是什么类型是调用者说了算
+zypeh : 2017-02-04 00:47:03
+👀 感觉 records，tuples，list 毫无违和感，原来是在 Python 里看过
+. : 2017-02-04 00:47:21
+然而不要依赖这样的先验知识
+zypeh : 2017-02-04 00:47:31
+👀 嗯…
+. : 2017-02-04 00:47:43
+能暂时忘了就暂时忘了
+zypeh : 2017-02-04 00:48:05
+👌 理解
+forever : 2017-02-04 00:48:50
+如果你学过几个编程语言的话，你很可能已经习惯了“xxx 语言里的 aaa 就是 yyy 语言里的 bbb”
+forever : 2017-02-04 00:49:00
+然而 haskell 这么着是永远不可能入门的
+zypeh : 2017-02-04 00:49:04
+sml 多参数函数其实是 pattern matching 得到的？
+zypeh : 2017-02-04 00:49:59</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170203</title>
+      <link>http://qq.haskellchina.org/2017/02/03/qq-group-log-of-haskellchina-20170203/</link>
+      <pubDate>Fri, 03 Feb 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/02/03/qq-group-log-of-haskellchina-20170203/</guid>
+      <description>魔理沙 : 2017-02-03 15:22:15
+@寒东 啥？给个地址
+寒东 : 2017-02-03 15:25:20
+额 就是reddit上面关于join point带来的性能提升的帖子
+寒东 : 2017-02-03 15:25:40
+应该在haskell频道的首页
+寒东 : 2017-02-03 15:26:06
+好几个测试内存减了99%
+魔理沙 : 2017-02-03 15:26:53
+这很魔法
+寒东 : 2017-02-03 15:27:18
+是的 论文翻了下 感觉吊吊吊
+Sicus Aduialion : 2017-02-03 15:30:56
+OMG&amp;hellip;.
+Unsafe : 2017-02-03 15:33:46
+99%&amp;hellip;
+天才麻将魔法少女Cosmia : 2017-02-03 15:41:18
+99???
+魔理沙 : 2017-02-03 15:42:31
+这算啥，DDF中我已经三次把O(2^N)改成nonexponential了（自豪脸）
+天才麻将魔法少女Cosmia : 2017-02-03 15:42:58
+好烦人啊
+F# Minor : 2017-02-03 15:43:10
+(f o g)(x) = f (g (x))这么看起来很顺</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170201</title>
+      <link>http://qq.haskellchina.org/2017/02/01/qq-group-log-of-haskellchina-20170201/</link>
+      <pubDate>Wed, 01 Feb 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/02/01/qq-group-log-of-haskellchina-20170201/</guid>
+      <description>昵称未知 : 2017-02-01 11:30:53
+弱弱问一句， eee bah gum*2 means ( (eee bah) gum )*2
+. : 2017-02-01 11:31:23
+这是什么语言的foo bar baz
+昵称未知 : 2017-02-01 11:31:50
+他说是 functional application, which has higher precedence than any other operator, also associates to the left
+昵称未知 : 2017-02-01 11:31:53
+Haskell
+. : 2017-02-01 11:32:01
+我知道是hs
+. : 2017-02-01 11:32:10
+你那个理解是对的
+昵称未知 : 2017-02-01 11:32:20
+这是数还是函数啊
+. : 2017-02-01 11:32:24
+我是说变量名的语言(
+. : 2017-02-01 11:32:32</description>
+    </item>
+    
+  </channel>
+</rss>

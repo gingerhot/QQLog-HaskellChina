@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on QQGroup Log of HaskellChina</title>
+    <link>http://qq.haskellchina.org/page/</link>
+    <description>Recent content in Pages on QQGroup Log of HaskellChina</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Dec 2016 13:50:32 +0800</lastBuildDate>
+    
+	<atom:link href="http://qq.haskellchina.org/page/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>about</title>
+      <link>http://qq.haskellchina.org/about/</link>
+      <pubDate>Thu, 29 Dec 2016 13:50:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/about/</guid>
+      <description>Haskell 中文社区: http://HaskellChina.org
+欢迎加入：
+[ Haskell 函数式编程] QQ 群: 72874436
+加入后可以使用 IRC 连接本群：
+ Host: irc.haskellchina.org
+Port: 7979 / 9090
+使用 QQ 号作为用户名，无需密码
+ Haskell 中文社区 GitHub：https://github.com/hskll</description>
+    </item>
+    
+  </channel>
+</rss>

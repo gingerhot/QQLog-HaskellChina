@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.30.2" />
+
+
+<title>QQ Group Log of HaskellChina: 20170527 - QQGroup Log of HaskellChina</title>
+<meta property="og:title" content="QQ Group Log of HaskellChina: 20170527 - QQGroup Log of HaskellChina">
+
+
+
+  
+
+
+
+<meta property="keywords" content ="Haskell,, HaskellChina">
+
+
+
+
+<link rel="stylesheet" href="http://qq.haskellchina.org/css/main.css" media="all">
+<link rel="stylesheet" href="//fonts.lug.ustc.edu.cn/css?family=Merriweather:400|Lato:400,400italic,700">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="http://qq.haskellchina.org/" class="nav-logo">
+    <img src="http://qq.haskellchina.org/images/logo.png" 
+         width="50" 
+         height="50" 
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="https://github.com/gingerhot/QQLog-HaskellChina">GitHub</a></li>
+    
+    <li><a href="/about/">关于</a></li>
+    
+    <li><a href="http://haskellchina.org/">社区首页</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">3 min read</span>
+    
+
+    <h1 class="article-title">QQ Group Log of HaskellChina: 20170527</h1>
+
+    
+    <span class="article-date">May 27, 2017</span>
+    
+
+    <div class="article-content">
+      
+
+<h4 id="f">f :</h4>
+
+<p><span class="article-duration">2017-05-27 00:52:31</span></p>
+
+<p>haskell中()是什么都可以匹配吗？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="f-1">f :</h4>
+
+<p><span class="article-duration">2017-05-27 00:53:43</span></p>
+
+<p>IO ()</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="yaegaki-erika">Yaegaki Erika :</h4>
+
+<p><span class="article-duration">2017-05-27 00:58:24</span></p>
+
+<p>不是</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="canto-ostinato">Canto Ostinato :</h4>
+
+<p><span class="article-duration">2017-05-27 01:06:38</span></p>
+
+<p>没有这种操作</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="ーー-be5">(ーー゛)be5 :</h4>
+
+<p><span class="article-duration">2017-05-27 01:08:12</span></p>
+
+<p>hs 里面 () 表示 Unit type 或者 Unit value</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="ーー-be5-1">(ーー゛)be5 :</h4>
+
+<p><span class="article-duration">2017-05-27 01:08:21</span></p>
+
+<p>啥都匹配的 pattern 是 _</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="ーー-be5-2">(ーー゛)be5 :</h4>
+
+<p><span class="article-duration">2017-05-27 01:10:13</span></p>
+
+<p>我们当中混进了二五仔（</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-05-27 01:10:29</span></p>
+
+<p>啥都匹配的不一定是 _</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-1">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-05-27 01:11:12</span></p>
+
+<p>正確來說 不是已定義的詞都是wildcard</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-2">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-05-27 01:11:20</span></p>
+
+<p>不過通常用_表示而已</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="ーー-be5-3">(ーー゛)be5 :</h4>
+
+<p><span class="article-duration">2017-05-27 01:11:28</span></p>
+
+<p>_ 匹配一切 value一切 type 的是各种 type variable……</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="f-2">f :</h4>
+
+<p><span class="article-duration">2017-05-27 01:13:48</span></p>
+
+<p>了解</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="f-3">f :</h4>
+
+<p><span class="article-duration">2017-05-27 01:14:37</span></p>
+
+<p>想起java8的 Object _ = new Object() 的奇葩语法。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-3">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-05-27 01:15:04</span></p>
+
+<p>JS也有這套</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-4">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-05-27 01:15:23</span></p>
+
+<p>Array.from(Array(10), (_,i)=&gt;i+1)</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="canto-ostinato-1">Canto Ostinato :</h4>
+
+<p><span class="article-duration">2017-05-27 01:15:35</span></p>
+
+<p>说起来 JS 的 destructuring assignment 不支持嵌套的 pattern 吧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-5">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-05-27 01:16:29</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="canto-ostinato-2">Canto Ostinato :</h4>
+
+<p><span class="article-duration">2017-05-27 01:17:08</span></p>
+
+<p>哦哦</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-6">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-05-27 01:17:14</span></p>
+
+<p>然後如果對不齊的話</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-7">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-05-27 01:17:24</span></p>
+
+<p>我記得還可以[a,&hellip;b] = [1,2,3,4,5]的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="canto-ostinato-3">Canto Ostinato :</h4>
+
+<p><span class="article-duration">2017-05-27 01:17:43</span></p>
+
+<p>那应该是 python 的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="canto-ostinato-4">Canto Ostinato :</h4>
+
+<p><span class="article-duration">2017-05-27 01:17:50</span></p>
+
+<p>可能记混了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-8">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-05-27 01:18:10</span></p>
+
+<p>JS的destructuring assignment還有這種黑魔法</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_23">:</h4>
+
+<p><span class="article-duration">2017-05-27 01:19:31</span></p>
+
+<p>Undefined is not a function？？？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_24">:</h4>
+
+<p><span class="article-duration">2017-05-27 01:20:19</span></p>
+
+<p>@我爱java “ 想起java8的 Object _ = new Object() 的奇葩语法。。。 ”<br />这个是为毛。。。？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-9">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-05-27 01:20:45</span></p>
+
+<p>估計是用來調用一些方法的吧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-10">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-05-27 01:21:13</span></p>
+
+<p>像JS裡jquery和lodash/underscore的變數名慣例</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-11">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-05-27 01:21:21</span></p>
+
+<p>$和_</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-12">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-05-27 01:21:53</span></p>
+
+<p>@ownwaterloo 這個天曉得JS在背後幹啥了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-13">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-05-27 01:22:27</span></p>
+
+<p>destructuring assignment對於不同長度的array沒有問題</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-14">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-05-27 01:22:38</span></p>
+
+<p>不過大概不能一個是value一個是array</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_31">:</h4>
+
+<p><span class="article-duration">2017-05-27 01:24:08</span></p>
+
+<p>Java好像要改成。。。“_”不能作为标识符。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-15">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-05-27 01:25:00</span></p>
+
+<p>我記得_可以的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-16">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-05-27 01:26:45</span></p>
+
+<p>好了 把SCJP課程的筆記翻出來了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-17">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-05-27 01:27:04</span></p>
+
+<p>首字符必須為字母 $或_</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-18">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-05-27 01:27:33</span></p>
+
+<p>隨後可以是數字母 $或_</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-19">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-05-27 01:27:50</span></p>
+
+<p>然後按慣例 reserved keyword不能當變數名</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="f-4">f :</h4>
+
+<p><span class="article-duration">2017-05-27 01:30:55</span></p>
+
+<p>这是一个错误</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_38">:</h4>
+
+<p><span class="article-duration">2017-05-27 01:31:11</span></p>
+
+<p><a href="http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.1">http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.1</a></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="f-5">f :</h4>
+
+<p><span class="article-duration">2017-05-27 01:31:16</span></p>
+
+<p>看文档说java9改了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_40">:</h4>
+
+<p><span class="article-duration">2017-05-27 01:31:20</span></p>
+
+<p>It is a compile-time error if a lambda parameter has the name _ (that is, a single underscore character).</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_41">:</h4>
+
+<p><span class="article-duration">2017-05-27 01:31:35</span></p>
+
+<p>The use of the variable name _ in any context is discouraged. Future versions of the Java programming language may reserve this name as a keyword and/or give it special semantics.</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="f-6">f :</h4>
+
+<p><span class="article-duration">2017-05-27 01:32:00</span></p>
+
+<p>嗯</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_43">:</h4>
+
+<p><span class="article-duration">2017-05-27 01:39:26</span></p>
+
+<p>Java是想干嘛。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="f-7">f :</h4>
+
+<p><span class="article-duration">2017-05-27 01:44:06</span></p>
+
+<p>搞些奇葩出来</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-20">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-05-27 01:44:28</span></p>
+
+<p>例如stream</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="f-8">f :</h4>
+
+<p><span class="article-duration">2017-05-27 01:44:29</span></p>
+
+<p>java9还有jshell。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="f-9">f :</h4>
+
+<p><span class="article-duration">2017-05-27 01:44:41</span></p>
+
+<p>(跑题了)</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-21">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-05-27 01:44:55</span></p>
+
+<p>曾經嘗試用過Stream 結果比C#的Linq還難用233</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="f-10">f :</h4>
+
+<p><span class="article-duration">2017-05-27 01:45:23</span></p>
+
+<p>C#特性比java好</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="f-11">f :</h4>
+
+<p><span class="article-duration">2017-05-27 01:45:48</span></p>
+
+<p>stream骨骼精奇</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="天才麻将魔法少女cosmia">天才麻将魔法少女Cosmia :</h4>
+
+<p><span class="article-duration">2017-05-27 04:23:40</span></p>
+
+<p>+1</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_52">[[[[[[[[[[[[[[[[[[[[[[[[ :</h4>
+
+<p><span class="article-duration">2017-05-27 05:59:47</span></p>
+
+<p>对啊 大家用cabal的时候 使用extra libraries 来build的时候经常会找不到lib 有时是lib坏了 有时是确实没有 。 怎么才能知道一个lib有没有问题呢 比如linux下的 .so 的dynamic shared object，elf格式，怎么才能知道到底能不能被cabal用呢？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-05-27 06:04:31</span></p>
+
+<p>话说有人知道ReadP是啥不？有没有啥paper</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_54">[[[[[[[[[[[[[[[[[[[[[[[[ :</h4>
+
+<p><span class="article-duration">2017-05-27 06:08:39</span></p>
+
+<p>好吧 我用cabal开了verbose3才能看见lib错误 cabal太坑了 明明lib有问题却报missing</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往">随心所往 :</h4>
+
+<p><span class="article-duration">2017-05-27 06:37:55</span></p>
+
+<p>没有听说过ReadP呢，刚刚一搜发现是base库的东西啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-1">随心所往 :</h4>
+
+<p><span class="article-duration">2017-05-27 06:40:23</span></p>
+
+<p>根据作者的名字找了一下，有一遍paper很像</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-2">随心所往 :</h4>
+
+<p><span class="article-duration">2017-05-27 06:40:24</span></p>
+
+<p>FUNCTIONAL PEARL Parallel Parsing Processes</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-3">随心所往 :</h4>
+
+<p><span class="article-duration">2017-05-27 06:40:31</span></p>
+
+<p><a href="https://www.cambridge.org/core/journals/journal-of-functional-programming/article/functional-pearl-parallel-parsing-processes/0AF17481A41F2007752F530F07698139">https://www.cambridge.org/core/journals/journal-of-functional-programming/article/functional-pearl-parallel-parsing-processes/0AF17481A41F2007752F530F07698139</a></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-4">随心所往 :</h4>
+
+<p><span class="article-duration">2017-05-27 06:40:40</span></p>
+
+<p>We derive a combinator library for non-deterministic parsers with a monadic interface, by means of successive refinements starting from a specification. The choice operator of the parser implements a breadth-first search rather than the more common depth-first search, and can be seen as a parallel composition between two parsing processes. The resulting library is simple and efficient for “almost deterministic” grammars, which are typical for programming languages and other computing science applications.</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-5">随心所往 :</h4>
+
+<p><span class="article-duration">2017-05-27 06:41:27</span></p>
+
+<p>不过我下载不了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-6">随心所往 :</h4>
+
+<p><span class="article-duration">2017-05-27 06:42:08</span></p>
+
+<p>@魔理沙 你有账号么?</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-1">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-05-27 06:42:39</span></p>
+
+<p><a href="http://www.cse.chalmers.se/edu/year/2015/course/TDA342_Advanced_Functional_Programming/Papers/parser-claessen.pdf">http://www.cse.chalmers.se/edu/year/2015/course/TDA342_Advanced_Functional_Programming/Papers/parser-claessen.pdf</a></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-7">随心所往 :</h4>
+
+<p><span class="article-duration">2017-05-27 06:43:09</span></p>
+
+<p>谢谢</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<p>以上内容来自 [Haskell函数式编程] QQ 群。</p>
+
+    </div>
+  </article>
+
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "binjoy" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="http://qq.haskellchina.org/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="http://qq.haskellchina.org/images/hugo-logo.png" width="22" height="22"></a>
+            <div style="display:none">
+                <script src="http://s95.cnzz.com/stat.php?id=1261078931&web_id=1261078931" language="JavaScript"></script>
+            </div>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
+

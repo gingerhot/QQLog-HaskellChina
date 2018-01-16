@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.30.2" />
+
+
+<title>QQ Group Log of HaskellChina: 20170208 - QQGroup Log of HaskellChina</title>
+<meta property="og:title" content="QQ Group Log of HaskellChina: 20170208 - QQGroup Log of HaskellChina">
+
+
+
+  
+
+
+
+<meta property="keywords" content ="Haskell,, HaskellChina">
+
+
+
+
+<link rel="stylesheet" href="http://qq.haskellchina.org/css/main.css" media="all">
+<link rel="stylesheet" href="//fonts.lug.ustc.edu.cn/css?family=Merriweather:400|Lato:400,400italic,700">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="http://qq.haskellchina.org/" class="nav-logo">
+    <img src="http://qq.haskellchina.org/images/logo.png" 
+         width="50" 
+         height="50" 
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="https://github.com/gingerhot/QQLog-HaskellChina">GitHub</a></li>
+    
+    <li><a href="/about/">关于</a></li>
+    
+    <li><a href="http://haskellchina.org/">社区首页</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">QQ Group Log of HaskellChina: 20170208</h1>
+
+    
+    <span class="article-date">February 8, 2017</span>
+    
+
+    <div class="article-content">
+      
+
+<h4 id="balternotz">BalterNotz :</h4>
+
+<p><span class="article-duration">2017-02-08 00:37:48</span></p>
+
+<p>(&lt;$) 函数，的实现 (&lt;$) = fmap . const 给人的第一感觉是这样子的：(&lt;$) = \x y -&gt; fmap (const x y) 但，实际是：(&lt;$) = \x y -&gt; fmap (const x) y 这里有点理解不了。GHC是怎样做到的？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="balternotz-1">BalterNotz :</h4>
+
+<p><span class="article-duration">2017-02-08 00:39:18</span></p>
+
+<p>就是根据，fmap的类型 ：： (a-&gt;b) -&gt; f a -&gt; f b，就推断出，const函数应当只应用第一个参数x，而不是将两个参数x y都应用到const上面？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever">forever :</h4>
+
+<p><span class="article-duration">2017-02-08 00:39:26</span></p>
+
+<p>对</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-1">forever :</h4>
+
+<p><span class="article-duration">2017-02-08 00:39:35</span></p>
+
+<p>f x y = (f x) y</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="balternotz-2">BalterNotz :</h4>
+
+<p><span class="article-duration">2017-02-08 00:39:50</span></p>
+
+<p>好神奇</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-2">forever :</h4>
+
+<p><span class="article-duration">2017-02-08 00:40:03</span></p>
+
+<p>并不神奇</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-3">forever :</h4>
+
+<p><span class="article-duration">2017-02-08 00:40:17</span></p>
+
+<p>恰恰很不神奇</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-4">forever :</h4>
+
+<p><span class="article-duration">2017-02-08 00:40:35</span></p>
+
+<p>fmap . const<br />= \x -&gt; fmap (const x)</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-5">forever :</h4>
+
+<p><span class="article-duration">2017-02-08 00:40:48</span></p>
+
+<p>这个对吧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="balternotz-3">BalterNotz :</h4>
+
+<p><span class="article-duration">2017-02-08 00:40:54</span></p>
+
+<p>还需要理解下。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-6">forever :</h4>
+
+<p><span class="article-duration">2017-02-08 00:41:18</span></p>
+
+<p>f . g = \x -&gt; f (g x)</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-7">forever :</h4>
+
+<p><span class="article-duration">2017-02-08 00:41:24</span></p>
+
+<p>这就是 (.) 的定义啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="balternotz-4">BalterNotz :</h4>
+
+<p><span class="article-duration">2017-02-08 00:41:42</span></p>
+
+<p>嗯。！！</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-8">forever :</h4>
+
+<p><span class="article-duration">2017-02-08 00:41:51</span></p>
+
+<p>fmap . const<br />= \x -&gt; fmap (const x)</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="balternotz-5">BalterNotz :</h4>
+
+<p><span class="article-duration">2017-02-08 00:41:52</span></p>
+
+<p>哦。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="balternotz-6">BalterNotz :</h4>
+
+<p><span class="article-duration">2017-02-08 00:41:55</span></p>
+
+<p>理解了。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-9">forever :</h4>
+
+<p><span class="article-duration">2017-02-08 00:42:10</span></p>
+
+<p>理解就行</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="balternotz-7">BalterNotz :</h4>
+
+<p><span class="article-duration">2017-02-08 00:42:17</span></p>
+
+<p>我将 (.) 函数，理解成，接收两个参数了。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="balternotz-8">BalterNotz :</h4>
+
+<p><span class="article-duration">2017-02-08 00:42:36</span></p>
+
+<p>f . g = \x y -&gt; f (g x y) 这个。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-10">forever :</h4>
+
+<p><span class="article-duration">2017-02-08 00:42:39</span></p>
+
+<p>haskell 函数都是接受一个参数返回一个值</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="balternotz-9">BalterNotz :</h4>
+
+<p><span class="article-duration">2017-02-08 00:42:42</span></p>
+
+<p>理解成这样子了。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="balternotz-10">BalterNotz :</h4>
+
+<p><span class="article-duration">2017-02-08 00:42:47</span></p>
+
+<p>了解了。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="饼干">饼干 :</h4>
+
+<p><span class="article-duration">2017-02-08 09:48:24</span></p>
+
+<p>除了这几个，还有其他的么？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="天才麻将魔法少女cosmia">天才麻将魔法少女Cosmia :</h4>
+
+<p><span class="article-duration">2017-02-08 09:53:11</span></p>
+
+<p>有啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="天才麻将魔法少女cosmia-1">天才麻将魔法少女Cosmia :</h4>
+
+<p><span class="article-duration">2017-02-08 09:53:14</span></p>
+
+<p>只是mtl没有</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="天才麻将魔法少女cosmia-2">天才麻将魔法少女Cosmia :</h4>
+
+<p><span class="article-duration">2017-02-08 09:53:18</span></p>
+
+<p>比如LoggerT</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="天才麻将魔法少女cosmia-3">天才麻将魔法少女Cosmia :</h4>
+
+<p><span class="article-duration">2017-02-08 09:53:35</span></p>
+
+<p>ResourceT</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="饼干-1">饼干 :</h4>
+
+<p><span class="article-duration">2017-02-08 09:53:41</span></p>
+
+<p>哪里可以查到捏？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="饼干-2">饼干 :</h4>
+
+<p><span class="article-duration">2017-02-08 09:53:55</span></p>
+
+<p>还是说只要自己展开想象力就好了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="天才麻将魔法少女cosmia-4">天才麻将魔法少女Cosmia :</h4>
+
+<p><span class="article-duration">2017-02-08 09:53:59</span></p>
+
+<p>。。。google？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="饼干-3">饼干 :</h4>
+
+<p><span class="article-duration">2017-02-08 09:54:49</span></p>
+
+<p>[OK]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="寒东">寒东 :</h4>
+
+<p><span class="article-duration">2017-02-08 11:08:37</span></p>
+
+<p>@阅千人而惜知己 今年国内的FP交流你有开始组织嘛</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="balternotz-11">BalterNotz :</h4>
+
+<p><span class="article-duration">2017-02-08 11:31:20</span></p>
+
+<p>可以搞起来</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="lambdaλx-x">Lambdaλx.x :</h4>
+
+<p><span class="article-duration">2017-02-08 11:31:40</span></p>
+
+<p>[强]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="天才麻将魔法少女cosmia-5">天才麻将魔法少女Cosmia :</h4>
+
+<p><span class="article-duration">2017-02-08 11:45:25</span></p>
+
+<p>服</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="mushroom">mushroom :</h4>
+
+<p><span class="article-duration">2017-02-08 12:03:29</span></p>
+
+<p>買買買</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="mushroom-1">mushroom :</h4>
+
+<p><span class="article-duration">2017-02-08 12:03:45</span></p>
+
+<p>百度威武</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="阅千人而惜知己">阅千人而惜知己 :</h4>
+
+<p><span class="article-duration">2017-02-08 12:55:55</span></p>
+
+<p>@寒东 还早，不过可以准备了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="寒东-1">寒东 :</h4>
+
+<p><span class="article-duration">2017-02-08 12:56:52</span></p>
+
+<p>嗯嗯～那到时候联系哈 期待哈哈</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="阅千人而惜知己-1">阅千人而惜知己 :</h4>
+
+<p><span class="article-duration">2017-02-08 12:58:45</span></p>
+
+<p>之前说在上海</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="寒东-2">寒东 :</h4>
+
+<p><span class="article-duration">2017-02-08 12:59:10</span></p>
+
+<p>嗯嗯 @饼干 还让我问你来着</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="阅千人而惜知己-2">阅千人而惜知己 :</h4>
+
+<p><span class="article-duration">2017-02-08 12:59:22</span></p>
+
+<p>饼干提供场地</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="寒东-3">寒东 :</h4>
+
+<p><span class="article-duration">2017-02-08 13:00:18</span></p>
+
+<p>ok～</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="超级班长">超级班长 :</h4>
+
+<p><span class="article-duration">2017-02-08 14:49:15</span></p>
+
+<p>关于lambdabot, 请问一下,有没有windows环境下编译好的可独立运行的版本</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="昵称未知">昵称未知 :</h4>
+
+<p><span class="article-duration">2017-02-08 15:35:30</span></p>
+
+<p>id</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="wuli华华">wuli华华 :</h4>
+
+<p><span class="article-duration">2017-02-08 17:38:43</span></p>
+
+<p>标准库的的实现我怎么越看越迷糊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="wuli华华-1">wuli华华 :</h4>
+
+<p><span class="article-duration">2017-02-08 19:16:12</span></p>
+
+<p>迷之尴尬，没人理我</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="wuli华华-2">wuli华华 :</h4>
+
+<p><span class="article-duration">2017-02-08 19:16:26</span></p>
+
+<p>[系统表情]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="天才麻将魔法少女cosmia-6">天才麻将魔法少女Cosmia :</h4>
+
+<p><span class="article-duration">2017-02-08 19:16:47</span></p>
+
+<p>我以为那是设问句</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="wuli华华-3">wuli华华 :</h4>
+
+<p><span class="article-duration">2017-02-08 19:18:47</span></p>
+
+<p>有没人帮梳理一下。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="wuli华华-4">wuli华华 :</h4>
+
+<p><span class="article-duration">2017-02-08 19:20:07</span></p>
+
+<p>群共享里一个PPT的实现，我觉得很好理解</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="wuli华华-5">wuli华华 :</h4>
+
+<p><span class="article-duration">2017-02-08 19:26:40</span></p>
+
+<p>insert x (y:ys)=(x:y:ys):[y : s| s &lt;- insert x ys]perms [t:ts]=insert x (perms ts)</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="wuli华华-6">wuli华华 :</h4>
+
+<p><span class="article-duration">2017-02-08 19:26:52</span></p>
+
+<p>大概是这样，记不很清</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="天才麻将魔法少女cosmia-7">天才麻将魔法少女Cosmia :</h4>
+
+<p><span class="article-duration">2017-02-08 19:33:33</span></p>
+
+<p>type DList a = [a] -&gt; [a]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<p>以上内容来自 [Haskell函数式编程] QQ 群。</p>
+
+    </div>
+  </article>
+
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "binjoy" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="http://qq.haskellchina.org/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="http://qq.haskellchina.org/images/hugo-logo.png" width="22" height="22"></a>
+            <div style="display:none">
+                <script src="http://s95.cnzz.com/stat.php?id=1261078931&web_id=1261078931" language="JavaScript"></script>
+            </div>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
+

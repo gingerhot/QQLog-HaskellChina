@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.30.2" />
+
+
+<title>QQ Group Log of HaskellChina: 20170408 - QQGroup Log of HaskellChina</title>
+<meta property="og:title" content="QQ Group Log of HaskellChina: 20170408 - QQGroup Log of HaskellChina">
+
+
+
+  
+
+
+
+<meta property="keywords" content ="Haskell,, HaskellChina">
+
+
+
+
+<link rel="stylesheet" href="http://qq.haskellchina.org/css/main.css" media="all">
+<link rel="stylesheet" href="//fonts.lug.ustc.edu.cn/css?family=Merriweather:400|Lato:400,400italic,700">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="http://qq.haskellchina.org/" class="nav-logo">
+    <img src="http://qq.haskellchina.org/images/logo.png" 
+         width="50" 
+         height="50" 
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="https://github.com/gingerhot/QQLog-HaskellChina">GitHub</a></li>
+    
+    <li><a href="/about/">关于</a></li>
+    
+    <li><a href="http://haskellchina.org/">社区首页</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">3 min read</span>
+    
+
+    <h1 class="article-title">QQ Group Log of HaskellChina: 20170408</h1>
+
+    
+    <span class="article-date">April 8, 2017</span>
+    
+
+    <div class="article-content">
+      
+
+<h4 id="天才麻将魔法少女cosmia">天才麻将魔法少女Cosmia :</h4>
+
+<p><span class="article-duration">2017-04-08 10:46:58</span></p>
+
+<p>准确的说，不是getLine每次得到一个String，而是你可以塞给getLine一个String -&gt; IO a的continuation</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="galaxy">galaxy :</h4>
+
+<p><span class="article-duration">2017-04-08 10:47:28</span></p>
+
+<p>是个action?</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="天才麻将魔法少女cosmia-1">天才麻将魔法少女Cosmia :</h4>
+
+<p><span class="article-duration">2017-04-08 10:48:15</span></p>
+
+<p>(&gt;&gt;=) getLine = (String -&gt; IO a) -&gt; IO a</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="天才麻将魔法少女cosmia-2">天才麻将魔法少女Cosmia :</h4>
+
+<p><span class="article-duration">2017-04-08 10:48:50</span></p>
+
+<p>你没法把这个String真正拿出来</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="haskell-v">haskell (=^v^=) :</h4>
+
+<p><span class="article-duration">2017-04-08 10:49:05</span></p>
+
+<p>如果不用io monad ，副作用在哪</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_5">. :</h4>
+
+<p><span class="article-duration">2017-04-08 10:49:07</span></p>
+
+<p>其实这种IO的实现方式就相当于是</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_6">. :</h4>
+
+<p><span class="article-duration">2017-04-08 10:49:17</span></p>
+
+<p>getLine putStrLn一类的相当于指令</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="寒东">寒东 :</h4>
+
+<p><span class="article-duration">2017-04-08 10:49:19</span></p>
+
+<p>IO a 的背后是个 RealWorld -&gt; (a, RealWorld) 的函数 建议翻翻spj的 tackling the awkward squad</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_8">. :</h4>
+
+<p><span class="article-duration">2017-04-08 10:49:23</span></p>
+
+<blockquote>
+<blockquote>
+<p>=相当于指令连起来</p>
+</blockquote>
+</blockquote>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_9">. :</h4>
+
+<p><span class="article-duration">2017-04-08 10:49:30</span></p>
+
+<p>最后一起解释</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_10">. :</h4>
+
+<p><span class="article-duration">2017-04-08 10:49:46</span></p>
+
+<p>同样一个IO String的指令往下pass的String当然可以不一样</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="the-fool">The Fool  :</h4>
+
+<p><span class="article-duration">2017-04-08 10:50:56</span></p>
+
+<p>我知道getLine没有“得到”一个IO String，这里只是为了解释方便&hellip;如果你觉得解释不恰当我承认</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_12">. :</h4>
+
+<p><span class="article-duration">2017-04-08 10:51:28</span></p>
+
+<p>其实IO String字面上就是IO下的一个能pass一个String的计算</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_13">. :</h4>
+
+<p><span class="article-duration">2017-04-08 10:51:32</span></p>
+
+<p>（已知IO是monad↑）</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="the-fool-1">The Fool  :</h4>
+
+<p><span class="article-duration">2017-04-08 10:51:39</span></p>
+
+<p>要一口气讲明白continuation也太困难了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="天才麻将魔法少女cosmia-3">天才麻将魔法少女Cosmia :</h4>
+
+<p><span class="article-duration">2017-04-08 10:51:53</span></p>
+
+<p>你要是觉得getLine这玩意很怪异的话</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="天才麻将魔法少女cosmia-4">天才麻将魔法少女Cosmia :</h4>
+
+<p><span class="article-duration">2017-04-08 10:52:26</span></p>
+
+<p>getLine :: (State [s]) s看看这玩意就好了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="天才麻将魔法少女cosmia-5">天才麻将魔法少女Cosmia :</h4>
+
+<p><span class="article-duration">2017-04-08 10:52:40</span></p>
+
+<p>getLine同样是相同的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="haskell-v-1">haskell (=^v^=) :</h4>
+
+<p><span class="article-duration">2017-04-08 10:54:44</span></p>
+
+<p>对于输入输出，为什么需要io monad,，如果不用会有怎么样的副作用，（提问提的含糊了，见谅）</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="天才麻将魔法少女cosmia-6">天才麻将魔法少女Cosmia :</h4>
+
+<p><span class="article-duration">2017-04-08 10:58:42</span></p>
+
+<p>不是说为什么需要IO monad，而是IO 恰好符合 monad的性质</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="天才麻将魔法少女cosmia-7">天才麻将魔法少女Cosmia :</h4>
+
+<p><span class="article-duration">2017-04-08 10:59:48</span></p>
+
+<p>而IO这个类型可以让很多IO相关的函数仍然保持referential transparency</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_21">. :</h4>
+
+<p><span class="article-duration">2017-04-08 10:59:52</span></p>
+
+<p>反正现在是IO monad了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="天才麻将魔法少女cosmia-8">天才麻将魔法少女Cosmia :</h4>
+
+<p><span class="article-duration">2017-04-08 11:00:18</span></p>
+
+<p>也就是 f x = g b x 所有的f a 都可以等价替换为 g b a</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="天才麻将魔法少女cosmia-9">天才麻将魔法少女Cosmia :</h4>
+
+<p><span class="article-duration">2017-04-08 11:02:46</span></p>
+
+<p><a href="https://wiki.haskell.org/Referential_transparency">https://wiki.haskell.org/Referential_transparency</a></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="再顾">再顾 :</h4>
+
+<p><span class="article-duration">2017-04-08 11:03:29</span></p>
+
+<p>没法catch一个纯函数</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_25">. :</h4>
+
+<p><span class="article-duration">2017-04-08 11:03:58</span></p>
+
+<p>不是 应该说catch本身就是被实现的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_26">. :</h4>
+
+<p><span class="article-duration">2017-04-08 11:04:18</span></p>
+
+<p>在hs这种&rdquo;流程&rdquo;也是可以表达出来的一种东西的情况下</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="the-fool-2">The Fool  :</h4>
+
+<p><span class="article-duration">2017-04-08 11:18:19</span></p>
+
+<p>原理和callcc一样吧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="the-fool-3">The Fool  :</h4>
+
+<p><span class="article-duration">2017-04-08 11:18:41</span></p>
+
+<p>不清楚haskell的错误处理怎么实现的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="举个栗子">举个栗子 :</h4>
+
+<p><span class="article-duration">2017-04-08 11:24:15</span></p>
+
+<p>所以带副作用的都可以理解为state monad?</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_30">. :</h4>
+
+<p><span class="article-duration">2017-04-08 11:24:27</span></p>
+
+<p>可以这么实现(</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever">forever :</h4>
+
+<p><span class="article-duration">2017-04-08 12:25:28</span></p>
+
+<p>IO 的各种函数本身没有副作用</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-1">forever :</h4>
+
+<p><span class="article-duration">2017-04-08 12:26:48</span></p>
+
+<p>就像 ls 不是文件列表而是个程序一样，print 也不会有输出什么东西的副作用</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-2">forever :</h4>
+
+<p><span class="article-duration">2017-04-08 12:30:20</span></p>
+
+<p>let x = print 2<br />in x &gt;&gt; x<br />会输出 1 次还是 2 次？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-3">forever :</h4>
+
+<p><span class="article-duration">2017-04-08 12:30:37</span></p>
+
+<p>^ 想想这个</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="某个人">某个人 :</h4>
+
+<p><span class="article-duration">2017-04-08 12:42:02</span></p>
+
+<p>看到有fp聚会</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="某个人-1">某个人 :</h4>
+
+<p><span class="article-duration">2017-04-08 12:43:18</span></p>
+
+<p>@阅千人而惜知己 请问，430聚会是全天的吗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_37">▽ :</h4>
+
+<p><span class="article-duration">2017-04-08 13:42:40</span></p>
+
+<p>++ 怎么实现的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_38">▽ :</h4>
+
+<p><span class="article-duration">2017-04-08 13:43:01</span></p>
+
+<p>总是报不完备</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_39">▽ :</h4>
+
+<p><span class="article-duration">2017-04-08 13:43:25</span></p>
+
+<p>看文档写的一样</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_40">▽ :</h4>
+
+<p><span class="article-duration">2017-04-08 13:43:28</span></p>
+
+<p>还是不行</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-4">forever :</h4>
+
+<p><span class="article-duration">2017-04-08 13:43:41</span></p>
+
+<p><a href="https://hackage.haskell.org/package/base-4.9.1.0/docs/Data-List.html#v:-43--43-">https://hackage.haskell.org/package/base-4.9.1.0/docs/Data-List.html#v:-43--43-</a></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-5">forever :</h4>
+
+<p><span class="article-duration">2017-04-08 13:43:48</span></p>
+
+<p>@▽  把代码发上来</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-6">forever :</h4>
+
+<p><span class="article-duration">2017-04-08 13:46:00</span></p>
+
+<p>@▽ 在</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-7">forever :</h4>
+
+<p><span class="article-duration">2017-04-08 13:46:08</span></p>
+
+<p>在 GHCi 里就不能这么些</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-8">forever :</h4>
+
+<p><span class="article-duration">2017-04-08 13:46:10</span></p>
+
+<p>写</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_46">▽ :</h4>
+
+<p><span class="article-duration">2017-04-08 13:46:24</span></p>
+
+<p>那该怎么写</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_47">. :</h4>
+
+<p><span class="article-duration">2017-04-08 13:46:32</span></p>
+
+<p>要么多行 要么分号</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_48">. :</h4>
+
+<p><span class="article-duration">2017-04-08 13:46:40</span></p>
+
+<p>要么写文件里面load进来</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-9">forever :</h4>
+
+<p><span class="article-duration">2017-04-08 13:46:45</span></p>
+
+<p>@▽ :{let (++) [] ys = ys    (++) (x : xs) ys = &hellip;:}</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_50">▽ :</h4>
+
+<p><span class="article-duration">2017-04-08 13:46:50</span></p>
+
+<p>额，这个意思啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-10">forever :</h4>
+
+<p><span class="article-duration">2017-04-08 13:47:00</span></p>
+
+<p>或者 let (++) [] ys = ys; (++) &hellip; = &hellip;</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_52">▽ :</h4>
+
+<p><span class="article-duration">2017-04-08 13:47:00</span></p>
+
+<p>懂了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_53">▽ :</h4>
+
+<p><span class="article-duration">2017-04-08 13:47:02</span></p>
+
+<p>谢谢</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="今天休息">☺今天休息 :</h4>
+
+<p><span class="article-duration">2017-04-08 14:58:41</span></p>
+
+<p>有人用spacemacs么?  我发现个诡异的问题..</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pengpengche">pengpengche :</h4>
+
+<p><span class="article-duration">2017-04-08 15:18:00</span></p>
+
+<p>是不是被替换成emoji然后自库里没这个字符- -</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="阅千人而惜知己">阅千人而惜知己 :</h4>
+
+<p><span class="article-duration">2017-04-08 16:02:13</span></p>
+
+<p>@某个人 是全天</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="rational">rational :</h4>
+
+<p><span class="article-duration">2017-04-08 16:53:45</span></p>
+
+<p>@阅千人而惜知己 只要报名就可以吗，我报名了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="阅千人而惜知己-1">阅千人而惜知己 :</h4>
+
+<p><span class="article-duration">2017-04-08 16:53:59</span></p>
+
+<p>@rational 理论上是的。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="rational-1">rational :</h4>
+
+<p><span class="article-duration">2017-04-08 16:54:28</span></p>
+
+<p>@阅千人而惜知己 哈哈，到时直接去就可以是吧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_60">[[[[[[[[[[[[[[[[[[[[[[[[ :</h4>
+
+<p><span class="article-duration">2017-04-08 17:29:54</span></p>
+
+<p>怎么实现Int的不溢出加法 普通加法超过maxBound就成负数了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_61">[[[[[[[[[[[[[[[[[[[[[[[[ :</h4>
+
+<p><span class="article-duration">2017-04-08 17:30:54</span></p>
+
+<p>是要加一步判断是否小于两参与加法的数字吗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="请问您今天要来点兔子吗">请问您今天要来点兔子吗？ :</h4>
+
+<p><span class="article-duration">2017-04-08 17:46:01</span></p>
+
+<p><a href="http://hg.openjdk.java.net/jdk7/jdk7/jdk/file/00cd9dc3c2b5/src/share/classes/java/math/BigInteger.java">http://hg.openjdk.java.net/jdk7/jdk7/jdk/file/00cd9dc3c2b5/src/share/classes/java/math/BigInteger.java</a></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="今天休息-1">☺今天休息 :</h4>
+
+<p><span class="article-duration">2017-04-08 18:01:15</span></p>
+
+<p>@[[[[[[[[[[[[[[[[[[[[[[[[ 关键是超maxBound的时候你打算返回什么东西&hellip;  如果还想返回正确结果那自然就需要实现高精度整数了.</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="f-minor">F# Minor :</h4>
+
+<p><span class="article-duration">2017-04-08 18:03:04</span></p>
+
+<p>他需要大整数</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-11">forever :</h4>
+
+<p><span class="article-duration">2017-04-08 18:24:25</span></p>
+
+<p>那就 Integer 呗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_66">[[[[[[[[[[[[[[[[[[[[[[[[ :</h4>
+
+<p><span class="article-duration">2017-04-08 20:00:42</span></p>
+
+<p>ok 多谢各位 不过 我是要溢出之后就返回maxBound 看来只能加判断了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="chy">chy :</h4>
+
+<p><span class="article-duration">2017-04-08 20:35:39</span></p>
+
+<p>问一下，大家有多少用过Nix或NixOS的？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-04-08 20:40:29</span></p>
+
+<p>需要Nat</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="任飘零-frank">任飘零-Frank :</h4>
+
+<p><span class="article-duration">2017-04-08 21:48:14</span></p>
+
+<p>@Yu Changyuan 　我有了解NixOS, 不过没有机会用……还没用……日本的公司也都用CentOS</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_70">[[[[[[[[[[[[[[[[[[[[[[[[ :</h4>
+
+<p><span class="article-duration">2017-04-08 22:12:51</span></p>
+
+<p>@Yu Changyuan 使用nix使用nixos差别大吗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="chy-1">chy :</h4>
+
+<p><span class="article-duration">2017-04-08 22:17:36</span></p>
+
+<p>还是有差别的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="chy-2">chy :</h4>
+
+<p><span class="article-duration">2017-04-08 22:17:57</span></p>
+
+<p>nix只管包，nixos管整个系统</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<p>以上内容来自 [Haskell函数式编程] QQ 群。</p>
+
+    </div>
+  </article>
+
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "binjoy" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="http://qq.haskellchina.org/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="http://qq.haskellchina.org/images/hugo-logo.png" width="22" height="22"></a>
+            <div style="display:none">
+                <script src="http://s95.cnzz.com/stat.php?id=1261078931&web_id=1261078931" language="JavaScript"></script>
+            </div>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
+

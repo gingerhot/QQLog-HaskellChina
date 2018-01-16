@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.30.2" />
+
+
+<title>QQ Group Log of HaskellChina: 20170412 - QQGroup Log of HaskellChina</title>
+<meta property="og:title" content="QQ Group Log of HaskellChina: 20170412 - QQGroup Log of HaskellChina">
+
+
+
+  
+
+
+
+<meta property="keywords" content ="Haskell,, HaskellChina">
+
+
+
+
+<link rel="stylesheet" href="http://qq.haskellchina.org/css/main.css" media="all">
+<link rel="stylesheet" href="//fonts.lug.ustc.edu.cn/css?family=Merriweather:400|Lato:400,400italic,700">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="http://qq.haskellchina.org/" class="nav-logo">
+    <img src="http://qq.haskellchina.org/images/logo.png" 
+         width="50" 
+         height="50" 
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="https://github.com/gingerhot/QQLog-HaskellChina">GitHub</a></li>
+    
+    <li><a href="/about/">关于</a></li>
+    
+    <li><a href="http://haskellchina.org/">社区首页</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">QQ Group Log of HaskellChina: 20170412</h1>
+
+    
+    <span class="article-date">April 12, 2017</span>
+    
+
+    <div class="article-content">
+      
+
+<h4 id="the-fool">The Fool  :</h4>
+
+<p><span class="article-duration">2017-04-12 20:40:34</span></p>
+
+<p>所以Racket引入了方括号(</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_1">:</h4>
+
+<p><span class="article-duration">2017-04-12 20:40:39</span></p>
+
+<p><a href="http://www.paulgraham.com/arcll1.html">http://www.paulgraham.com/arcll1.html</a></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_2">:</h4>
+
+<p><span class="article-duration">2017-04-12 20:40:57</span></p>
+
+<p>McCarthy,<br />who wanted to keep his axioms to a minimum, buried<br />progn within cond.  That worked for his examples, but   <br />for programming in general you soon find you need a<br />progn separate from the implicit progn of cond.</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_3">:</h4>
+
+<p><span class="article-duration">2017-04-12 20:41:18</span></p>
+
+<p>Having an implicit progn in cond means every cond<br />clause has to have an extra pair of parentheses.<br />McCarthy said later that he thought he had gotten cond wrong,<br />that it used too many parentheses, and this may be<br />what he meant.</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_4">:</h4>
+
+<p><span class="article-duration">2017-04-12 20:42:03</span></p>
+
+<p>他自己都觉得不应该这样了。。。<br />还是不要纠结什么几公理了。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="the-fool-1">The Fool  :</h4>
+
+<p><span class="article-duration">2017-04-12 20:42:36</span></p>
+
+<p>我觉得用方括号区分隐式的progn其实是个好方法&hellip;</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_6">:</h4>
+
+<p><span class="article-duration">2017-04-12 20:43:17</span></p>
+
+<p>嗯？Racket的方括号有这个作用？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="the-fool-2">The Fool  :</h4>
+
+<p><span class="article-duration">2017-04-12 20:43:45</span></p>
+
+<p>不完全是这样</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="yaegaki-erika">Yaegaki Erika :</h4>
+
+<p><span class="article-duration">2017-04-12 20:44:59</span></p>
+
+<p>不是 只是看上去而已</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="the-fool-3">The Fool  :</h4>
+
+<p><span class="article-duration">2017-04-12 20:44:59</span></p>
+
+<p>比如let也带方括号，但let的每个变量是不带顺序的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_10">:</h4>
+
+<p><span class="article-duration">2017-04-12 20:45:36</span></p>
+
+<p>方括号不是和圆括号一个作用吗？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_11">:</h4>
+
+<p><span class="article-duration">2017-04-12 20:45:50</span></p>
+
+<p>顺不顺序是let自己说了算</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="the-fool-4">The Fool  :</h4>
+
+<p><span class="article-duration">2017-04-12 20:46:28</span></p>
+
+<p>是的，但是遇到&rdquo;非正交&rdquo;设计的时候，方括号就很有必要</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_13">:</h4>
+
+<p><span class="article-duration">2017-04-12 20:47:15</span></p>
+
+<p>没懂。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页">第七页 :</h4>
+
+<p><span class="article-duration">2017-04-12 20:48:55</span></p>
+
+<p>let xxx in let yxx in let zxx in x + y + z  这样let不是有顺序吗？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="the-fool-5">The Fool  :</h4>
+
+<p><span class="article-duration">2017-04-12 20:49:53</span></p>
+
+<p>这是因为创建了n层的新环境&hellip;</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="the-fool-6">The Fool  :</h4>
+
+<p><span class="article-duration">2017-04-12 20:49:58</span></p>
+
+<p>Square brackets in the grammar indicate a parenthesized sequence of forms</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="the-fool-7">The Fool  :</h4>
+
+<p><span class="article-duration">2017-04-12 20:50:10</span></p>
+
+<p>racket自己的文档是这么说的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_18">:</h4>
+
+<p><span class="article-duration">2017-04-12 20:56:10</span></p>
+
+<p>感觉它这个是在说racket的文档里用的一种约定。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="the-fool-8">The Fool  :</h4>
+
+<p><span class="article-duration">2017-04-12 21:00:32</span></p>
+
+<p>虽然方括号没有特殊语义，但它告诉了你哪些括号是平行的(</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="yaegaki-erika-1">Yaegaki Erika :</h4>
+
+<p><span class="article-duration">2017-04-12 21:01:16</span></p>
+
+<p>把它当作另一种意义上的彩虹括号吧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="the-fool-9">The Fool  :</h4>
+
+<p><span class="article-duration">2017-04-12 21:11:48</span></p>
+
+<p>顺便(let ((〈var〉 〈exp〉)) 〈body〉)难道不是((lambda (〈var〉) 〈body〉) 〈exp〉)的宏怎么就带顺序了&hellip;</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="the-fool-10">The Fool  :</h4>
+
+<p><span class="article-duration">2017-04-12 21:12:39</span></p>
+
+<p>求解</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_23">:</h4>
+
+<p><span class="article-duration">2017-04-12 21:12:56</span></p>
+
+<p>let没顺序</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="yaegaki-erika-2">Yaegaki Erika :</h4>
+
+<p><span class="article-duration">2017-04-12 21:13:06</span></p>
+
+<p>let*有</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_25">:</h4>
+
+<p><span class="article-duration">2017-04-12 21:13:52</span></p>
+
+<p>我的意思是，let里面用方括号，其实和圆括号一样。<br />没顺序是let本身就这么规定的，而不是方括号带来的。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_26">:</h4>
+
+<p><span class="article-duration">2017-04-12 21:14:25</span></p>
+
+<p>用圆和用方，它都没顺序。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="the-fool-11">The Fool  :</h4>
+
+<p><span class="article-duration">2017-04-12 21:15:11</span></p>
+
+<p>是啊&hellip;<br />方括号就是告诉你后面要有一堆格式一样的列表出现了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="the-fool-12">The Fool  :</h4>
+
+<p><span class="article-duration">2017-04-12 21:15:48</span></p>
+
+<p>这并不是racket的语法，我只是觉得如果写一个新方言用方括号规定语义挺好</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="御坂黒子">御坂黒子 :</h4>
+
+<p><span class="article-duration">2017-04-12 21:16:31</span></p>
+
+<p>arc好像就满足你的要求</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_30">:</h4>
+
+<p><span class="article-duration">2017-04-12 21:17:15</span></p>
+
+<p>Clojure。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_31">:</h4>
+
+<p><span class="article-duration">2017-04-12 21:17:34</span></p>
+
+<p>不单是新语法。。。是新data type。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="the-fool-13">The Fool  :</h4>
+
+<p><span class="article-duration">2017-04-12 21:17:44</span></p>
+
+<p>没用过Clojure (</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_33">:</h4>
+
+<p><span class="article-duration">2017-04-12 21:18:07</span></p>
+
+<p>Arc感觉已经没人玩了。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_34">:</h4>
+
+<p><span class="article-duration">2017-04-12 21:18:48</span></p>
+
+<p>作者他自己都“Just use Clojure.”</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="the-fool-14">The Fool  :</h4>
+
+<p><span class="article-duration">2017-04-12 21:21:00</span></p>
+
+<p>Arc毕竟神教教主的语言(</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_36">:</h4>
+
+<p><span class="article-duration">2017-04-12 21:21:34</span></p>
+
+<p>如果继续搞下去的话。。。应该有很多人捧。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_37">:</h4>
+
+<p><span class="article-duration">2017-04-12 21:21:47</span></p>
+
+<p>可惜了。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="the-fool-15">The Fool  :</h4>
+
+<p><span class="article-duration">2017-04-12 21:27:19</span></p>
+
+<p>连Perl都有人用那大概&hellip;S看起来难看也不是个问题</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="the-fool-16">The Fool  :</h4>
+
+<p><span class="article-duration">2017-04-12 21:28:10</span></p>
+
+<p>反而是千千万懒得写parser的人的福音()</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="今天休息">☺今天休息 :</h4>
+
+<p><span class="article-duration">2017-04-12 23:07:02</span></p>
+
+<p>哈喽, 各位大大, 谁能解释一下这段?我看了一遍这个动画, 没太看懂, Idris怎么来的?</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="今天休息-1">☺今天休息 :</h4>
+
+<p><span class="article-duration">2017-04-12 23:07:12</span></p>
+
+<p>Idris这个名字, 怎么来的?</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="the-fool-17">The Fool  :</h4>
+
+<p><span class="article-duration">2017-04-12 23:53:21</span></p>
+
+<p>英国老动画里的一条威尔士龙(</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<p>以上内容来自 [Haskell函数式编程] QQ 群。</p>
+
+    </div>
+  </article>
+
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "binjoy" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="http://qq.haskellchina.org/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="http://qq.haskellchina.org/images/hugo-logo.png" width="22" height="22"></a>
+            <div style="display:none">
+                <script src="http://s95.cnzz.com/stat.php?id=1261078931&web_id=1261078931" language="JavaScript"></script>
+            </div>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
+

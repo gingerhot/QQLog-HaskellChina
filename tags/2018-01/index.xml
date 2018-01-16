@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2018 01 on QQGroup Log of HaskellChina</title>
+    <link>http://qq.haskellchina.org/tags/2018-01/</link>
+    <description>Recent content in 2018 01 on QQGroup Log of HaskellChina</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jan 2018 00:55:32 +0800</lastBuildDate>
+    
+	<atom:link href="http://qq.haskellchina.org/tags/2018-01/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20180101</title>
+      <link>http://qq.haskellchina.org/2018/01/01/qq-group-log-of-haskellchina-20180101/</link>
+      <pubDate>Mon, 01 Jan 2018 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2018/01/01/qq-group-log-of-haskellchina-20180101/</guid>
+      <description>½arj : 2018-01-01 00:23:54
+有一点我不是很懂,为什么main是 IO ()
+½arj : 2018-01-01 00:24:12
+按常理想不应该是IO Int32嘛
+Xyzt Toe : 2018-01-01 00:24:36
+？？？
+½arj : 2018-01-01 00:25:40
+我知道System.Exit有exitWith
+Narc : 2018-01-01 00:25:43
+C 语言？
+½arj : 2018-01-01 00:25:48
+但是想想就感觉怪怪的
+½arj : 2018-01-01 00:26:06
+更重要的是Prelude里没有exitWith
+FTS : 2018-01-01 00:59:21
+https://www.haskell.org/onlinereport/haskell2010/haskellch5.html#x11-980005
+FTS : 2018-01-01 01:01:12
+https://stackoverflow.com/q/22458056 Why is the type of “Main.main”, “IO ()” and not “IO a”?
+以上内容来自 [Haskell函数式编程] QQ 群。</description>
+    </item>
+    
+  </channel>
+</rss>

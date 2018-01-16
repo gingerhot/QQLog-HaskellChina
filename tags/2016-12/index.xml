@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2016 12 on QQGroup Log of HaskellChina</title>
+    <link>http://qq.haskellchina.org/tags/2016-12/</link>
+    <description>Recent content in 2016 12 on QQGroup Log of HaskellChina</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 31 Dec 2016 00:55:32 +0800</lastBuildDate>
+    
+	<atom:link href="http://qq.haskellchina.org/tags/2016-12/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20161231</title>
+      <link>http://qq.haskellchina.org/2016/12/31/qq-group-log-of-haskellchina-20161231/</link>
+      <pubDate>Sat, 31 Dec 2016 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2016/12/31/qq-group-log-of-haskellchina-20161231/</guid>
+      <description>Hulk : 2016-12-31 12:45:08 大家好，我是Hulk。
+Hulk : 2016-12-31 12:45:50 大家好，新人刚开始接触haskell，请多多指教
+Matrixbirds : 2016-12-31 12:58:10 欢迎萌新
+吃睡玩三连击 : 2016-12-31 13:00:13 欢迎~
+Hulk : 2016-12-31 13:24:55 windows系统，cabal安装ghc mod错误
+Hulk : 2016-12-31 13:25:35 要怎么继续
+Hulk : 2016-12-31 13:26:25 哎…不是这个，怎么变又回去了
+\ : 2016-12-31 13:27:02 装msys
+吃睡玩三连击 : 2016-12-31 13:27:10 看输出好像是cabal install ghc-mod这个指令不支持windows的CMD，下个Cygwin试试
+Hulk : 2016-12-31 13:27:15 这个问题我已经解决了
+Hulk : 2016-12-31 13:27:25 然后出了新问题
+Hulk : 2016-12-31 13:27:35 不知道怎么又回去了
+吃睡玩三连击 : 2016-12-31 13:27:55 新问题是什么？
+Hulk : 2016-12-31 13:28:16 我调一下，之后拍个照</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20161230</title>
+      <link>http://qq.haskellchina.org/2016/12/30/qq-group-log-of-haskellchina-20161230/</link>
+      <pubDate>Fri, 30 Dec 2016 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2016/12/30/qq-group-log-of-haskellchina-20161230/</guid>
+      <description>老农 : 2016-12-30 10:07:51 这图不是p的？[流汗]
+forever : 2016-12-30 10:09:42 不是
+forever : 2016-12-30 10:10:04 他们好像在玩一些有趣的事情
+☆飞翔的蘑菇 : 2016-12-30 10:10:30 是真的
+饼干 : 2016-12-30 12:30:24 为啥这两个地方不一样啊
+饼干 : 2016-12-30 12:31:13 是因为这个？
+forever : 2016-12-30 12:35:10 lambdabot 功能特别杂
+橙月雪离子 : 2016-12-30 12:35:15 [系统表情]
+魔理沙 : 2016-12-30 12:37:08 实时map上imgur?
+forever : 2016-12-30 12:43:51 test[强][强]
+PPAP ✏️🍍🍎✏️ : 2016-12-30 13:01:36 目前是因为 Perl 这个模块完全接收不到图片消息，不知道是腾讯的接口还是模块本身的问题，还没深究～
+PPAP ✏️🍍🍎✏️ : 2016-12-30 13:02:29 所以还没有办法发送 [图片] 这种提示消息
+第七页 : 2016-12-30 13:24:18 看了一个 IO Monad 的定义 type IO a = World -&amp;gt; (a,World) 这个里面的类型构造器是什么？</description>
+    </item>
+    
+  </channel>
+</rss>

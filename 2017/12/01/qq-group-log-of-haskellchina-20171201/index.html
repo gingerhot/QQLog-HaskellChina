@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.30.2" />
+
+
+<title>QQ Group Log of HaskellChina: 20171201 - QQGroup Log of HaskellChina</title>
+<meta property="og:title" content="QQ Group Log of HaskellChina: 20171201 - QQGroup Log of HaskellChina">
+
+
+
+  
+
+
+
+<meta property="keywords" content ="Haskell,, HaskellChina">
+
+
+
+
+<link rel="stylesheet" href="http://qq.haskellchina.org/css/main.css" media="all">
+<link rel="stylesheet" href="//fonts.lug.ustc.edu.cn/css?family=Merriweather:400|Lato:400,400italic,700">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="http://qq.haskellchina.org/" class="nav-logo">
+    <img src="http://qq.haskellchina.org/images/logo.png" 
+         width="50" 
+         height="50" 
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="https://github.com/gingerhot/QQLog-HaskellChina">GitHub</a></li>
+    
+    <li><a href="/about/">关于</a></li>
+    
+    <li><a href="http://haskellchina.org/">社区首页</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">QQ Group Log of HaskellChina: 20171201</h1>
+
+    
+    <span class="article-date">December 1, 2017</span>
+    
+
+    <div class="article-content">
+      
+
+<h4 id="fts">FTS :</h4>
+
+<p><span class="article-duration">2017-12-01 15:08:15</span></p>
+
+<p><a href="https://savanni.luminescent-dreams.com/page/production-haskell">https://savanni.luminescent-dreams.com/page/production-haskell</a></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="neo">Neo :</h4>
+
+<p><span class="article-duration">2017-12-01 15:12:48</span></p>
+
+<p>所以代码呢？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="fts-1">FTS :</h4>
+
+<p><span class="article-duration">2017-12-01 15:17:19</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="fts-2">FTS :</h4>
+
+<p><span class="article-duration">2017-12-01 15:18:15</span></p>
+
+<p>下面的文章挺有意思的…主要探究monad stack的问题…</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="neo-1">Neo :</h4>
+
+<p><span class="article-duration">2017-12-01 15:20:40</span></p>
+
+<p>这个stack是指技术栈，工具箱，他认为必须要知道的几个monad让开发更快进行</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="neo-2">Neo :</h4>
+
+<p><span class="article-duration">2017-12-01 15:21:10</span></p>
+
+<p>然鹅，很多人卡在不是哪个栈的问题……而是概念</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-01 15:21:51</span></p>
+
+<p>这个 monad stack 太复杂了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-1">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-01 15:22:15</span></p>
+
+<p>一个 ReaderT IO 应该能搞定一切。。包括 logging 之类的额外 effect</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-2">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-01 15:23:14</span></p>
+
+<p>实际上很多应用 ReaderT 也只会传一个全局的 comtext，所以。。直接用全局变量好像也没啥问题。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="fts-3">FTS :</h4>
+
+<p><span class="article-duration">2017-12-01 15:25:06</span></p>
+
+<p><br />今天/r/haskell 突然就出了两篇探索这方面的&hellip;</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="fts-4">FTS :</h4>
+
+<p><span class="article-duration">2017-12-01 15:26:24</span></p>
+
+<p>我觉得全局变量也没啥问题…erlang就是这么搞的…<a href="http://erlang.org/doc/design_principles/applications.html#id81816">http://erlang.org/doc/design_principles/applications.html#id81816</a></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="fts-5">FTS :</h4>
+
+<p><span class="article-duration">2017-12-01 15:26:35</span></p>
+
+<p>不过Erlang有application这种namespace…</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-3">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-01 15:43:17</span></p>
+
+<p>用 RecordWildCards 扩展可以搞 poor man&rsquo;s namespace（小声</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="neo-3">Neo :</h4>
+
+<p><span class="article-duration">2017-12-01 15:45:27</span></p>
+
+<p>……</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-4">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-01 15:48:40</span></p>
+
+<p>至于 backpack。。很惭愧我还没用上（</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="fts-6">FTS :</h4>
+
+<p><span class="article-duration">2017-12-01 16:09:15</span></p>
+
+<p>昨天在想用backpack重整化整个 haskell ecosystem&hellip;</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-01 16:34:21</span></p>
+
+<p>[惊讶]然鹅stack不资瓷这玩意</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-5">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-01 16:36:02</span></p>
+
+<p>快了，beta 版已经依赖 Cabal 2 了，backpack 支持在做</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-1">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-01 16:39:02</span></p>
+
+<p>[惊讶]backpack看得我一头雾水。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-2">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-01 16:39:18</span></p>
+
+<p>好像搞这玩意需要一堆的package。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-6">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-01 16:39:38</span></p>
+
+<p>不需要啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-7">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-01 16:39:49</span></p>
+
+<p>ghc 和 Cabal 内置特性</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-3">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-01 16:40:03</span></p>
+
+<p>[惊讶]我找找那篇文章</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-4">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-01 16:40:19</span></p>
+
+<p>好像要用这个功能最少要4个package</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-5">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-01 16:42:20</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-6">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-01 16:42:22</span></p>
+
+<p>这个</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-7">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-01 16:43:17</span></p>
+
+<p>好像一定要搞一个mixin package，而不能直接在regex这个package里面写一个Str来用</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-8">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-01 16:43:27</span></p>
+
+<p><a href="http://blog.ezyang.com/2017/01/try-backpack-cabal-packages/">http://blog.ezyang.com/2017/01/try-backpack-cabal-packages/</a></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="fts-7">FTS :</h4>
+
+<p><span class="article-duration">2017-12-01 18:58:11</span></p>
+
+<p>backpack 至少要两个吧 一个接口包, 一个实现包</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-9">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-01 19:01:56</span></p>
+
+<p>并不是</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-10">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-01 19:01:59</span></p>
+
+<p>至少三个</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="fts-8">FTS :</h4>
+
+<p><span class="article-duration">2017-12-01 19:02:06</span></p>
+
+<p>怎么说</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-11">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-01 19:02:07</span></p>
+
+<p>我也不懂为啥</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-12">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-01 19:02:37</span></p>
+
+<p>一个是infinite package，一个实现signature，一个依赖前面两个</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-13">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-01 19:02:53</span></p>
+
+<p>当然也可能是我没搞懂</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_35">_ :</h4>
+
+<p><span class="article-duration">2017-12-01 20:03:11</span></p>
+
+<p>backpack对大项目有什么用吗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-14">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-01 20:03:32</span></p>
+
+<p>[惊讶]暂时不知道</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-15">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-01 20:04:09</span></p>
+
+<p>个人感觉有点像是C艹的抽象类</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_38">_ :</h4>
+
+<p><span class="article-duration">2017-12-01 20:05:27</span></p>
+
+<p>unit 就是好几个module放一起嘛</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_39">_ :</h4>
+
+<p><span class="article-duration">2017-12-01 20:06:06</span></p>
+
+<p>hs的module对应namespace 下意识里</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="fts-9">FTS :</h4>
+
+<p><span class="article-duration">2017-12-01 20:06:40</span></p>
+
+<p>为什么要考虑对大项目有什么作用</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_41">_ :</h4>
+
+<p><span class="article-duration">2017-12-01 20:11:13</span></p>
+
+<p>因为已知可把很多小文件用unit合写成一个 （单纯搞不懂motivation</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="fts-10">FTS :</h4>
+
+<p><span class="article-duration">2017-12-01 20:14:07</span></p>
+
+<p>你确定是&rdquo;合成&rdquo;?</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-8">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-01 20:22:44</span></p>
+
+<p>不知道用 backpack 可不可以模拟 scala 的 path-dependent type</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_44">_ :</h4>
+
+<p><span class="article-duration">2017-12-01 20:33:15</span></p>
+
+<p>记得spj采访问hs的设计遗憾时不是说想要把module设计成有输入有导出的函数类似的样子 类似 (ff1,ff2)=&gt;module A (f1,f2,f3)</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-9">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-01 20:38:31</span></p>
+
+<p>这就接近 ML 的 functor 了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-10">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-01 20:39:09</span></p>
+
+<p>而且这么设计的话可以简化很多复杂的 monad transformer stack</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="御坂黒子">御坂黒子 :</h4>
+
+<p><span class="article-duration">2017-12-01 20:43:05</span></p>
+
+<p>这就是first class module，racket里的unit</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-11">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-01 20:45:18</span></p>
+
+<p>不是 first class 的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-12">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-01 20:45:31</span></p>
+
+<p>first class 要 1ML 的才能达到要求</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-13">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-01 20:45:57</span></p>
+
+<p>但哪怕不是 first class 也已经很方便了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-16">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-01 20:48:10</span></p>
+
+<p>[惊讶]不是就是ml的functor吗？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_52">_ :</h4>
+
+<p><span class="article-duration">2017-12-01 20:49:25</span></p>
+
+<p>ml指sml？还是ocaml</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_53">&rdquo;&rsquo; ⃢・ ・ ⃢&rdquo;&rsquo; :</h4>
+
+<p><span class="article-duration">2017-12-01 20:51:12</span></p>
+
+<p>[惊讶]都有Functor啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_54">_ :</h4>
+
+<p><span class="article-duration">2017-12-01 20:54:18</span></p>
+
+<p>哦哦 这样啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="neo-4">Neo :</h4>
+
+<p><span class="article-duration">2017-12-01 22:17:46</span></p>
+
+<p>新朋友终于调试到正确答案了，请介绍一下自己</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="三七二十">三七二十‭ :</h4>
+
+<p><span class="article-duration">2017-12-01 22:18:41</span></p>
+
+<p>haha</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<p>以上内容来自 [<a href="http://qq.haskellchina.org/about/">Haskell函数式编程</a>] QQ 群。</p>
+
+    </div>
+  </article>
+
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "binjoy" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="http://qq.haskellchina.org/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="http://qq.haskellchina.org/images/hugo-logo.png" width="22" height="22"></a>
+            <div style="display:none">
+                <script src="http://s95.cnzz.com/stat.php?id=1261078931&web_id=1261078931" language="JavaScript"></script>
+            </div>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
+

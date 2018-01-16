@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.30.2" />
+
+
+<title>QQ Group Log of HaskellChina: 20170330 - QQGroup Log of HaskellChina</title>
+<meta property="og:title" content="QQ Group Log of HaskellChina: 20170330 - QQGroup Log of HaskellChina">
+
+
+
+  
+
+
+
+<meta property="keywords" content ="Haskell,, HaskellChina">
+
+
+
+
+<link rel="stylesheet" href="http://qq.haskellchina.org/css/main.css" media="all">
+<link rel="stylesheet" href="//fonts.lug.ustc.edu.cn/css?family=Merriweather:400|Lato:400,400italic,700">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="http://qq.haskellchina.org/" class="nav-logo">
+    <img src="http://qq.haskellchina.org/images/logo.png" 
+         width="50" 
+         height="50" 
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="https://github.com/gingerhot/QQLog-HaskellChina">GitHub</a></li>
+    
+    <li><a href="/about/">关于</a></li>
+    
+    <li><a href="http://haskellchina.org/">社区首页</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">5 min read</span>
+    
+
+    <h1 class="article-title">QQ Group Log of HaskellChina: 20170330</h1>
+
+    
+    <span class="article-date">March 30, 2017</span>
+    
+
+    <div class="article-content">
+      
+
+<h4 id="举个栗子">举个栗子 :</h4>
+
+<p><span class="article-duration">2017-03-30 08:37:15</span></p>
+
+<p>非尾递归的可以先用cps转成尾递归</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="举个栗子-1">举个栗子 :</h4>
+
+<p><span class="article-duration">2017-03-30 08:38:30</span></p>
+
+<p>这个就跟statemonad有点差不多的意思，一长串计算拆成一步步的，然后外面套个while</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页">第七页 :</h4>
+
+<p><span class="article-duration">2017-03-30 09:24:02</span></p>
+
+<p>用脑图可以描绘出思路 但是不方便存储 有没有有文本描绘思路的？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-03-30 09:24:25</span></p>
+
+<p>脑图生成文本</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-1">第七页 :</h4>
+
+<p><span class="article-duration">2017-03-30 09:25:34</span></p>
+
+<p>那个也得依赖脑图工具的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="怀谷">怀谷 :</h4>
+
+<p><span class="article-duration">2017-03-30 09:36:26</span></p>
+
+<p>@第七页 你需要的不就是伪代码而已么[冷汗]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-2">第七页 :</h4>
+
+<p><span class="article-duration">2017-03-30 09:36:54</span></p>
+
+<p>如何设计这样的伪代码呢</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="怀谷-1">怀谷 :</h4>
+
+<p><span class="article-duration">2017-03-30 09:38:53</span></p>
+
+<p>然后这个问题就变成，如何设计dsl了。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_8">[[[[[[[[[[[[[[[[[[[[[[[[ :</h4>
+
+<p><span class="article-duration">2017-03-30 09:39:27</span></p>
+
+<p>脑图是树状的？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-1">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-03-30 09:39:58</span></p>
+
+<p>树状可以用yml</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-30 09:40:38</span></p>
+
+<p>脑图要反映直觉</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-1">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-30 09:40:42</span></p>
+
+<p>不如用工具</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_12">[[[[[[[[[[[[[[[[[[[[[[[[ :</h4>
+
+<p><span class="article-duration">2017-03-30 09:41:32</span></p>
+
+<p>这样说，其实ps或者krita最合适，如果有板子</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-2">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-30 09:41:34</span></p>
+
+<p>看文本就好像直接用编辑器看电影一样</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-3">第七页 :</h4>
+
+<p><span class="article-duration">2017-03-30 09:57:28</span></p>
+
+<p>思路也可以是网状的吧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="f-minor">F# Minor :</h4>
+
+<p><span class="article-duration">2017-03-30 09:58:21</span></p>
+
+<p>网状才是正道</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="haskell-v">haskell (=^v^=) :</h4>
+
+<p><span class="article-duration">2017-03-30 10:25:49</span></p>
+
+<p>感觉还是不如动手画直观</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-4">第七页 :</h4>
+
+<p><span class="article-duration">2017-03-30 10:39:35</span></p>
+
+<p>没有跟filter 相反的函数  reject</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="茶几之友">茶几之友  :</h4>
+
+<p><span class="article-duration">2017-03-30 10:39:58</span></p>
+
+<p>有 filter . not</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-5">第七页 :</h4>
+
+<p><span class="article-duration">2017-03-30 10:42:15</span></p>
+
+<p>这个好像只能这样写 (filter .not $ eq) xs</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="茶几之友-1">茶几之友  :</h4>
+
+<p><span class="article-duration">2017-03-30 10:43:06</span></p>
+
+<p>?</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-6">第七页 :</h4>
+
+<p><span class="article-duration">2017-03-30 10:43:24</span></p>
+
+<p>是的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="茶几之友-2">茶几之友  :</h4>
+
+<p><span class="article-duration">2017-03-30 10:44:04</span></p>
+
+<p>我印象里 . 的优先级的确比较低。但是可以这样写<br />(filter . not . (==)) x0 xs</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-3">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-30 10:44:45</span></p>
+
+<p>卧槽</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-4">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-30 10:44:56</span></p>
+
+<p>.的优先级应该相当高啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="茶几之友-3">茶几之友  :</h4>
+
+<p><span class="article-duration">2017-03-30 10:45:12</span></p>
+
+<p>比预期的要低一些……</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="茶几之友-4">茶几之友  :</h4>
+
+<p><span class="article-duration">2017-03-30 10:45:29</span></p>
+
+<p>这也许是因为随便一个操作都是函数</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-5">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-30 10:46:38</span></p>
+
+<p>随手来个小测验，舒缓一下紧张情绪</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-6">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-30 10:46:48</span></p>
+
+<p>如果矩阵是[[a]]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-7">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-30 10:46:59</span></p>
+
+<p>写一个矩阵转置函数</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="茶几之友-5">茶几之友  :</h4>
+
+<p><span class="article-duration">2017-03-30 10:47:20</span></p>
+
+<p>transpose &hellip;</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-8">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-30 10:47:30</span></p>
+
+<p>[系统表情]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="茶几之友-6">茶几之友  :</h4>
+
+<p><span class="article-duration">2017-03-30 10:48:53</span></p>
+
+<p>高段技巧我几乎没碰过，但是基础类型的一些基础操作，几年前我还是比较熟的[得意]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-9">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-30 10:49:13</span></p>
+
+<p>当然要自己实现一个啦</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="茶几之友-7">茶几之友  :</h4>
+
+<p><span class="article-duration">2017-03-30 10:49:43</span></p>
+
+<p>印象里有个习题就是 transpose 的 N 种写法</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="茶几之友-8">茶几之友  :</h4>
+
+<p><span class="article-duration">2017-03-30 10:50:28</span></p>
+
+<p>比如尾递归、模式匹配、foldx 只用任何一个都可以。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-10">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-30 10:50:48</span></p>
+
+<p>我是因为前两天看traverse</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-11">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-30 10:51:01</span></p>
+
+<p>然后看到一个有点意思的写法</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-7">第七页 :</h4>
+
+<p><span class="article-duration">2017-03-30 10:52:09</span></p>
+
+<p>(filter . not . (==)) x0 xs</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-8">第七页 :</h4>
+
+<p><span class="article-duration">2017-03-30 10:52:15</span></p>
+
+<p>这个类型匹配不上吧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-9">第七页 :</h4>
+
+<p><span class="article-duration">2017-03-30 10:52:29</span></p>
+
+<p>== 是两个 类型一样的值</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-10">第七页 :</h4>
+
+<p><span class="article-duration">2017-03-30 10:53:08</span></p>
+
+<p>filter (not (==x0)) xs 只能这样玩了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="mislanka-nova">Mislanka Nova :</h4>
+
+<p><span class="article-duration">2017-03-30 10:53:59</span></p>
+
+<p>/=…</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="茶几之友-9">茶几之友  :</h4>
+
+<p><span class="article-duration">2017-03-30 10:54:16</span></p>
+
+<p>那只是个示意啊……</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="茶几之友-10">茶几之友  :</h4>
+
+<p><span class="article-duration">2017-03-30 10:54:27</span></p>
+
+<p>你可以试试 (filter . not) (==x0) xs</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="sirius">Sirius :</h4>
+
+<p><span class="article-duration">2017-03-30 10:55:16</span></p>
+
+<p>filter . not $ (==) x0 x1</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="茶几之友-11">茶几之友  :</h4>
+
+<p><span class="article-duration">2017-03-30 10:56:00</span></p>
+
+<p>这个是不行的，我们开始都要踩过这个坑</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="sirius-1">Sirius :</h4>
+
+<p><span class="article-duration">2017-03-30 10:58:29</span></p>
+
+<p>filter (not . (== x)) xs[抠鼻]刚刚看错了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-11">第七页 :</h4>
+
+<p><span class="article-duration">2017-03-30 11:01:39</span></p>
+
+<p>filter . not 括号也不少</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-12">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-30 11:03:33</span></p>
+
+<p>这是按长度排序列表？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-12">第七页 :</h4>
+
+<p><span class="article-duration">2017-03-30 11:03:50</span></p>
+
+<p>恩</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-13">第七页 :</h4>
+
+<p><span class="article-duration">2017-03-30 11:04:03</span></p>
+
+<p>qq question 里面的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-14">第七页 :</h4>
+
+<p><span class="article-duration">2017-03-30 11:04:12</span></p>
+
+<p>做着玩的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-13">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-30 11:05:03</span></p>
+
+<p>lsort = sortOn length</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="没有尾巴">没有尾巴 :</h4>
+
+<p><span class="article-duration">2017-03-30 11:13:01</span></p>
+
+<p>二叉树查找，是树形递归，不是尾递归</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-14">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-30 11:16:17</span></p>
+
+<p>嗯，但是每次查找只会落入其中一个分支</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-15">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-30 11:46:04</span></p>
+
+<p>[系统表情]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="the-fool">The Fool  :</h4>
+
+<p><span class="article-duration">2017-03-30 11:47:24</span></p>
+
+<p>树查找写出来就是尾递归的，树遍历可能需要借助CPS，但大多数过程不敏感的情况下也没有必要CPS</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pengpengche">pengpengche :</h4>
+
+<p><span class="article-duration">2017-03-30 15:12:12</span></p>
+
+<p>可以这样，先要求这是一棵完全二叉树，然后要求用数组形式存放，最后遍历这个数组</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="举个栗子-2">举个栗子 :</h4>
+
+<p><span class="article-duration">2017-03-30 15:28:04</span></p>
+
+<p><br />像这种形式的尾递归 haskell能对他做尾递归优化吗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-16">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-30 15:28:56</span></p>
+
+<p>no&hellip;</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="balternotz">BalterNotz :</h4>
+
+<p><span class="article-duration">2017-03-30 15:32:27</span></p>
+
+<p>@举个栗子 上面的代码，可以运行？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="举个栗子-3">举个栗子 :</h4>
+
+<p><span class="article-duration">2017-03-30 15:32:36</span></p>
+
+<p>可以</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="举个栗子-4">举个栗子 :</h4>
+
+<p><span class="article-duration">2017-03-30 15:32:48</span></p>
+
+<p>fib :: Int -&gt; (Int -&gt; Int) -&gt; Int<br />  fib 0 k = k 0<br />  fib 1 k = k 1<br />  fib n k = fib (n-1) (\r1 -&gt; fib (n-2) (\r2 -&gt; k (r1 + r2)))</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="balternotz-1">BalterNotz :</h4>
+
+<p><span class="article-duration">2017-03-30 15:32:53</span></p>
+
+<p>嗯。咽。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="举个栗子-5">举个栗子 :</h4>
+
+<p><span class="article-duration">2017-03-30 15:32:54</span></p>
+
+<p>带个id 进去</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-17">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-30 15:33:17</span></p>
+
+<p>嘛，我觉得搞个fib 1000000之类的试验一下，看看会不会爆炸</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-18">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-30 15:33:23</span></p>
+
+<p>目测要爆炸</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="举个栗子-6">举个栗子 :</h4>
+
+<p><span class="article-duration">2017-03-30 15:35:19</span></p>
+
+<p>这怎么不是尾递归形式了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-19">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-30 15:35:54</span></p>
+
+<p>wait&hellip; lemme see</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="举个栗子-7">举个栗子 :</h4>
+
+<p><span class="article-duration">2017-03-30 15:36:36</span></p>
+
+<p>暂时还没炸</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="talos">talos :</h4>
+
+<p><span class="article-duration">2017-03-30 15:36:45</span></p>
+
+<p>[强]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="balternotz-2">BalterNotz :</h4>
+
+<p><span class="article-duration">2017-03-30 15:37:18</span></p>
+
+<p>第二个，fib 红框里面，不是尾递归吧。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-20">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-30 15:37:22</span></p>
+
+<p>不满足这条</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="举个栗子-8">举个栗子 :</h4>
+
+<p><span class="article-duration">2017-03-30 15:37:45</span></p>
+
+<p>这个在哪里看呢</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="举个栗子-9">举个栗子 :</h4>
+
+<p><span class="article-duration">2017-03-30 15:37:50</span></p>
+
+<p>能给个链接吗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-21">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-30 15:37:53</span></p>
+
+<p><a href="https://wiki.haskell.org/Tail_recursion">https://wiki.haskell.org/Tail_recursion</a></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="balternotz-3">BalterNotz :</h4>
+
+<p><span class="article-duration">2017-03-30 15:38:31</span></p>
+
+<p>意思就是说，递归调用的时候，应该是最后一步调用。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="举个栗子-10">举个栗子 :</h4>
+
+<p><span class="article-duration">2017-03-30 15:38:31</span></p>
+
+<p>[抱拳]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="balternotz-4">BalterNotz :</h4>
+
+<p><span class="article-duration">2017-03-30 15:38:47</span></p>
+
+<p>参数计算时，不能调用自身。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="举个栗子-11">举个栗子 :</h4>
+
+<p><span class="article-duration">2017-03-30 15:38:55</span></p>
+
+<p>那个是在函数里面</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-22">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-30 15:42:35</span></p>
+
+<p>我觉得这个应该是thunk爆炸而不是stack爆炸。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-23">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-30 15:43:47</span></p>
+
+<p>你可以试下给k加个bang</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="举个栗子-12">举个栗子 :</h4>
+
+<p><span class="article-duration">2017-03-30 15:49:03</span></p>
+
+<p>加在参数上就可以了吗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-24">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-30 15:49:09</span></p>
+
+<p>操</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-25">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-30 15:49:15</span></p>
+
+<p>炸了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="举个栗子-13">举个栗子 :</h4>
+
+<p><span class="article-duration">2017-03-30 15:49:19</span></p>
+
+<p>hhh</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-26">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-30 15:49:30</span></p>
+
+<p>妈的，机器动不了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="举个栗子-14">举个栗子 :</h4>
+
+<p><span class="article-duration">2017-03-30 15:49:51</span></p>
+
+<p>家属表示情绪稳定</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-27">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-30 15:50:08</span></p>
+
+<p>[系统表情]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-28">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-30 15:50:15</span></p>
+
+<p>壕无人性</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="balternotz-5">BalterNotz :</h4>
+
+<p><span class="article-duration">2017-03-30 15:50:22</span></p>
+
+<p>@举个栗子 你多大内存？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="举个栗子-15">举个栗子 :</h4>
+
+<p><span class="article-duration">2017-03-30 15:52:18</span></p>
+
+<p>事实上没有这么大</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="举个栗子-16">举个栗子 :</h4>
+
+<p><span class="article-duration">2017-03-30 15:52:51</span></p>
+
+<p>16G</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-29">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-30 15:53:30</span></p>
+
+<p>我刚才说错了，加k上没卵用</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-30">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-30 15:53:33</span></p>
+
+<p>k是个函数。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="swordfeng">swordfeng :</h4>
+
+<p><span class="article-duration">2017-03-30 17:17:10</span></p>
+
+<p>fib !x 0 = x<br />fib !x n = fib (x*n) (n-1)</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="swordfeng-1">swordfeng :</h4>
+
+<p><span class="article-duration">2017-03-30 17:17:22</span></p>
+
+<p>fib&rsquo; = fib 1</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-31">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-30 17:44:54</span></p>
+
+<p>。。你这哪是fib</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="jin">Jin :</h4>
+
+<p><span class="article-duration">2017-03-30 17:57:50</span></p>
+
+<p>像阶乘，可是也不对啊。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-32">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-30 17:58:53</span></p>
+
+<p>是阶乘</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="senge">senge :</h4>
+
+<p><span class="article-duration">2017-03-30 18:01:03</span></p>
+
+<p>问一下 我需要定义一个函数 这个函数的返回值是针对一个定长数组上的一系列操作</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="senge-1">senge :</h4>
+
+<p><span class="article-duration">2017-03-30 18:01:23</span></p>
+
+<p>类似 State (Array i e) a</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="senge-2">senge :</h4>
+
+<p><span class="article-duration">2017-03-30 18:01:43</span></p>
+
+<p>但是Array的修改效率太低了 我需要一个更高效的版本</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-33">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-30 18:03:17</span></p>
+
+<p>Array的修改效率低？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-34">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-30 18:03:26</span></p>
+
+<p>那Data.Array.Unboxed?</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="senge-3">senge :</h4>
+
+<p><span class="article-duration">2017-03-30 18:04:22</span></p>
+
+<p>额 我的理解 这两个不都是immutable的么</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="senge-4">senge :</h4>
+
+<p><span class="article-duration">2017-03-30 18:04:36</span></p>
+
+<p>修改会产生一个新的copy吧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever">forever :</h4>
+
+<p><span class="article-duration">2017-03-30 18:05:11</span></p>
+
+<p>只有 mutable 那个效率高</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-35">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-30 18:05:33</span></p>
+
+<p>这底层的机制我不知道，如果你修改之后还用旧的数组那肯定是两份</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-36">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-30 18:05:56</span></p>
+
+<p>（话说怎么实现的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="张智城">张智城 :</h4>
+
+<p><span class="article-duration">2017-03-30 18:12:41</span></p>
+
+<p>各位大大 问个问题data Modified a = Multi Int a  | Single a decode :: [Modified a ] -&gt; [a] 怎么判断传入的是 Multi 还是Single</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-1">forever :</h4>
+
+<p><span class="article-duration">2017-03-30 18:13:04</span></p>
+
+<p>mutable 那个你修改完还是用原数组，不过你必须在 ST 或者 IO 里面读所以没事</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-2">forever :</h4>
+
+<p><span class="article-duration">2017-03-30 18:14:37</span></p>
+
+<p>@张智城 列表函数要对元素匹配的一般可以这么写decode [] = &hellip; &ndash; 没了decode (Multi num val : xs) = &hellip; &ndash; 第一个是 Multidecode (Single val : xs) = &hellip; &ndash; 第一个是 Single</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="张智城-1">张智城 :</h4>
+
+<p><span class="article-duration">2017-03-30 18:16:48</span></p>
+
+<p>明白了，thx！</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-37">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-30 18:16:48</span></p>
+
+<p>@dram 原来如此，我没办法在ST里修改外面创建的array</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-3">forever :</h4>
+
+<p><span class="article-duration">2017-03-30 18:17:11</span></p>
+
+<p>你是不能把 ST 里面的数组带出去的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-4">forever :</h4>
+
+<p><span class="article-duration">2017-03-30 18:17:16</span></p>
+
+<p>类型保证的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-38">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-30 18:17:29</span></p>
+
+<p>嗯，Rank2Type</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="举个栗子-17">举个栗子 :</h4>
+
+<p><span class="article-duration">2017-03-30 20:44:06</span></p>
+
+<p>有人在这个群里吗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="饼干">饼干 :</h4>
+
+<p><span class="article-duration">2017-03-30 22:01:49</span></p>
+
+<p>我在 怎么</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="举个栗子-18">举个栗子 :</h4>
+
+<p><span class="article-duration">2017-03-30 22:15:31</span></p>
+
+<p>我申请了，能不能通过一下</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="举个栗子-19">举个栗子 :</h4>
+
+<p><span class="article-duration">2017-03-30 22:15:39</span></p>
+
+<p>题做了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="饼干-1">饼干 :</h4>
+
+<p><span class="article-duration">2017-03-30 22:25:07</span></p>
+
+<p>我不是管理</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="举个栗子-20">举个栗子 :</h4>
+
+<p><span class="article-duration">2017-03-30 22:48:13</span></p>
+
+<p>哦，那我等等吧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_125">. :</h4>
+
+<p><span class="article-duration">2017-03-30 22:51:44</span></p>
+
+<p>scala难吗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-2">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-03-30 22:51:58</span></p>
+
+<p>很简单〘逃</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="举个栗子-21">举个栗子 :</h4>
+
+<p><span class="article-duration">2017-03-30 22:53:56</span></p>
+
+<p>那看你要学到什么程度了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="举个栗子-22">举个栗子 :</h4>
+
+<p><span class="article-duration">2017-03-30 22:54:42</span></p>
+
+<p>反正我看scalaz是有一点怀疑自己是弱智了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-39">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-30 23:36:42</span></p>
+
+<p>scala相比haskell哪个更难？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-40">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-30 23:37:17</span></p>
+
+<p>妈个鸡，卡了20分钟了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-41">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-30 23:37:32</span></p>
+
+<p>我已经在用tuna源</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-5">forever :</h4>
+
+<p><span class="article-duration">2017-03-30 23:38:03</span></p>
+
+<p>好像最近 GitHub 是慢到死</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="此人已放弃治疗">此人已放弃治疗 :</h4>
+
+<p><span class="article-duration">2017-03-30 23:38:07</span></p>
+
+<p>论难度的话……cpp表示不服</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-6">forever :</h4>
+
+<p><span class="article-duration">2017-03-30 23:38:25</span></p>
+
+<p>好了别水了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="rational">rational :</h4>
+
+<p><span class="article-duration">2017-03-30 23:43:14</span></p>
+
+<p>勿水</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="张智城-2">张智城 :</h4>
+
+<p><span class="article-duration">2017-03-30 23:47:16</span></p>
+
+<p>我学Fp 是想着弄下 spark ,  当初说是学scala前看一下haskell不错，然后现在有个haskell 写的spark,地址 <a href="https://github.com/tweag/sparkle">https://github.com/tweag/sparkle</a> , 但是目前只支持spark1 ，是继续haskell 还是直接转scala</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-7">forever :</h4>
+
+<p><span class="article-duration">2017-03-30 23:48:06</span></p>
+
+<p>去学 scala 吧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="张智城-3">张智城 :</h4>
+
+<p><span class="article-duration">2017-03-30 23:50:44</span></p>
+
+<p>嗯嗯</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<p>以上内容来自 [Haskell函数式编程] QQ 群。</p>
+
+    </div>
+  </article>
+
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "binjoy" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="http://qq.haskellchina.org/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="http://qq.haskellchina.org/images/hugo-logo.png" width="22" height="22"></a>
+            <div style="display:none">
+                <script src="http://s95.cnzz.com/stat.php?id=1261078931&web_id=1261078931" language="JavaScript"></script>
+            </div>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
+

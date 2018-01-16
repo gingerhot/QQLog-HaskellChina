@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.30.2" />
+
+
+<title>QQ Group Log of HaskellChina: 20170117 - QQGroup Log of HaskellChina</title>
+<meta property="og:title" content="QQ Group Log of HaskellChina: 20170117 - QQGroup Log of HaskellChina">
+
+
+
+  
+
+
+
+<meta property="keywords" content ="Haskell,, HaskellChina">
+
+
+
+
+<link rel="stylesheet" href="http://qq.haskellchina.org/css/main.css" media="all">
+<link rel="stylesheet" href="//fonts.lug.ustc.edu.cn/css?family=Merriweather:400|Lato:400,400italic,700">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="http://qq.haskellchina.org/" class="nav-logo">
+    <img src="http://qq.haskellchina.org/images/logo.png" 
+         width="50" 
+         height="50" 
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="https://github.com/gingerhot/QQLog-HaskellChina">GitHub</a></li>
+    
+    <li><a href="/about/">关于</a></li>
+    
+    <li><a href="http://haskellchina.org/">社区首页</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">5 min read</span>
+    
+
+    <h1 class="article-title">QQ Group Log of HaskellChina: 20170117</h1>
+
+    
+    <span class="article-date">January 17, 2017</span>
+    
+
+    <div class="article-content">
+      
+
+<h4 id="pigeon-t">pigeon_t :</h4>
+
+<p><span class="article-duration">2017-01-17 20:37:47</span></p>
+
+<p>functor 只接受仅有一个参数的type constructor有什么原因么</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pigeon-t-1">pigeon_t :</h4>
+
+<p><span class="article-duration">2017-01-17 20:37:54</span></p>
+
+<p>还是钦定的？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever">forever :</h4>
+
+<p><span class="article-duration">2017-01-17 20:40:53</span></p>
+
+<p>@pigeon_t 有，要不呢？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-1">forever :</h4>
+
+<p><span class="article-duration">2017-01-17 20:40:56</span></p>
+
+<p>类型写不出来啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pigeon-t-2">pigeon_t :</h4>
+
+<p><span class="article-duration">2017-01-17 20:42:30</span></p>
+
+<p>哈，就是class Functor m where <br />                fmap :: (a -&gt; b) -&gt; f a -&gt; f b</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pigeon-t-3">pigeon_t :</h4>
+
+<p><span class="article-duration">2017-01-17 20:42:40</span></p>
+
+<p>是定义了f接受一个a</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-2">forever :</h4>
+
+<p><span class="article-duration">2017-01-17 20:43:06</span></p>
+
+<p>yes，（你把 f 写成 m 了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-3">forever :</h4>
+
+<p><span class="article-duration">2017-01-17 20:43:17</span></p>
+
+<p>）<br />所以你想要几个？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pigeon-t-4">pigeon_t :</h4>
+
+<p><span class="article-duration">2017-01-17 20:44:00</span></p>
+
+<p>有没有什么原因呢，有没有更高阶的, class HighOrderFunctor f where<br />                                              fmap :: (a -&gt; b) -&gt; (.写不下去了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pigeon-t-5">pigeon_t :</h4>
+
+<p><span class="article-duration">2017-01-17 20:44:05</span></p>
+
+<p>哦哦，写错了是我</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-4">forever :</h4>
+
+<p><span class="article-duration">2017-01-17 20:44:17</span></p>
+
+<p>就是写不下去了啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pigeon-t-6">pigeon_t :</h4>
+
+<p><span class="article-duration">2017-01-17 20:44:36</span></p>
+
+<p>好吧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pigeon-t-7">pigeon_t :</h4>
+
+<p><span class="article-duration">2017-01-17 20:45:03</span></p>
+
+<p>（想多了。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-5">forever :</h4>
+
+<p><span class="article-duration">2017-01-17 20:45:33</span></p>
+
+<p>no magic rule: Haskell 里大部分标准库里的东西是可以你自己定义的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-6">forever :</h4>
+
+<p><span class="article-duration">2017-01-17 20:45:42</span></p>
+
+<p>（标准库：标准里写了的库）</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pigeon-t-8">pigeon_t :</h4>
+
+<p><span class="article-duration">2017-01-17 20:46:35</span></p>
+
+<p>哦哦</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pigeon-t-9">pigeon_t :</h4>
+
+<p><span class="article-duration">2017-01-17 20:46:40</span></p>
+
+<p>haskell好强大</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="汪先森-づ">汪先森 づ :</h4>
+
+<p><span class="article-duration">2017-01-17 20:50:05</span></p>
+
+<p>r -&gt;是ContraFunctor吧？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-7">forever :</h4>
+
+<p><span class="article-duration">2017-01-17 20:53:16</span></p>
+
+<p>但是越抽象越能定义</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pigeon-t-10">pigeon_t :</h4>
+
+<p><span class="article-duration">2017-01-17 20:55:51</span></p>
+
+<p>哦哦，我再看看，整理下思路</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pigeon-t-11">pigeon_t :</h4>
+
+<p><span class="article-duration">2017-01-17 20:58:33</span></p>
+
+<p>比如这里是infix,但是不是写infix的函数要写： infixr 5 (&gt;&gt;=)这样吗，比如，</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pigeon-t-12">pigeon_t :</h4>
+
+<p><span class="article-duration">2017-01-17 20:58:58</span></p>
+
+<p>还是说在class里面定义价格parens就成了infix?</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pigeon-t-13">pigeon_t :</h4>
+
+<p><span class="article-duration">2017-01-17 20:59:38</span></p>
+
+<p>这个一直有疑问</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-8">forever :</h4>
+
+<p><span class="article-duration">2017-01-17 21:00:02</span></p>
+
+<p><a href="http://hackage.haskell.org/package/base-4.9.1.0/docs/src/GHC.Base.html#line-135">http://hackage.haskell.org/package/base-4.9.1.0/docs/src/GHC.Base.html#line-135</a></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-9">forever :</h4>
+
+<p><span class="article-duration">2017-01-17 21:01:13</span></p>
+
+<p>still no magic</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pigeon-t-14">pigeon_t :</h4>
+
+<p><span class="article-duration">2017-01-17 21:02:35</span></p>
+
+<p>好棒啊，谢谢啊，</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="wuli华华">wuli华华 :</h4>
+
+<p><span class="article-duration">2017-01-17 22:16:38</span></p>
+
+<p>谁解释下“#”在代码里什么意思，度娘找不到</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="gabriel">Gabriel :</h4>
+
+<p><span class="article-duration">2017-01-17 22:17:22</span></p>
+
+<p>unbox type</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pigeon-t-15">pigeon_t :</h4>
+
+<p><span class="article-duration">2017-01-17 22:49:30</span></p>
+
+<p>shebang</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pigeon-t-16">pigeon_t :</h4>
+
+<p><span class="article-duration">2017-01-17 22:49:36</span></p>
+
+<p>#! ?</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="wuli华华-1">wuli华华 :</h4>
+
+<p><span class="article-duration">2017-01-17 22:52:29</span></p>
+
+<p>明天贴图。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pigeon-t-17">pigeon_t :</h4>
+
+<p><span class="article-duration">2017-01-17 22:58:16</span></p>
+
+<p>刚才面试被问到一个问题，没答上，说Maybe Monad 如果返回Nothing,那么bind 会是啥</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pigeon-t-18">pigeon_t :</h4>
+
+<p><span class="article-duration">2017-01-17 22:58:35</span></p>
+
+<p>name &lt;- Nothing</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pigeon-t-19">pigeon_t :</h4>
+
+<p><span class="article-duration">2017-01-17 22:58:36</span></p>
+
+<p>?</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页">第七页 :</h4>
+
+<p><span class="article-duration">2017-01-17 22:58:58</span></p>
+
+<p>没看懂题意</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-1">第七页 :</h4>
+
+<p><span class="article-duration">2017-01-17 22:59:15</span></p>
+
+<p>bind不应该是返回nothing吗？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_36">[[[[[[[[[[[[[[[[[[[[[[[[ :</h4>
+
+<p><span class="article-duration">2017-01-17 22:59:29</span></p>
+
+<p>怎么会面haskell</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-10">forever :</h4>
+
+<p><span class="article-duration">2017-01-17 22:59:30</span></p>
+
+<p>Nothing &gt;&gt;= f = Nothing</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pigeon-t-20">pigeon_t :</h4>
+
+<p><span class="article-duration">2017-01-17 22:59:36</span></p>
+
+<p>比如do <br />  name &lt;- getMaybeMonad</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pigeon-t-21">pigeon_t :</h4>
+
+<p><span class="article-duration">2017-01-17 22:59:56</span></p>
+
+<p>职位haskell</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-2">第七页 :</h4>
+
+<p><span class="article-duration">2017-01-17 23:00:32</span></p>
+
+<p>国外的？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pigeon-t-22">pigeon_t :</h4>
+
+<p><span class="article-duration">2017-01-17 23:00:39</span></p>
+
+<p>我才看到monad，让我回答好多问题</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pigeon-t-23">pigeon_t :</h4>
+
+<p><span class="article-duration">2017-01-17 23:00:45</span></p>
+
+<p>SAP 的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pigeon-t-24">pigeon_t :</h4>
+
+<p><span class="article-duration">2017-01-17 23:01:07</span></p>
+
+<p>言归正传啊，有个问题，我说name &lt;- getLine</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pigeon-t-25">pigeon_t :</h4>
+
+<p><span class="article-duration">2017-01-17 23:01:56</span></p>
+
+<p>就是绑定，然后说Maybe Monad,他问Nothing这种绑定啥，我没太懂大神写的啊Nothing &gt;&gt;= f = Nothing, f 是个啥</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pigeon-t-26">pigeon_t :</h4>
+
+<p><span class="article-duration">2017-01-17 23:02:01</span></p>
+
+<p>functor type variabler?</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-11">forever :</h4>
+
+<p><span class="article-duration">2017-01-17 23:03:08</span></p>
+
+<p>do<br />    x &lt;- e<br />    rest<br /><br />=<br /><br />e &gt;&gt;= (\x -&gt; do rest)</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-3">第七页 :</h4>
+
+<p><span class="article-duration">2017-01-17 23:03:11</span></p>
+
+<p>证明monad没理解</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-12">forever :</h4>
+
+<p><span class="article-duration">2017-01-17 23:03:43</span></p>
+
+<p>证明你还没想明白 monad is not magic</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-4">第七页 :</h4>
+
+<p><span class="article-duration">2017-01-17 23:04:14</span></p>
+
+<p>f就是x</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-13">forever :</h4>
+
+<p><span class="article-duration">2017-01-17 23:04:46</span></p>
+
+<p>e 是 Nothing 时候<br />Nothing &gt;&gt;= (无论什么) 都= Nothing</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="矽砂">矽砂 :</h4>
+
+<p><span class="article-duration">2017-01-17 23:04:48</span></p>
+
+<p>f不是那个函数吗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="汪先森-づ-1">汪先森 づ :</h4>
+
+<p><span class="article-duration">2017-01-17 23:04:49</span></p>
+
+<p>f就是一个a-&gt;Maybe b的函数啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-14">forever :</h4>
+
+<p><span class="article-duration">2017-01-17 23:05:05</span></p>
+
+<p>f 就是 (\x -&gt; do rest)</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pigeon-t-27">pigeon_t :</h4>
+
+<p><span class="article-duration">2017-01-17 23:06:32</span></p>
+
+<p>哦哦，我再去看看，我真心今天上午才看到haskell monad,结果下午就问，咋个会。。。。<br />以前都是js里面理解的monad,说一个wrapped box with value，js函数式坑人</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-5">第七页 :</h4>
+
+<p><span class="article-duration">2017-01-17 23:06:54</span></p>
+
+<p>do里面有没有办法跳过Nothing 我记得有办法的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="yaegaki-erika">Yaegaki Erika :</h4>
+
+<p><span class="article-duration">2017-01-17 23:06:56</span></p>
+
+<p>比如说 a &gt;&gt;= \x-&gt;E 如果a是Nothing 根据Maybe monad里的定义整个都等于Nothing 如果a是Just v 那么整个等于(\x-&gt;E) v</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-15">forever :</h4>
+
+<p><span class="article-duration">2017-01-17 23:07:08</span></p>
+
+<p>@第七页 跳啥啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-6">第七页 :</h4>
+
+<p><span class="article-duration">2017-01-17 23:07:37</span></p>
+
+<p>就是返回Nothing 忽略继续走下面的代码</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="汪先森-づ-2">汪先森 づ :</h4>
+
+<p><span class="article-duration">2017-01-17 23:07:57</span></p>
+
+<p>Applicative吧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-7">第七页 :</h4>
+
+<p><span class="article-duration">2017-01-17 23:08:31</span></p>
+
+<p>@pigeon_t  js里很多介绍monad的 但是我看那个是跟haskell一致的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-16">forever :</h4>
+
+<p><span class="article-duration">2017-01-17 23:08:35</span></p>
+
+<p>你不用 bind 不就行了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pigeon-t-28">pigeon_t :</h4>
+
+<p><span class="article-duration">2017-01-17 23:10:47</span></p>
+
+<p>是一样的，但是问我Nothing 的box 里面装的啥，我就不知道了，还是haskell学完了再看这些才会清晰，要不然云里雾里的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="汪先森-づ-3">汪先森 づ :</h4>
+
+<p><span class="article-duration">2017-01-17 23:10:56</span></p>
+
+<p>学不完的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="yaegaki-erika-1">Yaegaki Erika :</h4>
+
+<p><span class="article-duration">2017-01-17 23:11:06</span></p>
+
+<p>学不完的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-17">forever :</h4>
+
+<p><span class="article-duration">2017-01-17 23:11:08</span></p>
+
+<p>@zjyjer 别捣乱</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pigeon-t-29">pigeon_t :</h4>
+
+<p><span class="article-duration">2017-01-17 23:11:12</span></p>
+
+<p>反正我看完Haskell functor之后就明白了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pigeon-t-30">pigeon_t :</h4>
+
+<p><span class="article-duration">2017-01-17 23:11:26</span></p>
+
+<p>啥是functor</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-18">forever :</h4>
+
+<p><span class="article-duration">2017-01-17 23:12:44</span></p>
+
+<p>最恰当的学法是自己写几个 monad 就知道了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pigeon-t-31">pigeon_t :</h4>
+
+<p><span class="article-duration">2017-01-17 23:13:43</span></p>
+
+<p>哦哦，haskell好烧脑，不过很好玩</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-8">第七页 :</h4>
+
+<p><span class="article-duration">2017-01-17 23:13:48</span></p>
+
+<p>我看的js里面介绍的是  monad实现的核心函数就是 join 功能是输入 Maybe Maybe a 返回 Maybe a  然后我再看haskell也是这样介绍的  [得意]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-9">第七页 :</h4>
+
+<p><span class="article-duration">2017-01-17 23:14:18</span></p>
+
+<p>然后就没了😱</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-19">forever :</h4>
+
+<p><span class="article-duration">2017-01-17 23:14:26</span></p>
+
+<p>觉得，很不理解的一件事就是 monad 有什么可以理解的么？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pigeon-t-32">pigeon_t :</h4>
+
+<p><span class="article-duration">2017-01-17 23:14:32</span></p>
+
+<p>js说functor比如一个a.map就算了，但是还是不理解为啥</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pigeon-t-33">pigeon_t :</h4>
+
+<p><span class="article-duration">2017-01-17 23:14:45</span></p>
+
+<p>看完haskell才知道原来 [] 是个type</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pigeon-t-34">pigeon_t :</h4>
+
+<p><span class="article-duration">2017-01-17 23:14:49</span></p>
+
+<p>才理解了。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="天才麻将魔法少女cosmia">天才麻将魔法少女Cosmia :</h4>
+
+<p><span class="article-duration">2017-01-17 23:14:52</span></p>
+
+<p>js</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="天才麻将魔法少女cosmia-1">天才麻将魔法少女Cosmia :</h4>
+
+<p><span class="article-duration">2017-01-17 23:15:05</span></p>
+
+<p>的functor根本是残废的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pigeon-t-35">pigeon_t :</h4>
+
+<p><span class="article-duration">2017-01-17 23:15:58</span></p>
+
+<p>面试题</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-10">第七页 :</h4>
+
+<p><span class="article-duration">2017-01-17 23:16:10</span></p>
+
+<p>其实这张图是没错的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pigeon-t-36">pigeon_t :</h4>
+
+<p><span class="article-duration">2017-01-17 23:16:30</span></p>
+
+<p>结果网络太烂，也没讨论，今天好衰。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-11">第七页 :</h4>
+
+<p><span class="article-duration">2017-01-17 23:17:01</span></p>
+
+<p>要不来我们公司做js？[系统表情]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-20">forever :</h4>
+
+<p><span class="article-duration">2017-01-17 23:17:10</span></p>
+
+<p>图形的问题。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-21">forever :</h4>
+
+<p><span class="article-duration">2017-01-17 23:17:20</span></p>
+
+<p>你有什么办法把函数“画”出来么？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_84">. :</h4>
+
+<p><span class="article-duration">2017-01-17 23:17:47</span></p>
+
+<p>其实有些monad表示的是一个计算过程</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-22">forever :</h4>
+
+<p><span class="article-duration">2017-01-17 23:17:51</span></p>
+
+<p>我觉得基本上只能列几个值或者画个坐标图像什么的了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_86">. :</h4>
+
+<p><span class="article-duration">2017-01-17 23:18:03</span></p>
+
+<p>可能里面是一个管线</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-12">第七页 :</h4>
+
+<p><span class="article-duration">2017-01-17 23:18:04</span></p>
+
+<p>嗯</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="天才麻将魔法少女cosmia-2">天才麻将魔法少女Cosmia :</h4>
+
+<p><span class="article-duration">2017-01-17 23:18:10</span></p>
+
+<p>要理解monad还是要理解那句老梗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_89">. :</h4>
+
+<p><span class="article-duration">2017-01-17 23:18:12</span></p>
+
+<p>这个管线的规格是个Int之类的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-23">forever :</h4>
+
+<p><span class="article-duration">2017-01-17 23:18:15</span></p>
+
+<p>过程和没过程是没有区别的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_91">. :</h4>
+
+<p><span class="article-duration">2017-01-17 23:18:17</span></p>
+
+<p>而不是说容器里放了个Int</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="天才麻将魔法少女cosmia-3">天才麻将魔法少女Cosmia :</h4>
+
+<p><span class="article-duration">2017-01-17 23:18:18</span></p>
+
+<p>= =</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-24">forever :</h4>
+
+<p><span class="article-duration">2017-01-17 23:18:35</span></p>
+
+<p>@东风谷草田 看你管什么叫容器了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pigeon-t-37">pigeon_t :</h4>
+
+<p><span class="article-duration">2017-01-17 23:19:01</span></p>
+
+<p>这题会让我干嘛？。。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pigeon-t-38">pigeon_t :</h4>
+
+<p><span class="article-duration">2017-01-17 23:19:24</span></p>
+
+<p>数numberOfWords?</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-13">第七页 :</h4>
+
+<p><span class="article-duration">2017-01-17 23:19:31</span></p>
+
+<p>我发现classtype都符合容器的特征。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-25">forever :</h4>
+
+<p><span class="article-duration">2017-01-17 23:19:34</span></p>
+
+<p>@pigeon_t 有题目描述啥的么？没有就别做了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="yaegaki-erika-2">Yaegaki Erika :</h4>
+
+<p><span class="article-duration">2017-01-17 23:19:49</span></p>
+
+<p>……让你把undefined补上吧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="汪先森-づ-4">汪先森 づ :</h4>
+
+<p><span class="article-duration">2017-01-17 23:19:55</span></p>
+
+<p>这不就是统计单词个数吗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-26">forever :</h4>
+
+<p><span class="article-duration">2017-01-17 23:19:56</span></p>
+
+<p>对呀，要往广了说所有 * -&gt; * 都是容器</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-27">forever :</h4>
+
+<p><span class="article-duration">2017-01-17 23:20:05</span></p>
+
+<p>看你怎么容了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pigeon-t-39">pigeon_t :</h4>
+
+<p><span class="article-duration">2017-01-17 23:20:06</span></p>
+
+<p>没。。。网络不好，结果就没讨论。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_103">. :</h4>
+
+<p><span class="article-duration">2017-01-17 23:20:33</span></p>
+
+<p>我的容器指的不是list那种collection</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_104">. :</h4>
+
+<p><span class="article-duration">2017-01-17 23:20:39</span></p>
+
+<p>[系统表情]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-14">第七页 :</h4>
+
+<p><span class="article-duration">2017-01-17 23:21:13</span></p>
+
+<p>list也是容器 [系统表情]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_106">. :</h4>
+
+<p><span class="article-duration">2017-01-17 23:21:22</span></p>
+
+<p>list是容器</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_107">. :</h4>
+
+<p><span class="article-duration">2017-01-17 23:21:32</span></p>
+
+<p>呸 我的不是容器指的不是这种collection</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_108">. :</h4>
+
+<p><span class="article-duration">2017-01-17 23:21:39</span></p>
+
+<p>前后否定不一致的语文(</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="天才麻将魔法少女cosmia-4">天才麻将魔法少女Cosmia :</h4>
+
+<p><span class="article-duration">2017-01-17 23:22:09</span></p>
+
+<p>所以你想表达什么？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-28">forever :</h4>
+
+<p><span class="article-duration">2017-01-17 23:22:29</span></p>
+
+<p>所以可以反过来嘛</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="天才麻将魔法少女cosmia-5">天才麻将魔法少女Cosmia :</h4>
+
+<p><span class="article-duration">2017-01-17 23:22:54</span></p>
+
+<p>不过想起来</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-29">forever :</h4>
+
+<p><span class="article-duration">2017-01-17 23:23:09</span></p>
+
+<p>Functor<br />    |&mdash;&gt; Applicative -&gt; Monad<br />    &lsquo;&mdash;&gt; Foldable -&gt; Traversable</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="天才麻将魔法少女cosmia-6">天才麻将魔法少女Cosmia :</h4>
+
+<p><span class="article-duration">2017-01-17 23:23:10</span></p>
+
+<p>理解了monad对用各种monad完全没有帮助啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-30">forever :</h4>
+
+<p><span class="article-duration">2017-01-17 23:23:25</span></p>
+
+<p>我觉得我就至今没理解 monad</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-31">forever :</h4>
+
+<p><span class="article-duration">2017-01-17 23:23:35</span></p>
+
+<p>我不知道我想理解什么。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-15">第七页 :</h4>
+
+<p><span class="article-duration">2017-01-17 23:23:47</span></p>
+
+<p>玩了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="天才麻将魔法少女cosmia-7">天才麻将魔法少女Cosmia :</h4>
+
+<p><span class="article-duration">2017-01-17 23:23:50</span></p>
+
+<p>就像你理解了群的概念你还是不可能GLn一样</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-16">第七页 :</h4>
+
+<p><span class="article-duration">2017-01-17 23:23:52</span></p>
+
+<p>没法学了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="天才麻将魔法少女cosmia-8">天才麻将魔法少女Cosmia :</h4>
+
+<p><span class="article-duration">2017-01-17 23:24:05</span></p>
+
+<p>就像你理解了群的概念你还是不可能直接理解GLn一样</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="天才麻将魔法少女cosmia-9">天才麻将魔法少女Cosmia :</h4>
+
+<p><span class="article-duration">2017-01-17 23:24:18</span></p>
+
+<p>并没有什么卵用啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-32">forever :</h4>
+
+<p><span class="article-duration">2017-01-17 23:25:25</span></p>
+
+<p>然后感觉其实 oop 也好难理解，为什么 oop 这么火<br />这可得好好学学</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-17">第七页 :</h4>
+
+<p><span class="article-duration">2017-01-17 23:25:55</span></p>
+
+<p>oop 全靠接口 😱</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-33">forever :</h4>
+
+<p><span class="article-duration">2017-01-17 23:26:06</span></p>
+
+<p>接口，接啥？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="天才麻将魔法少女cosmia-10">天才麻将魔法少女Cosmia :</h4>
+
+<p><span class="article-duration">2017-01-17 23:26:24</span></p>
+
+<p>c艹点了反对+没有帮助</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-18">第七页 :</h4>
+
+<p><span class="article-duration">2017-01-17 23:26:26</span></p>
+
+<p>oop里面的 面向接口编程</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-19">第七页 :</h4>
+
+<p><span class="article-duration">2017-01-17 23:27:08</span></p>
+
+<p>有一半类型类的功能</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-34">forever :</h4>
+
+<p><span class="article-duration">2017-01-17 23:27:17</span></p>
+
+<p>比如说的挺好的，程序里面你要真出现 class Truck extends Car 也没个卵用。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="c0c0c0">#c0c0c0 :</h4>
+
+<p><span class="article-duration">2017-01-17 23:29:47</span></p>
+
+<p>【面向对象编程的弊端是什么？】invalid s：弊端是，没有人还记得面向对象原本要解… <a href="http://www.zhihu.com/question/20275578/answer/26577791?utm_source=qq&amp;utm_medium=social">http://www.zhihu.com/question/20275578/answer/26577791?utm_source=qq&amp;utm_medium=social</a> （分享自知乎网）</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-35">forever :</h4>
+
+<p><span class="article-duration">2017-01-17 23:37:14</span></p>
+
+<p>其实，我感觉 oop 最好的地方就在 .() 了<br />并不是说是最重要的地方，而是那种你不用 oo 了也极其想要的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_130">. :</h4>
+
+<p><span class="article-duration">2017-01-17 23:38:18</span></p>
+
+<p>自动curry一个参数</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="c0c0c0-1">#c0c0c0 :</h4>
+
+<p><span class="article-duration">2017-01-17 23:38:23</span></p>
+
+<p>根据类型自动选择不同类的同名操作么。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-36">forever :</h4>
+
+<p><span class="article-duration">2017-01-17 23:39:06</span></p>
+
+<p>主要是 x.f(y, z) 而不是 f(x, y, z)</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-37">forever :</h4>
+
+<p><span class="article-duration">2017-01-17 23:39:14</span></p>
+
+<p>自动选择还是其次（</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_134">. :</h4>
+
+<p><span class="article-duration">2017-01-17 23:39:21</span></p>
+
+<p>这个不是一致调用吗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-38">forever :</h4>
+
+<p><span class="article-duration">2017-01-17 23:39:39</span></p>
+
+<p>不知道</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="c0c0c0-2">#c0c0c0 :</h4>
+
+<p><span class="article-duration">2017-01-17 23:39:52</span></p>
+
+<p>只是语法糖</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="c0c0c0-3">#c0c0c0 :</h4>
+
+<p><span class="article-duration">2017-01-17 23:39:58</span></p>
+
+<p>__thiscall</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_138">. :</h4>
+
+<p><span class="article-duration">2017-01-17 23:40:04</span></p>
+
+<p>不一定</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-39">forever :</h4>
+
+<p><span class="article-duration">2017-01-17 23:40:15</span></p>
+
+<p>yes，然后把自动选择函数加上</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="c0c0c0-4">#c0c0c0 :</h4>
+
+<p><span class="article-duration">2017-01-17 23:40:25</span></p>
+
+<p>睡了[月亮]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_141">. :</h4>
+
+<p><span class="article-duration">2017-01-17 23:40:39</span></p>
+
+<p>在有个版本的C++标准里面</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_142">. :</h4>
+
+<p><span class="article-duration">2017-01-17 23:40:44</span></p>
+
+<p>这两种可以相互替代了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_143">. :</h4>
+
+<p><span class="article-duration">2017-01-17 23:40:51</span></p>
+
+<p>好像还没实行？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_144">. :</h4>
+
+<p><span class="article-duration">2017-01-17 23:40:57</span></p>
+
+<p>而这个好像是从rust来的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_145">. :</h4>
+
+<p><span class="article-duration">2017-01-17 23:41:44</span></p>
+
+<p><a href="https://en.wikipedia.org/wiki/Uniform_Function_Call_Syntax">https://en.wikipedia.org/wiki/Uniform_Function_Call_Syntax</a></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-40">forever :</h4>
+
+<p><span class="article-duration">2017-01-17 23:47:17</span></p>
+
+<p>不错</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-41">forever :</h4>
+
+<p><span class="article-duration">2017-01-17 23:49:39</span></p>
+
+<p>可惜目前看来还没有办法让人觉得自己理解 monad 了。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<p>以上内容来自 [Haskell函数式编程] QQ 群。</p>
+
+    </div>
+  </article>
+
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "binjoy" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="http://qq.haskellchina.org/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="http://qq.haskellchina.org/images/hugo-logo.png" width="22" height="22"></a>
+            <div style="display:none">
+                <script src="http://s95.cnzz.com/stat.php?id=1261078931&web_id=1261078931" language="JavaScript"></script>
+            </div>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
+

@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.30.2" />
+
+
+<title>QQ Group Log of HaskellChina: 20170103 - QQGroup Log of HaskellChina</title>
+<meta property="og:title" content="QQ Group Log of HaskellChina: 20170103 - QQGroup Log of HaskellChina">
+
+
+
+  
+
+
+
+<meta property="keywords" content ="Haskell,, HaskellChina">
+
+
+
+
+<link rel="stylesheet" href="http://qq.haskellchina.org/css/main.css" media="all">
+<link rel="stylesheet" href="//fonts.lug.ustc.edu.cn/css?family=Merriweather:400|Lato:400,400italic,700">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="http://qq.haskellchina.org/" class="nav-logo">
+    <img src="http://qq.haskellchina.org/images/logo.png" 
+         width="50" 
+         height="50" 
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="https://github.com/gingerhot/QQLog-HaskellChina">GitHub</a></li>
+    
+    <li><a href="/about/">关于</a></li>
+    
+    <li><a href="http://haskellchina.org/">社区首页</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">QQ Group Log of HaskellChina: 20170103</h1>
+
+    
+    <span class="article-date">January 3, 2017</span>
+    
+
+    <div class="article-content">
+      
+
+<h4 id="lambdabot">LambdaBot :</h4>
+
+<p><span class="article-duration">2017-01-03 10:31:28</span></p>
+
+<p>-_,-</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="信长">信长 :</h4>
+
+<p><span class="article-duration">2017-01-03 10:48:04</span></p>
+
+<p>哈哈哈</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="左新宇">左新宇 :</h4>
+
+<p><span class="article-duration">2017-01-03 11:54:01</span></p>
+
+<p>类型的kind就是指的类型类么？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="lightgray">lightgray :</h4>
+
+<p><span class="article-duration">2017-01-03 11:54:37</span></p>
+
+<p>不……应该叫 类型的类型</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="左新宇-1">左新宇 :</h4>
+
+<p><span class="article-duration">2017-01-03 11:55:09</span></p>
+
+<p>嗯？和类型类不一样吗？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="汪先森-づ">汪先森 づ :</h4>
+
+<p><span class="article-duration">2017-01-03 11:55:38</span></p>
+
+<p>好像没什么关系啊？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="汪先森-づ-1">汪先森 づ :</h4>
+
+<p><span class="article-duration">2017-01-03 11:57:31</span></p>
+
+<p>你可以理解成可以对一个type :t type</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="汪先森-づ-2">汪先森 づ :</h4>
+
+<p><span class="article-duration">2017-01-03 11:58:45</span></p>
+
+<p>然后实际上你要用:k来做这件事情</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="左新宇-2">左新宇 :</h4>
+
+<p><span class="article-duration">2017-01-03 12:02:14</span></p>
+
+<p>我看的是张淞的《haskell函数式编程入门》，在第8章11节这里举的一个例子：data Triple a b c = Triple a b</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="左新宇-3">左新宇 :</h4>
+
+<p><span class="article-duration">2017-01-03 12:02:55</span></p>
+
+<p>这里的第一个Triple指的是类型构造器，第二个Triple指的是数据构造器吧？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="左新宇-4">左新宇 :</h4>
+
+<dl>
+<dt><span class="article-duration">2017-01-03 12:04:43</span></dt>
+</dl>
+
+<p>:k Triple得出的 Triple:: * -&gt; * -&gt; * -&gt; 这个信息有什么意义吗？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="yaegaki-erika">Yaegaki Erika :</h4>
+
+<p><span class="article-duration">2017-01-03 12:05:29</span></p>
+
+<p>kind</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="汪先森-づ-3">汪先森 づ :</h4>
+
+<p><span class="article-duration">2017-01-03 12:07:11</span></p>
+
+<p>反映了一个type ctor需要的参数个数…</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="左新宇-5">左新宇 :</h4>
+
+<p><span class="article-duration">2017-01-03 12:07:50</span></p>
+
+<p>所以这个kind到底是什么意思，就是说这个类型的签名是3个参数么？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="汪先森-づ-4">汪先森 づ :</h4>
+
+<p><span class="article-duration">2017-01-03 12:08:29</span></p>
+
+<p>我觉得你去看一眼wiki就能明白了…</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="yaegaki-erika-1">Yaegaki Erika :</h4>
+
+<p><span class="article-duration">2017-01-03 12:08:46</span></p>
+
+<p>the type of types</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="yaegaki-erika-2">Yaegaki Erika :</h4>
+
+<p><span class="article-duration">2017-01-03 12:09:04</span></p>
+
+<p>*and type constructors</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="左新宇-6">左新宇 :</h4>
+
+<p><span class="article-duration">2017-01-03 12:09:23</span></p>
+
+<p>那我再定义一个 data Cube a b c = Cube a b c，可以说Cube 的kind和 Triple的kind是一样的吗？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="yaegaki-erika-3">Yaegaki Erika :</h4>
+
+<p><span class="article-duration">2017-01-03 12:09:37</span></p>
+
+<p>对 是一样的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="汪先森-づ-5">汪先森 づ :</h4>
+
+<p><span class="article-duration">2017-01-03 12:09:44</span></p>
+
+<p>可以啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="yaegaki-erika-4">Yaegaki Erika :</h4>
+
+<p><span class="article-duration">2017-01-03 12:10:05</span></p>
+
+<p>都是*→*→<em>→</em></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="左新宇-7">左新宇 :</h4>
+
+<p><span class="article-duration">2017-01-03 12:10:27</span></p>
+
+<p>那这个kind有什么用。。。这个参数个数的信息很重要吗？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="汪先森-づ-6">汪先森 づ :</h4>
+
+<p><span class="article-duration">2017-01-03 12:27:49</span></p>
+
+<p>比如定义一个type-level的自然数和运算…?</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever">forever :</h4>
+
+<p><span class="article-duration">2017-01-03 12:28:37</span></p>
+
+<p>@左新宇 哈哈当然很重要了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-1">forever :</h4>
+
+<p><span class="article-duration">2017-01-03 12:28:46</span></p>
+
+<p>就像函数接受几个参数一样重要</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="左新宇-8">左新宇 :</h4>
+
+<p><span class="article-duration">2017-01-03 12:32:15</span></p>
+
+<p>好吧。我看有的书上提到了kind这个概念。但有的就没有，haskell趣学指南就没提到。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="芝心大椰子">芝心大椰子 :</h4>
+
+<p><span class="article-duration">2017-01-03 12:51:09</span></p>
+
+<p>好吧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="michael">Michael :</h4>
+
+<p><span class="article-duration">2017-01-03 14:31:13</span></p>
+
+<p>谁能告诉我</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="lightgray-1">lightgray :</h4>
+
+<p><span class="article-duration">2017-01-03 14:31:28</span></p>
+
+<p>装一个maxima</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="放点番茄酱">放点番茄酱 :</h4>
+
+<p><span class="article-duration">2017-01-03 14:31:34</span></p>
+
+<p>0啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="放点番茄酱-1">放点番茄酱 :</h4>
+
+<p><span class="article-duration">2017-01-03 14:31:44</span></p>
+
+<p>奇函数</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="放点番茄酱-2">放点番茄酱 :</h4>
+
+<p><span class="article-duration">2017-01-03 14:31:46</span></p>
+
+<p>😄</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="lightgray-2">lightgray :</h4>
+
+<p><span class="article-duration">2017-01-03 14:32:01</span></p>
+
+<p>[震惊哭]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_33">. :</h4>
+
+<p><span class="article-duration">2017-01-03 14:32:45</span></p>
+
+<p>太trivial</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="michael-1">Michael :</h4>
+
+<p><span class="article-duration">2017-01-03 14:33:00</span></p>
+
+<p>[系统表情]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="michael-2">Michael :</h4>
+
+<p><span class="article-duration">2017-01-03 14:33:34</span></p>
+
+<p>@东风谷草田 多少，求答案</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_36">. :</h4>
+
+<p><span class="article-duration">2017-01-03 14:33:42</span></p>
+
+<p>上面不是有人回答了吗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="michael-3">Michael :</h4>
+
+<p><span class="article-duration">2017-01-03 14:35:00</span></p>
+
+<p>[衰]还是你们在读学生牛逼</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="wuli华华">wuli华华 :</h4>
+
+<p><span class="article-duration">2017-01-03 14:35:47</span></p>
+
+<p>反正我自己是看不出来答案的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="mr-w">Mr.W :</h4>
+
+<p><span class="article-duration">2017-01-03 14:38:12</span></p>
+
+<p>trivial、</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="放点番茄酱-3">放点番茄酱 :</h4>
+
+<p><span class="article-duration">2017-01-03 14:38:47</span></p>
+
+<p>已经毕业好多好多年了。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="放点番茄酱-4">放点番茄酱 :</h4>
+
+<p><span class="article-duration">2017-01-03 14:38:56</span></p>
+
+<p>[糗大了]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="bugonee">BuGoNee :</h4>
+
+<p><span class="article-duration">2017-01-03 14:48:22</span></p>
+
+<p>愁，有个request会把password加密成22位或者24位，求问各位能想到什么算法是这样的吗？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="mr-w-1">Mr.W :</h4>
+
+<p><span class="article-duration">2017-01-03 14:48:47</span></p>
+
+<p>太多了吧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="bugonee-1">BuGoNee :</h4>
+
+<p><span class="article-duration">2017-01-03 14:49:31</span></p>
+
+<p>恰好是24位，又比较常用的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="bugonee-2">BuGoNee :</h4>
+
+<p><span class="article-duration">2017-01-03 14:49:51</span></p>
+
+<p>我有一组密码加密前后的样子，怎么样找出是哪个算法？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="老农">老农 :</h4>
+
+<p><span class="article-duration">2017-01-03 15:12:12</span></p>
+
+<p>md5是16 sha1是2024的话可能是sha1加了个slat</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="monsoon">monsoon :</h4>
+
+<p><span class="article-duration">2017-01-03 18:10:12</span></p>
+
+<p>WiFi密码不都8位起的吗？难道密码是8个0。。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="bugonee-3">BuGoNee :</h4>
+
+<p><span class="article-duration">2017-01-03 18:27:27</span></p>
+
+<p>反正&hellip;</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="bugonee-4">BuGoNee :</h4>
+
+<p><span class="article-duration">2017-01-03 18:27:32</span></p>
+
+<p>绕过去了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="瑞典咸鱼cosmia">瑞典咸鱼Cosmia :</h4>
+
+<p><span class="article-duration">2017-01-03 18:52:46</span></p>
+
+<p>trivial。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="michael-4">Michael :</h4>
+
+<p><span class="article-duration">2017-01-03 20:18:26</span></p>
+
+<p>@魔法少女 ~Cosmia~ [坏笑]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<p>以上内容来自 [Haskell函数式编程] QQ 群。</p>
+
+    </div>
+  </article>
+
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "binjoy" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="http://qq.haskellchina.org/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="http://qq.haskellchina.org/images/hugo-logo.png" width="22" height="22"></a>
+            <div style="display:none">
+                <script src="http://s95.cnzz.com/stat.php?id=1261078931&web_id=1261078931" language="JavaScript"></script>
+            </div>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
+

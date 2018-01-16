@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.30.2" />
+
+
+<title>QQ Group Log of HaskellChina: 20171126 - QQGroup Log of HaskellChina</title>
+<meta property="og:title" content="QQ Group Log of HaskellChina: 20171126 - QQGroup Log of HaskellChina">
+
+
+
+  
+
+
+
+<meta property="keywords" content ="Haskell,, HaskellChina">
+
+
+
+
+<link rel="stylesheet" href="http://qq.haskellchina.org/css/main.css" media="all">
+<link rel="stylesheet" href="//fonts.lug.ustc.edu.cn/css?family=Merriweather:400|Lato:400,400italic,700">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="http://qq.haskellchina.org/" class="nav-logo">
+    <img src="http://qq.haskellchina.org/images/logo.png" 
+         width="50" 
+         height="50" 
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="https://github.com/gingerhot/QQLog-HaskellChina">GitHub</a></li>
+    
+    <li><a href="/about/">关于</a></li>
+    
+    <li><a href="http://haskellchina.org/">社区首页</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">1 min read</span>
+    
+
+    <h1 class="article-title">QQ Group Log of HaskellChina: 20171126</h1>
+
+    
+    <span class="article-date">November 26, 2017</span>
+    
+
+    <div class="article-content">
+      
+
+<h4 id="toc_0">_ :</h4>
+
+<p><span class="article-duration">2017-11-26 13:26:28</span></p>
+
+<p>在想rust里lifetime ownership之类对hs而言有无借鉴意义 不过hs里所有都是immutable的(\x-&gt;(x,x)) 實際上相當於rs裡的(\x-&gt;(&amp;x,&amp;x)) 若是把hs的lambda表达式限制成linear的有什么意义吗 （想不通这些</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-11-26 13:32:38</span></p>
+
+<p>ghc 8.4 会有 linear type</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-11-26 13:33:26</span></p>
+
+<p>那麼日常問題來了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-1">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-11-26 13:33:38</span></p>
+
+<p>hs甚麼時候有dependent type呢</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="λcrlf-º⁷¹º">λCrLF·º⁷¹º :</h4>
+
+<p><span class="article-duration">2017-11-26 13:34:01</span></p>
+
+<p>诶，haskell没有数组嘛？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-2">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-11-26 13:34:10</span></p>
+
+<p>Vector</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="λcrlf-º⁷¹º-1">λCrLF·º⁷¹º :</h4>
+
+<p><span class="article-duration">2017-11-26 13:34:27</span></p>
+
+<p>那个不算，就是dependent type 的那种数组</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-3">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-11-26 13:34:42</span></p>
+
+<p>就是Vector啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-4">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-11-26 13:34:53</span></p>
+
+<p>不過hs沒有dt</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="姚少妖妖">姚少妖妖、 :</h4>
+
+<p><span class="article-duration">2017-11-26 13:34:54</span></p>
+
+<p>[惊讶][惊讶][惊讶]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-5">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-11-26 13:35:04</span></p>
+
+<p>所以要用singleton模擬dt</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="λcrlf-º⁷¹º-2">λCrLF·º⁷¹º :</h4>
+
+<p><span class="article-duration">2017-11-26 13:35:20</span></p>
+
+<p>[usize; 3]       &lt;&mdash; 类似这种</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="三七二十">三七二十‭ :</h4>
+
+<p><span class="article-duration">2017-11-26 13:35:44</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="三七二十-1">三七二十‭ :</h4>
+
+<p><span class="article-duration">2017-11-26 13:35:56</span></p>
+
+<p>Rust语法吗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="λcrlf-º⁷¹º-3">λCrLF·º⁷¹º :</h4>
+
+<p><span class="article-duration">2017-11-26 13:36:12</span></p>
+
+<p>嗯，不管怎么写啦</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_15">_ :</h4>
+
+<p><span class="article-duration">2017-11-26 13:36:34</span></p>
+
+<p>怎么引入linear type 想不通 比如增加个 (~&gt;)嗎</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_16">_ :</h4>
+
+<p><span class="article-duration">2017-11-26 13:37:41</span></p>
+
+<p>hs不屑于搞这种低级的dt 好像tensor的dt不少</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="fts">FTS :</h4>
+
+<p><span class="article-duration">2017-11-26 14:06:41</span></p>
+
+<p><a href="https://hackage.haskell.org/package/sized-vector">https://hackage.haskell.org/package/sized-vector</a></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="fts-1">FTS :</h4>
+
+<p><span class="article-duration">2017-11-26 14:07:16</span></p>
+
+<p><a href="https://github.com/tweag/ghc-proposals/blob/linear-types/proposals/0000-linear-types.rst">https://github.com/tweag/ghc-proposals/blob/linear-types/proposals/0000-linear-types.rst</a> Linear Types GHC Proposal</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="fts-2">FTS :</h4>
+
+<p><span class="article-duration">2017-11-26 14:08:41</span></p>
+
+<p><a href="https://mail.haskell.org/pipermail/haskell-cafe/2017-November/128195.html">https://mail.haskell.org/pipermail/haskell-cafe/2017-November/128195.html</a> <br /></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="fts-3">FTS :</h4>
+
+<p><span class="article-duration">2017-11-26 14:09:04</span></p>
+
+<p>FYI 最近出的两个库</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-1">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-11-26 14:10:26</span></p>
+
+<p><a href="https://gist.github.com/nkpart/8922083d3c18a8f777b8">https://gist.github.com/nkpart/8922083d3c18a8f777b8</a></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-2">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-11-26 14:10:32</span></p>
+
+<p>笑岔气了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="仄仄">仄仄 :</h4>
+
+<p><span class="article-duration">2017-11-26 14:52:27</span></p>
+
+<p>string text 的read调用就会报错..   不知道为嘛还要instance Read</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<p>以上内容来自 [Haskell函数式编程] QQ 群。</p>
+
+    </div>
+  </article>
+
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "binjoy" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="http://qq.haskellchina.org/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="http://qq.haskellchina.org/images/hugo-logo.png" width="22" height="22"></a>
+            <div style="display:none">
+                <script src="http://s95.cnzz.com/stat.php?id=1261078931&web_id=1261078931" language="JavaScript"></script>
+            </div>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
+

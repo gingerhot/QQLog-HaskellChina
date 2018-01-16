@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2017 10 on QQGroup Log of HaskellChina</title>
+    <link>http://qq.haskellchina.org/tags/2017-10/</link>
+    <description>Recent content in 2017 10 on QQGroup Log of HaskellChina</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 31 Oct 2017 00:55:32 +0800</lastBuildDate>
+    
+	<atom:link href="http://qq.haskellchina.org/tags/2017-10/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171031</title>
+      <link>http://qq.haskellchina.org/2017/10/31/qq-group-log-of-haskellchina-20171031/</link>
+      <pubDate>Tue, 31 Oct 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/10/31/qq-group-log-of-haskellchina-20171031/</guid>
+      <description>昵称未知 : 2017-10-31 09:08:18
+id
+饼干先生 : 2017-10-31 09:11:07
+@Tywin 欢迎欢迎！
+饼干先生 : 2017-10-31 09:11:25
+@Tywin 请自我介绍下
+昵称未知 : 2017-10-31 10:01:27
+大家好
+饼干先生 : 2017-10-31 10:06:48
+@Tywin 请自我介绍下
+Xyzt Toe : 2017-10-31 17:02:28
+这是啥
+y=mx+⑨ : 2017-10-31 17:02:44
+Except monad的transformer版
+y=mx+⑨ : 2017-10-31 17:02:58
+所有T結尾的都是monad transformer
+Xyzt Toe : 2017-10-31 17:03:17
+ExceptMonad是啥
+三七二十‭ : 2017-10-31 17:03:24
+好像是either
+Xyzt Toe : 2017-10-31 17:03:33
+transformer到是知道
+三七二十‭ : 2017-10-31 17:03:50
+eitherT被废了，改成ExceptT了
+Xyzt Toe : 2017-10-31 17:04:29</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171030</title>
+      <link>http://qq.haskellchina.org/2017/10/30/qq-group-log-of-haskellchina-20171030/</link>
+      <pubDate>Mon, 30 Oct 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/10/30/qq-group-log-of-haskellchina-20171030/</guid>
+      <description>大笨蛋千里冰封 : 2017-10-30 08:17:08
+IO Monad的join是unsafePerformIO吗
+y=mx+⑨ : 2017-10-30 08:20:54
+當然不是
+y=mx+⑨ : 2017-10-30 08:21:00
+你看簽名都不對
+y=mx+⑨ : 2017-10-30 08:21:16
+為甚麼不去看IO的實現呢
+Felis sapiens : 2017-10-30 09:46:04
+签名其实是对的
+Felis sapiens : 2017-10-30 09:46:08
+但是不是
+大笨蛋千里冰封 : 2017-10-30 13:23:55
+喔
+仄仄 : 2017-10-30 16:37:19
+forall 没看懂用来干啥的 同义词是啥意思
+三七二十‭ : 2017-10-30 16:37:47
+同义词就是for all
+三七二十‭ : 2017-10-30 16:37:52
+三七二十‭ : 2017-10-30 16:37:59
+Xyzt Toe : 2017-10-30 16:38:04
+arbitrary
+仄仄 : 2017-10-30 16:38:15</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171029</title>
+      <link>http://qq.haskellchina.org/2017/10/29/qq-group-log-of-haskellchina-20171029/</link>
+      <pubDate>Sun, 29 Oct 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/10/29/qq-group-log-of-haskellchina-20171029/</guid>
+      <description>阅千人而惜知己 : 2017-10-29 00:17:54
+@faultrit 科大有开Haskell的课？
+刘笑天 : 2017-10-29 00:18:38
+cpp函数式？
+阅千人而惜知己 : 2017-10-29 00:18:48
+@断水流的宗旨 你看完了趣学也只是初级。
+Narc : 2017-10-29 00:25:49
+没有
+0vo : 2017-10-29 00:29:49
+@刘笑天 github.com/fc01 想做一个CPS风格的库，按照函数式的方式先做一些准备工作
+在座的各位都是辣鸡 : 2017-10-29 07:10:15
+@阅千人而惜知己 等我到了初级 可不可以简单介绍一下 更有特点的一些东西
+faultrit : 2017-10-29 07:19:37
+@阅千人而惜知己 没有，自己想学
+大笨蛋千里冰封 : 2017-10-29 07:51:20
+@断水流的宗旨 GADT和type family
+魔理沙 : 2017-10-29 07:56:15
+@断水流的宗旨 equational reasoning
+在座的各位都是辣鸡 : 2017-10-29 08:10:53
+谢谢 谢谢!
+&amp;rdquo;&amp;rsquo; ⃢・ ・ ⃢&amp;rdquo;&amp;rsquo; : 2017-10-29 10:10:56</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171028</title>
+      <link>http://qq.haskellchina.org/2017/10/28/qq-group-log-of-haskellchina-20171028/</link>
+      <pubDate>Sat, 28 Oct 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/10/28/qq-group-log-of-haskellchina-20171028/</guid>
+      <description>faultrit : 2017-10-28 22:48:17
+id
+Neo : 2017-10-28 22:49:34
+欢迎欢迎，介绍一下自己?
+faultrit : 2017-10-28 22:52:12
+计算机专业本科生一枚，刚学haskell不久，感觉非常有趣，希望能多和大家交流
+アッコ : 2017-10-28 22:52:27
+中科大的！
+アッコ : 2017-10-28 22:52:29
+？
+faultrit : 2017-10-28 22:52:59
+emm，是的
+Ryan J.K. : 2017-10-28 22:53:20
+欢迎
+Ryan J.K. : 2017-10-28 22:53:34
+最近觉得中科大出来的人都非常棒
+斯大林的RBQ Cosmia : 2017-10-28 22:54:23
+欢迎
+饼干先生 : 2017-10-28 22:54:29
+[惊讶]别来砸场子啊 最近几个大佬都不在
+faultrit : 2017-10-28 22:55:49
+额，暂时没什么问题要问😂
+Xyzt Toe : 2017-10-28 22:57:46
+[惊讶]
+Xyzt Toe : 2017-10-28 22:58:02</description>
+    </item>
+    
+  </channel>
+</rss>

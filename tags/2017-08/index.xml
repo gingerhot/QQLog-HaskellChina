@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2017 08 on QQGroup Log of HaskellChina</title>
+    <link>http://qq.haskellchina.org/tags/2017-08/</link>
+    <description>Recent content in 2017 08 on QQGroup Log of HaskellChina</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 02 Aug 2017 00:55:32 +0800</lastBuildDate>
+    
+	<atom:link href="http://qq.haskellchina.org/tags/2017-08/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170802</title>
+      <link>http://qq.haskellchina.org/2017/08/02/qq-group-log-of-haskellchina-20170802/</link>
+      <pubDate>Wed, 02 Aug 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/08/02/qq-group-log-of-haskellchina-20170802/</guid>
+      <description>玄简[夏] : 2017-08-02 00:01:27
+写个addon重载浏览器行为（
+嶺上アイドルCosmia : 2017-08-02 00:03:55
+@别说话 http://mirrors.tuna.tsinghua.edu.cn/stackage/ghc/ghc-8.0.2-x86_64-unknown-mingw32-integer-simple-win10.tar.xz
+嶺上アイドルCosmia : 2017-08-02 00:05:06
+@别说话 http://mirrors.tuna.tsinghua.edu.cn/stackage/ghc/ghc-8.2.1-x86_64-unknown-mingw32.tar.xz
+别说话 : 2017-08-02 00:06:20
+3Q
+嶺上アイドルCosmia : 2017-08-02 00:06:44
+http://mirrors.tuna.tsinghua.edu.cn/msys2/distrib/x86_64/msys2-base-x86_64-20161025.tar.xz
+嶺上アイドルCosmia : 2017-08-02 00:06:46
+这两个都得装
+别说话 : 2017-08-02 00:11:05
+我装GIT了
+hitchhiker : 2017-08-02 13:19:32
+hitchhiker : 2017-08-02 13:22:17
+请问您今天要来点兔子吗？ : 2017-08-02 13:27:59
+@嶺上アイドルCosmia https://raw.githubusercontent.com/kubernetes/kubernetes/master/examples/guestbook/all-in-one/guestbook-all-in-one.yaml
+我试了试，我的ff不会自动下载这文件
+以上内容来自 [Haskell函数式编程] QQ 群。</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170801</title>
+      <link>http://qq.haskellchina.org/2017/08/01/qq-group-log-of-haskellchina-20170801/</link>
+      <pubDate>Tue, 01 Aug 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/08/01/qq-group-log-of-haskellchina-20170801/</guid>
+      <description>dram : 2017-08-01 00:00:01
+一个 fix 毁全场系列
+Felis sapiens : 2017-08-01 00:00:14
+写 CEK 有什么问题吗。。
+dram : 2017-08-01 00:00:35
+那这就说明白了啊
+dram : 2017-08-01 00:00:42
+[惊讶]好了我说完了
+魔理沙 : 2017-08-01 00:00:47
+说模拟说的是有类型的translation啊
+Felis sapiens : 2017-08-01 00:01:23
+我再想想
+魔理沙 : 2017-08-01 00:01:25
+比如说oc可以把a -&amp;gt; b translate到{get: b, set: a}上
+魔理沙 : 2017-08-01 00:01:39
+函数调用就是override set，然后call get
+魔理沙 : 2017-08-01 00:02:23
+不用recursive type/mutation能不能做到？我有点不会证明
+魔理沙 : 2017-08-01 00:02:44
+我只知道naive record不行
+f : 2017-08-01 00:03:47</description>
+    </item>
+    
+  </channel>
+</rss>

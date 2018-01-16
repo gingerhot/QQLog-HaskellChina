@@ -1,0 +1,1983 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.30.2" />
+
+
+<title>QQ Group Log of HaskellChina: 20171205 - QQGroup Log of HaskellChina</title>
+<meta property="og:title" content="QQ Group Log of HaskellChina: 20171205 - QQGroup Log of HaskellChina">
+
+
+
+  
+
+
+
+<meta property="keywords" content ="Haskell,, HaskellChina">
+
+
+
+
+<link rel="stylesheet" href="http://qq.haskellchina.org/css/main.css" media="all">
+<link rel="stylesheet" href="//fonts.lug.ustc.edu.cn/css?family=Merriweather:400|Lato:400,400italic,700">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="http://qq.haskellchina.org/" class="nav-logo">
+    <img src="http://qq.haskellchina.org/images/logo.png" 
+         width="50" 
+         height="50" 
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="https://github.com/gingerhot/QQLog-HaskellChina">GitHub</a></li>
+    
+    <li><a href="/about/">关于</a></li>
+    
+    <li><a href="http://haskellchina.org/">社区首页</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">8 min read</span>
+    
+
+    <h1 class="article-title">QQ Group Log of HaskellChina: 20171205</h1>
+
+    
+    <span class="article-date">December 5, 2017</span>
+    
+
+    <div class="article-content">
+      
+
+<h4 id="faultrit">faultrit :</h4>
+
+<p><span class="article-duration">2017-12-05 00:00:53</span></p>
+
+<p>hackerrank</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="nicekingwei">Nicekingwei :</h4>
+
+<p><span class="article-duration">2017-12-05 00:08:14</span></p>
+
+<p>pat也可以，不过只到ghc7.6</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="six-edge">Six Edge :</h4>
+
+<p><span class="article-duration">2017-12-05 01:09:09</span></p>
+
+<p>pta？浙大的那个？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="長信宮燈">長信宮燈 :</h4>
+
+<p><span class="article-duration">2017-12-05 06:48:06</span></p>
+
+<p>对的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="liuliu">liuliu :</h4>
+
+<p><span class="article-duration">2017-12-05 09:54:57</span></p>
+
+<p>问个简单的语法问题<br />run :: String -&gt; Expr<br />run = runParser expr<br /><br />runParser :: Parser a -&gt; String -&gt; a<br />runParser m s =<br />这2个能匹配吗？<br /><br /></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="liuliu-1">liuliu :</h4>
+
+<p><span class="article-duration">2017-12-05 09:55:49</span></p>
+
+<p>runParser是说传入Parser和String，返回a吗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="仄仄">仄仄 :</h4>
+
+<p><span class="article-duration">2017-12-05 10:04:16</span></p>
+
+<p>传入 Parser a、String 类型  返回a类型</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 10:05:39</span></p>
+
+<p>[惊讶]expr 是 Parser Expr就能匹配啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-1">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 10:05:45</span></p>
+
+<p>为什么不能？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="liuliu-2">liuliu :</h4>
+
+<p><span class="article-duration">2017-12-05 10:50:45</span></p>
+
+<p>对，我理解了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="liuliu-3">liuliu :</h4>
+
+<p><span class="article-duration">2017-12-05 11:03:45</span></p>
+
+<p>newtype Parser a = Parser { parse :: String -&gt; [(a,String)] }<br /><br />runParser :: Parser a -&gt; String -&gt; a<br />这个返回的a是什么含义</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-2">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 11:03:55</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="liuliu-4">liuliu :</h4>
+
+<p><span class="article-duration">2017-12-05 11:04:03</span></p>
+
+<p>[惊讶]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-3">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 11:04:10</span></p>
+
+<p>你连基础都没搞懂就来玩这个吗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="liuliu-5">liuliu :</h4>
+
+<p><span class="article-duration">2017-12-05 11:04:22</span></p>
+
+<p>有些忘了。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="liuliu-6">liuliu :</h4>
+
+<p><span class="article-duration">2017-12-05 11:05:38</span></p>
+
+<p>是表示任意值是吗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-05 11:47:17</span></p>
+
+<p>ghc 的 master 分支版本号切到 8.5 了。。感慨。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="foreverbell">foreverbell :</h4>
+
+<p><span class="article-duration">2017-12-05 11:52:21</span></p>
+
+<p>linear type 是 8.5？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-1">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-05 11:54:07</span></p>
+
+<p><a href="https://ghc.haskell.org/trac/ghc/wiki/Status/GHC-8.4.1">https://ghc.haskell.org/trac/ghc/wiki/Status/GHC-8.4.1</a></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-2">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-05 11:54:27</span></p>
+
+<p>似乎 linear type 还没有进主线</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="jin">Jin :</h4>
+
+<p><span class="article-duration">2017-12-05 11:55:02</span></p>
+
+<p>linear type 是什么type?</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-4">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 11:55:07</span></p>
+
+<p>[惊讶]不懂+1</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-5">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 12:02:19</span></p>
+
+<p>看了一下wiki <a href="https://ghc.haskell.org/trac/ghc/wiki/LinearTypes">https://ghc.haskell.org/trac/ghc/wiki/LinearTypes</a></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-6">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 12:02:49</span></p>
+
+<p>所以是可以明确告诉编译器某个东西只用N次，方便编译器优化？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-3">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-05 12:04:23</span></p>
+
+<p>只用1次：linear type</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-4">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-05 12:04:37</span></p>
+
+<p>只用不超过1次：uniqueness type</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-7">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 12:05:14</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-8">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 12:05:58</span></p>
+
+<p>那，怎么样算是用了呢？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="fts">FTS :</h4>
+
+<p><span class="article-duration">2017-12-05 12:15:32</span></p>
+
+<p>看上去8.4变动还挺大的&hellip;</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="neo">Neo :</h4>
+
+<p><span class="article-duration">2017-12-05 13:23:52</span></p>
+
+<p>最近退群不少?</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="仄仄-1">仄仄 :</h4>
+
+<p><span class="article-duration">2017-12-05 13:24:13</span></p>
+
+<p>我记得我之前退过 然后又加进来了。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="我的电脑">我的电脑 :</h4>
+
+<p><span class="article-duration">2017-12-05 14:12:57</span></p>
+
+<p>请教个问题，现在我有个lens</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="我的电脑-1">我的电脑 :</h4>
+
+<p><span class="article-duration">2017-12-05 14:13:54</span></p>
+
+<p>当我 t &amp; (matchAttr &ldquo;overflow&rdquo;) .~ &ldquo;something&rdquo;的时候一切正常</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="我的电脑-2">我的电脑 :</h4>
+
+<p><span class="article-duration">2017-12-05 14:14:27</span></p>
+
+<p>但是如果我声明一个函数f = isJust.matchAttr.fst</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="我的电脑-3">我的电脑 :</h4>
+
+<p><span class="article-duration">2017-12-05 14:15:06</span></p>
+
+<p>他会告诉我之前matchAttr中Functor f的f是ambiguous的，这是什么情况</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-9">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 14:23:14</span></p>
+
+<p>[惊讶]他推断不出来f是啥</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-10">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 14:23:18</span></p>
+
+<p>就酱</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="我的电脑-4">我的电脑 :</h4>
+
+<p><span class="article-duration">2017-12-05 14:23:48</span></p>
+
+<p>emmmm我都写到Traversable了还是不行</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-11">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 14:24:54</span></p>
+
+<p>你最终的结果中没有mention f</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-12">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 14:25:20</span></p>
+
+<p>f :: (String, b) -&gt; Bool</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="我的电脑-5">我的电脑 :</h4>
+
+<p><span class="article-duration">2017-12-05 14:25:21</span></p>
+
+<p>对，我只想判断Just还是Nothing</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-13">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 14:25:26</span></p>
+
+<p>f被吃掉了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-14">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 14:25:34</span></p>
+
+<p>他知不知道不同的f会不会影响结果</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-15">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 14:25:43</span></p>
+
+<p>他不知道不同的f会不会影响结果</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-16">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 14:26:10</span></p>
+
+<p>比较简单的方法是</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-17">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 14:26:21</span></p>
+
+<p>你在f的定义里面随意规定一个Functor 给他</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="我的电脑-6">我的电脑 :</h4>
+
+<p><span class="article-duration">2017-12-05 14:27:13</span></p>
+
+<p>于是问题来了=。=规定了随便的反而会让别的函数受影响</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-18">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 14:27:23</span></p>
+
+<p>[惊讶]why？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-19">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 14:27:51</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="我的电脑-7">我的电脑 :</h4>
+
+<p><span class="article-duration">2017-12-05 14:28:01</span></p>
+
+<p>啊，这个意思</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-20">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 14:28:04</span></p>
+
+<p>那个matchXXX该是啥还是啥</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="我的电脑-8">我的电脑 :</h4>
+
+<p><span class="article-duration">2017-12-05 14:28:07</span></p>
+
+<p>我以为你说matchAttr</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="我的电脑-9">我的电脑 :</h4>
+
+<p><span class="article-duration">2017-12-05 14:28:14</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-21">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 14:28:14</span></p>
+
+<p>你在定义里面强行规定一个</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-22">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 14:28:18</span></p>
+
+<p>这是可以的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="我的电脑-10">我的电脑 :</h4>
+
+<p><span class="article-duration">2017-12-05 14:28:19</span></p>
+
+<p>好的我试一下</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="我的电脑-11">我的电脑 :</h4>
+
+<p><span class="article-duration">2017-12-05 14:30:35</span></p>
+
+<p>那如果复杂一点的办法呢？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-23">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 14:34:26</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-24">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 14:34:34</span></p>
+
+<p>比如这种情况结果就不一样了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="我的电脑-12">我的电脑 :</h4>
+
+<p><span class="article-duration">2017-12-05 14:34:52</span></p>
+
+<p>呃，脑壳疼</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-25">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 14:35:06</span></p>
+
+<p>但是你看组合出来的类型都是一样的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-26">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 14:35:38</span></p>
+
+<p>当然我这纯属蛋疼</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="我的电脑-13">我的电脑 :</h4>
+
+<p><span class="article-duration">2017-12-05 14:36:35</span></p>
+
+<p>我还是看看我这会不会出现这个情况吧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="我的电脑-14">我的电脑 :</h4>
+
+<p><span class="article-duration">2017-12-05 14:36:39</span></p>
+
+<p>应该不会</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-27">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 14:36:53</span></p>
+
+<p>你这肯定不会</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-28">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 14:36:57</span></p>
+
+<p>但是ghc不知道</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-29">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 14:37:07</span></p>
+
+<p>于是他就要求你必须订好了f是啥</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="我的电脑-15">我的电脑 :</h4>
+
+<p><span class="article-duration">2017-12-05 14:37:26</span></p>
+
+<p>懂了，奇怪了好久</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="我的电脑-16">我的电脑 :</h4>
+
+<p><span class="article-duration">2017-12-05 14:37:34</span></p>
+
+<p>谢了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-30">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 14:39:14</span></p>
+
+<p>说白了还是GHC太鶸</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-31">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 14:39:19</span></p>
+
+<p>不能自己deduce出来</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-32">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 14:39:39</span></p>
+
+<p>复杂的方法。。。可能有，然鹅我不会</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="snowonion">SnowOnion :</h4>
+
+<p><span class="article-duration">2017-12-05 15:42:06</span></p>
+
+<p>@mirone 啊就是它！多谢～</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="snowonion-1">SnowOnion :</h4>
+
+<p><span class="article-duration">2017-12-05 15:42:21</span></p>
+
+<p>@每一天 @lHrRofsfFHvA0Q== thx too</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="每一天">每一天 :</h4>
+
+<p><span class="article-duration">2017-12-05 17:01:40</span></p>
+
+<p>[惊讶]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-33">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 19:44:24</span></p>
+
+<p>[惊讶]这个东西和tell有啥区别？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-5">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-05 19:46:43</span></p>
+
+<p>这个就是把 lseek 包装一下吧。。跟 tell 有什么关系</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-34">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 19:47:28</span></p>
+
+<p>[惊讶]差不多吧。。。getpos相当于tell，setpos相当于seek</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-35">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 19:47:52</span></p>
+
+<p>我没看出来有啥区别= =</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-36">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 19:49:29</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-37">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 19:49:49</span></p>
+
+<p>这么做有什么好处吗？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-38">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 19:50:03</span></p>
+
+<p>可以防止不小心seek到一个不存在的地方？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-6">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-05 19:58:51</span></p>
+
+<p>不能吧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-7">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-05 19:59:03</span></p>
+
+<p>该抛异常照抛</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-39">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 20:00:10</span></p>
+
+<p>[惊讶]HandlePosn只能从hGetPosn创建</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-40">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 20:00:26</span></p>
+
+<p>constructor是不export的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-8">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-05 20:00:37</span></p>
+
+<p>那我不知道。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="刘笑天">刘笑天 :</h4>
+
+<p><span class="article-duration">2017-12-05 20:00:57</span></p>
+
+<p>可不可以把内存做为IO存变量？？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-9">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-05 20:01:13</span></p>
+
+<p>@刘笑天  github.com/fc01 可以</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-41">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 20:01:17</span></p>
+
+<p>我能想到的唯一的用处就是防止不小心seek到不存在的地方。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="刘笑天-1">刘笑天 :</h4>
+
+<p><span class="article-duration">2017-12-05 20:01:26</span></p>
+
+<p>好东西</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-10">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-05 20:01:33</span></p>
+
+<p>我觉得 base 里面的 Handle 属于过度包装</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-11">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-05 20:01:50</span></p>
+
+<p>我写的话给 fd 包个 newtype 就差不多了。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-42">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 20:02:06</span></p>
+
+<p>我觉得直接给FILE* 搞个newtype就行了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-12">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-05 20:02:18</span></p>
+
+<p>FILE* 都不需要</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-43">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 20:02:26</span></p>
+
+<p>刚才看了一眼里面好多东西啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-13">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-05 20:02:28</span></p>
+
+<p>因为那个是 libc 的。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-14">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-05 20:02:47</span></p>
+
+<p>理想来说不应该依赖 libc。。（看向隔壁 golang</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-44">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 20:02:55</span></p>
+
+<p>还带了一个encoding。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-45">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 20:03:00</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-15">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-05 20:03:14</span></p>
+
+<p>对，这个 encoding 也不应该放在 base 里面</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-16">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-05 20:03:32</span></p>
+
+<p>想要 encode 那就好好做个官方的 icu binding 啊。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-46">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 20:03:45</span></p>
+
+<p>我觉得应该把bytestring合进来</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-47">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 20:03:53</span></p>
+
+<p>然后让String-based IO滚蛋</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-17">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-05 20:04:01</span></p>
+
+<p>bytestring 和 text 都是</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-48">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 20:04:12</span></p>
+
+<p>Text可以不必须</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-49">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 20:04:22</span></p>
+
+<p>ByteString比较重要</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-18">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-05 20:04:40</span></p>
+
+<p>然后 text 直接用 unboxed vector 实现，utf-32 编码，多方便</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-50">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 20:04:54</span></p>
+
+<p>hmmm</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-51">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 20:05:04</span></p>
+
+<p>那估计得等haskell搞出新标准了。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-19">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-05 20:05:15</span></p>
+
+<p>不用啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-20">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-05 20:05:24</span></p>
+
+<p>foundation 就是这个思路</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-52">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 20:05:27</span></p>
+
+<p>String-based IO好像是语言标准规定的。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-53">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 20:05:35</span></p>
+
+<p>foundation是啥？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-21">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-05 20:05:47</span></p>
+
+<p>一个替代 prelude</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-54">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 20:06:00</span></p>
+
+<p>[惊讶]给个链接？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-22">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-05 20:06:06</span></p>
+
+<p>。。hackage 上</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-55">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 20:07:57</span></p>
+
+<p>这。。。。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-23">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-05 20:09:08</span></p>
+
+<p>。。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-56">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 20:13:54</span></p>
+
+<p>什么时候把一众contravariant，profunctor，semigroupoid啥的都合进来好了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-57">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 20:14:10</span></p>
+
+<p>bifunctor和semigroup不就合进来了吗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-24">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-05 20:25:37</span></p>
+
+<p>一句话：把 ekmett 合进来</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-58">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 20:31:52</span></p>
+
+<p>噗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-59">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 20:33:21</span></p>
+
+<p>找几个民意代表寄一封信，强烈要求把ekmett合进来</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-60">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 20:33:29</span></p>
+
+<p>委员会：我不会被敲诈（误</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="fts-1">FTS :</h4>
+
+<p><span class="article-duration">2017-12-05 20:33:57</span></p>
+
+<p>ekmett曾经是core library committee的…</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-25">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-05 20:34:14</span></p>
+
+<p>ekmett 是因病辞职的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-26">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-05 20:34:22</span></p>
+
+<p>记得是甲状腺癌</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-61">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 20:34:59</span></p>
+
+<p>嗯</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="fts-2">FTS :</h4>
+
+<p><span class="article-duration">2017-12-05 20:40:25</span></p>
+
+<p>前几天翻炒 haskellcast bos那期…bos直接说ekmett是mad scientist…</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="fts-3">FTS :</h4>
+
+<p><span class="article-duration">2017-12-05 20:45:34</span></p>
+
+<p>btw 有兴趣可以看看 <a href="https://ghc.haskell.org/trac/ghc/ticket/8400">https://ghc.haskell.org/trac/ghc/ticket/8400</a> Migrate the RTS to use libuv</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-62">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 20:45:48</span></p>
+
+<p>[惊讶]不是已经被reject了嘛</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="fts-4">FTS :</h4>
+
+<p><span class="article-duration">2017-12-05 20:49:13</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-63">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 20:50:33</span></p>
+
+<p>我看最新的也是4 months ago</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-64">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 20:50:40</span></p>
+
+<p>好像没啥进展</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-65">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 20:52:53</span></p>
+
+<p>感觉提升不是很明显呢</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="fts-5">FTS :</h4>
+
+<p><span class="article-duration">2017-12-05 20:54:13</span></p>
+
+<p>别只看性能…</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-66">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 20:54:45</span></p>
+
+<p>[惊讶]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-12-05 21:04:54</span></p>
+
+<p>別學JSperf那一套</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="fts-6">FTS :</h4>
+
+<p><span class="article-duration">2017-12-05 21:05:33</span></p>
+
+<p>什么叫 JSperf那一套</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-27">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-05 21:06:06</span></p>
+
+<p>性能相当但是能减少 LOC 那就值了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-67">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 21:06:35</span></p>
+
+<p>但是引入了新的依赖。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-68">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 21:06:54</span></p>
+
+<p>可能有的时候必须等上游libuv</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-28">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-05 21:07:19</span></p>
+
+<p>自己维护一个 in-tree 的版本啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-29">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-05 21:07:33</span></p>
+
+<p>libffi 和 gmp 都是 in-tree 的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="fts-7">FTS :</h4>
+
+<p><span class="article-duration">2017-12-05 21:07:36</span></p>
+
+<p>我觉得libuv这种库相当stable的了&hellip;</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-69">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 21:07:57</span></p>
+
+<p>我觉得两年内没戏</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="fts-8">FTS :</h4>
+
+<p><span class="article-duration">2017-12-05 21:08:32</span></p>
+
+<p>没人推当然没戏</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-70">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 21:08:45</span></p>
+
+<p>对啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-30">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-05 21:09:08</span></p>
+
+<p>说起来现在的 webghc 也是想把整个 libc 搞到 wasm 上。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="fts-9">FTS :</h4>
+
+<p><span class="article-duration">2017-12-05 21:09:23</span></p>
+
+<p>好像去搞musl了?</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-71">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 21:09:24</span></p>
+
+<p>我没看错吧。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-72">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 21:09:26</span></p>
+
+<p>webghc？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-73">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 21:09:33</span></p>
+
+<p>我都不知道有这个东西。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-31">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-05 21:10:26</span></p>
+
+<p>是</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-74">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 21:10:46</span></p>
+
+<p>ghc这性能消耗。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-75">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 21:10:53</span></p>
+
+<p>放浏览器上会炸吧。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="fts-10">FTS :</h4>
+
+<p><span class="article-duration">2017-12-05 21:11:02</span></p>
+
+<p>你这说ghcjs情何以堪</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-32">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-05 21:11:08</span></p>
+
+<p>看你肯放弃多少兼容性</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-76">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 21:12:20</span></p>
+
+<p>看错。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-77">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 21:12:39</span></p>
+
+<p>我以为是要让ghc itself run on web</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-78">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 21:12:45</span></p>
+
+<p>原来是target web</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-79">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 21:12:47</span></p>
+
+<p>吓死我了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_163">_ :</h4>
+
+<p><span class="article-duration">2017-12-05 21:13:08</span></p>
+
+<p>ghc到wasm有希望？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-80">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 21:13:53</span></p>
+
+<p>ghc itself放到浏览器上我觉得会炸</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-1">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-12-05 21:14:07</span></p>
+
+<p>沒事</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="fts-11">FTS :</h4>
+
+<p><span class="article-duration">2017-12-05 21:14:16</span></p>
+
+<p><a href="https://dhc.dfinity.org/">https://dhc.dfinity.org/</a></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-2">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-12-05 21:14:26</span></p>
+
+<p>那群前端早就在喊要在瀏覽器直接跑nn了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_168">_ :</h4>
+
+<p><span class="article-duration">2017-12-05 21:14:41</span></p>
+
+<p>不会吧 wasm也不是特别慢的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-3">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-12-05 21:14:49</span></p>
+
+<p>開始要求瀏覽器的gpu接口</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-81">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 21:14:57</span></p>
+
+<p>那我就不清楚了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-33">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-05 21:15:01</span></p>
+
+<p>wasm 缺一堆东西</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-82">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 21:15:09</span></p>
+
+<p>反正native都慢得要死</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="felis-sapiens-34">Felis sapiens :</h4>
+
+<p><span class="article-duration">2017-12-05 21:15:28</span></p>
+
+<p>没有异常，没有任意goto，没有尾调用，没有gc，没有dom接口</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-83">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 21:15:56</span></p>
+
+<p>。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-84">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 21:16:01</span></p>
+
+<p>别的都好说</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-4">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-12-05 21:16:02</span></p>
+
+<p>這聽上去</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-5">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-12-05 21:16:06</span></p>
+
+<p>怎麼辣麼像go</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_178">_ :</h4>
+
+<p><span class="article-duration">2017-12-05 21:16:07</span></p>
+
+<p>刚才的dhc没有gc！</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-85">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 21:16:12</span></p>
+
+<p>没有dom玩蛋啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-6">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-12-05 21:16:27</span></p>
+
+<p>cheerio</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-7">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-12-05 21:16:32</span></p>
+
+<p>node也沒有dom</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_182">_ :</h4>
+
+<p><span class="article-duration">2017-12-05 21:18:18</span></p>
+
+<p>node还好有electron之类可以凑乎</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-86">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 21:18:42</span></p>
+
+<p>wasm感觉听了好几年了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-87">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 21:18:56</span></p>
+
+<p>然鹅依然不能native资瓷</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_185">&rdquo;&rsquo; ⃢・ ・ ⃢&rdquo;&rsquo; :</h4>
+
+<p><span class="article-duration">2017-12-05 21:19:02</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-88">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 21:19:37</span></p>
+
+<p>还得拿js去load</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-8">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-12-05 21:19:59</span></p>
+
+<p>沒事</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-9">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-12-05 21:20:05</span></p>
+
+<p>最後js編譯成wasm</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-10">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-12-05 21:20:17</span></p>
+
+<p>當年asm.js和emscripten也是吹得上天</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="y-mx-⑨-11">y=mx+⑨ :</h4>
+
+<p><span class="article-duration">2017-12-05 21:20:30</span></p>
+
+<p>最後也是當了to js接口</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_191">. :</h4>
+
+<p><span class="article-duration">2017-12-05 21:28:49</span></p>
+
+<p>我想在gchi里面输出 λ &hellip; 怎么写?</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-89">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 21:29:12</span></p>
+
+<p>putStrLn</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_193">. :</h4>
+
+<p><span class="article-duration">2017-12-05 21:29:13</span></p>
+
+<p>就是输出字符 &ldquo;λ&rdquo;</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-90">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 21:29:17</span></p>
+
+<p>或者putChar</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_195">. :</h4>
+
+<p><span class="article-duration">2017-12-05 21:29:36</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-91">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 21:29:47</span></p>
+
+<p>= =</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-92">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 21:29:52</span></p>
+
+<p>那是你终端的问题了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_198">. :</h4>
+
+<p><span class="article-duration">2017-12-05 21:29:58</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-93">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 21:30:24</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-94">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 21:30:49</span></p>
+
+<p>你终端字体不资瓷</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="每一天-1">每一天 :</h4>
+
+<p><span class="article-duration">2017-12-05 21:30:52</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_202">. :</h4>
+
+<p><span class="article-duration">2017-12-05 21:31:05</span></p>
+
+<p>&hellip;..</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_203">. :</h4>
+
+<p><span class="article-duration">2017-12-05 21:31:20</span></p>
+
+<p>终端咋还不支持呢&hellip;.</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-95">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 21:31:21</span></p>
+
+<p>反正我不会设置windows</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="每一天-2">每一天 :</h4>
+
+<p><span class="article-duration">2017-12-05 21:41:42</span></p>
+
+<p>cmder</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="每一天-3">每一天 :</h4>
+
+<p><span class="article-duration">2017-12-05 21:42:22</span></p>
+
+<p>prompt就是一个lambda，肯定有这个字符[惊讶]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_207">. :</h4>
+
+<p><span class="article-duration">2017-12-05 21:48:51</span></p>
+
+<p>哎&hellip;算了&hellip;不搞了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="liuliu-7">liuliu :</h4>
+
+<p><span class="article-duration">2017-12-05 21:50:15</span></p>
+
+<p>请教下，怎么判断一个字符是不是英文字母</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="shizu">Shizu :</h4>
+
+<p><span class="article-duration">2017-12-05 21:51:09</span></p>
+
+<p>看ASCII码吗[疑问]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="三七二十">三七二十‭ :</h4>
+
+<p><span class="article-duration">2017-12-05 21:51:17</span></p>
+
+<p>看它是不是26个字母里面的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="liuliu-8">liuliu :</h4>
+
+<p><span class="article-duration">2017-12-05 21:51:48</span></p>
+
+<p>isLetter 找到了又这个函数</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="每一天-4">每一天 :</h4>
+
+<p><span class="article-duration">2017-12-05 21:52:04</span></p>
+
+<p>Data.Char</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="每一天-5">每一天 :</h4>
+
+<p><span class="article-duration">2017-12-05 21:52:41</span></p>
+
+<p>isAlpha</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="liuliu-9">liuliu :</h4>
+
+<p><span class="article-duration">2017-12-05 21:54:27</span></p>
+
+<p>哦哦</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="liuliu-10">liuliu :</h4>
+
+<p><span class="article-duration">2017-12-05 21:55:10</span></p>
+
+<p>import Control.Applicative<br />有没有返回第一个满足条件后，就不再寻找的<br />some 是返回第一个满足条件后，继续寻找，一直到不满足</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_216">. :</h4>
+
+<p><span class="article-duration">2017-12-05 21:58:49</span></p>
+
+<p>和some对应的好像有个any吧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-96">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 21:59:21</span></p>
+
+<p>many</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-97">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 21:59:47</span></p>
+
+<p>辣鸡cmd好菜啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="liuliu-11">liuliu :</h4>
+
+<p><span class="article-duration">2017-12-05 22:04:22</span></p>
+
+<p>many也是会继续寻找的，算了，我换个方式</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="liuliu-12">liuliu :</h4>
+
+<p><span class="article-duration">2017-12-05 22:04:54</span></p>
+
+<p>问下，<a href="https://www.codewars.com/kata/regular-expression-parser/haskell，这题&quot;abc&quot;">https://www.codewars.com/kata/regular-expression-parser/haskell，这题&quot;abc&quot;</a> 算合法输入吗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-98">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 22:05:24</span></p>
+
+<p>那你为啥要用some。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-99">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 22:05:29</span></p>
+
+<p>你需要的是optional</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-100">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 22:05:34</span></p>
+
+<p>也在Alternative里面</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="liuliu-13">liuliu :</h4>
+
+<p><span class="article-duration">2017-12-05 22:06:49</span></p>
+
+<p>我要找到第一个满足条件的，然后不找了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-101">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 22:07:12</span></p>
+
+<p>跟你说了optional</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="liuliu-14">liuliu :</h4>
+
+<p><span class="article-duration">2017-12-05 22:07:23</span></p>
+
+<p>好的，谢谢</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="liuliu-15">liuliu :</h4>
+
+<p><span class="article-duration">2017-12-05 22:07:43</span></p>
+
+<p><a href="https://www.codewars.com/kata/regular-expression-parser/haskell，这题&quot;abc&quot;">https://www.codewars.com/kata/regular-expression-parser/haskell，这题&quot;abc&quot;</a> 算合法输入吗？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-102">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 22:07:53</span></p>
+
+<p>这种时候你该学会搜索</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-103">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 22:08:31</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-104">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 22:08:40</span></p>
+
+<p>第一个就是</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="liuliu-16">liuliu :</h4>
+
+<p><span class="article-duration">2017-12-05 22:09:20</span></p>
+
+<p>哪个网站</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-105">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 22:09:26</span></p>
+
+<p>&hellip;&hellip;</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="斯大林的rbq-cosmia-106">斯大林的RBQ Cosmia :</h4>
+
+<p><span class="article-duration">2017-12-05 22:09:32</span></p>
+
+<p><a href="https://www.haskell.org/hoogle/?hoogle=f+a+-%3E+f+%28Maybe+a%29">https://www.haskell.org/hoogle/?hoogle=f+a+-%3E+f+%28Maybe+a%29</a></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="liuliu-17">liuliu :</h4>
+
+<p><span class="article-duration">2017-12-05 22:10:40</span></p>
+
+<p>哦哦</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="fts-12">FTS :</h4>
+
+<p><span class="article-duration">2017-12-05 23:13:17</span></p>
+
+<p>我们不要助长把这群当搜索引擎的风气…</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_236">（ :</h4>
+
+<p><span class="article-duration">2017-12-05 23:16:54</span></p>
+
+<p>0 0</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<p>以上内容来自 [<a href="http://qq.haskellchina.org/about/">Haskell函数式编程</a>] QQ 群。</p>
+
+    </div>
+  </article>
+
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "binjoy" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="http://qq.haskellchina.org/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="http://qq.haskellchina.org/images/hugo-logo.png" width="22" height="22"></a>
+            <div style="display:none">
+                <script src="http://s95.cnzz.com/stat.php?id=1261078931&web_id=1261078931" language="JavaScript"></script>
+            </div>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
+

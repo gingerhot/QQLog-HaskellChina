@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.30.2" />
+
+
+<title>QQ Group Log of HaskellChina: 20170110 - QQGroup Log of HaskellChina</title>
+<meta property="og:title" content="QQ Group Log of HaskellChina: 20170110 - QQGroup Log of HaskellChina">
+
+
+
+  
+
+
+
+<meta property="keywords" content ="Haskell,, HaskellChina">
+
+
+
+
+<link rel="stylesheet" href="http://qq.haskellchina.org/css/main.css" media="all">
+<link rel="stylesheet" href="//fonts.lug.ustc.edu.cn/css?family=Merriweather:400|Lato:400,400italic,700">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="http://qq.haskellchina.org/" class="nav-logo">
+    <img src="http://qq.haskellchina.org/images/logo.png" 
+         width="50" 
+         height="50" 
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="https://github.com/gingerhot/QQLog-HaskellChina">GitHub</a></li>
+    
+    <li><a href="/about/">关于</a></li>
+    
+    <li><a href="http://haskellchina.org/">社区首页</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">4 min read</span>
+    
+
+    <h1 class="article-title">QQ Group Log of HaskellChina: 20170110</h1>
+
+    
+    <span class="article-date">January 10, 2017</span>
+    
+
+    <div class="article-content">
+      
+
+<h4 id="pigeon-t">pigeon_t :</h4>
+
+<p><span class="article-duration">2017-01-10 04:39:41</span></p>
+
+<p>这句话数学上如果写集合怎么表示？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="天才麻将魔法少女cosmia">天才麻将魔法少女Cosmia :</h4>
+
+<p><span class="article-duration">2017-01-10 08:45:31</span></p>
+
+<p>然而这不是集合= =</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="mr-w">Mr.W :</h4>
+
+<p><span class="article-duration">2017-01-10 09:02:45</span></p>
+
+<p>然而这不是集合= = +1</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="snowonion">SnowOnion :</h4>
+
+<p><span class="article-duration">2017-01-10 11:57:23</span></p>
+
+<p>@pigeon_t <br />如果不管列表和集合的区别，大概是<br />{f(x)|x∈xs,odd(x)} 其中 f(x)=一个分段函数</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="snowonion-1">SnowOnion :</h4>
+
+<p><span class="article-duration">2017-01-10 12:00:30</span></p>
+
+<p>提问……<br />我有两个ghc环境，8.0.1 和 6.12.1<br />cabal安的package能被8.0.1用。怎样让那些package能被6.12.1用呀？<br /><br />➜  ~ /usr/local/bin/ghc -V<br />The Glorious Glasgow Haskell Compilation System, version 8.0.1<br />➜  ~ ~/ghcDist/bin/ghc -V<br />The Glorious Glasgow Haskell Compilation System, version 6.12.1<br />➜  ~ which cabal<br />/usr/local/bin/cabal</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="超级班长">超级班长 :</h4>
+
+<p><span class="article-duration">2017-01-10 12:29:26</span></p>
+
+<p>(fmap.const) 1 &ldquo;ab&rdquo; 等于 [1,1].  这是怎么推导出来的。   const 传递给fmap的 值的类型应该怎么写？哪位大神能赐教一下</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_6">. :</h4>
+
+<p><span class="article-duration">2017-01-10 12:29:57</span></p>
+
+<p>其实是fmap (const 1)</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="天才麻将魔法少女cosmia-1">天才麻将魔法少女Cosmia :</h4>
+
+<p><span class="article-duration">2017-01-10 12:30:04</span></p>
+
+<p>你这还用推到？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_8">. :</h4>
+
+<p><span class="article-duration">2017-01-10 12:30:13</span></p>
+
+<p>然后这也是个函数 再应用到&rdquo;ab&rdquo;上</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="天才麻将魔法少女cosmia-2">天才麻将魔法少女Cosmia :</h4>
+
+<p><span class="article-duration">2017-01-10 12:30:15</span></p>
+
+<p>直接手算啊，一共就两项</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_10">. :</h4>
+
+<p><span class="article-duration">2017-01-10 12:30:16</span></p>
+
+<p>也就是[&lsquo;a&rsquo;, &lsquo;b&rsquo;]上</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_11">. :</h4>
+
+<p><span class="article-duration">2017-01-10 12:30:23</span></p>
+
+<p>const 1 &lsquo;a&rsquo; = 1 const 1 &lsquo;b&rsquo; = 1</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_12">&rdquo;&rsquo; ⃢・ ・ ⃢&rdquo;&rsquo; :</h4>
+
+<p><span class="article-duration">2017-01-10 12:30:28</span></p>
+
+<p>其实是fmap (const 1) any =1</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页">第七页 :</h4>
+
+<p><span class="article-duration">2017-01-10 12:30:43</span></p>
+
+<p>const a b</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_14">&rdquo;&rsquo; ⃢・ ・ ⃢&rdquo;&rsquo; :</h4>
+
+<p><span class="article-duration">2017-01-10 12:30:56</span></p>
+
+<p>const的特性</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="超级班长-1">超级班长 :</h4>
+
+<p><span class="article-duration">2017-01-10 12:32:34</span></p>
+
+<p>但是这里有个 .</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-01-10 12:33:02</span></p>
+
+<p>f.g h = f(g(h))</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever">forever :</h4>
+
+<p><span class="article-duration">2017-01-10 12:33:12</span></p>
+
+<p>(f.g) x = f (g x)</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-1">forever :</h4>
+
+<p><span class="article-duration">2017-01-10 12:33:19</span></p>
+
+<p>f.g h = f . (g h)</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-01-10 12:34:24</span></p>
+
+<p>请大家多多用BCKW编程，打败SKI邪教</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="超级班长-2">超级班长 :</h4>
+
+<p><span class="article-duration">2017-01-10 12:36:50</span></p>
+
+<p>那应该是这样：  fmap.const 1 &ldquo;ab&rdquo;  等于   (fmap ( const  1 )) &ldquo;ab&rdquo;.         (f.g) x  y  该等于什么</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-2">forever :</h4>
+
+<p><span class="article-duration">2017-01-10 12:37:24</span></p>
+
+<p>你写的是对的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_22">. :</h4>
+
+<p><span class="article-duration">2017-01-10 12:37:56</span></p>
+
+<p>const 1其实就是\x -&gt; 1</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_23">. :</h4>
+
+<p><span class="article-duration">2017-01-10 12:38:04</span></p>
+
+<p>fmap对于list而言就是map</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_24">. :</h4>
+
+<p><span class="article-duration">2017-01-10 12:38:09</span></p>
+
+<p>map (\x -&gt; 1) &ldquo;ab&rdquo;的话</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-3">forever :</h4>
+
+<p><span class="article-duration">2017-01-10 12:38:13</span></p>
+
+<p>fmap (const 1) &ldquo;ab&rdquo;<br />= [const 1 &lsquo;a&rsquo;, const 1 &lsquo;b&rsquo;]<br />= [1, 1]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="超级班长-3">超级班长 :</h4>
+
+<p><span class="article-duration">2017-01-10 12:41:35</span></p>
+
+<p>谢谢。 另外   (f.g)  x  y 没有可能等于  f(  g x y )</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_27">. :</h4>
+
+<p><span class="article-duration">2017-01-10 12:41:52</span></p>
+
+<p>你要知道</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_28">. :</h4>
+
+<p><span class="article-duration">2017-01-10 12:41:56</span></p>
+
+<p>a x y是(a x) y</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-4">forever :</h4>
+
+<p><span class="article-duration">2017-01-10 12:42:43</span></p>
+
+<p>“可能”？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-5">forever :</h4>
+
+<p><span class="article-duration">2017-01-10 12:42:52</span></p>
+
+<p>对，没有可能</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-6">forever :</h4>
+
+<p><span class="article-duration">2017-01-10 12:43:02</span></p>
+
+<p>haskell 就不是那么些的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-7">forever :</h4>
+
+<p><span class="article-duration">2017-01-10 12:43:28</span></p>
+
+<p>*写的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="超级班长-4">超级班长 :</h4>
+
+<p><span class="article-duration">2017-01-10 12:43:30</span></p>
+
+<p>明白了， 非常感谢大家[抱拳]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="饼干">饼干 :</h4>
+
+<p><span class="article-duration">2017-01-10 15:02:56</span></p>
+
+<p>谁给我来一个2015和2016年的Haskell会议的相关页面</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_35">[[[[[[[[[[[[[[[[[[[[[[[[ :</h4>
+
+<p><span class="article-duration">2017-01-10 15:06:38</span></p>
+
+<p>I&rsquo;ve</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_36">[[[[[[[[[[[[[[[[[[[[[[[[ :</h4>
+
+<p><span class="article-duration">2017-01-10 15:06:58</span></p>
+
+<p>是指icfp？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="饼干-1">饼干 :</h4>
+
+<p><span class="article-duration">2017-01-10 16:40:35</span></p>
+
+<p>( (,)  &lt;$&gt; (+2) ) 123 456<br />(125,456)<br /><br />lift2 (&lt;$&gt;) (,) (return (+1)) 123 456<br />(123,457)<br /><br />来来来，谁帮我将下这两个的展开</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="snowonion-2">SnowOnion :</h4>
+
+<p><span class="article-duration">2017-01-10 16:42:53</span></p>
+
+<p>@饼干 <a href="https://www.haskell.org/haskell-symposium/2015/">https://www.haskell.org/haskell-symposium/2015/</a> 这个？google &ldquo;symposium haskell 2015&rdquo;</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="snowonion-3">SnowOnion :</h4>
+
+<p><span class="article-duration">2017-01-10 16:43:12</span></p>
+
+<p>@魔理沙 为啥呢 既然它俩等价<br />因为 S x y z = x z (y z) 难看吗（</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="饼干-2">饼干 :</h4>
+
+<p><span class="article-duration">2017-01-10 16:43:30</span></p>
+
+<p>@SnowOnion 谢谢，不过我本来想要的是千人在杭州的那次。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-1">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-01-10 16:43:49</span></p>
+
+<p>喊句话玩，你竟然当真。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="snowonion-4">SnowOnion :</h4>
+
+<p><span class="article-duration">2017-01-10 16:44:26</span></p>
+
+<p>@饼干 - - 啊喔 那不知道</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="snowonion-5">SnowOnion :</h4>
+
+<p><span class="article-duration">2017-01-10 16:44:35</span></p>
+
+<p>@魔理沙 （趴</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="饼干-3">饼干 :</h4>
+
+<p><span class="article-duration">2017-01-10 16:45:31</span></p>
+
+<p>谁帮我讲下这两个的展开</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-1">第七页 :</h4>
+
+<p><span class="article-duration">2017-01-10 16:48:25</span></p>
+
+<p>你从哪找的题？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="饼干-4">饼干 :</h4>
+
+<p><span class="article-duration">2017-01-10 16:49:34</span></p>
+
+<p><a href="https://github.com/NICTA/course@第七页">https://github.com/NICTA/course@第七页</a>  这里。我稍微改了下</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-2">第七页 :</h4>
+
+<p><span class="article-duration">2017-01-10 16:51:18</span></p>
+
+<p>额</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="lambdabot">LambdaBot :</h4>
+
+<p><span class="article-duration">2017-01-10 17:52:42</span></p>
+
+<p>饼干</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="lambdabot-1">LambdaBot :</h4>
+
+<p><span class="article-duration">2017-01-10 17:53:44</span></p>
+
+<p>Functor ((-&gt;) a)的实现上f &lt;$&gt; g = f . g</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="lambdabot-2">LambdaBot :</h4>
+
+<p><span class="article-duration">2017-01-10 17:54:41</span></p>
+
+<p>所以((,) &lt;$&gt; (+1)) 1 1 = (,) . (+1) 1 1 = (,) 2 1 = (2, 1)</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="lambdabot-3">LambdaBot :</h4>
+
+<p><span class="article-duration">2017-01-10 17:55:07</span></p>
+
+<p>楼下继续</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="wuli华华">wuli华华 :</h4>
+
+<p><span class="article-duration">2017-01-10 17:59:55</span></p>
+
+<p>插个问题,自己想好久不得要领:</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="wuli华华-1">wuli华华 :</h4>
+
+<p><span class="article-duration">2017-01-10 18:00:30</span></p>
+
+<p>怎么理解</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-8">forever :</h4>
+
+<p><span class="article-duration">2017-01-10 18:01:50</span></p>
+
+<p>取 f 为 ((-&gt;) r)</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="饼干-5">饼干 :</h4>
+
+<p><span class="article-duration">2017-01-10 18:06:59</span></p>
+
+<p>@LambdaBot 好的 等你讲下面那个</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="lambdabot-4">LambdaBot :</h4>
+
+<p><span class="article-duration">2017-01-10 18:20:51</span></p>
+
+<p>骚行装</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="lambdabot-5">LambdaBot :</h4>
+
+<p><span class="article-duration">2017-01-10 18:20:54</span></p>
+
+<p>骚等</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="lambdabot-6">LambdaBot :</h4>
+
+<p><span class="article-duration">2017-01-10 18:20:57</span></p>
+
+<p>有点事</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="lambdabot-7">LambdaBot :</h4>
+
+<p><span class="article-duration">2017-01-10 18:31:48</span></p>
+
+<p>来吧，推了一下</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="lambdabot-8">LambdaBot :</h4>
+
+<p><span class="article-duration">2017-01-10 18:32:20</span></p>
+
+<p>首先。。对于instance Applicative ((-&gt;) r)</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="lambdabot-9">LambdaBot :</h4>
+
+<p><span class="article-duration">2017-01-10 18:32:33</span></p>
+
+<p>a &lt;*&gt; b = \x -&gt; a x (b x)</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="lambdabot-10">LambdaBot :</h4>
+
+<p><span class="article-duration">2017-01-10 18:32:44</span></p>
+
+<p>所以。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="lambdabot-11">LambdaBot :</h4>
+
+<p><span class="article-duration">2017-01-10 18:33:02</span></p>
+
+<p>liftA2 (&lt;$&gt;) (,) (return (+1)) 1 1</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="lambdabot-12">LambdaBot :</h4>
+
+<p><span class="article-duration">2017-01-10 18:34:24</span></p>
+
+<p>&lt;=&gt; ((&lt;$&gt;) &lt;$&gt; (,) &lt;*&gt; (return (+1))) 1 $ 1</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="lambdabot-13">LambdaBot :</h4>
+
+<p><span class="article-duration">2017-01-10 18:35:22</span></p>
+
+<p>&lt;=&gt; ((&lt;$&gt; . (,)) &lt;*&gt; (return (+1)) 1) 1</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="lambdabot-14">LambdaBot :</h4>
+
+<p><span class="article-duration">2017-01-10 18:35:53</span></p>
+
+<p>括号丢了<em>(:з」∠)</em></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="lambdabot-15">LambdaBot :</h4>
+
+<p><span class="article-duration">2017-01-10 18:36:20</span></p>
+
+<p>&lt;=&gt; ((&lt;$&gt;) . (,)) 1 (return (+1) 1) 1</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="lambdabot-16">LambdaBot :</h4>
+
+<p><span class="article-duration">2017-01-10 18:36:38</span></p>
+
+<p>&lt;=&gt; (1,) &lt;$&gt; (const (+1) 1) $ 1</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="lambdabot-17">LambdaBot :</h4>
+
+<p><span class="article-duration">2017-01-10 18:36:57</span></p>
+
+<p>&lt;=&gt; (1, ) . (+1) $ 1</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="lambdabot-18">LambdaBot :</h4>
+
+<p><span class="article-duration">2017-01-10 18:37:04</span></p>
+
+<p>= (1, 2)</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="lambdabot-19">LambdaBot :</h4>
+
+<p><span class="article-duration">2017-01-10 18:37:49</span></p>
+
+<p>tmd，发到QQ上惨不忍睹</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="jin">Jin :</h4>
+
+<p><span class="article-duration">2017-01-10 18:48:18</span></p>
+
+<p>发图片或者gist啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-1">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-01-10 19:03:18</span></p>
+
+<p>懒得搞了，在纸上演算的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="snowonion-6">SnowOnion :</h4>
+
+<p><span class="article-duration">2017-01-10 20:18:14</span></p>
+
+<p>用cabal给机器上的多个ghc分别装package的问题解决了……cabal install package名 -w /path/to/one/ghccabal install package名 -w /path/to/another/ghc然后在这补了个回答 <a href="http://stackoverflow.com/a/41568600/2801663">http://stackoverflow.com/a/41568600/2801663</a></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="饼干-6">饼干 :</h4>
+
+<p><span class="article-duration">2017-01-10 20:23:40</span></p>
+
+<p>@SnowOnion 厉害</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="jin-1">Jin :</h4>
+
+<p><span class="article-duration">2017-01-10 20:32:01</span></p>
+
+<p>这什么情况</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="雪人">雪人 :</h4>
+
+<p><span class="article-duration">2017-01-10 20:33:45</span></p>
+
+<p>看见你们怎么厉害的数学功底和编程能力我就放心了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="雪人-1">雪人 :</h4>
+
+<p><span class="article-duration">2017-01-10 20:34:06</span></p>
+
+<p>@Jin 转发的不信你看</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="jin-2">Jin :</h4>
+
+<p><span class="article-duration">2017-01-10 20:35:42</span></p>
+
+<p>转发啥了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="jin-3">Jin :</h4>
+
+<p><span class="article-duration">2017-01-10 20:37:00</span></p>
+
+<p>哦哦</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="jin-4">Jin :</h4>
+
+<p><span class="article-duration">2017-01-10 20:37:30</span></p>
+
+<p>手机好像没法转发，qq还真是神奇</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="雪人-2">雪人 :</h4>
+
+<p><span class="article-duration">2017-01-10 20:38:04</span></p>
+
+<p>可以啊。iOS吧你</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="jin-5">Jin :</h4>
+
+<p><span class="article-duration">2017-01-10 20:38:21</span></p>
+
+<p>哦我多选可以转发</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<p>以上内容来自 [Haskell函数式编程] QQ 群。</p>
+
+    </div>
+  </article>
+
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "binjoy" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="http://qq.haskellchina.org/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="http://qq.haskellchina.org/images/hugo-logo.png" width="22" height="22"></a>
+            <div style="display:none">
+                <script src="http://s95.cnzz.com/stat.php?id=1261078931&web_id=1261078931" language="JavaScript"></script>
+            </div>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
+

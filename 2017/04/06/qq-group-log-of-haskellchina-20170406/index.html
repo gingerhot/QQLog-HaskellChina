@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.30.2" />
+
+
+<title>QQ Group Log of HaskellChina: 20170406 - QQGroup Log of HaskellChina</title>
+<meta property="og:title" content="QQ Group Log of HaskellChina: 20170406 - QQGroup Log of HaskellChina">
+
+
+
+  
+
+
+
+<meta property="keywords" content ="Haskell,, HaskellChina">
+
+
+
+
+<link rel="stylesheet" href="http://qq.haskellchina.org/css/main.css" media="all">
+<link rel="stylesheet" href="//fonts.lug.ustc.edu.cn/css?family=Merriweather:400|Lato:400,400italic,700">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="http://qq.haskellchina.org/" class="nav-logo">
+    <img src="http://qq.haskellchina.org/images/logo.png" 
+         width="50" 
+         height="50" 
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="https://github.com/gingerhot/QQLog-HaskellChina">GitHub</a></li>
+    
+    <li><a href="/about/">关于</a></li>
+    
+    <li><a href="http://haskellchina.org/">社区首页</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">QQ Group Log of HaskellChina: 20170406</h1>
+
+    
+    <span class="article-date">April 6, 2017</span>
+    
+
+    <div class="article-content">
+      
+
+<h4 id="大笨蛋千里冰封">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-04-06 00:19:28</span></p>
+
+<p>各位大佬这里是萌新提问</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-1">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-04-06 00:20:13</span></p>
+
+<p>我现在想弄一个函数，（拿Java类比一下）接收一个Option<string>，返回拆出来的String，或者&rdquo;null&rdquo;</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-2">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-04-06 00:20:32</span></p>
+
+<p>然后我没看懂报错</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="yaegaki-erika">Yaegaki Erika :</h4>
+
+<p><span class="article-duration">2017-04-06 00:20:38</span></p>
+
+<p>不是</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever">forever :</h4>
+
+<p><span class="article-duration">2017-04-06 00:20:39</span></p>
+
+<p>直接 Option String</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="yaegaki-erika-1">Yaegaki Erika :</h4>
+
+<p><span class="article-duration">2017-04-06 00:20:50</span></p>
+
+<p>没有(String e)这种东西</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-3">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-04-06 00:20:56</span></p>
+
+<p>哦</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="neuromancer">Neuromancer :</h4>
+
+<p><span class="article-duration">2017-04-06 00:21:09</span></p>
+
+<p>fromMaybe</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-1">forever :</h4>
+
+<p><span class="article-duration">2017-04-06 00:21:31</span></p>
+
+<p>@大笨蛋千里冰封 * -&gt; Constraint 表示像 Num 这样的接受一个类型变成一个约束的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-4">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-04-06 00:21:35</span></p>
+
+<p>String是一个实在的类型，而如果要加约束，应该是一个类似Functor/Applicative的东西？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-2">forever :</h4>
+
+<p><span class="article-duration">2017-04-06 00:21:41</span></p>
+
+<p>对喽</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-5">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-04-06 00:21:46</span></p>
+
+<p>/ok</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-06 00:23:24</span></p>
+
+<p>难道是想写IsString?</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-3">forever :</h4>
+
+<p><span class="article-duration">2017-04-06 00:23:53</span></p>
+
+<p>但是这不 IsString 啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-1">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-06 00:25:01</span></p>
+
+<p>hmm</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-6">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-04-06 00:29:54</span></p>
+
+<p>各位大佬这里是萌新提问 II</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-7">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-04-06 00:30:17</span></p>
+
+<p>我想撸个类似Rust的Result该咋整，我这么写编译过了，总感觉不对</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_17">:</h4>
+
+<p><span class="article-duration">2017-04-06 00:30:35</span></p>
+
+<p>哪不对。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-8">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-04-06 00:30:46</span></p>
+
+<p>如果我要匹配它呢？我试一下</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-9">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-04-06 00:30:53</span></p>
+
+<p>是不是这样？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_20">:</h4>
+
+<p><span class="article-duration">2017-04-06 00:31:33</span></p>
+
+<p>没有那两个下划线。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-10">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-04-06 00:31:51</span></p>
+
+<p>这样吗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_22">:</h4>
+
+<p><span class="article-duration">2017-04-06 00:31:59</span></p>
+
+<p>目测是。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-11">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-04-06 00:32:11</span></p>
+
+<p>编译过辣，我测一下</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-12">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-04-06 00:32:34</span></p>
+
+<p>我写成Left了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-13">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-04-06 00:32:50</span></p>
+
+<p>擦~这就过了~</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-4">forever :</h4>
+
+<p><span class="article-duration">2017-04-06 00:33:02</span></p>
+
+<p>可能是假的 Left</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-14">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-04-06 00:33:04</span></p>
+
+<p>我是大笨蛋！</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-15">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-04-06 00:33:12</span></p>
+
+<p>我是大笨蛋！</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="yaegaki-erika-2">Yaegaki Erika :</h4>
+
+<p><span class="article-duration">2017-04-06 00:33:54</span></p>
+
+<p>嗯。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大笨蛋千里冰封-16">大笨蛋千里冰封 :</h4>
+
+<p><span class="article-duration">2017-04-06 00:35:30</span></p>
+
+<p>原来大魔头早就写了这种东西啦</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-2">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-06 00:45:11</span></p>
+
+<p>像c一样用ioarray&hellip;</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-3">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-06 01:17:33</span></p>
+
+<p>在IO的结果上循环操作n次有什么方法</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-4">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-06 01:17:39</span></p>
+
+<p>我能想到的是foldM</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-5">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-06 01:17:54</span></p>
+
+<p>还有更好用的嘛</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-5">forever :</h4>
+
+<p><span class="article-duration">2017-04-06 01:18:29</span></p>
+
+<p>replicateM_</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-6">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-06 01:19:07</span></p>
+
+<p>这个好像不能用到上次的结果</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-7">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-06 01:20:07</span></p>
+
+<p>搭配IORef?</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-6">forever :</h4>
+
+<p><span class="article-duration">2017-04-06 01:20:50</span></p>
+
+<p>StateT？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-8">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-06 01:21:33</span></p>
+
+<p>一时脑残不知道怎么用了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-9">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-06 01:22:28</span></p>
+
+<p>wow</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-10">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-06 01:22:35</span></p>
+
+<p>应该可以</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-11">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-06 01:23:31</span></p>
+
+<p>好，知道这个就行了，狗屎oj系统上也没有transformers和mtl</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<p>以上内容来自 [Haskell函数式编程] QQ 群。</p>
+
+    </div>
+  </article>
+
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "binjoy" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="http://qq.haskellchina.org/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="http://qq.haskellchina.org/images/hugo-logo.png" width="22" height="22"></a>
+            <div style="display:none">
+                <script src="http://s95.cnzz.com/stat.php?id=1261078931&web_id=1261078931" language="JavaScript"></script>
+            </div>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
+

@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.30.2" />
+
+
+<title>QQ Group Log of HaskellChina: 20170612 - QQGroup Log of HaskellChina</title>
+<meta property="og:title" content="QQ Group Log of HaskellChina: 20170612 - QQGroup Log of HaskellChina">
+
+
+
+  
+
+
+
+<meta property="keywords" content ="Haskell,, HaskellChina">
+
+
+
+
+<link rel="stylesheet" href="http://qq.haskellchina.org/css/main.css" media="all">
+<link rel="stylesheet" href="//fonts.lug.ustc.edu.cn/css?family=Merriweather:400|Lato:400,400italic,700">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="http://qq.haskellchina.org/" class="nav-logo">
+    <img src="http://qq.haskellchina.org/images/logo.png" 
+         width="50" 
+         height="50" 
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="https://github.com/gingerhot/QQLog-HaskellChina">GitHub</a></li>
+    
+    <li><a href="/about/">关于</a></li>
+    
+    <li><a href="http://haskellchina.org/">社区首页</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">4 min read</span>
+    
+
+    <h1 class="article-title">QQ Group Log of HaskellChina: 20170612</h1>
+
+    
+    <span class="article-date">June 12, 2017</span>
+    
+
+    <div class="article-content">
+      
+
+<h4 id="刘闽晟">刘闽晟 :</h4>
+
+<p><span class="article-duration">2017-06-12 09:59:18</span></p>
+
+<p>诶呦我去怎么 dual map 都冒出来了（想起被上同调支配的恐惧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="刘闽晟-1">刘闽晟 :</h4>
+
+<p><span class="article-duration">2017-06-12 10:02:53</span></p>
+
+<p>GHC 里有办法表示真正的 void type 吗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="刘闽晟-2">刘闽晟 :</h4>
+
+<p><span class="article-duration">2017-06-12 10:03:03</span></p>
+
+<p>一构造就 crash 的那种</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_3">[[[[[[[[[[[[[[[[[[[[[[[[ :</h4>
+
+<p><span class="article-duration">2017-06-12 10:13:41</span></p>
+
+<p>undef</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="canto-ostinato">Canto Ostinato :</h4>
+
+<p><span class="article-duration">2017-06-12 10:20:59</span></p>
+
+<p>@刘闽晟 一个没有 constructor 的 datatype 不就行了吗。。base里有Data.Void</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="刘闽晟-3">刘闽晟 :</h4>
+
+<p><span class="article-duration">2017-06-12 10:22:21</span></p>
+
+<p>@Canto Ostinato undefined pass 过去不会 crash 啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="刘闽晟-4">刘闽晟 :</h4>
+
+<p><span class="article-duration">2017-06-12 10:23:06</span></p>
+
+<p>其实我是想问 strict eval 的黑科技的，这块我不是很熟悉</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="canto-ostinato-1">Canto Ostinato :</h4>
+
+<p><span class="article-duration">2017-06-12 10:23:23</span></p>
+
+<p>不是可以标star以外的kind么</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="canto-ostinato-2">Canto Ostinato :</h4>
+
+<p><span class="article-duration">2017-06-12 10:23:25</span></p>
+
+<p>等我试试</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="刘闽晟-5">刘闽晟 :</h4>
+
+<p><span class="article-duration">2017-06-12 10:24:50</span></p>
+
+<p>[惊讶]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="刘闽晟-6">刘闽晟 :</h4>
+
+<p><span class="article-duration">2017-06-12 10:25:13</span></p>
+
+<p>我看了那篇 tree growth 的 paper 之后一直想问</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="刘闽晟-7">刘闽晟 :</h4>
+
+<p><span class="article-duration">2017-06-12 10:25:20</span></p>
+
+<p>不过 SPJ 说不行估计就真不行了吧……</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="canto-ostinato-3">Canto Ostinato :</h4>
+
+<p><span class="article-duration">2017-06-12 10:28:14</span></p>
+
+<p>啊，我失败了，不能搞出 voidrep 或者 unliftedrep 的数据类型</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="canto-ostinato-4">Canto Ostinato :</h4>
+
+<p><span class="article-duration">2017-06-12 10:28:40</span></p>
+
+<p>只好坐等 unlifteddatatype 填坑了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="canto-ostinato-5">Canto Ostinato :</h4>
+
+<p><span class="article-duration">2017-06-12 10:28:59</span></p>
+
+<p>不对，坐等 simon marlow 和 ezyang 填坑</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="刘闽晟-8">刘闽晟 :</h4>
+
+<p><span class="article-duration">2017-06-12 10:30:02</span></p>
+
+<p>[惊讶]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="canto-ostinato-6">Canto Ostinato :</h4>
+
+<p><span class="article-duration">2017-06-12 10:31:30</span></p>
+
+<p>ezyang 以前还在 twitter 上吹过一波 Haskell 里的 strict 子语言用起来轻而易举</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="canto-ostinato-7">Canto Ostinato :</h4>
+
+<p><span class="article-duration">2017-06-12 10:31:52</span></p>
+
+<p>快去发邮件叫他别炼丹了来填ghc坑（逃</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="tz">Tz :</h4>
+
+<p><span class="article-duration">2017-06-12 10:47:04</span></p>
+
+<p>title image_url url<br />content_id</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="断水流宗师">断水流宗师 :</h4>
+
+<p><span class="article-duration">2017-06-12 11:05:07</span></p>
+
+<p>有没有比较经典的程序 在haskell里用类型组合出更多类型?</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever">forever :</h4>
+
+<p><span class="article-duration">2017-06-12 11:19:02</span></p>
+
+<p>用类型组合出网站 <a href="http://hackage.haskell.org/package/servant">http://hackage.haskell.org/package/servant</a></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大魔头">大魔头 :</h4>
+
+<p><span class="article-duration">2017-06-12 14:57:13</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大魔头-1">大魔头 :</h4>
+
+<p><span class="article-duration">2017-06-12 14:57:33</span></p>
+
+<p>这个类族应该是type class的翻译吧，感觉倒也贴切啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="嶺上アイドルcosmia">嶺上アイドルCosmia :</h4>
+
+<p><span class="article-duration">2017-06-12 14:58:01</span></p>
+
+<p>类族。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="嶺上アイドルcosmia-1">嶺上アイドルCosmia :</h4>
+
+<p><span class="article-duration">2017-06-12 14:58:16</span></p>
+
+<p>这是哪里翻译的？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大魔头-2">大魔头 :</h4>
+
+<p><span class="article-duration">2017-06-12 15:01:42</span></p>
+
+<p>这本书</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大魔头-3">大魔头 :</h4>
+
+<p><span class="article-duration">2017-06-12 15:01:43</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大魔头-4">大魔头 :</h4>
+
+<p><span class="article-duration">2017-06-12 15:02:00</span></p>
+
+<p>我一直是直译：类型类</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大魔头-5">大魔头 :</h4>
+
+<p><span class="article-duration">2017-06-12 15:02:03</span></p>
+
+<p>也怪怪的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页">第七页 :</h4>
+
+<p><span class="article-duration">2017-06-12 15:08:20</span></p>
+
+<p>class 类</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-1">第七页 :</h4>
+
+<p><span class="article-duration">2017-06-12 15:08:29</span></p>
+
+<p>太绕了 就直接类就好了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_31">. :</h4>
+
+<p><span class="article-duration">2017-06-12 15:08:34</span></p>
+
+<p>type是类型啊(</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-2">第七页 :</h4>
+
+<p><span class="article-duration">2017-06-12 15:09:26</span></p>
+
+<p>data ， type 译为 集合吧[惊讶] （逃</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-3">第七页 :</h4>
+
+<p><span class="article-duration">2017-06-12 15:09:35</span></p>
+
+<p>模型</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-1">forever :</h4>
+
+<p><span class="article-duration">2017-06-12 15:10:07</span></p>
+
+<p>然后就会有人开始想 new Num 了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="whst">WHsT :</h4>
+
+<p><span class="article-duration">2017-06-12 15:10:08</span></p>
+
+<p>这本书的翻译特别差</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-2">forever :</h4>
+
+<p><span class="article-duration">2017-06-12 15:10:11</span></p>
+
+<p>起名字好难的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="whst-1">WHsT :</h4>
+
+<p><span class="article-duration">2017-06-12 15:10:19</span></p>
+
+<p>好像是中大一个老师翻译的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="hyrious">hyrious :</h4>
+
+<p><span class="article-duration">2017-06-12 15:11:22</span></p>
+
+<p>准确的学术界命名</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-4">第七页 :</h4>
+
+<p><span class="article-duration">2017-06-12 15:11:38</span></p>
+
+<p>data 定义模型<br />type 模型别名<br />class  类</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-5">第七页 :</h4>
+
+<p><span class="article-duration">2017-06-12 15:11:39</span></p>
+
+<p>多好</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_41">. :</h4>
+
+<p><span class="article-duration">2017-06-12 15:14:44</span></p>
+
+<p>没翻译成类阶层就不错了……</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_42">. :</h4>
+
+<p><span class="article-duration">2017-06-12 15:14:51</span></p>
+
+<p>反正大家都知道是啥(</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-6">第七页 :</h4>
+
+<p><span class="article-duration">2017-06-12 15:16:43</span></p>
+
+<p>type翻译成类 我想知道data翻译成啥？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-7">第七页 :</h4>
+
+<p><span class="article-duration">2017-06-12 15:16:47</span></p>
+
+<p>newtype呢</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="l喵">L喵 :</h4>
+
+<p><span class="article-duration">2017-06-12 15:17:15</span></p>
+
+<p>type class 翻译成类族 那么 type family 翻译成啥……？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-8">第七页 :</h4>
+
+<p><span class="article-duration">2017-06-12 15:17:31</span></p>
+
+<p>类家族。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-06-12 15:20:24</span></p>
+
+<p>@第七页 来自新类型</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-1">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-06-12 15:20:45</span></p>
+
+<p>@L喵 类型大家族</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="アッコ">アッコ :</h4>
+
+<p><span class="article-duration">2017-06-12 15:21:06</span></p>
+
+<p>类型,类型,类型大家族.</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="嶺上アイドルcosmia-2">嶺上アイドルCosmia :</h4>
+
+<p><span class="article-duration">2017-06-12 15:31:28</span></p>
+
+<p>自动脑补一堆type跳来跳去</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="嶺上アイドルcosmia-3">嶺上アイドルCosmia :</h4>
+
+<p><span class="article-duration">2017-06-12 15:32:35</span></p>
+
+<p>@第七页 娘TYPE</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="u">u :</h4>
+
+<p><span class="article-duration">2017-06-12 15:32:48</span></p>
+
+<p>为啥要翻译成中文。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pengpengche">pengpengche :</h4>
+
+<p><span class="article-duration">2017-06-12 15:33:09</span></p>
+
+<p>tc tf t</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-9">第七页 :</h4>
+
+<p><span class="article-duration">2017-06-12 15:33:58</span></p>
+
+<p>为什么我觉得日名字 没有美感  相比韩文</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往">随心所往 :</h4>
+
+<p><span class="article-duration">2017-06-12 15:34:12</span></p>
+
+<p>就是绝大多数情况下都直接写英文，但是还是需要对应的中文术语啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="hyrious-1">hyrious :</h4>
+
+<p><span class="article-duration">2017-06-12 15:34:40</span></p>
+
+<p>中文本来就有表述不清的特性</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="アッコ-1">アッコ :</h4>
+
+<p><span class="article-duration">2017-06-12 15:34:42</span></p>
+
+<p>日本那边函数叫做関数</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="アッコ-2">アッコ :</h4>
+
+<p><span class="article-duration">2017-06-12 15:35:06</span></p>
+
+<p>函子叫做関手</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="御坂黒子">御坂黒子 :</h4>
+
+<p><span class="article-duration">2017-06-12 15:35:31</span></p>
+
+<p>函数道</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-10">第七页 :</h4>
+
+<p><span class="article-duration">2017-06-12 15:35:42</span></p>
+
+<p>哈哈</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-11">第七页 :</h4>
+
+<p><span class="article-duration">2017-06-12 15:35:47</span></p>
+
+<p>函道</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="アッコ-3">アッコ :</h4>
+
+<p><span class="article-duration">2017-06-12 15:36:28</span></p>
+
+<p>哈哈哈</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="御坂黒子-1">御坂黒子 :</h4>
+
+<p><span class="article-duration">2017-06-12 15:36:57</span></p>
+
+<p>听起来逼格爆棚</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="嶺上アイドルcosmia-4">嶺上アイドルCosmia :</h4>
+
+<p><span class="article-duration">2017-06-12 15:37:22</span></p>
+
+<p>函道不是发动机那啥的吗？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="老农">老农 :</h4>
+
+<p><span class="article-duration">2017-06-12 15:38:49</span></p>
+
+<p>碰到这种名词不翻是最好的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_66">. :</h4>
+
+<p><span class="article-duration">2017-06-12 15:39:07</span></p>
+
+<p>那是冲程</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-1">随心所往 :</h4>
+
+<p><span class="article-duration">2017-06-12 15:39:37</span></p>
+
+<p>飞机发动机讲函道的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-2">随心所往 :</h4>
+
+<p><span class="article-duration">2017-06-12 15:39:45</span></p>
+
+<p>函道比</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_69">. :</h4>
+
+<p><span class="article-duration">2017-06-12 15:39:53</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大魔头-6">大魔头 :</h4>
+
+<p><span class="article-duration">2017-06-12 15:46:20</span></p>
+
+<p>这话题可以结束了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大魔头-7">大魔头 :</h4>
+
+<p><span class="article-duration">2017-06-12 15:46:26</span></p>
+
+<p>再讨论也没有什么营养了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-2">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-06-12 15:47:53</span></p>
+
+<p>群主，定下人满清员的规矩吧，别让不看群的人占空间</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="饼干先生">饼干先生 :</h4>
+
+<p><span class="article-duration">2017-06-12 15:50:32</span></p>
+
+<p>群主可以找个机会清一次不说话的人了。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="请月红">请月红 :</h4>
+
+<p><span class="article-duration">2017-06-12 15:51:16</span></p>
+
+<p>我喜欢用大括号👀</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大魔头-8">大魔头 :</h4>
+
+<p><span class="article-duration">2017-06-12 15:51:23</span></p>
+
+<p>清不说话的人也不是很公平啊，是我说让大家没话说就潜水，不要乱说话</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="mike-tang">Mike Tang :</h4>
+
+<p><span class="article-duration">2017-06-12 15:51:24</span></p>
+
+<p>我在说话</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大魔头-9">大魔头 :</h4>
+
+<p><span class="article-duration">2017-06-12 15:51:31</span></p>
+
+<p>都闭嘴。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="mike-tang-1">Mike Tang :</h4>
+
+<p><span class="article-duration">2017-06-12 15:51:39</span></p>
+
+<p>上2000人群是王道</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="mike-tang-2">Mike Tang :</h4>
+
+<p><span class="article-duration">2017-06-12 15:51:48</span></p>
+
+<p>隔壁rust早就上2000人群了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大魔头-10">大魔头 :</h4>
+
+<p><span class="article-duration">2017-06-12 15:51:59</span></p>
+
+<p>待我研究一下</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pengpengche-1">pengpengche :</h4>
+
+<p><span class="article-duration">2017-06-12 15:52:07</span></p>
+
+<p>潜水员都被炸出来了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大魔头-11">大魔头 :</h4>
+
+<p><span class="article-duration">2017-06-12 15:52:21</span></p>
+
+<p>rust都上2000人群了？[疑问]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-3">随心所往 :</h4>
+
+<p><span class="article-duration">2017-06-12 15:52:37</span></p>
+
+<p>不能落后啊[偷笑]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="御坂黒子-2">御坂黒子 :</h4>
+
+<p><span class="article-duration">2017-06-12 15:52:41</span></p>
+
+<p>是啊，马上就要上3000人群了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="嶺上アイドルcosmia-5">嶺上アイドルCosmia :</h4>
+
+<p><span class="article-duration">2017-06-12 15:52:50</span></p>
+
+<p>蛤？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="嶺上アイドルcosmia-6">嶺上アイドルCosmia :</h4>
+
+<p><span class="article-duration">2017-06-12 15:52:58</span></p>
+
+<p>有3000人裙？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="御坂黒子-3">御坂黒子 :</h4>
+
+<p><span class="article-duration">2017-06-12 15:53:03</span></p>
+
+<p>有</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="任飘零-frank">任飘零-Frank :</h4>
+
+<p><span class="article-duration">2017-06-12 15:53:20</span></p>
+
+<p>那升级一下群呗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="mike-tang-3">Mike Tang :</h4>
+
+<p><span class="article-duration">2017-06-12 15:53:21</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="mike-tang-4">Mike Tang :</h4>
+
+<p><span class="article-duration">2017-06-12 15:53:35</span></p>
+
+<p>当年900多的时候，两个群人数差不多</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="嶺上アイドルcosmia-7">嶺上アイドルCosmia :</h4>
+
+<p><span class="article-duration">2017-06-12 15:53:40</span></p>
+
+<p>不是最高2000吗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="mike-tang-5">Mike Tang :</h4>
+
+<p><span class="article-duration">2017-06-12 15:53:41</span></p>
+
+<p>现在hs已经远远落后了啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="御坂黒子-4">御坂黒子 :</h4>
+
+<p><span class="article-duration">2017-06-12 15:53:56</span></p>
+
+<p>是rust那边要开分部了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="任飘零-frank-1">任飘零-Frank :</h4>
+
+<p><span class="article-duration">2017-06-12 15:53:58</span></p>
+
+<p>群人再多，一般也就那几个人在聊……</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="アッコ-4">アッコ :</h4>
+
+<p><span class="article-duration">2017-06-12 15:54:12</span></p>
+
+<p>是的啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="アッコ-5">アッコ :</h4>
+
+<p><span class="article-duration">2017-06-12 15:54:39</span></p>
+
+<p>感觉很多都是加个群就好了，真正在学在讨论的也是少数</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="矽砂">矽砂 :</h4>
+
+<p><span class="article-duration">2017-06-12 15:54:39</span></p>
+
+<p>rust比较容易出东西,Haskell学个一年半年什么的干不了啥都挺正常,差距就出来了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大魔头-12">大魔头 :</h4>
+
+<p><span class="article-duration">2017-06-12 15:54:56</span></p>
+
+<p>升了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大魔头-13">大魔头 :</h4>
+
+<p><span class="article-duration">2017-06-12 15:55:25</span></p>
+
+<p>宁可大家加了潜水不说话，默默的学习就好</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="mike-tang-6">Mike Tang :</h4>
+
+<p><span class="article-duration">2017-06-12 15:55:50</span></p>
+
+<p>[强]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="请月红-1">请月红 :</h4>
+
+<p><span class="article-duration">2017-06-12 15:56:07</span></p>
+
+<p>[惊讶]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="任飘零-frank-2">任飘零-Frank :</h4>
+
+<p><span class="article-duration">2017-06-12 15:56:09</span></p>
+
+<p>[强]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="星沉雾宇">星沉雾宇 :</h4>
+
+<p><span class="article-duration">2017-06-12 15:56:14</span></p>
+
+<p>[强]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="御坂黒子-5">御坂黒子 :</h4>
+
+<p><span class="article-duration">2017-06-12 15:56:15</span></p>
+
+<p>是</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="大魔头-14">大魔头 :</h4>
+
+<p><span class="article-duration">2017-06-12 15:57:13</span></p>
+
+<p>好了，没话题要讨论的可以继续潜水去了，本群禁水</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="f">f :</h4>
+
+<p><span class="article-duration">2017-06-12 15:57:29</span></p>
+
+<p>按照书上说的，type 是在编译时决定的，而 data 是在运行时做这个工作</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-3">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-06-12 15:57:35</span></p>
+
+<p>[强]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="neo">Neo :</h4>
+
+<p><span class="article-duration">2017-06-12 15:57:38</span></p>
+
+<p>噗通，潜了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_109">:</h4>
+
+<p><span class="article-duration">2017-06-12 17:00:18</span></p>
+
+<p>给力[强]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_110">（#-_-)\┯━┯ :</h4>
+
+<p><span class="article-duration">2017-06-12 19:25:21</span></p>
+
+<p>求救…Windows 用 vs code 装 haskelly 需要什么特殊姿势吗😂</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_111">（#-_-)\┯━┯ :</h4>
+
+<p><span class="article-duration">2017-06-12 19:26:13</span></p>
+
+<p>intero的命令行也能用就是编辑器里不能看类型🙄</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_112">（#-_-)\┯━┯ :</h4>
+
+<p><span class="article-duration">2017-06-12 19:27:42</span></p>
+
+<p>哇这报错真刺激</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="嶺上アイドルcosmia-8">嶺上アイドルCosmia :</h4>
+
+<p><span class="article-duration">2017-06-12 19:32:47</span></p>
+
+<p>别装</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_114">（#-_-)\┯━┯ :</h4>
+
+<p><span class="article-duration">2017-06-12 19:41:37</span></p>
+
+<p>原来是double-conversion着玩意儿挂了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-12">第七页 :</h4>
+
+<p><span class="article-duration">2017-06-12 21:48:14</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-13">第七页 :</h4>
+
+<p><span class="article-duration">2017-06-12 21:48:27</span></p>
+
+<p>ghci中 如何打印出换行符?</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="请月红-2">请月红 :</h4>
+
+<p><span class="article-duration">2017-06-12 21:48:54</span></p>
+
+<p>putStr</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-14">第七页 :</h4>
+
+<p><span class="article-duration">2017-06-12 21:49:36</span></p>
+
+<p>赞</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="з"><em>(:з」∠)</em> :</h4>
+
+<p><span class="article-duration">2017-06-12 22:08:30</span></p>
+
+<p>putStrLn &ldquo;&rdquo;</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<p>以上内容来自 [Haskell函数式编程] QQ 群。</p>
+
+    </div>
+  </article>
+
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "binjoy" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="http://qq.haskellchina.org/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="http://qq.haskellchina.org/images/hugo-logo.png" width="22" height="22"></a>
+            <div style="display:none">
+                <script src="http://s95.cnzz.com/stat.php?id=1261078931&web_id=1261078931" language="JavaScript"></script>
+            </div>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
+

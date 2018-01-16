@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>20161229 on QQGroup Log of HaskellChina</title>
+    <link>http://qq.haskellchina.org/tags/20161229/</link>
+    <description>Recent content in 20161229 on QQGroup Log of HaskellChina</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Dec 2016 00:55:32 +0800</lastBuildDate>
+    
+	<atom:link href="http://qq.haskellchina.org/tags/20161229/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20161229</title>
+      <link>http://qq.haskellchina.org/2016/12/29/qq-group-log-of-haskellchina-20161229/</link>
+      <pubDate>Thu, 29 Dec 2016 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2016/12/29/qq-group-log-of-haskellchina-20161229/</guid>
+      <description>[[[[[[[[[[[[[[[[[[[[[[[[ : 2016-12-29 15:48:38 不要装cabal了 用stack 直接setup （虽然可以cabal install cabal-install
+Link : 2016-12-29 16:05:25 卧槽，mojo这么快就渗透到这个群了[发呆]
+peter : 2016-12-29 16:12:06 大家好
+(:з」∠) : 2016-12-29 17:43:06 cabal update一下？
+swordfeng : 2016-12-29 18:33:01 我接个bot进irc可以不（
+瑞典咸鱼Cosmia : 2016-12-29 20:28:50 traversable 的 sequence 的相反操作应该叫什么？
+瑞典咸鱼Cosmia : 2016-12-29 20:29:51 sequance :: (Monad m, Traversable t) -&amp;gt; t (m a) -&amp;gt; m (t a)?????????? :: (Monad m, Traversable t) -&amp;gt; m (t a) -&amp;gt; m (t (m a))</description>
+    </item>
+    
+  </channel>
+</rss>

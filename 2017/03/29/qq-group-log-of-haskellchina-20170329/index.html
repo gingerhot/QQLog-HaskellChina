@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.30.2" />
+
+
+<title>QQ Group Log of HaskellChina: 20170329 - QQGroup Log of HaskellChina</title>
+<meta property="og:title" content="QQ Group Log of HaskellChina: 20170329 - QQGroup Log of HaskellChina">
+
+
+
+  
+
+
+
+<meta property="keywords" content ="Haskell,, HaskellChina">
+
+
+
+
+<link rel="stylesheet" href="http://qq.haskellchina.org/css/main.css" media="all">
+<link rel="stylesheet" href="//fonts.lug.ustc.edu.cn/css?family=Merriweather:400|Lato:400,400italic,700">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="http://qq.haskellchina.org/" class="nav-logo">
+    <img src="http://qq.haskellchina.org/images/logo.png" 
+         width="50" 
+         height="50" 
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="https://github.com/gingerhot/QQLog-HaskellChina">GitHub</a></li>
+    
+    <li><a href="/about/">关于</a></li>
+    
+    <li><a href="http://haskellchina.org/">社区首页</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">3 min read</span>
+    
+
+    <h1 class="article-title">QQ Group Log of HaskellChina: 20170329</h1>
+
+    
+    <span class="article-date">March 29, 2017</span>
+    
+
+    <div class="article-content">
+      
+
+<h4 id="雾满拦江">雾满拦江 :</h4>
+
+<p><span class="article-duration">2017-03-29 10:20:08</span></p>
+
+<p>类成员函数可以显式地拿第一个参数传对象的this，魔板函数可以拿TH搞</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="雾满拦江-1">雾满拦江 :</h4>
+
+<p><span class="article-duration">2017-03-29 10:23:09</span></p>
+
+<p>记得有个叫 cxxffi 还是 fficxx 的，可以直接生成这些 bindings</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="雾满拦江-2">雾满拦江 :</h4>
+
+<p><span class="article-duration">2017-03-29 10:24:09</span></p>
+
+<p>但我觉得，要想把生成的函数名搞得比较正常，少不了大量的人工工作</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="雾满拦江-3">雾满拦江 :</h4>
+
+<p><span class="article-duration">2017-03-29 10:24:21</span></p>
+
+<p>比如各种llvm的binding&hellip;</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页">第七页 :</h4>
+
+<p><span class="article-duration">2017-03-29 11:12:37</span></p>
+
+<p>data Type a = X a | Y a<br /><br />我如果想限定这个 a是 Eq的实例 应该怎么写呢？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="yaegaki-erika">Yaegaki Erika :</h4>
+
+<p><span class="article-duration">2017-03-29 11:14:29</span></p>
+
+<p>forall a. (Eq a) =&gt;</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="yaegaki-erika-1">Yaegaki Erika :</h4>
+
+<p><span class="article-duration">2017-03-29 11:14:32</span></p>
+
+<p>这样？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="undefined">undefined :</h4>
+
+<p><span class="article-duration">2017-03-29 11:15:01</span></p>
+
+<p>hs支持这样限定吗…</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="neuromancer">Neuromancer :</h4>
+
+<p><span class="article-duration">2017-03-29 11:15:18</span></p>
+
+<p>data Eq a =&gt; Type a</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="yaegaki-erika-2">Yaegaki Erika :</h4>
+
+<p><span class="article-duration">2017-03-29 11:15:24</span></p>
+
+<p>应该有吧 existential什么什么的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="undefined-1">undefined :</h4>
+
+<p><span class="article-duration">2017-03-29 11:15:25</span></p>
+
+<p>好像是某个被废掉的扩展里面的？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-1">第七页 :</h4>
+
+<p><span class="article-duration">2017-03-29 11:15:41</span></p>
+
+<p>为什么不支持呢？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="neuromancer-1">Neuromancer :</h4>
+
+<p><span class="article-duration">2017-03-29 11:17:25</span></p>
+
+<p>少打了括号 。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="neuromancer-2">Neuromancer :</h4>
+
+<p><span class="article-duration">2017-03-29 11:18:14</span></p>
+
+<p>data (Eq a) =&gt; Type a</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="寒东">寒东 :</h4>
+
+<p><span class="article-duration">2017-03-29 11:18:16</span></p>
+
+<p>上GADT吧 这样ghc就可以从你的constructor里推断出携带的限定</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="寒东-1">寒东 :</h4>
+
+<p><span class="article-duration">2017-03-29 11:18:43</span></p>
+
+<p>你要是用了 DatatypeContexts 用到T a的函数都要手动加上 Eq a</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="寒东-2">寒东 :</h4>
+
+<p><span class="article-duration">2017-03-29 11:18:48</span></p>
+
+<p>没必要</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="neuromancer-3">Neuromancer :</h4>
+
+<p><span class="article-duration">2017-03-29 11:20:31</span></p>
+
+<p>的确是很麻烦。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-2">第七页 :</h4>
+
+<p><span class="article-duration">2017-03-29 11:20:53</span></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="举个栗子">举个栗子 :</h4>
+
+<p><span class="article-duration">2017-03-29 11:29:05</span></p>
+
+<p>atom的缩进应该怎么配置，有现成的插件吗，手按空格真是心累</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="ryan">Ryan :</h4>
+
+<p><span class="article-duration">2017-03-29 11:29:47</span></p>
+
+<p>我一直对Haskell的缩进风格感到很迷茫</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="ryan-1">Ryan :</h4>
+
+<p><span class="article-duration">2017-03-29 11:29:56</span></p>
+
+<p>在不同的地方能看到不同的对齐方式</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="举个栗子-1">举个栗子 :</h4>
+
+<p><span class="article-duration">2017-03-29 11:30:32</span></p>
+
+<p>游标卡尺能拿来黑haskell吗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="miyo-17-16-嗨">miyo.👉🏻[17|16|嗨] :</h4>
+
+<p><span class="article-duration">2017-03-29 11:30:50</span></p>
+
+<p>data里面逗号竟然能前置吗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="ryan-2">Ryan :</h4>
+
+<p><span class="article-duration">2017-03-29 11:30:53</span></p>
+
+<p>觉得需要有个类似gofmt的东西,hsfmt</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="jin">Jin :</h4>
+
+<p><span class="article-duration">2017-03-29 11:32:14</span></p>
+
+<p>不同的排版工具造成的吧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="jin-1">Jin :</h4>
+
+<p><span class="article-duration">2017-03-29 11:32:21</span></p>
+
+<p>hs有排版工具</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="jin-2">Jin :</h4>
+
+<p><span class="article-duration">2017-03-29 11:32:44</span></p>
+
+<p>spacemacs里面对hs有两种排版工具，效果不一样</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-29 11:32:47</span></p>
+
+<p>我只相信emacs 的haskell-mode</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-1">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-29 11:33:07</span></p>
+
+<p>atom排版辣鸡</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="哥无恩-衮">哥无恩、衮 :</h4>
+
+<p><span class="article-duration">2017-03-29 11:33:30</span></p>
+
+<p>乃们都用啥子编辑器</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-2">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-29 11:33:55</span></p>
+
+<p>emacs/spacemacs里tab自动对齐逗号</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-3">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-29 11:34:28</span></p>
+
+<p>atom里的module&hellip;where回车竟然尼玛缩进</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="怀谷">怀谷 :</h4>
+
+<p><span class="article-duration">2017-03-29 11:40:45</span></p>
+
+<p>还有VS code啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="くまちゃん">くまちゃん :</h4>
+
+<p><span class="article-duration">2017-03-29 11:44:12</span></p>
+
+<p>编辑器圣战领域，Emacs既出，就只有vim可以争锋了[系统表情]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="ryan-3">Ryan :</h4>
+
+<p><span class="article-duration">2017-03-29 11:45:12</span></p>
+
+<p>你们啊，一无聊就扯编辑器</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-4">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-29 11:45:41</span></p>
+
+<p>没有，只是在谈缩进[调皮]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-5">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-29 11:45:54</span></p>
+
+<p>我不介意用atom，如果缩进能搞成一样的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="くまちゃん-1">くまちゃん :</h4>
+
+<p><span class="article-duration">2017-03-29 11:49:17</span></p>
+
+<p>感觉用hindent or stylish-haskell，reformat 一下就好</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="haskell-v">haskell (=^v^=) :</h4>
+
+<p><span class="article-duration">2017-03-29 12:02:27</span></p>
+
+<p>@Neuromancer 不建议这样用</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="haskell-v-1">haskell (=^v^=) :</h4>
+
+<p><span class="article-duration">2017-03-29 12:06:27</span></p>
+
+<p>@第七页 我觉得就写instance EQ……</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-6">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-29 12:09:51</span></p>
+
+<p>不直接deriving Eq?</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-7">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-29 12:11:07</span></p>
+
+<p>忽略我。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="lambdabot">LambdaBot :</h4>
+
+<p><span class="article-duration">2017-03-29 12:18:00</span></p>
+
+<p>irc又能用了？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="jin-3">Jin :</h4>
+
+<p><span class="article-duration">2017-03-29 12:34:47</span></p>
+
+<p>求频道名称？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-8">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-29 12:37:35</span></p>
+
+<p>irc.haskellchina.com:7979</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-9">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-29 12:37:53</span></p>
+
+<p>#Haskell函数式编程</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="jin-4">Jin :</h4>
+
+<p><span class="article-duration">2017-03-29 12:38:05</span></p>
+
+<p>哦哦好</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever">forever :</h4>
+
+<p><span class="article-duration">2017-03-29 12:38:41</span></p>
+
+<p>那个 datatypecontext 在 100% 的情况下是无用的限制</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="neuromancer-4">Neuromancer :</h4>
+
+<p><span class="article-duration">2017-03-29 12:39:30</span></p>
+
+<p>我也不知道限定a类型干什么</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="neuromancer-5">Neuromancer :</h4>
+
+<p><span class="article-duration">2017-03-29 12:40:01</span></p>
+
+<p>只是记得lyah上有说过</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="lambdabot-1">LambdaBot :</h4>
+
+<p><span class="article-duration">2017-03-29 12:40:34</span></p>
+
+<p>hello</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="lambdabot-2">LambdaBot :</h4>
+
+<p><span class="article-duration">2017-03-29 12:40:58</span></p>
+
+<p>-_,-</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="cj">CJ :</h4>
+
+<p><span class="article-duration">2017-03-29 12:47:55</span></p>
+
+<p>datatypecontext 可以在有些非typeclass中的方法上省掉写constraint……我还是觉得有些用[可怜]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-1">forever :</h4>
+
+<p><span class="article-duration">2017-03-29 12:52:33</span></p>
+
+<p>@CJ 恰恰不能</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-2">forever :</h4>
+
+<p><span class="article-duration">2017-03-29 12:53:13</span></p>
+
+<p>反倒即使不需要这个 constraint 的地方也要写上</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-03-29 12:53:43</span></p>
+
+<p>没dtc你Incoherent就会爆</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-1">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-03-29 12:55:40</span></p>
+
+<p>dram，拆装成功，我接下来搞auto style dt tensor</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="cj-1">CJ :</h4>
+
+<p><span class="article-duration">2017-03-29 12:57:50</span></p>
+
+<p>@dram 记错了，还真不能，要它无用……但是我想要这个类似的功能[可怜]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="talos">talos :</h4>
+
+<p><span class="article-duration">2017-03-29 16:51:43</span></p>
+
+<p>有用过haskell stack的么</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="lambdabot-3">LambdaBot :</h4>
+
+<p><span class="article-duration">2017-03-29 17:40:31</span></p>
+
+<p>hi</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="lambdabot-4">LambdaBot :</h4>
+
+<p><span class="article-duration">2017-03-29 17:42:42</span></p>
+
+<p>ACTION drown in bugs</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="lambdabot-5">LambdaBot :</h4>
+
+<p><span class="article-duration">2017-03-29 17:43:12</span></p>
+
+<p>弱爆了。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="象之若">象之若 :</h4>
+
+<p><span class="article-duration">2017-03-29 17:50:02</span></p>
+
+<p>好奇这个bot是怎么实现的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="gci">gci :</h4>
+
+<p><span class="article-duration">2017-03-29 17:51:12</span></p>
+
+<p>是那个xiaov么</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="miyo-17-16-嗨-1">miyo.👉🏻[17|16|嗨] :</h4>
+
+<p><span class="article-duration">2017-03-29 17:51:43</span></p>
+
+<p>irc频道是什么</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="miyo-17-16-嗨-2">miyo.👉🏻[17|16|嗨] :</h4>
+
+<p><span class="article-duration">2017-03-29 17:56:38</span></p>
+
+<p>连不上。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="miyo-17-16-嗨-3">miyo.👉🏻[17|16|嗨] :</h4>
+
+<p><span class="article-duration">2017-03-29 17:56:42</span></p>
+
+<p>要ssl吗？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙子圆">橙子圆 :</h4>
+
+<p><span class="article-duration">2017-03-29 17:59:09</span></p>
+
+<p>不需要吧。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="lambdabot-6">LambdaBot :</h4>
+
+<p><span class="article-duration">2017-03-29 18:34:57</span></p>
+
+<p>大家好</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="象之若-1">象之若 :</h4>
+
+<p><span class="article-duration">2017-03-29 18:40:32</span></p>
+
+<p>irc.haskellchina.com:7979<br />#Haskell函数式编程</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="第七页-3">第七页 :</h4>
+
+<p><span class="article-duration">2017-03-29 19:01:35</span></p>
+
+<p>很好奇 qq怎么做到 在网页中启动qq的呢？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="ryan-4">Ryan :</h4>
+
+<p><span class="article-duration">2017-03-29 19:01:50</span></p>
+
+<p>等下，群里有bot吗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="天才麻将魔法少女cosmia">天才麻将魔法少女Cosmia :</h4>
+
+<p><span class="article-duration">2017-03-29 19:02:04</span></p>
+
+<p>href=&ldquo;qqprotocol://&hellip;&ldquo;之类的吧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="miyo-17-16-嗨-4">miyo.👉🏻[17|16|嗨] :</h4>
+
+<p><span class="article-duration">2017-03-29 19:02:06</span></p>
+
+<p>注册了系统url schema什么的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="ryan-5">Ryan :</h4>
+
+<p><span class="article-duration">2017-03-29 19:02:08</span></p>
+
+<p>这个LambdaBot是bot吗&hellip;</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-3">forever :</h4>
+
+<p><span class="article-duration">2017-03-29 19:02:11</span></p>
+
+<p>是</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="miyo-17-16-嗨-5">miyo.👉🏻[17|16|嗨] :</h4>
+
+<p><span class="article-duration">2017-03-29 19:02:14</span></p>
+
+<p>好像是叫这个名字</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-4">forever :</h4>
+
+<p><span class="article-duration">2017-03-29 19:02:22</span></p>
+
+<p>连到一个奇怪的 irc</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_79">. :</h4>
+
+<p><span class="article-duration">2017-03-29 19:02:34</span></p>
+
+<p>λβωτ</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="lambdabot-7">LambdaBot :</h4>
+
+<p><span class="article-duration">2017-03-29 19:05:35</span></p>
+
+<p>bonjour</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="ryan-6">Ryan :</h4>
+
+<p><span class="article-duration">2017-03-29 19:05:38</span></p>
+
+<p>哦</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-10">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-29 19:40:03</span></p>
+
+<p>入807</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="λcrlf-º⁷¹º">λCrLF·º⁷¹º :</h4>
+
+<p><span class="article-duration">2017-03-29 20:08:03</span></p>
+
+<p>求助…… 问个工具环境的问题Error: While constructing the build plan, the following exceptions were encountered:In the dependencies for corrode-0.1.0.0:    language-c-0.5.0 must match ==0.6.* (latest applicable is 0.6.1)Plan construction failed.</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_84">。。。 :</h4>
+
+<p><span class="article-duration">2017-03-29 22:15:47</span></p>
+
+<p>:set -XOverloadedStrings有大神懂这是什么吗？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="天才麻将魔法少女cosmia-1">天才麻将魔法少女Cosmia :</h4>
+
+<p><span class="article-duration">2017-03-29 22:20:29</span></p>
+
+<p><a href="https://downloads.haskell.org/~ghc/7.8.2/docs/html/users_guide/type-class-extensions.html">https://downloads.haskell.org/~ghc/7.8.2/docs/html/users_guide/type-class-extensions.html</a></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_86">。。。 :</h4>
+
+<p><span class="article-duration">2017-03-29 22:22:15</span></p>
+
+<p>ok谢啦</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-11">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-29 23:14:07</span></p>
+
+<p>二叉搜索树的查找怎么做成尾递归的版本？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="怀谷-1">怀谷 :</h4>
+
+<p><span class="article-duration">2017-03-29 23:16:16</span></p>
+
+<p>不就是if 搜left else if</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_89">[[[[[[[[[[[[[[[[[[[[[[[[ :</h4>
+
+<p><span class="article-duration">2017-03-29 23:16:21</span></p>
+
+<p>其实一直不明白 lazy和尾递归是否有关系</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="浩-翔">🌗浩↑翔 :</h4>
+
+<p><span class="article-duration">2017-03-29 23:17:16</span></p>
+
+<p>尾递归是需要立即求值的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-12">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-29 23:18:43</span></p>
+
+<p>诶，等等，好像很容易额</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-13">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-29 23:18:50</span></p>
+
+<p>直接写出来就是尾递归的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-5">forever :</h4>
+
+<p><span class="article-duration">2017-03-29 23:19:19</span></p>
+
+<p>@[[[[[[[[[[[[[[[[[[[[[[[[ 在 lazy 下，直接套在一层构造器底下的也可以认为是尾递归</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-6">forever :</h4>
+
+<p><span class="article-duration">2017-03-29 23:19:40</span></p>
+
+<p>可以认为已经 trampoline 过了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="the-fool">The Fool  :</h4>
+
+<p><span class="article-duration">2017-03-29 23:19:56</span></p>
+
+<p><a href="http://lambda-startup.com/traversing-trees-tail-recursively/">http://lambda-startup.com/traversing-trees-tail-recursively/</a></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-14">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-03-29 23:19:57</span></p>
+
+<p>tail recusion modulo cons</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-7">forever :</h4>
+
+<p><span class="article-duration">2017-03-29 23:20:01</span></p>
+
+<p>比如 map _f [] = []; map f (x : xs) = f x : map f xs</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-8">forever :</h4>
+
+<p><span class="article-duration">2017-03-29 23:20:15</span></p>
+
+<p>感觉还是说 trampoline 过了好理解一些。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<p>以上内容来自 [Haskell函数式编程] QQ 群。</p>
+
+    </div>
+  </article>
+
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "binjoy" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="http://qq.haskellchina.org/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="http://qq.haskellchina.org/images/hugo-logo.png" width="22" height="22"></a>
+            <div style="display:none">
+                <script src="http://s95.cnzz.com/stat.php?id=1261078931&web_id=1261078931" language="JavaScript"></script>
+            </div>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
+

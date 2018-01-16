@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2017 07 on QQGroup Log of HaskellChina</title>
+    <link>http://qq.haskellchina.org/tags/2017-07/</link>
+    <description>Recent content in 2017 07 on QQGroup Log of HaskellChina</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 31 Jul 2017 00:55:32 +0800</lastBuildDate>
+    
+	<atom:link href="http://qq.haskellchina.org/tags/2017-07/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170731</title>
+      <link>http://qq.haskellchina.org/2017/07/31/qq-group-log-of-haskellchina-20170731/</link>
+      <pubDate>Mon, 31 Jul 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/07/31/qq-group-log-of-haskellchina-20170731/</guid>
+      <description>hitchhiker : 2017-07-31 14:27:04
+@寒东 我稍微看了一下whnf，一般haskell对于表达式的eval就到whnf为止。然后cons (:)对于两个参数都不进行eval到whnf的过程，所以是对它们lazy，并且t
+hitchhiker : 2017-07-31 14:27:40
+sorry 手抖[衰]
+hitchhiker : 2017-07-31 14:28:02
+好烦 手机打字
+hitchhiker : 2017-07-31 14:50:42
+take 3 [1..]应该只会被eval成 1 : take (3-1) [2..]吧？如果按照(:)对两个参数都lazy。
+寒东 : 2017-07-31 14:51:22
+对的
+hitchhiker : 2017-07-31 14:51:57
+厉害了。。
+hitchhiker : 2017-07-31 14:52:15
+嗯 谢谢
+入 : 2017-07-31 15:26:33
+不知道，都装了些什么东西进去，
+_ : 2017-07-31 15:35:52
+无所谓的 一般而已就是.stack 文件夹变大一点
+dram : 2017-07-31 15:35:57
+把 .stack-work 删掉就行了
+dram : 2017-07-31 15:36:26</description>
+    </item>
+    
+  </channel>
+</rss>

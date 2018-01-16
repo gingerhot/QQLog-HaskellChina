@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2017 05 on QQGroup Log of HaskellChina</title>
+    <link>http://qq.haskellchina.org/tags/2017-05/</link>
+    <description>Recent content in 2017 05 on QQGroup Log of HaskellChina</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 31 May 2017 00:55:32 +0800</lastBuildDate>
+    
+	<atom:link href="http://qq.haskellchina.org/tags/2017-05/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170531</title>
+      <link>http://qq.haskellchina.org/2017/05/31/qq-group-log-of-haskellchina-20170531/</link>
+      <pubDate>Wed, 31 May 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/05/31/qq-group-log-of-haskellchina-20170531/</guid>
+      <description>第七页 : 2017-05-31 01:08:20
+newtype Compose f g a = Compose (f (g a))
+这个里面的 Compose 的构造参数 是什么？ 为什么看不懂呢？
+大笨蛋千里冰封 : 2017-05-31 01:10:20
+是一个类似
+大笨蛋千里冰封 : 2017-05-31 01:10:38
+Maybe (Maybe 1)的东西
+安静 : 2017-05-31 06:32:04
+弱弱的问一句，内存耗尽以后，haskell程序会怎么样？崩溃吗？卡死？
+Liqueur Librazy : 2017-05-31 06:39:26
+oom的话什么语言都没法救吧
+昵称未知 : 2017-05-31 09:26:30
+大家好，我是迎着小风尿尿。
+饼干先生 : 2017-05-31 09:26:44
+@迎着小风尿尿 来。自我介绍下吧
+昵称未知 : 2017-05-31 09:27:27
+两年过去了，你们水平怎么样了😂
+第七页 : 2017-05-31 09:28:25
+感觉很奇怪 还能这样定义类型
+蕝吥犹豫 : 2017-05-31 09:48:41
+f :: * -&amp;gt; *，g :: * -&amp;gt; *， a :: * ，这样看吧</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170530</title>
+      <link>http://qq.haskellchina.org/2017/05/30/qq-group-log-of-haskellchina-20170530/</link>
+      <pubDate>Tue, 30 May 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/05/30/qq-group-log-of-haskellchina-20170530/</guid>
+      <description>橙月雪离子 : 2017-05-30 15:13:52
+橙月雪离子 : 2017-05-30 15:13:57
+求助[惊讶]
+橙月雪离子 : 2017-05-30 15:14:11
+我加了forever就报这个错
+橙月雪离子 : 2017-05-30 15:15:34
+诶不对，好像和forever无关
+Canto Ostinato : 2017-05-30 15:15:58
+你的bus里有producer放数据吗
+橙月雪离子 : 2017-05-30 15:17:28
+橙月雪离子 : 2017-05-30 15:17:35
+上面那个相当于main
+橙月雪离子 : 2017-05-30 15:17:43
+就放了一个debug gg
+橙月雪离子 : 2017-05-30 15:23:03
+[惊讶]
+橙月雪离子 : 2017-05-30 15:23:21
+其实并不是很会用stm
+Canto Ostinato : 2017-05-30 15:24:04
+去掉forever还有问题吗
+Canto Ostinato : 2017-05-30 15:24:34
+说起Channel的话，用MVar实现的overhead会更低
+橙月雪离子 : 2017-05-30 15:25:30
+刚才第二张图里已经把原来defaultDispatcher里的forever去掉了
+橙月雪离子 : 2017-05-30 15:25:35</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170527</title>
+      <link>http://qq.haskellchina.org/2017/05/27/qq-group-log-of-haskellchina-20170527/</link>
+      <pubDate>Sat, 27 May 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/05/27/qq-group-log-of-haskellchina-20170527/</guid>
+      <description>f : 2017-05-27 00:52:31
+haskell中()是什么都可以匹配吗？
+f : 2017-05-27 00:53:43
+IO ()
+Yaegaki Erika : 2017-05-27 00:58:24
+不是
+Canto Ostinato : 2017-05-27 01:06:38
+没有这种操作
+(ーー゛)be5 : 2017-05-27 01:08:12
+hs 里面 () 表示 Unit type 或者 Unit value
+(ーー゛)be5 : 2017-05-27 01:08:21
+啥都匹配的 pattern 是 _
+(ーー゛)be5 : 2017-05-27 01:10:13
+我们当中混进了二五仔（
+y=mx+⑨ : 2017-05-27 01:10:29
+啥都匹配的不一定是 _
+y=mx+⑨ : 2017-05-27 01:11:12
+正確來說 不是已定義的詞都是wildcard
+y=mx+⑨ : 2017-05-27 01:11:20
+不過通常用_表示而已
+(ーー゛)be5 : 2017-05-27 01:11:28</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170526</title>
+      <link>http://qq.haskellchina.org/2017/05/26/qq-group-log-of-haskellchina-20170526/</link>
+      <pubDate>Fri, 26 May 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/05/26/qq-group-log-of-haskellchina-20170526/</guid>
+      <description>高佳欣 : 2017-05-26 09:26:31
+计算的时候, 为什么最后能够丢了上下文呢?
+高佳欣 : 2017-05-26 09:26:59
+M(M a) -&amp;gt; M a这个函数的作用不就是丢了一层上下文
+魔理沙 : 2017-05-26 09:27:35
+啥叫上下文？
+高佳欣 : 2017-05-26 09:28:33
+就是a -&amp;gt; M a加的&amp;rdquo;容器&amp;rdquo;
+魔理沙 : 2017-05-26 09:29:02
+啥叫容器？
+我行我素(loaba) : 2017-05-26 09:30:36
+好抽象的问题
+高佳欣 : 2017-05-26 09:30:40
+好吗,我不专业也不会专业的名词
+高佳欣 : 2017-05-26 09:30:54
+我问的问题太不专业了
+高佳欣 : 2017-05-26 09:32:20
+@魔理沙 我的意思就是为什么能够将M (M a) -&amp;gt; M a
+高佳欣 : 2017-05-26 09:32:30
+这不是明显少了一个M
+饼干先生 : 2017-05-26 09:34:26
+一个集合的子集的子集 也是 这个集合的子集</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170525</title>
+      <link>http://qq.haskellchina.org/2017/05/25/qq-group-log-of-haskellchina-20170525/</link>
+      <pubDate>Thu, 25 May 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/05/25/qq-group-log-of-haskellchina-20170525/</guid>
+      <description>HrvvI : 2017-05-25 14:12:31
+碰到一个关于Integral与Int的问题，如下图，请问是什么原因
+HrvvI : 2017-05-25 14:13:16
+大衍 : 2017-05-25 14:31:57
+xs是怎么弄出来的
+HrvvI : 2017-05-25 14:33:17
+不在电脑前，不好贴图，是从一个scanl的结果take出来的
+Jin : 2017-05-25 14:34:00
+神奇
+大衍 : 2017-05-25 14:34:20
+神奇，想看看代码
+HrvvI : 2017-05-25 14:35:08
+我等下到电脑前，贴完整的
+HrvvI : 2017-05-25 14:38:31
+是在做HackerRank的https://www.hackerrank.com/challenges/summing-pieces时碰到的
+HrvvI : 2017-05-25 16:04:58
+问题应该与类型推导有关，可简化如下https://paste.ofcode.org/mVSezAqDVtVD6j4c8H9ftr
+HrvvI : 2017-05-25 16:05:15
+sqd : 2017-05-25 16:18:50
+2^79溢出了
+大衍 : 2017-05-25 16:51:39
+如果你把base申明为Int，你中间的全部都是Int
+大衍 : 2017-05-25 16:52:09
+一步溢出了就溢出了
+大衍 : 2017-05-25 16:53:19
+爪机无力。。
+大笨蛋千里冰封 : 2017-05-25 16:53:32</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170524</title>
+      <link>http://qq.haskellchina.org/2017/05/24/qq-group-log-of-haskellchina-20170524/</link>
+      <pubDate>Wed, 24 May 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/05/24/qq-group-log-of-haskellchina-20170524/</guid>
+      <description>茶几之友 : 2017-05-24 08:46:46
+手持两把锟斤拷，口中疾呼烫烫烫。
+脚踏千朵屯屯屯，笑看万物锘锘锘。
+大魔头 : 2017-05-24 09:42:13
+@ 茶几之友 以后不要再发无关信息
+茶几之友 : 2017-05-24 09:42:21
+OK
+大魔头 : 2017-05-24 09:42:24
+本群禁水
+以上内容来自 [Haskell函数式编程] QQ 群。</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170523</title>
+      <link>http://qq.haskellchina.org/2017/05/23/qq-group-log-of-haskellchina-20170523/</link>
+      <pubDate>Tue, 23 May 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/05/23/qq-group-log-of-haskellchina-20170523/</guid>
+      <description>haskell (=^v^=) : 2017-05-23 12:03:26
+@Michael ok
+刘笑天 : 2017-05-23 12:32:12
+https://github.com/fc01/game1k
+我的 js1k game
+茶几之友 : 2017-05-23 17:47:27
+https://www.zhihu.com/question/20034686/answer/52063718
+逛知乎看见沙沙的足迹
+我行我素(loaba) : 2017-05-23 17:55:15
+大神无处不在啊
+暧月ō.ō猫 : 2017-05-23 18:08:11
+帅气可爱 所以是她还是他
+(:з」∠) : 2017-05-23 18:16:23
+这重要么
+y=mx+⑨ : 2017-05-23 18:16:43
+性別魔理沙
+tennix : 2017-05-23 18:17:55
+这个时代她和他还有区别么
+月光寒 : 2017-05-23 18:46:46
+虵
+第七页 : 2017-05-23 18:51:29
+叼叼的
+lambda : 2017-05-23 19:22:30
+性别不是重点，重点是帅气可爱
+以上内容来自 [Haskell函数式编程] QQ 群。</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170511</title>
+      <link>http://qq.haskellchina.org/2017/05/11/qq-group-log-of-haskellchina-20170511/</link>
+      <pubDate>Thu, 11 May 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/05/11/qq-group-log-of-haskellchina-20170511/</guid>
+      <description>阅千人而惜知己 : 2017-05-11 09:57:31
+@ezksd liftIO就好了
+以上内容来自 [Haskell函数式编程] QQ 群。</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170509</title>
+      <link>http://qq.haskellchina.org/2017/05/09/qq-group-log-of-haskellchina-20170509/</link>
+      <pubDate>Tue, 09 May 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/05/09/qq-group-log-of-haskellchina-20170509/</guid>
+      <description>Neo : 2017-05-09 15:51:32
+这是一个面向猎头的网站，如果你们申请一些美国本土的公司，80%以上的可能性，猎头或公司都会让你去做一下，这些公司包括并且不限于amazon, apple, 和其它大企业
+以上内容来自 [Haskell函数式编程] QQ 群。</description>
+    </item>
+    
+  </channel>
+</rss>

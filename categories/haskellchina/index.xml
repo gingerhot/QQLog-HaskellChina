@@ -1,0 +1,4044 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Haskellchina on QQGroup Log of HaskellChina</title>
+    <link>http://qq.haskellchina.org/categories/haskellchina/</link>
+    <description>Recent content in Haskellchina on QQGroup Log of HaskellChina</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jan 2018 00:55:32 +0800</lastBuildDate>
+    
+	<atom:link href="http://qq.haskellchina.org/categories/haskellchina/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20180101</title>
+      <link>http://qq.haskellchina.org/2018/01/01/qq-group-log-of-haskellchina-20180101/</link>
+      <pubDate>Mon, 01 Jan 2018 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2018/01/01/qq-group-log-of-haskellchina-20180101/</guid>
+      <description>½arj : 2018-01-01 00:23:54
+有一点我不是很懂,为什么main是 IO ()
+½arj : 2018-01-01 00:24:12
+按常理想不应该是IO Int32嘛
+Xyzt Toe : 2018-01-01 00:24:36
+？？？
+½arj : 2018-01-01 00:25:40
+我知道System.Exit有exitWith
+Narc : 2018-01-01 00:25:43
+C 语言？
+½arj : 2018-01-01 00:25:48
+但是想想就感觉怪怪的
+½arj : 2018-01-01 00:26:06
+更重要的是Prelude里没有exitWith
+FTS : 2018-01-01 00:59:21
+https://www.haskell.org/onlinereport/haskell2010/haskellch5.html#x11-980005
+FTS : 2018-01-01 01:01:12
+https://stackoverflow.com/q/22458056 Why is the type of “Main.main”, “IO ()” and not “IO a”?
+以上内容来自 [Haskell函数式编程] QQ 群。</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171231</title>
+      <link>http://qq.haskellchina.org/2017/12/31/qq-group-log-of-haskellchina-20171231/</link>
+      <pubDate>Sun, 31 Dec 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/12/31/qq-group-log-of-haskellchina-20171231/</guid>
+      <description>刘笑天 : 2017-12-31 09:39:14
+π现在的每一位，都是用前面的数，带入某公式计算出来的这个是真的吗？求公式！
+EtaoinWu : 2017-12-31 09:40:13
+https://en.wikipedia.org/wiki/Category:Pi_algorithms
+Xyzt Toe : 2017-12-31 09:41:03
+@刘笑天 github.com/fc01 应该是存在 但是找不出来……而且这说法有点模糊了吧
+刘笑天 : 2017-12-31 09:42:29
+是迭代公式 不是前面的数
+Xyzt Toe : 2017-12-31 09:43:15
+[惊讶]级数不可以写成迭代的么
+Xyzt Toe : 2017-12-31 09:44:34
+就算不是级数 那啥 连分数之类 连乘 之类也行……
+Neo : 2017-12-31 12:26:53
+莎莎你这是什么神操作
+魔理沙 : 2017-12-31 12:27:37
+怎么了0 0
+Narc : 2017-12-31 12:28:36
+Narc : 2017-12-31 12:28:45
+这样就可以
+Narc : 2017-12-31 12:29:02
+本质上是牛顿法求根
+刘笑天 : 2017-12-31 12:30:39</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171228</title>
+      <link>http://qq.haskellchina.org/2017/12/28/qq-group-log-of-haskellchina-20171228/</link>
+      <pubDate>Thu, 28 Dec 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/12/28/qq-group-log-of-haskellchina-20171228/</guid>
+      <description>Jin : 2017-12-28 10:17:39
+太强了
+姜涛 : 2017-12-28 17:29:04
+发一个招聘，可以吗@大魔头
+魔理沙 : 2017-12-28 17:32:04
+HS有关的可以
+姜涛 : 2017-12-28 17:33:22
+不是，数据库查询，优化器相关
+Neo : 2017-12-28 17:33:54
+pingcap吗？
+魔理沙 : 2017-12-28 17:35:28
+这问魔头吧。。我不清楚
+姜涛 : 2017-12-28 17:37:21
+阿里数据库团队
+燕颌虎颈 : 2017-12-28 18:04:17
+@Neo 那不是 golang+rust 额 tidb吗
+燕颌虎颈 : 2017-12-28 18:05:24
+我记得我加群那会 大魔头正在带领团队 入坑 scala
+燕颌虎颈 : 2017-12-28 18:05:56
+那时候应该是 2014年
+wweir : 2017-12-28 18:08:56
+@姜涛 oceanbase?
+之前公司也打算过做一些数据库查询优化器的，可惜带队的老大没抗住 hs 的压力
+tennix : 2017-12-28 19:09:59</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171227</title>
+      <link>http://qq.haskellchina.org/2017/12/27/qq-group-log-of-haskellchina-20171227/</link>
+      <pubDate>Wed, 27 Dec 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/12/27/qq-group-log-of-haskellchina-20171227/</guid>
+      <description>Neo : 2017-12-27 00:12:30
+哪有群面的……
+FTS : 2017-12-27 00:17:55
+能讨论点跟Haskell相关的么
+Neo : 2017-12-27 00:18:58
+不是在聊hs面试吗？……
+_ : 2017-12-27 00:19:06
+以为人很多需要海选（脑海中的群面 在codingame拉个群pk 搞最速hs刷题瑞士轮
+Felis sapiens : 2017-12-27 00:19:24
+他们问我会不会分布式
+Felis sapiens : 2017-12-27 00:19:37
+我说我会搬运 cloud haskell 的api。。
+Felis sapiens : 2017-12-27 00:19:55
+要手写个共识算法什么的就免了
+Neo : 2017-12-27 00:20:43
+别了，你可以试一个particia tree的实现
+Neo : 2017-12-27 00:20:47
+还行
+Neo : 2017-12-27 00:21:01
+scala我搞了200行不到
+_ : 2017-12-27 00:21:10
+cloud hs 分布式。。好吧 我只知道用cloud hs 并发调 ffi 容易 core dump</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171226</title>
+      <link>http://qq.haskellchina.org/2017/12/26/qq-group-log-of-haskellchina-20171226/</link>
+      <pubDate>Tue, 26 Dec 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/12/26/qq-group-log-of-haskellchina-20171226/</guid>
+      <description>Neo : 2017-12-26 23:06:13
+vim vscode intellij三件套
+. : 2017-12-26 23:06:42
+对jetbrains的印象不好
+Oling Cat : 2017-12-26 23:06:47
+咱们好像又在扯无关紧要的东西了= =
+. : 2017-12-26 23:06:49
+主要是rubymine的感觉
+Oling Cat : 2017-12-26 23:07:24
+serokell到底是个啥样的公司= =？
+Felis sapiens : 2017-12-26 23:08:18
+外包写hs的皮包公司（
+MageFox : 2017-12-26 23:15:31
+@Felis sapiens 如果你能把三本小黄书刷完搞懂，我觉得JS基础一点问题都没了
+燕颌虎颈 : 2017-12-26 23:24:45
+我对 C# java 的印象都不好
+燕颌虎颈 : 2017-12-26 23:24:58
+都是挺卡的
+燕颌虎颈 : 2017-12-26 23:25:27
+同样是虚拟机 erlang就丝丝顺滑
+Glavo : 2017-12-26 23:25:55
+Glavo : 2017-12-26 23:25:58</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171224</title>
+      <link>http://qq.haskellchina.org/2017/12/24/qq-group-log-of-haskellchina-20171224/</link>
+      <pubDate>Sun, 24 Dec 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/12/24/qq-group-log-of-haskellchina-20171224/</guid>
+      <description>张智城 : 2017-12-24 00:20:19
+这个为什么是first fRes &amp;lt;$&amp;gt; runParser p2 strRes，为什么不是[晕] runParser p2 strRes
+张智城 : 2017-12-24 00:20:23
+y=mx+⑨ : 2017-12-24 00:31:10
+你想下類型
+y=mx+⑨ : 2017-12-24 00:31:23
+全部都是講類型的
+张智城 : 2017-12-24 00:39:03
+runParser p2 strRes好像符合题目的类型耶[惊讶] 还有左边first fRes,这个first不是传一个函数的咩，我要再想想[晕]
+くまちゃん : 2017-12-24 01:06:56
+想像成 p1 :: Parser([Char] -&amp;gt; [Char]) p2::Parser [Char] 就好理解了，不可以丢掉拍
+くまちゃん : 2017-12-24 01:07:08
+p1
+_ : 2017-12-24 01:08:14
+记得tweag是搞cloud haskell的 移植erlang各种框架
+张智城 : 2017-12-24 01:20:44
+@くまちゃん ！！有点理解了
+张智城 : 2017-12-24 01:21:55</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171223</title>
+      <link>http://qq.haskellchina.org/2017/12/23/qq-group-log-of-haskellchina-20171223/</link>
+      <pubDate>Sat, 23 Dec 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/12/23/qq-group-log-of-haskellchina-20171223/</guid>
+      <description>左新宇 : 2017-12-23 16:09:54
+请教一个问题，有没有将「数据绑定
+左新宇 : 2017-12-23 16:10:16
+唔。。 有没有自带「数据绑定」的语言
+. : 2017-12-23 16:12:21
+啥叫
+. : 2017-12-23 16:13:07
+你指的是什么
+左新宇 : 2017-12-23 16:13:10
+就是那些Vue或者Anglr里实现的那种，或者C#
+左新宇 : 2017-12-23 16:14:02
+唔。。。算了，我概念还有点混乱。
+. : 2017-12-23 16:15:01
+其实vue那种有点流的意思
+左新宇 : 2017-12-23 16:15:48
+你值的是哪种流的概念？
+FTS : 2017-12-23 16:19:30
+http://www.seas.upenn.edu/~harmony/ Boomerang
+FTS : 2017-12-23 16:20:41
+. : 2017-12-23 16:21:57
+像这种的 bacon.js（
+. : 2017-12-23 16:22:06
+两个流(
+左新宇 : 2017-12-23 16:22:40
+对对对，想要的就是这种
+. : 2017-12-23 16:23:24</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171222</title>
+      <link>http://qq.haskellchina.org/2017/12/22/qq-group-log-of-haskellchina-20171222/</link>
+      <pubDate>Fri, 22 Dec 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/12/22/qq-group-log-of-haskellchina-20171222/</guid>
+      <description>并非柳下惠 : 2017-12-22 14:38:13
+谁知道有 相关自然语言搜索 相关的库，java的，，推荐一下
+陈梓立 : 2017-12-22 14:42:00
+https://stanfordnlp.github.io/CoreNLP/
+陈梓立 : 2017-12-22 14:42:00
+http://opennlp.apache.org/
+并非柳下惠 : 2017-12-22 14:42:55
+谢谢
+燕颌虎颈 : 2017-12-22 14:54:12
+vscode里居然可以 打断点 牛批啊
+燕颌虎颈 : 2017-12-22 14:54:30
+不过貌似实现的比较简陋
+老农 : 2017-12-22 16:56:03
+前几天说到hs=&amp;gt;wasm的https://github.com/haskell-wasm/wasm 这个其实是定义了一个DSL然后用hs来翻译，不是把hs翻译成wasmhttps://github.com/dfinity/dhc 这个是但是支持太少了
+FTS : 2017-12-22 17:14:46
+https://github.com/WebGHC
+https://github.com/TerrorJack/asterius
+以上内容来自 [Haskell函数式编程] QQ 群。</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171219</title>
+      <link>http://qq.haskellchina.org/2017/12/19/qq-group-log-of-haskellchina-20171219/</link>
+      <pubDate>Tue, 19 Dec 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/12/19/qq-group-log-of-haskellchina-20171219/</guid>
+      <description>燕颌虎颈 : 2017-12-19 12:24:41
+这是咋回事
+Xyzt Toe : 2017-12-19 12:44:12
+……
+张智城 : 2017-12-19 12:53:24
+在stack 配置文件中 , build-depends: &amp;hellip; ,text
+张智城 : 2017-12-19 12:53:34
+加多一个text
+燕颌虎颈 : 2017-12-19 12:54:41
+燕颌虎颈 : 2017-12-19 12:54:46
+是这么加吗
+燕颌虎颈 : 2017-12-19 12:54:59
+貌似应该有个 【】吧
+燕颌虎颈 : 2017-12-19 12:55:33
+Warning: D:\sr\global-project\stack.yaml: Unrecognized field in ProjectAndConfigMonoid: build-depends
+Felis sapiens : 2017-12-19 12:55:36
+在 .cabal 里面加。。不在 stack.yaml 里面。。
+张智城 : 2017-12-19 12:56:01
+嗯嗯，在.cabal这个加才对
+燕颌虎颈 : 2017-12-19 17:59:31</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171218</title>
+      <link>http://qq.haskellchina.org/2017/12/18/qq-group-log-of-haskellchina-20171218/</link>
+      <pubDate>Mon, 18 Dec 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/12/18/qq-group-log-of-haskellchina-20171218/</guid>
+      <description>燕颌虎颈 : 2017-12-18 00:49:40
+foop 才是将来时
+PL : 2017-12-18 07:39:10
+fp还没出生
+魔理沙 : 2017-12-18 07:51:42
+隔壁？
+talos : 2017-12-18 09:04:40
+隔壁是哪
+monsoon : 2017-12-18 09:06:04
+匿名：两个演讲会场，一个是fp的，一个是oop的。所以隔壁的意思是说隔壁oop会场的。
+御坂黒子 : 2017-12-18 09:09:07
+其实fp也要细分的
+御坂黒子 : 2017-12-18 09:09:45
+icfp下面就分了一个scheme and functional programming workshop
+没有尾巴 : 2017-12-18 09:57:48
+oop 概念也是早就有了的
+Neo : 2017-12-18 10:00:26
+莎莎画个时间线吧
+Neo : 2017-12-18 10:00:38
+多早叫早
+魔理沙 : 2017-12-18 10:01:17
+学历史不是为了排第0第1，而是看idea如何互相影响
+Neo : 2017-12-18 10:01:23
+yup
+Neo : 2017-12-18 10:03:42</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171217</title>
+      <link>http://qq.haskellchina.org/2017/12/17/qq-group-log-of-haskellchina-20171217/</link>
+      <pubDate>Sun, 17 Dec 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/12/17/qq-group-log-of-haskellchina-20171217/</guid>
+      <description>FTS : 2017-12-17 21:55:32
+第一个问题已经很操蛋了 所以我觉得用ES不实际
+Neo : 2017-12-17 21:55:39
+第三个stage是CQRS现在想处理的
+FTS : 2017-12-17 21:55:54
+我情愿跑binlog
+Neo : 2017-12-17 21:56:03
+es的snapshot策略超坑爹
+Neo : 2017-12-17 21:56:24
+基本每个数据源都要定自己一个策略……
+FTS : 2017-12-17 21:57:19
+有空我们私下聊 好像有点OT了
+我的电脑 : 2017-12-17 21:57:46
+话说，ghc-mod是不是不支持ghc 8.4
+斯大林的RBQ Cosmia : 2017-12-17 21:57:47
+喵喵喵？？？
+Neo : 2017-12-17 21:57:47
+还好，这是DDD和FP设计上的问题
+FTS : 2017-12-17 21:58:01
+ghc 8.4 还没有release
+Neo : 2017-12-17 21:58:28
+不过的确没啥hs&amp;hellip;结了吧
+FTS : 2017-12-17 21:58:56
+FTS : 2017-12-17 21:59:55</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171215</title>
+      <link>http://qq.haskellchina.org/2017/12/15/qq-group-log-of-haskellchina-20171215/</link>
+      <pubDate>Fri, 15 Dec 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/12/15/qq-group-log-of-haskellchina-20171215/</guid>
+      <description>Felis sapiens : 2017-12-15 00:37:06
+cocreature 说现在的 arch linux 哪怕用 stack 官网的版本安装 ghc 也很可能不 work。。有人确认过吗
+Felis sapiens : 2017-12-15 00:37:27
+退 arch 很久了一时不好确认
+λCrLF·º⁷¹º : 2017-12-15 01:49:02
+我是arch，怎么确认……？
+Felis sapiens : 2017-12-15 02:01:03
+那你的是好的
+泉彼方 : 2017-12-15 02:02:06
+Leeroy Jenkins
+_ : 2017-12-15 02:17:53
+不是没法用 是build用gcc时fpic no pie libtinfo 各种问题
+_ : 2017-12-15 02:18:53
+虽然可以改.stack的progma 但是太坑了
+饼干先生 : 2017-12-15 21:19:12
+把手机拆了就有了
+JUNXTER : 2017-12-15 21:19:47
+手机里的好像不能光学变焦
+创始元灵 : 2017-12-15 21:20:17</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171214</title>
+      <link>http://qq.haskellchina.org/2017/12/14/qq-group-log-of-haskellchina-20171214/</link>
+      <pubDate>Thu, 14 Dec 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/12/14/qq-group-log-of-haskellchina-20171214/</guid>
+      <description>张智城 : 2017-12-14 01:06:54
+（问一个ubuntu的问题[惊讶]）这个是什么错误，命令也打不了 tput: No value for $TERM and no -T specified
+张智城 : 2017-12-14 01:06:55
+会变成这样
+_ : 2017-12-14 06:42:12
+stack 最近的更新1.6.1什么鬼 默认hpack？stack new 的里面没有 stack.yaml?!lts用户是不是不应该升级stack的啊 cabal不兼容 还是hpack版本不对
+FTS : 2017-12-14 09:19:18
+https://github.com/commercialhaskell/stack/blob/master/ChangeLog.md#v161
+follow your feeling : 2017-12-14 09:30:21
+。
+姚少妖妖、 : 2017-12-14 10:01:26
+0.0
+燕颌虎颈 : 2017-12-14 10:42:54
+@cu7qbtYnkvHyCQ== wire 服务端在 虚拟机 ubuntu 17.10 8核心 8G内存
+燕颌虎颈 : 2017-12-14 10:43:09
+编译了4个多小时
+燕颌虎颈 : 2017-12-14 10:43:17</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171213</title>
+      <link>http://qq.haskellchina.org/2017/12/13/qq-group-log-of-haskellchina-20171213/</link>
+      <pubDate>Wed, 13 Dec 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/12/13/qq-group-log-of-haskellchina-20171213/</guid>
+      <description>Felis sapiens : 2017-12-13 14:31:05
+用 GADT 的一个爽点：刚匹配完一个 pattern，然后准备写个 fallback pattern 运行时报错时，ghc 提示是冗余匹配。。
+斯大林的RBQ Cosmia : 2017-12-13 14:39:25
+[惊讶]
+bot : 2017-12-13 19:46:03
+[惊讶][惊讶][惊讶][惊讶][惊讶][惊讶][惊讶][惊讶][惊讶][惊讶][惊讶][惊讶]
+以上内容来自 [Haskell函数式编程] QQ 群。</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171210</title>
+      <link>http://qq.haskellchina.org/2017/12/10/qq-group-log-of-haskellchina-20171210/</link>
+      <pubDate>Sun, 10 Dec 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/12/10/qq-group-log-of-haskellchina-20171210/</guid>
+      <description>斯大林的RBQ Cosmia : 2017-12-10 11:27:25
+[惊讶]integer没法hash？
+斯大林的RBQ Cosmia : 2017-12-10 11:27:26
+不会吧
+Felis sapiens : 2017-12-10 11:56:32
+有好多库直接依赖 integer-gmp
+左新宇 : 2017-12-10 15:33:42
+https://www.slideshare.net/ScottWlaschin/fp-patterns-buildstufflt一个用F#介绍FP的slides，不知道有人看过没。
+左新宇 : 2017-12-10 15:36:17
+附赠劝退表情两张
+Felis sapiens : 2017-12-10 16:12:31
+我试试看 unregisterised 模式的 ghc 能慢多少
+: 2017-12-10 17:25:02
+15页里提到worse is better
+我还在想f井该怎么算。。。
+: 2017-12-10 17:25:30
+16页就把自己和haskell与ocaml并列了。。。
+Felis sapiens : 2017-12-10 17:33:42
+啊，segfault 了。。改参数重跑
+以上内容来自 [Haskell函数式编程] QQ 群。</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171209</title>
+      <link>http://qq.haskellchina.org/2017/12/09/qq-group-log-of-haskellchina-20171209/</link>
+      <pubDate>Sat, 09 Dec 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/12/09/qq-group-log-of-haskellchina-20171209/</guid>
+      <description>_ : 2017-12-09 04:40:11
+看现在好多hs 类似的语言都直接依赖z3 编译的
+御坂黒子 : 2017-12-09 08:22:51
+有个问题@魔理沙
+御坂黒子 : 2017-12-09 08:24:53
+我记得你以前说bottom是0，unit是1，either是+，mul是*
+御坂黒子 : 2017-12-09 08:26:01
+那either unit unit和unit是一样的？
+御坂黒子 : 2017-12-09 08:26:08
+2=1?
+御坂黒子 : 2017-12-09 08:29:48
+哎呀貌似发错群了
+御坂黒子 : 2017-12-09 08:29:56
+对不起对不起
+魔理沙 : 2017-12-09 08:32:19
+不一样啊
+魔理沙 : 2017-12-09 08:32:31
+左边有两个element，右边一个
+魔理沙 : 2017-12-09 08:32:38
+（左边是boolean
+御坂黒子 : 2017-12-09 08:34:17
+可是左边两个都一样？
+御坂黒子 : 2017-12-09 08:34:56
+命题p和p|p表达的意思是一样的？
+魔理沙 : 2017-12-09 08:37:38
+首先，不是所有类型系统都对应着命题跟整数</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171208</title>
+      <link>http://qq.haskellchina.org/2017/12/08/qq-group-log-of-haskellchina-20171208/</link>
+      <pubDate>Fri, 08 Dec 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/12/08/qq-group-log-of-haskellchina-20171208/</guid>
+      <description>安静 : 2017-12-08 10:51:13
+求助，stack好像出问题了。
+每次stack build之后，.cabal文件的内容会变回stack new &amp;hellip;生成的内容。比如说，我在build-depends下面加个containers，stack build之后这个containers就没了。
+Narc : 2017-12-08 10:51:37
+没遇到过。。
+安静 : 2017-12-08 10:54:02
+安静 : 2017-12-08 10:54:17
+cabal文件的缩进也比较奇怪
+安静 : 2017-12-08 10:54:34
+以前用的时候好像不是这样&amp;hellip;
+Narc : 2017-12-08 10:55:18
+stack 的版本？
+Narc : 2017-12-08 10:55:30
+是最新的吗
+安静 : 2017-12-08 10:56:37
+1.5.1
+安静 : 2017-12-08 10:56:50
+这是最新的吗？好久没用了
+Narc : 2017-12-08 10:58:42
+现在是1.6.1
+ruiheng : 2017-12-08 13:11:59
+很可能cabal文件是从另一个文件生成的. 我见过一下那工具文件, 名字不记得了
+Felis sapiens : 2017-12-08 16:37:16
+hpack
+Felis sapiens : 2017-12-08 20:18:18</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171207</title>
+      <link>http://qq.haskellchina.org/2017/12/07/qq-group-log-of-haskellchina-20171207/</link>
+      <pubDate>Thu, 07 Dec 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/12/07/qq-group-log-of-haskellchina-20171207/</guid>
+      <description>斯大林的RBQ Cosmia : 2017-12-07 10:39:34
+hmmm
+斯大林的RBQ Cosmia : 2017-12-07 10:40:20
+how？
+斯大林的RBQ Cosmia : 2017-12-07 10:41:09
+[惊讶]昨天试着用kleisli arrow的monad law证明bind的monad law
+斯大林的RBQ Cosmia : 2017-12-07 10:41:21
+就差这个条件了
+斯大林的RBQ Cosmia : 2017-12-07 10:41:59
+感觉&amp;gt;&amp;gt;=定义的laws还是比join和&amp;gt;=&amp;gt;的版本稍微强一点
+我的电脑 : 2017-12-07 10:46:34
+斯大林的RBQ Cosmia : 2017-12-07 10:46:44
+&amp;hellip;&amp;hellip;
+我的电脑 : 2017-12-07 10:46:58
+斯大林的RBQ Cosmia : 2017-12-07 10:46:58
+但是我要证明的是对任意monad成立
+我的电脑 : 2017-12-07 10:47:09
+我的电脑 : 2017-12-07 10:47:28
+然后就可以愉悦的证明monad laws了
+我的电脑 : 2017-12-07 10:47:46
+啊，你是说任意的
+我的电脑 : 2017-12-07 10:47:50</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171206</title>
+      <link>http://qq.haskellchina.org/2017/12/06/qq-group-log-of-haskellchina-20171206/</link>
+      <pubDate>Wed, 06 Dec 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/12/06/qq-group-log-of-haskellchina-20171206/</guid>
+      <description>大魔头 : 2017-12-06 16:39:53
+大魔头 : 2017-12-06 16:39:57
+顶！
+仄仄 : 2017-12-06 16:43:50
+[惊讶] 我的问题好像一直没得到解答 搜索也搜不到
+Neo : 2017-12-06 16:44:49
+比如?
+仄仄 : 2017-12-06 16:45:21
+斯大林的RBQ Cosmia : 2017-12-06 16:45:36
+。。。
+斯大林的RBQ Cosmia : 2017-12-06 16:45:43
+愚蠢的拍屏主义者-1000
+仄仄 : 2017-12-06 16:45:43
+cabal 的问题 我的没法用 删除~/.ghc ~/.cabal 都不行。。。
+仄仄 : 2017-12-06 16:46:00
+之前拍的。。。还好我保留着。。
+斯大林的RBQ Cosmia : 2017-12-06 16:46:23
+他要求base==4.6.*
+斯大林的RBQ Cosmia : 2017-12-06 16:46:31
+这个不知道是哪个旧版本GHC的
+斯大林的RBQ Cosmia : 2017-12-06 16:46:48</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171205</title>
+      <link>http://qq.haskellchina.org/2017/12/05/qq-group-log-of-haskellchina-20171205/</link>
+      <pubDate>Tue, 05 Dec 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/12/05/qq-group-log-of-haskellchina-20171205/</guid>
+      <description>faultrit : 2017-12-05 00:00:53
+hackerrank
+Nicekingwei : 2017-12-05 00:08:14
+pat也可以，不过只到ghc7.6
+Six Edge : 2017-12-05 01:09:09
+pta？浙大的那个？
+長信宮燈 : 2017-12-05 06:48:06
+对的
+liuliu : 2017-12-05 09:54:57
+问个简单的语法问题
+run :: String -&amp;gt; Expr
+run = runParser expr
+runParser :: Parser a -&amp;gt; String -&amp;gt; a
+runParser m s =
+这2个能匹配吗？
+liuliu : 2017-12-05 09:55:49
+runParser是说传入Parser和String，返回a吗
+仄仄 : 2017-12-05 10:04:16
+传入 Parser a、String 类型 返回a类型
+斯大林的RBQ Cosmia : 2017-12-05 10:05:39
+[惊讶]expr 是 Parser Expr就能匹配啊</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171204</title>
+      <link>http://qq.haskellchina.org/2017/12/04/qq-group-log-of-haskellchina-20171204/</link>
+      <pubDate>Mon, 04 Dec 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/12/04/qq-group-log-of-haskellchina-20171204/</guid>
+      <description>liuliu : 2017-12-04 20:15:10
+终于写了个爬虫
+liuliu : 2017-12-04 20:15:28
+有什么复杂一点点的例子吗，不要太多
+. : 2017-12-04 20:15:44
+厉害啊
+我的电脑 : 2017-12-04 20:16:26
+parser题啊
+liuliu : 2017-12-04 20:17:26
+parser指https://www.codewars.com/kata/regular-expression-parser/haskell吗
+liuliu : 2017-12-04 20:17:33
+这个看着没啥思路啊
+我的电脑 : 2017-12-04 20:17:34
+是的
+我的电脑 : 2017-12-04 20:17:45
+书里面没有讲parser的？
+liuliu : 2017-12-04 20:17:50
+哪本
+Jin : 2017-12-04 20:18:03
+rwh
+liuliu : 2017-12-04 20:18:51
+rwh哪章是和parser有关的？
+Jin : 2017-12-04 20:18:55
+只是有点旧，API有点对不上
+我的电脑 : 2017-12-04 20:19:05
+没看过rwh
+Jin : 2017-12-04 20:19:15</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171202</title>
+      <link>http://qq.haskellchina.org/2017/12/02/qq-group-log-of-haskellchina-20171202/</link>
+      <pubDate>Sat, 02 Dec 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/12/02/qq-group-log-of-haskellchina-20171202/</guid>
+      <description>魔理沙 : 2017-12-02 02:20:11
+指的是Machine Learning(
+Oling Cat : 2017-12-02 04:27:18
+话说 Arch下尝试安装 hakyll 总报错，Google 半天无果= =||https://gist.github.com/OlingCat/1a4d512002cda7166caec91bbd88bbba各位有啥思路么？@Felis sapiens
+Oling Cat : 2017-12-02 04:28:29
+找到个似乎有关的帖子，把libtinfo换成libncurses，然而问题照旧= =
+_ : 2017-12-02 05:02:26
+ghc什么版本啊 你是static的吗 我static会报rodata错误的
+Oling Cat : 2017-12-02 06:08:45
+lts-9.14 ghc-8.0.2
+Oling Cat : 2017-12-02 06:08:58
+对，就是这个rodata什么的错误
+Oling Cat : 2017-12-02 06:09:10
+有什么办法可以解决么
+_ : 2017-12-02 06:28:55
+我的arch正常啊安装 安的只有 libtinfo5
+Oling Cat : 2017-12-02 06:56:16
+好吧..= =
+以上内容来自 [Haskell函数式编程] QQ 群。</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171201</title>
+      <link>http://qq.haskellchina.org/2017/12/01/qq-group-log-of-haskellchina-20171201/</link>
+      <pubDate>Fri, 01 Dec 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/12/01/qq-group-log-of-haskellchina-20171201/</guid>
+      <description>FTS : 2017-12-01 15:08:15
+https://savanni.luminescent-dreams.com/page/production-haskell
+Neo : 2017-12-01 15:12:48
+所以代码呢？
+FTS : 2017-12-01 15:17:19
+FTS : 2017-12-01 15:18:15
+下面的文章挺有意思的…主要探究monad stack的问题…
+Neo : 2017-12-01 15:20:40
+这个stack是指技术栈，工具箱，他认为必须要知道的几个monad让开发更快进行
+Neo : 2017-12-01 15:21:10
+然鹅，很多人卡在不是哪个栈的问题……而是概念
+Felis sapiens : 2017-12-01 15:21:51
+这个 monad stack 太复杂了
+Felis sapiens : 2017-12-01 15:22:15
+一个 ReaderT IO 应该能搞定一切。。包括 logging 之类的额外 effect
+Felis sapiens : 2017-12-01 15:23:14
+实际上很多应用 ReaderT 也只会传一个全局的 comtext，所以。。直接用全局变量好像也没啥问题。。
+FTS : 2017-12-01 15:25:06
+
+今天/r/haskell 突然就出了两篇探索这方面的&amp;hellip;
+FTS : 2017-12-01 15:26:24</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171130</title>
+      <link>http://qq.haskellchina.org/2017/11/30/qq-group-log-of-haskellchina-20171130/</link>
+      <pubDate>Thu, 30 Nov 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/11/30/qq-group-log-of-haskellchina-20171130/</guid>
+      <description>饼干先生 : 2017-11-30 22:28:14
+自动给Record生成get的是什么语法。。忘记了。
+斯大林的RBQ Cosmia : 2017-11-30 22:34:17
+[惊讶]。。。
+斯大林的RBQ Cosmia : 2017-11-30 22:34:29
+你都知道他叫record了
+斯大林的RBQ Cosmia : 2017-11-30 22:34:36
+不就是record syntax吗？
+Felis sapiens : 2017-11-30 22:36:19
+自动生成 get 不够用啊。。要自动生成 lens
+饼干先生 : 2017-11-30 22:41:27
+[惊讶]好吧。我傻了。请无视我
+以上内容来自 [Haskell函数式编程] QQ 群。</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171129</title>
+      <link>http://qq.haskellchina.org/2017/11/29/qq-group-log-of-haskellchina-20171129/</link>
+      <pubDate>Wed, 29 Nov 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/11/29/qq-group-log-of-haskellchina-20171129/</guid>
+      <description>三七二十‭ : 2017-11-29 01:47:45
+三七二十‭ : 2017-11-29 01:48:23
+有可能写出区分第二个和第三个答案的测试吗？我第二个能过，第三个过不了测试
+三七二十‭ : 2017-11-29 01:48:40
+题目名字是Sum Arrays
+L喵 : 2017-11-29 01:51:09
+*** Failed! Falsifiable (after 7 tests and 7 shrinks):
+[36.727391963418064,18.0,14.119468016243399]
+L喵 : 2017-11-29 01:51:13
+这是我拿到的一个反例……
+三七二十‭ : 2017-11-29 01:53:40
+你用的哪个函数
+L喵 : 2017-11-29 01:54:13
+三七二十‭ : 2017-11-29 01:54:39
+是不是IEEE的浮点数不是幺半群
+三七二十‭ : 2017-11-29 01:54:57
+哦不，幺半群似乎也有顺序
+三七二十‭ : 2017-11-29 01:55:02
+无视我
+L喵 : 2017-11-29 01:55:04
+把 foldl 变成 foldr 就对了
+L喵 : 2017-11-29 01:55:12</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171128</title>
+      <link>http://qq.haskellchina.org/2017/11/28/qq-group-log-of-haskellchina-20171128/</link>
+      <pubDate>Tue, 28 Nov 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/11/28/qq-group-log-of-haskellchina-20171128/</guid>
+      <description>Goo go : 2017-11-28 17:40:53
+写个什么现在都想用map
+Goo go : 2017-11-28 17:40:56
+哎
+斯大林的RBQ Cosmia : 2017-11-28 17:49:16
+map不好吗？
+. : 2017-11-28 17:49:47
+map挺好的啊
+左新宇 : 2017-11-28 17:50:08
+我现在写js都没用过for while之类的~~
+&amp;rdquo;&amp;rsquo; ⃢・ ・ ⃢&amp;rdquo;&amp;rsquo; : 2017-11-28 17:50:19
+我现在写js都没用过for while之类的~~
+. : 2017-11-28 17:50:36
+我被Moand搞懵逼了&amp;hellip;哎&amp;hellip;.蒙了还几天了
+反抗引力 : 2017-11-28 17:50:58
+反抗引力 : 2017-11-28 17:51:16
+请问下这个例题是什么意思？？
+斯大林的RBQ Cosmia : 2017-11-28 17:51:19
+一个XXX不就是XXX的一个XXX吗？what&amp;rsquo;s the problem
+反抗引力 : 2017-11-28 17:51:51
+题目没有加 |，但是不加又报错。。。
+. : 2017-11-28 17:51:55</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171127</title>
+      <link>http://qq.haskellchina.org/2017/11/27/qq-group-log-of-haskellchina-20171127/</link>
+      <pubDate>Mon, 27 Nov 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/11/27/qq-group-log-of-haskellchina-20171127/</guid>
+      <description>御坂黒子 : 2017-11-27 16:44:36
+我觉得肯定是把可能的全实现一遍
+以上内容来自 [Haskell函数式编程] QQ 群。</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171126</title>
+      <link>http://qq.haskellchina.org/2017/11/26/qq-group-log-of-haskellchina-20171126/</link>
+      <pubDate>Sun, 26 Nov 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/11/26/qq-group-log-of-haskellchina-20171126/</guid>
+      <description>_ : 2017-11-26 13:26:28
+在想rust里lifetime ownership之类对hs而言有无借鉴意义 不过hs里所有都是immutable的(\x-&amp;gt;(x,x)) 實際上相當於rs裡的(\x-&amp;gt;(&amp;amp;x,&amp;amp;x)) 若是把hs的lambda表达式限制成linear的有什么意义吗 （想不通这些
+Felis sapiens : 2017-11-26 13:32:38
+ghc 8.4 会有 linear type
+y=mx+⑨ : 2017-11-26 13:33:26
+那麼日常問題來了
+y=mx+⑨ : 2017-11-26 13:33:38
+hs甚麼時候有dependent type呢
+λCrLF·º⁷¹º : 2017-11-26 13:34:01
+诶，haskell没有数组嘛？
+y=mx+⑨ : 2017-11-26 13:34:10
+Vector
+λCrLF·º⁷¹º : 2017-11-26 13:34:27
+那个不算，就是dependent type 的那种数组
+y=mx+⑨ : 2017-11-26 13:34:42
+就是Vector啊
+y=mx+⑨ : 2017-11-26 13:34:53
+不過hs沒有dt
+姚少妖妖、 : 2017-11-26 13:34:54
+[惊讶][惊讶][惊讶]
+y=mx+⑨ : 2017-11-26 13:35:04
+所以要用singleton模擬dt
+λCrLF·º⁷¹º : 2017-11-26 13:35:20</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171125</title>
+      <link>http://qq.haskellchina.org/2017/11/25/qq-group-log-of-haskellchina-20171125/</link>
+      <pubDate>Sat, 25 Nov 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/11/25/qq-group-log-of-haskellchina-20171125/</guid>
+      <description>noti0na1 : 2017-11-25 05:55:43
+https://youtu.be/t1e8gqXLbsU
+_ : 2017-11-25 12:41:54
+hs里对应(,)
+_ : 2017-11-25 12:42:38
+Haskell 里有safe的 (!!) 吗
+_ : 2017-11-25 12:43:57
+如果仅限标准库的话
+斯大林的RBQ Cosmia : 2017-11-25 12:58:54
+好像没有
+斯大林的RBQ Cosmia : 2017-11-25 12:59:10
+我恍惚记得有!?这么个函数返回maybe的
+talos : 2017-11-25 13:25:36
+stack init出现invalid package id如何解决
+y=mx+⑨ : 2017-11-25 13:26:34
+說個笑話
+y=mx+⑨ : 2017-11-25 13:26:45
+computerphile今早更了個monad tutorial
+_ : 2017-11-25 13:34:45
+你看你是不是改过stack的template之类的设置
+_ : 2017-11-25 13:35:04
+多谢了 估计那个是vector库里的
+talos : 2017-11-25 13:42:41</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171123</title>
+      <link>http://qq.haskellchina.org/2017/11/23/qq-group-log-of-haskellchina-20171123/</link>
+      <pubDate>Thu, 23 Nov 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/11/23/qq-group-log-of-haskellchina-20171123/</guid>
+      <description>胖胖 : 2017-11-23 00:04:42
+lsp大法好。
+Lambdaλx.x : 2017-11-23 11:57:06
+atom
+左新宇 : 2017-11-23 12:01:12
+咦，有atom这个函数么？
+反抗引力 : 2017-11-23 12:02:03
+atom是个编辑器。。
+曾棋钏 : 2017-11-23 12:05:15
+不是原子么
+以上内容来自 [Haskell函数式编程] QQ 群。</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171122</title>
+      <link>http://qq.haskellchina.org/2017/11/22/qq-group-log-of-haskellchina-20171122/</link>
+      <pubDate>Wed, 22 Nov 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/11/22/qq-group-log-of-haskellchina-20171122/</guid>
+      <description>Nicekingwei : 2017-11-22 12:02:32
+求问，用parsec的时候，有没有办法获得当前offset……不是行号和列号。应用场景是代码转换，有一部分代码需要保留
+Nicekingwei : 2017-11-22 12:03:19
+[惊讶]目前的做法是取出内容再拼接……
+FTS : 2017-11-22 12:13:34
+offset是指…? http://hackage.haskell.org/package/parsec-3.1.11/docs/Text-Parsec-Prim.html#t:State State只有这些&amp;hellip;
+Nicekingwei : 2017-11-22 12:26:57
+相对于Stream开头的位移，因为我用ByteString，有了位移就可以O(1)截取字符串
+Nicekingwei : 2017-11-22 12:27:17
+SourcePos里只有行号列号，不够用QAQ
+FTS : 2017-11-22 12:46:36
+这样的话只能由你自己maintain这个状态了…
+FTS : 2017-11-22 12:51:36
+ParserT 里有个 user state type 你可以看看
+Nicekingwei : 2017-11-22 12:52:51
+好的，谢谢啦
+Felis sapiens : 2017-11-22 15:50:38
+学到了一条没什么X用的经验：如果在写 ghc frontend plugin，这个 plugin 用来编译 ghc boot libraries，那么在导出 frontendPlugin 的模块中要避免导出 Orphan instance。。。
+Felis sapiens : 2017-11-22 15:51:46</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171121</title>
+      <link>http://qq.haskellchina.org/2017/11/21/qq-group-log-of-haskellchina-20171121/</link>
+      <pubDate>Tue, 21 Nov 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/11/21/qq-group-log-of-haskellchina-20171121/</guid>
+      <description>御坂黒子 : 2017-11-21 15:08:12
+id
+以上内容来自 [Haskell函数式编程] QQ 群。</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171120</title>
+      <link>http://qq.haskellchina.org/2017/11/20/qq-group-log-of-haskellchina-20171120/</link>
+      <pubDate>Mon, 20 Nov 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/11/20/qq-group-log-of-haskellchina-20171120/</guid>
+      <description>(ーー゛)be5 : 2017-11-20 01:43:35
+@Felis sapiens ghc 会把所有编译期能确定的 dict passing 都给内联掉吗？
+Felis sapiens : 2017-11-20 01:44:49
+要手动标 INLINABLE
+魔理沙 : 2017-11-20 02:02:12
+@斯大林的RBQ Cosmia 看成stack of monad transformer，搞定
+魔理沙 : 2017-11-20 02:03:09
+还有类型搞错了吧。。。不是[t] -&amp;gt; [([t], a)]吗。。
+魔理沙 : 2017-11-20 02:06:36
+Wow
+魔理沙 : 2017-11-20 02:06:38
+WTF
+魔理沙 : 2017-11-20 02:06:47
+Parser is just a nondeterministic state machine
+魔理沙 : 2017-11-20 02:06:53
+what&amp;rsquo;s the problem
+以上内容来自 [Haskell函数式编程] QQ 群。</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171119</title>
+      <link>http://qq.haskellchina.org/2017/11/19/qq-group-log-of-haskellchina-20171119/</link>
+      <pubDate>Sun, 19 Nov 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/11/19/qq-group-log-of-haskellchina-20171119/</guid>
+      <description>faultrit : 2017-11-19 21:13:07
+haskell有没有针对非String的序列的ParserCombinator?
+faultrit : 2017-11-19 21:13:56
+就是可以解析[a]而不只是[Char]的
+斯大林的RBQ Cosmia : 2017-11-19 21:14:31
+[惊讶]你自己写一个呗
+faultrit : 2017-11-19 21:15:06
+目前不会写，在做另一个东西要用到(:з」∠)_
+斯大林的RBQ Cosmia : 2017-11-19 21:15:25
+[惊讶]建议花一个小时学一下
+斯大林的RBQ Cosmia : 2017-11-19 21:15:33
+最naive的实现
+faultrit : 2017-11-19 21:15:54
+[惊讶]好吧我先写个naive的
+斯大林的RBQ Cosmia : 2017-11-19 21:16:06
+newtype Parser a = [Token] -&amp;gt; ([Token], a)
+斯大林的RBQ Cosmia : 2017-11-19 21:16:24
+newtype Parser t a = Parser [t] -&amp;gt; ([t], a)
+斯大林的RBQ Cosmia : 2017-11-19 21:16:40</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171118</title>
+      <link>http://qq.haskellchina.org/2017/11/18/qq-group-log-of-haskellchina-20171118/</link>
+      <pubDate>Sat, 18 Nov 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/11/18/qq-group-log-of-haskellchina-20171118/</guid>
+      <description>0vo : 2017-11-18 00:52:41
+各位，还记得我的问题吗
+0vo : 2017-11-18 00:52:51
+我写出来一个假冒伪劣产品
+0vo : 2017-11-18 00:53:04
+0vo : 2017-11-18 00:53:43
+这算不算一个合格的答案另说，我注意到一件事
+0vo : 2017-11-18 00:54:51
+从形式上来看，我其实是在手动科里化，在原理上这个实现是三个参数的迭代逻辑foldl没有区别
+0vo : 2017-11-18 00:55:38
+但是，init可以不出现在调用时，也就是说，它是一个只活在函数定义过程中的函数参数
+0vo : 2017-11-18 00:56:38
+我隐约觉得它和func和list应该是不同的函数参数，这个不同不仅仅是不在一层闭包，而是“功能集”的不同
+0vo : 2017-11-18 00:57:20
+然而我根本说不清楚一个普通的函数参数的“功能集”是什么…所以有哪位大佬对此有研究吗？多谢了
+. : 2017-11-18 01:59:50
+其实你也可以定义init……
+. : 2017-11-18 02:00:12
+init = (list) =&amp;gt; list.slice(0, list.length - 1)last = (list) =&amp;gt; list[list.length-1]
+Unexpectable : 2017-11-18 02:32:25
+[惊讶]
+: 2017-11-18 04:33:44
+并不一定需要curried</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171117</title>
+      <link>http://qq.haskellchina.org/2017/11/17/qq-group-log-of-haskellchina-20171117/</link>
+      <pubDate>Fri, 17 Nov 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/11/17/qq-group-log-of-haskellchina-20171117/</guid>
+      <description>zrt : 2017-11-17 08:24:23
+大佬们啊我最近想用haskell写个最简单的类似一个web framework的DSL，然后我好像卡在router的实现上了有什么好的idea可以帮帮我么QAQ
+zrt : 2017-11-17 08:26:40
+ideally就是有一个registerHandler的function，input是一个名字（比如&amp;rdquo;hello&amp;rdquo;）和一个string-&amp;gt;string的function，想要做到的是编译完以后可以直接在argument上加之前register的名字就可以执行之前input的那个函数zzz
+zrt : 2017-11-17 08:27:11
+想了半天也不知道除了metaprogramming有啥好的实现方法OTL
+三七二十‭ : 2017-11-17 08:28:37
+map么
+zrt : 2017-11-17 08:29:28
+我想过这个
+zrt : 2017-11-17 08:29:45
+但是这个map是要在编译的时候生成的，并不了解该怎么写zz
+y=mx+⑨ : 2017-11-17 08:31:53
+Map String (String -&amp;gt; String)
+y=mx+⑨ : 2017-11-17 08:32:08
+first class就行了 不需要元編程
+三七二十‭ : 2017-11-17 08:34:17
+为啥要编译期就存在
+zrt : 2017-11-17 08:35:38
+就是你需要register哪些function在编译的时候就已经可以确定了嘛
+三七二十‭ : 2017-11-17 08:35:48
+map = [(&amp;ldquo;a&amp;rdquo;,(++&amp;ldquo;b&amp;rdquo;))]这种算编译期确定么
+zrt : 2017-11-17 08:36:24
+额算吧</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171116</title>
+      <link>http://qq.haskellchina.org/2017/11/16/qq-group-log-of-haskellchina-20171116/</link>
+      <pubDate>Thu, 16 Nov 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/11/16/qq-group-log-of-haskellchina-20171116/</guid>
+      <description>反抗引力 : 2017-11-16 00:17:39
+反抗引力 : 2017-11-16 00:18:00
+问个比较简单的。。。怎么让这个changemood正常运行？
+反抗引力 : 2017-11-16 00:20:51
+擦。。。搜到了。。
+Narc : 2017-11-16 00:20:51
+你这个函数是想干啥
+反抗引力 : 2017-11-16 00:21:31
+就是仿一个Bool的类型
+Narc : 2017-11-16 00:22:12
+你的那个函数只会返回woot
+反抗引力 : 2017-11-16 00:23:08
+嗯嗯，现在懂了(￣∀￣)
+魔理沙 : 2017-11-16 00:25:46
+@小小白 以后请用截屏工具
+Glavo : 2017-11-16 00:26:10
+没有截屏至少也用个office lens啊。。。
+反抗引力 : 2017-11-16 00:26:27
+没有qq&amp;hellip;
+&amp;rdquo;&amp;rsquo; ⃢・ ・ ⃢&amp;rdquo;&amp;rsquo; : 2017-11-16 00:26:40
+手机有啊
+反抗引力 : 2017-11-16 00:27:24
+？？在Ubuntu上，不知道其他方法了，不想用wine qq┐（─__─）┌。。
+&amp;rdquo;&amp;rsquo; ⃢・ ・ ⃢&amp;rdquo;&amp;rsquo; : 2017-11-16 00:27:36</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171115</title>
+      <link>http://qq.haskellchina.org/2017/11/15/qq-group-log-of-haskellchina-20171115/</link>
+      <pubDate>Wed, 15 Nov 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/11/15/qq-group-log-of-haskellchina-20171115/</guid>
+      <description>陆德靖 : 2017-11-15 16:45:58
+下午好
+陆德靖 : 2017-11-15 16:46:03
+下班好
+大笨蛋千里冰封 : 2017-11-15 20:13:27
+大笨蛋千里冰封 : 2017-11-15 20:13:32
+y=mx+⑨ : 2017-11-15 20:13:40
+前端! 前端!
+F : 2017-11-15 20:20:51
+以后编译器都是在浏览器里运行的
+F : 2017-11-15 20:21:09
+操作系统只是你chrome的runtime
+随心所往 : 2017-11-15 20:51:41
+这种和purescript比有优势吗？
+随心所往 : 2017-11-15 20:51:52
+purescript等
+y=mx+⑨ : 2017-11-15 20:51:59
+比較新
+大笨蛋千里冰封 : 2017-11-15 20:55:12
+支持dt也是优势啊
+大笨蛋千里冰封 : 2017-11-15 20:55:17
+我爱Agda
+FTS : 2017-11-15 21:15:46
+lazy 和 strict 是根本的差别…
+Nicekingwei : 2017-11-15 23:03:24</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171114</title>
+      <link>http://qq.haskellchina.org/2017/11/14/qq-group-log-of-haskellchina-20171114/</link>
+      <pubDate>Tue, 14 Nov 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/11/14/qq-group-log-of-haskellchina-20171114/</guid>
+      <description>(:з」∠) : 2017-11-14 16:25:12
+@F 还有帝国理工
+Felis sapiens : 2017-11-14 16:25:46
+@冰封 ice1000.org 如果你用 terrorjack/meikyu:nightly-2017-11-14，那么就不用 stack install，Agda/alex/happy 什么的都安装好了
+大笨蛋千里冰封 : 2017-11-14 16:26:01
+@Felis sapiens ？？？？？？？？？？？？？
+大笨蛋千里冰封 : 2017-11-14 16:26:06
+那这个东西本身安装需要多久呢？
+大笨蛋千里冰封 : 2017-11-14 16:26:21
+你不是说光是弄下来就要三分钟吗
+Felis sapiens : 2017-11-14 16:26:43
+镜像本身在 circle ci 上下载展开也就 3min 左右，很快
+大笨蛋千里冰封 : 2017-11-14 16:26:57
+能不能教教我咋在docker hub里整个image，就基于你那个，然后只装Agda环境
+大笨蛋千里冰封 : 2017-11-14 16:27:24
+顺便就能把标准库配了，这样就可以达到类似Travis CI上配置Gradle项目那种one-linear的效果
+大笨蛋千里冰封 : 2017-11-14 16:27:30
+就很爽了
+大笨蛋千里冰封 : 2017-11-14 16:27:39
+3-min挺起来很诱人
+大笨蛋千里冰封 : 2017-11-14 16:27:45</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171113</title>
+      <link>http://qq.haskellchina.org/2017/11/13/qq-group-log-of-haskellchina-20171113/</link>
+      <pubDate>Mon, 13 Nov 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/11/13/qq-group-log-of-haskellchina-20171113/</guid>
+      <description>反抗引力 : 2017-11-13 00:08:19
+haskell学习
+_ : 2017-11-13 01:38:03
+你是机器人吗？
+大笨蛋千里冰封 : 2017-11-13 03:06:25
+一个大问题
+大笨蛋千里冰封 : 2017-11-13 03:06:29
+巨大的问题
+大笨蛋千里冰封 : 2017-11-13 03:06:34
+我现在可以
+大笨蛋千里冰封 : 2017-11-13 03:06:53
+len : (n : Nat) → Vec A n
+大笨蛋千里冰封 : 2017-11-13 03:06:58
+it works
+大笨蛋千里冰封 : 2017-11-13 03:07:20
+len : (n : Nat) → Vec Top n
+大笨蛋千里冰封 : 2017-11-13 03:07:25
+Top就是Unit
+大笨蛋千里冰封 : 2017-11-13 03:07:32
+就是只有一个instance那个
+大笨蛋千里冰封 : 2017-11-13 03:08:00</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171112</title>
+      <link>http://qq.haskellchina.org/2017/11/12/qq-group-log-of-haskellchina-20171112/</link>
+      <pubDate>Sun, 12 Nov 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/11/12/qq-group-log-of-haskellchina-20171112/</guid>
+      <description>Felis sapiens : 2017-11-12 01:11:34
+https://github.com/TerrorJack/meikyu
+Felis sapiens : 2017-11-12 01:12:17
+做了个基于 alpine/musl 的 image，包含 stack 和 ghc，可以直接配合 stackage nightly 使用。。静态链接应该没问题
+Glavo : 2017-11-12 01:37:33
+FTS : 2017-11-12 13:24:03
+foreverbell : 2017-11-12 18:33:21
+各位老司机们
+foreverbell : 2017-11-12 18:33:33
+已有 haskell 和 deptype 基础
+foreverbell : 2017-11-12 18:33:38
+学习 idris 看什么好
+Jin : 2017-11-12 19:22:06
+看文档[惊讶]
+Jin : 2017-11-12 19:22:16
+我只看过文档
+大笨蛋千里冰封 : 2017-11-12 19:26:40
+@foreverbell 正好！！符合我那个Agda系列的面相人群，快去看
+大笨蛋千里冰封 : 2017-11-12 19:26:58</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171111</title>
+      <link>http://qq.haskellchina.org/2017/11/11/qq-group-log-of-haskellchina-20171111/</link>
+      <pubDate>Sat, 11 Nov 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/11/11/qq-group-log-of-haskellchina-20171111/</guid>
+      <description>胖胖 : 2017-11-11 00:16:28
+胖胖 : 2017-11-11 00:16:38
+就是不升级
+左新宇 : 2017-11-11 10:41:17
+@‮秒一了续并‭交易完成感到偷税 看了看React，感觉自己是重新造了一个简化版的react。。。
+Glavo : 2017-11-11 10:43:35
+Glavo : 2017-11-11 10:43:43
+。。。
+Glavo : 2017-11-11 10:43:50
+前端人就喜欢造轮子
+左新宇 : 2017-11-11 10:44:16
+瞎说，我本来是写C++（Qt）的，才不是什么前端。
+三七二十‭ : 2017-11-11 10:44:55
+前端应该是干啥都npm install，cpp才造轮子
+三七二十‭ : 2017-11-11 10:45:03
+左新宇 : 2017-11-11 10:45:34
+你以为npm里那几十万个包功能都不一样？
+三七二十‭ : 2017-11-11 10:46:15
+但是你只要install一次，世界上就少了一个轮子
+三七二十‭ : 2017-11-11 10:46:22
+左新宇 : 2017-11-11 10:46:36
+那你以为那几十万个包是怎么来的。。。
+Glavo : 2017-11-11 10:46:52
+三七二十‭ : 2017-11-11 10:46:59</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171110</title>
+      <link>http://qq.haskellchina.org/2017/11/10/qq-group-log-of-haskellchina-20171110/</link>
+      <pubDate>Fri, 10 Nov 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/11/10/qq-group-log-of-haskellchina-20171110/</guid>
+      <description>请叫我欧巴 : 2017-11-10 00:09:28
+请叫我欧巴 : 2017-11-10 00:10:32
+haskell新手，想问下这个错是什么意思哦，这部分的功能是match两个Term
+大笨蛋千里冰封 : 2017-11-10 00:18:29
+返回值没有实现Show
+大笨蛋千里冰封 : 2017-11-10 00:18:41
+你定义的时候加个deriving (Show)
+请叫我欧巴 : 2017-11-10 00:26:47
+我都定义了诶
+请叫我欧巴 : 2017-11-10 00:26:51
+请叫我欧巴 : 2017-11-10 00:27:35
+y=mx+⑨ : 2017-11-10 00:30:21
+y=mx+⑨ : 2017-11-10 00:30:32
+沒有Show的是Local ()
+魔理沙 : 2017-11-10 00:37:01
+@请叫我欧巴 HS新手别玩这个
+魔理沙 : 2017-11-10 00:37:05
+老老实实跟书走
+请叫我欧巴 : 2017-11-10 00:41:07
+😂我也不想玩
+请叫我欧巴 : 2017-11-10 00:41:13
+一定要我写。。作业来的。。
+请叫我欧巴 : 2017-11-10 00:41:31
+老师上两节课就让写interpreter了。。</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171109</title>
+      <link>http://qq.haskellchina.org/2017/11/09/qq-group-log-of-haskellchina-20171109/</link>
+      <pubDate>Thu, 09 Nov 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/11/09/qq-group-log-of-haskellchina-20171109/</guid>
+      <description>左新宇 : 2017-11-09 10:27:03
+ramda.js值得尝试么？
+左新宇 : 2017-11-09 10:27:46
+最近在用electron开发客户端，不知道引入ramda合适不合适。
+. : 2017-11-09 10:27:56
+这个无所谓……
+左新宇 : 2017-11-09 10:29:20
+看文档实现的还是挺全面的。只是用来做UI感觉有点。。。
+y=mx+⑨ : 2017-11-09 10:30:46
+前端就別想辣麼多啦
+y=mx+⑨ : 2017-11-09 10:31:05
+更前沿的人還在玩frp呢
+左新宇 : 2017-11-09 10:32:10
+。。。ES6本身其实提供了不少fp特性，比较遗憾的是currying不太方便还有模式匹配比较弱
+黄金时代 : 2017-11-09 13:06:38
+一个动态语言要什么模式匹配
+F : 2017-11-09 13:07:44
+动态语言不要模式匹配?
+F : 2017-11-09 13:08:01
+不要模式匹配Racket能写累死人
+danihao123 : 2017-11-09 13:08:14
+Erlang：喵喵喵？
+黄金时代 : 2017-11-09 13:08:24
+我错了
+Yaegaki Erika : 2017-11-09 13:08:46
+prolog:……
+黄金时代 : 2017-11-09 13:10:18</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171108</title>
+      <link>http://qq.haskellchina.org/2017/11/08/qq-group-log-of-haskellchina-20171108/</link>
+      <pubDate>Wed, 08 Nov 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/11/08/qq-group-log-of-haskellchina-20171108/</guid>
+      <description>Felis sapiens : 2017-11-08 00:09:12
+话说，用 ContT IO 做 raii 是不是有点核弹打蚊子的感觉。。
+Felis sapiens : 2017-11-08 00:09:29
+不太想用 ResourceT，依赖太多了
+y=mx+⑨ : 2017-11-08 00:19:53
+核彈打蚊子好啊
+y=mx+⑨ : 2017-11-08 00:20:02
+用HS寫一個簡單IO互動程序
+_ : 2017-11-08 00:36:11
+哦哦 等于是把c源码塞进package里 （不过绑定库好多都有编译flag设置系统lib还是自带的
+_ : 2017-11-08 00:37:06
+一直不明白依赖太多有什么不好 比如很多人拒绝用依赖lens的库
+y=mx+⑨ : 2017-11-08 00:38:09
+你知道lens那依賴多是甚麼程度的多嗎
+y=mx+⑨ : 2017-11-08 00:38:30
+lens的依賴是整個hackage的大半
+y=mx+⑨ : 2017-11-08 00:40:51
+lens的編譯時間出了名的慢得要死
+_ : 2017-11-08 00:41:08
+多依赖又不会怀孕 只是第一遍慢些
+y=mx+⑨ : 2017-11-08 00:41:48
+你這是真不知道lens編譯時間多久啊
+y=mx+⑨ : 2017-11-08 00:42:16</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171107</title>
+      <link>http://qq.haskellchina.org/2017/11/07/qq-group-log-of-haskellchina-20171107/</link>
+      <pubDate>Tue, 07 Nov 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/11/07/qq-group-log-of-haskellchina-20171107/</guid>
+      <description>Shizu : 2017-11-07 18:05:50
+请教一下，有人遇到过这种状况吗。。
+饼干先生 : 2017-11-07 18:06:37
+你操作系统是什么呀？
+Shizu : 2017-11-07 18:07:08
+win10 64位系统
+饼干先生 : 2017-11-07 18:09:28
+那应该还可以的。。你装的是haskell platform？
+Shizu : 2017-11-07 18:09:49
+嗯，full和core都试了试 都是这个问题= =
+f : 2017-11-07 18:15:22
+你发现了一个 bug
+Shizu : 2017-11-07 18:16:29
+B1nj0y : 2017-11-07 19:06:54
+win 10 用户建议安装 Bash
+B1nj0y : 2017-11-07 19:07:07
+Bash On Windows
+EtaoinWu : 2017-11-07 19:07:38
+wsl里面，ghc&amp;gt;=8都不能用&amp;hellip;
+EtaoinWu : 2017-11-07 19:07:46
+记得装7.x
+Shizu : 2017-11-07 19:12:18
+= =这样啊</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171104</title>
+      <link>http://qq.haskellchina.org/2017/11/04/qq-group-log-of-haskellchina-20171104/</link>
+      <pubDate>Sat, 04 Nov 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/11/04/qq-group-log-of-haskellchina-20171104/</guid>
+      <description>Nicekingwei : 2017-11-04 17:48:40
+求助，Haskell里有高精度小数类型吗？
+Xyzt Toe : 2017-11-04 17:57:41
+（有理数
+Nicekingwei : 2017-11-04 18:01:10
+在hoogle上搜一搜real，发现了好多了不得的东西
+Nicekingwei : 2017-11-04 18:01:25
+还有用柯西序列模拟实数的……
+Nicekingwei : 2017-11-04 18:01:44
+（问题已解决，跑了
+CJ : 2017-11-04 20:19:32
+一定是我哪里姿势不对[惊讶]
+CJ : 2017-11-04 20:20:11
+一定是我哪里姿势不对才会搞这么长[惊讶]
+y=mx+⑨ : 2017-11-04 20:21:14
+$
+CJ : 2017-11-04 20:30:48
+Pattern 能不能像 Alternative 一样组合？[疑问]
+以上内容来自 [Haskell函数式编程] QQ 群。</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171103</title>
+      <link>http://qq.haskellchina.org/2017/11/03/qq-group-log-of-haskellchina-20171103/</link>
+      <pubDate>Fri, 03 Nov 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/11/03/qq-group-log-of-haskellchina-20171103/</guid>
+      <description>Glavo : 2017-11-03 06:41:39
+我只知道Java能做dll。。。
+Glavo : 2017-11-03 06:41:50
+hs的话，我记得有JVM后端？
+Glavo : 2017-11-03 06:42:18
+编译到Java class file，然后打包jar，然后再用ExcelsiorJET编译成dll
+Glavo : 2017-11-03 06:42:21
+完美
+_ : 2017-11-03 06:46:01
+为何要dll啊 闭源的需要？
+大魔头 : 2017-11-03 11:33:59
+@Glavo 以后不要发这么大的无意义的图
+Glavo : 2017-11-03 11:34:10
+。。。大吗
+Glavo : 2017-11-03 11:34:16
+手机看不出来，sorry
+大魔头 : 2017-11-03 11:34:22
+本群禁水。。。
+Xyzt Toe : 2017-11-03 11:43:34
+（什么是lens[惊讶]用来做什么的
+饼干先生 : 2017-11-03 11:44:50
+用来给你做set get的
+y=mx+⑨ : 2017-11-03 11:44:57
+來人 上1000個lens tutorial
+Xyzt Toe : 2017-11-03 11:46:07</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171102</title>
+      <link>http://qq.haskellchina.org/2017/11/02/qq-group-log-of-haskellchina-20171102/</link>
+      <pubDate>Thu, 02 Nov 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/11/02/qq-group-log-of-haskellchina-20171102/</guid>
+      <description>f : 2017-11-02 00:40:01
+thk
+f : 2017-11-02 00:40:52
+刚才没看理解错了，以为是存在栈上的，原来是直接当 byte 数组存了
+大笨蛋千里冰封 : 2017-11-02 00:49:34
+大笨蛋千里冰封 : 2017-11-02 00:49:45
+大笨蛋千里冰封 : 2017-11-02 00:49:51
+是不是可以说这个Haskell版本不total
+(ーー゛)be5 : 2017-11-02 01:18:06
+@Felis sapiens hs 里面包含 new 和 delete 的 class 是啥…就是标记一个类型有占有某个奇葩的外部资源要管理的
+Felis sapiens : 2017-11-02 01:18:49
+你是说需要 finalizer 的类型吗
+(ーー゛)be5 : 2017-11-02 01:18:56
+y
+Felis sapiens : 2017-11-02 01:19:02
+有两种
+Felis sapiens : 2017-11-02 01:19:42
+一种是垃圾回收管理的，gc回收时顺便执行finalize。这种用 ForeignPtr 或者 Weak 都可以实现
+Felis sapiens : 2017-11-02 01:20:50</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171101</title>
+      <link>http://qq.haskellchina.org/2017/11/01/qq-group-log-of-haskellchina-20171101/</link>
+      <pubDate>Wed, 01 Nov 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/11/01/qq-group-log-of-haskellchina-20171101/</guid>
+      <description>FTS : 2017-11-01 13:15:06
+
+https://dirtcheaphaskell.io/
+欢送十九大 : 2017-11-01 13:17:43
+fxmy : 2017-11-01 13:22:02
+Neo : 2017-11-01 17:07:11
+新朋友请介绍一下自己
+Neo : 2017-11-01 17:15:18
+没反应就准备踢了啊
+灵魂学校 : 2017-11-01 17:16:25
+NEO那都有你啊
+Neo : 2017-11-01 17:18:05
+踢人了啊，之后再申请入群吧
+大笨蛋千里冰封 : 2017-11-01 17:33:10
++0 : {n : ℕ} → 0 + n ≡ n + 0+0 = {!!}
+大笨蛋千里冰封 : 2017-11-01 17:33:18
+错群
+大笨蛋千里冰封 : 2017-11-01 17:33:43
+大笨蛋千里冰封 : 2017-11-01 17:33:47
+如何评价这个语法
+邱焜 : 2017-11-01 17:34:30</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171031</title>
+      <link>http://qq.haskellchina.org/2017/10/31/qq-group-log-of-haskellchina-20171031/</link>
+      <pubDate>Tue, 31 Oct 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/10/31/qq-group-log-of-haskellchina-20171031/</guid>
+      <description>昵称未知 : 2017-10-31 09:08:18
+id
+饼干先生 : 2017-10-31 09:11:07
+@Tywin 欢迎欢迎！
+饼干先生 : 2017-10-31 09:11:25
+@Tywin 请自我介绍下
+昵称未知 : 2017-10-31 10:01:27
+大家好
+饼干先生 : 2017-10-31 10:06:48
+@Tywin 请自我介绍下
+Xyzt Toe : 2017-10-31 17:02:28
+这是啥
+y=mx+⑨ : 2017-10-31 17:02:44
+Except monad的transformer版
+y=mx+⑨ : 2017-10-31 17:02:58
+所有T結尾的都是monad transformer
+Xyzt Toe : 2017-10-31 17:03:17
+ExceptMonad是啥
+三七二十‭ : 2017-10-31 17:03:24
+好像是either
+Xyzt Toe : 2017-10-31 17:03:33
+transformer到是知道
+三七二十‭ : 2017-10-31 17:03:50
+eitherT被废了，改成ExceptT了
+Xyzt Toe : 2017-10-31 17:04:29</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171030</title>
+      <link>http://qq.haskellchina.org/2017/10/30/qq-group-log-of-haskellchina-20171030/</link>
+      <pubDate>Mon, 30 Oct 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/10/30/qq-group-log-of-haskellchina-20171030/</guid>
+      <description>大笨蛋千里冰封 : 2017-10-30 08:17:08
+IO Monad的join是unsafePerformIO吗
+y=mx+⑨ : 2017-10-30 08:20:54
+當然不是
+y=mx+⑨ : 2017-10-30 08:21:00
+你看簽名都不對
+y=mx+⑨ : 2017-10-30 08:21:16
+為甚麼不去看IO的實現呢
+Felis sapiens : 2017-10-30 09:46:04
+签名其实是对的
+Felis sapiens : 2017-10-30 09:46:08
+但是不是
+大笨蛋千里冰封 : 2017-10-30 13:23:55
+喔
+仄仄 : 2017-10-30 16:37:19
+forall 没看懂用来干啥的 同义词是啥意思
+三七二十‭ : 2017-10-30 16:37:47
+同义词就是for all
+三七二十‭ : 2017-10-30 16:37:52
+三七二十‭ : 2017-10-30 16:37:59
+Xyzt Toe : 2017-10-30 16:38:04
+arbitrary
+仄仄 : 2017-10-30 16:38:15</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171029</title>
+      <link>http://qq.haskellchina.org/2017/10/29/qq-group-log-of-haskellchina-20171029/</link>
+      <pubDate>Sun, 29 Oct 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/10/29/qq-group-log-of-haskellchina-20171029/</guid>
+      <description>阅千人而惜知己 : 2017-10-29 00:17:54
+@faultrit 科大有开Haskell的课？
+刘笑天 : 2017-10-29 00:18:38
+cpp函数式？
+阅千人而惜知己 : 2017-10-29 00:18:48
+@断水流的宗旨 你看完了趣学也只是初级。
+Narc : 2017-10-29 00:25:49
+没有
+0vo : 2017-10-29 00:29:49
+@刘笑天 github.com/fc01 想做一个CPS风格的库，按照函数式的方式先做一些准备工作
+在座的各位都是辣鸡 : 2017-10-29 07:10:15
+@阅千人而惜知己 等我到了初级 可不可以简单介绍一下 更有特点的一些东西
+faultrit : 2017-10-29 07:19:37
+@阅千人而惜知己 没有，自己想学
+大笨蛋千里冰封 : 2017-10-29 07:51:20
+@断水流的宗旨 GADT和type family
+魔理沙 : 2017-10-29 07:56:15
+@断水流的宗旨 equational reasoning
+在座的各位都是辣鸡 : 2017-10-29 08:10:53
+谢谢 谢谢!
+&amp;rdquo;&amp;rsquo; ⃢・ ・ ⃢&amp;rdquo;&amp;rsquo; : 2017-10-29 10:10:56</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20171028</title>
+      <link>http://qq.haskellchina.org/2017/10/28/qq-group-log-of-haskellchina-20171028/</link>
+      <pubDate>Sat, 28 Oct 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/10/28/qq-group-log-of-haskellchina-20171028/</guid>
+      <description>faultrit : 2017-10-28 22:48:17
+id
+Neo : 2017-10-28 22:49:34
+欢迎欢迎，介绍一下自己?
+faultrit : 2017-10-28 22:52:12
+计算机专业本科生一枚，刚学haskell不久，感觉非常有趣，希望能多和大家交流
+アッコ : 2017-10-28 22:52:27
+中科大的！
+アッコ : 2017-10-28 22:52:29
+？
+faultrit : 2017-10-28 22:52:59
+emm，是的
+Ryan J.K. : 2017-10-28 22:53:20
+欢迎
+Ryan J.K. : 2017-10-28 22:53:34
+最近觉得中科大出来的人都非常棒
+斯大林的RBQ Cosmia : 2017-10-28 22:54:23
+欢迎
+饼干先生 : 2017-10-28 22:54:29
+[惊讶]别来砸场子啊 最近几个大佬都不在
+faultrit : 2017-10-28 22:55:49
+额，暂时没什么问题要问😂
+Xyzt Toe : 2017-10-28 22:57:46
+[惊讶]
+Xyzt Toe : 2017-10-28 22:58:02</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170802</title>
+      <link>http://qq.haskellchina.org/2017/08/02/qq-group-log-of-haskellchina-20170802/</link>
+      <pubDate>Wed, 02 Aug 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/08/02/qq-group-log-of-haskellchina-20170802/</guid>
+      <description>玄简[夏] : 2017-08-02 00:01:27
+写个addon重载浏览器行为（
+嶺上アイドルCosmia : 2017-08-02 00:03:55
+@别说话 http://mirrors.tuna.tsinghua.edu.cn/stackage/ghc/ghc-8.0.2-x86_64-unknown-mingw32-integer-simple-win10.tar.xz
+嶺上アイドルCosmia : 2017-08-02 00:05:06
+@别说话 http://mirrors.tuna.tsinghua.edu.cn/stackage/ghc/ghc-8.2.1-x86_64-unknown-mingw32.tar.xz
+别说话 : 2017-08-02 00:06:20
+3Q
+嶺上アイドルCosmia : 2017-08-02 00:06:44
+http://mirrors.tuna.tsinghua.edu.cn/msys2/distrib/x86_64/msys2-base-x86_64-20161025.tar.xz
+嶺上アイドルCosmia : 2017-08-02 00:06:46
+这两个都得装
+别说话 : 2017-08-02 00:11:05
+我装GIT了
+hitchhiker : 2017-08-02 13:19:32
+hitchhiker : 2017-08-02 13:22:17
+请问您今天要来点兔子吗？ : 2017-08-02 13:27:59
+@嶺上アイドルCosmia https://raw.githubusercontent.com/kubernetes/kubernetes/master/examples/guestbook/all-in-one/guestbook-all-in-one.yaml
+我试了试，我的ff不会自动下载这文件
+以上内容来自 [Haskell函数式编程] QQ 群。</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170801</title>
+      <link>http://qq.haskellchina.org/2017/08/01/qq-group-log-of-haskellchina-20170801/</link>
+      <pubDate>Tue, 01 Aug 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/08/01/qq-group-log-of-haskellchina-20170801/</guid>
+      <description>dram : 2017-08-01 00:00:01
+一个 fix 毁全场系列
+Felis sapiens : 2017-08-01 00:00:14
+写 CEK 有什么问题吗。。
+dram : 2017-08-01 00:00:35
+那这就说明白了啊
+dram : 2017-08-01 00:00:42
+[惊讶]好了我说完了
+魔理沙 : 2017-08-01 00:00:47
+说模拟说的是有类型的translation啊
+Felis sapiens : 2017-08-01 00:01:23
+我再想想
+魔理沙 : 2017-08-01 00:01:25
+比如说oc可以把a -&amp;gt; b translate到{get: b, set: a}上
+魔理沙 : 2017-08-01 00:01:39
+函数调用就是override set，然后call get
+魔理沙 : 2017-08-01 00:02:23
+不用recursive type/mutation能不能做到？我有点不会证明
+魔理沙 : 2017-08-01 00:02:44
+我只知道naive record不行
+f : 2017-08-01 00:03:47</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170731</title>
+      <link>http://qq.haskellchina.org/2017/07/31/qq-group-log-of-haskellchina-20170731/</link>
+      <pubDate>Mon, 31 Jul 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/07/31/qq-group-log-of-haskellchina-20170731/</guid>
+      <description>hitchhiker : 2017-07-31 14:27:04
+@寒东 我稍微看了一下whnf，一般haskell对于表达式的eval就到whnf为止。然后cons (:)对于两个参数都不进行eval到whnf的过程，所以是对它们lazy，并且t
+hitchhiker : 2017-07-31 14:27:40
+sorry 手抖[衰]
+hitchhiker : 2017-07-31 14:28:02
+好烦 手机打字
+hitchhiker : 2017-07-31 14:50:42
+take 3 [1..]应该只会被eval成 1 : take (3-1) [2..]吧？如果按照(:)对两个参数都lazy。
+寒东 : 2017-07-31 14:51:22
+对的
+hitchhiker : 2017-07-31 14:51:57
+厉害了。。
+hitchhiker : 2017-07-31 14:52:15
+嗯 谢谢
+入 : 2017-07-31 15:26:33
+不知道，都装了些什么东西进去，
+_ : 2017-07-31 15:35:52
+无所谓的 一般而已就是.stack 文件夹变大一点
+dram : 2017-07-31 15:35:57
+把 .stack-work 删掉就行了
+dram : 2017-07-31 15:36:26</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170623</title>
+      <link>http://qq.haskellchina.org/2017/06/23/qq-group-log-of-haskellchina-20170623/</link>
+      <pubDate>Fri, 23 Jun 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/06/23/qq-group-log-of-haskellchina-20170623/</guid>
+      <description>monsoon : 2017-06-23 22:55:28
+现在有人写haskell一直开启Strict模式吗……
+[[[[[[[[[[[[[[[[[[[[[[[[ : 2017-06-23 22:57:20
+对于没有用到lazy特性 ，strict或lazy都可以的程序 开strict能提升性能吗
+monsoon : 2017-06-23 23:00:48
+不知道……
+y=mx+⑨ : 2017-06-23 23:00:50
+這個問題你不開profiler說個蛋
+魔理沙 : 2017-06-23 23:03:15
+@/zt呜呜 我看看
+以上内容来自 [Haskell函数式编程] QQ 群。</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170622</title>
+      <link>http://qq.haskellchina.org/2017/06/22/qq-group-log-of-haskellchina-20170622/</link>
+      <pubDate>Thu, 22 Jun 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/06/22/qq-group-log-of-haskellchina-20170622/</guid>
+      <description>暧月ō.ō猫 : 2017-06-22 10:33:30
+那个 我轻轻的问一句？ 逃)是什么意思跟这个tao是不是一样的
+Yaegaki Erika : 2017-06-22 10:35:02
+Tao 是 道
+暧月ō.ō猫 : 2017-06-22 10:35:22
+那逃)呢
+Yaegaki Erika : 2017-06-22 10:35:25
+Tao Te Ching 道德经
+暧月ō.ō猫 : 2017-06-22 10:35:44
+不要开玩笑啊 我会信以为真
+Yaegaki Erika : 2017-06-22 10:35:57
+逃 有点复杂
+アッコ : 2017-06-22 10:36:00
+就是道
+暧月ō.ō猫 : 2017-06-22 10:36:06
+rambda之道？
+Yaegaki Erika : 2017-06-22 10:36:12
+对
+暧月ō.ō猫 : 2017-06-22 10:36:16
+那再说说逃吧
+The Fool : 2017-06-22 10:36:42
+难道不是知乎某大v的口癖</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170621</title>
+      <link>http://qq.haskellchina.org/2017/06/21/qq-group-log-of-haskellchina-20170621/</link>
+      <pubDate>Wed, 21 Jun 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/06/21/qq-group-log-of-haskellchina-20170621/</guid>
+      <description>可爱即正义 : 2017-06-21 00:14:25
+Y :: (a -&amp;gt; a) -&amp;gt; a
+Mo&amp;amp;Mo : 2017-06-21 08:10:16
+嗯[惊讶]
+惰性求治 : 2017-06-21 15:19:16
+现在问题是什么，当初是 a-&amp;gt;a …
+(:з」∠) : 2017-06-21 15:20:00
+dram : 2017-06-21 15:23:39
+@惰性求治 还是这个啊……
+惰性求治 : 2017-06-21 15:24:54
+以为变了 (
+monsoon : 2017-06-21 18:24:57
+以前的答案不是id吗
+monsoon : 2017-06-21 18:25:22
+这个进群的答案是不是错的
+y=mx+⑨ : 2017-06-21 18:26:46
+這問題的考核重點不是答不答得對
+御坂黒子 : 2017-06-21 18:29:10
+群问题改成写callcc的type吧
+. : 2017-06-21 18:29:57
+不是undefined吗(
+dram : 2017-06-21 18:30:00
+只有你会。</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170620</title>
+      <link>http://qq.haskellchina.org/2017/06/20/qq-group-log-of-haskellchina-20170620/</link>
+      <pubDate>Tue, 20 Jun 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/06/20/qq-group-log-of-haskellchina-20170620/</guid>
+      <description>MageFox : 2017-06-20 23:50:30
+我放弃自己写的原因是自己考虑不到所有的情况，容易有遗漏，怕翻车
+. : 2017-06-20 23:50:56
+所以如何保证这个质量也是训练的一部分
+. : 2017-06-20 23:51:04
+还是快速集成能力问题
+MageFox : 2017-06-20 23:51:21
+嗯，受教了
+MageFox : 2017-06-20 23:51:52
+主要是我工作还没多久，Js都还学的不行，先堆堆js基础再想别的
+. : 2017-06-20 23:52:07
+感觉我们是不是太水了 打住吧
+MageFox : 2017-06-20 23:52:18
+是的，抱歉
+以上内容来自 [Haskell函数式编程] QQ 群。</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170616</title>
+      <link>http://qq.haskellchina.org/2017/06/16/qq-group-log-of-haskellchina-20170616/</link>
+      <pubDate>Fri, 16 Jun 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/06/16/qq-group-log-of-haskellchina-20170616/</guid>
+      <description>昵称未知 : 2017-06-16 00:00:07
+大笨蛋千里冰封(951394653) 被管理员禁言12小时
+昵称未知 : 2017-06-16 00:00:24
+断水流宗师(1318405440) 被管理员禁言1小时
+f : 2017-06-16 00:07:25
+以上内容来自 [Haskell函数式编程] QQ 群。</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170615</title>
+      <link>http://qq.haskellchina.org/2017/06/15/qq-group-log-of-haskellchina-20170615/</link>
+      <pubDate>Thu, 15 Jun 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/06/15/qq-group-log-of-haskellchina-20170615/</guid>
+      <description>danihao123 : 2017-06-15 08:40:19
+@byx 因为有intero
+魔理沙 : 2017-06-15 08:42:48
+@y=mx+⑨ 去了lambdaconf，一个连的haskeller。。。
+y=mx+⑨ : 2017-06-15 08:45:20
+一個連的魔理沙
+danihao123 : 2017-06-15 08:52:22
+@大笨蛋千里冰封 我也搞不懂啊……
+大笨蛋千里冰封 : 2017-06-15 08:53:39
+羡慕中考完的
+大笨蛋千里冰封 : 2017-06-15 08:53:49
+danihao123 : 2017-06-15 08:54:36
+我是中考已经完了
+大笨蛋千里冰封 : 2017-06-15 08:54:46
+danihao123 : 2017-06-15 08:54:50
+感觉上本校的分数线都困难
+danihao123 : 2017-06-15 08:55:08
+讲个笑话：烟台的物理题
+饼干先生 : 2017-06-15 08:55:12
+来来来 不要水
+大笨蛋千里冰封 : 2017-06-15 08:56:13
+Emacs里面粘贴hs会混缩进 如何对敌
+大笨蛋千里冰封 : 2017-06-15 08:56:17
+danihao123 : 2017-06-15 08:56:44</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170614</title>
+      <link>http://qq.haskellchina.org/2017/06/14/qq-group-log-of-haskellchina-20170614/</link>
+      <pubDate>Wed, 14 Jun 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/06/14/qq-group-log-of-haskellchina-20170614/</guid>
+      <description>断水流宗师 : 2017-06-14 10:34:02
+然而看不懂+1
+刘闽晟 : 2017-06-14 11:30:41
+SPJ 那片 tree grow 的文章，既然可以添加一个 field，可不可以用这样的方法来模拟 catamorphism，without fix point 那一大坨东西……
+刘闽晟 : 2017-06-14 11:30:42
+我去试试
+hitchhiker : 2017-06-14 11:31:14
+然而有人说，写好haskell并不需要学范畴论
+刘闽晟 : 2017-06-14 11:34:30
+@Silent TNT
+刘闽晟 : 2017-06-14 11:34:35
+忘记 at 了😂
+刘闽晟 : 2017-06-14 11:37:01
+never mind
+刘闽晟 : 2017-06-14 11:37:06
+我觉得我想错了一些东西
+迎着小风尿尿 : 2017-06-14 11:58:26
+不识庐山真面目，只缘身在此山中
+第七页 : 2017-06-14 13:14:05
+谁用过 haskell 做 osx上的 app开发 有哪些资料可看呢？
+Ryan J.</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170612</title>
+      <link>http://qq.haskellchina.org/2017/06/12/qq-group-log-of-haskellchina-20170612/</link>
+      <pubDate>Mon, 12 Jun 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/06/12/qq-group-log-of-haskellchina-20170612/</guid>
+      <description>刘闽晟 : 2017-06-12 09:59:18
+诶呦我去怎么 dual map 都冒出来了（想起被上同调支配的恐惧
+刘闽晟 : 2017-06-12 10:02:53
+GHC 里有办法表示真正的 void type 吗
+刘闽晟 : 2017-06-12 10:03:03
+一构造就 crash 的那种
+[[[[[[[[[[[[[[[[[[[[[[[[ : 2017-06-12 10:13:41
+undef
+Canto Ostinato : 2017-06-12 10:20:59
+@刘闽晟 一个没有 constructor 的 datatype 不就行了吗。。base里有Data.Void
+刘闽晟 : 2017-06-12 10:22:21
+@Canto Ostinato undefined pass 过去不会 crash 啊
+刘闽晟 : 2017-06-12 10:23:06
+其实我是想问 strict eval 的黑科技的，这块我不是很熟悉
+Canto Ostinato : 2017-06-12 10:23:23
+不是可以标star以外的kind么
+Canto Ostinato : 2017-06-12 10:23:25</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170611</title>
+      <link>http://qq.haskellchina.org/2017/06/11/qq-group-log-of-haskellchina-20170611/</link>
+      <pubDate>Sun, 11 Jun 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/06/11/qq-group-log-of-haskellchina-20170611/</guid>
+      <description>永远 kayoubi : 2017-06-11 17:10:10
+大神们，有木有讨论scala问题的群
+Responsible : 2017-06-11 17:10:22
+同求
+饼干先生 : 2017-06-11 17:11:05
+饼干先生 : 2017-06-11 17:11:13
+scala群
+永远 kayoubi : 2017-06-11 17:34:38
+加群的问题答案是啥
+饼干先生 : 2017-06-11 17:35:25
+@砸锅上网 id
+永远 kayoubi : 2017-06-11 17:39:11
+@饼干先生 啥id？
+饼干先生 : 2017-06-11 17:39:50
+答案就是id id是一个函数 id:a-＞a
+forever : 2017-06-11 17:39:57
+https://hackage.haskell.org/package/base-4.9.1.0/docs/Prelude.html#v:id
+永远 kayoubi : 2017-06-11 17:40:23
+@饼干先生 进去了，答案是 Lightbend
+饼干先生 : 2017-06-11 17:40:56
+那个不知道 我进去的时候还没设置问题
+魔理沙 : 2017-06-11 17:46:53</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170603</title>
+      <link>http://qq.haskellchina.org/2017/06/03/qq-group-log-of-haskellchina-20170603/</link>
+      <pubDate>Sat, 03 Jun 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/06/03/qq-group-log-of-haskellchina-20170603/</guid>
+      <description>橙月雪离子 : 2017-06-03 03:44:00
+[视频]你的QQ暂不支持查看视频短片，请升级到最新版本后查看。
+大笨蛋千里冰封 : 2017-06-03 03:45:08
+[惊讶]害怕
+橙月雪离子 : 2017-06-03 03:46:00
+[惊讶]
+橙月雪离子 : 2017-06-03 04:31:17
+https://github.com/y-usuzumi/goblin-workshop
+橙月雪离子 : 2017-06-03 04:31:19
+[惊讶]
+刘笑天 : 2017-06-03 07:23:34
+早上去超市买的猪肉 非常软 怎么回事 像个水球一样。。。
+f : 2017-06-03 07:40:42
+呀，都Haskell多线程了
+橙月雪离子 : 2017-06-03 12:14:19
+多线程难道不是haskell的长处嘛[惊讶]
+Neo : 2017-06-03 12:22:36
+erlang想死
+橙月雪离子 : 2017-06-03 12:28:00
+[惊讶]
+talos : 2017-06-03 12:32:00
+.cabal/logs/base-compat-0.9.3.log: openFile: does not exist
+talos : 2017-06-03 12:32:14
+cabal install出现的错误
+talos : 2017-06-03 12:32:29</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170602</title>
+      <link>http://qq.haskellchina.org/2017/06/02/qq-group-log-of-haskellchina-20170602/</link>
+      <pubDate>Fri, 02 Jun 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/06/02/qq-group-log-of-haskellchina-20170602/</guid>
+      <description>橙月雪离子 : 2017-06-02 01:04:09
+卐卍 : 2017-06-02 09:39:46
+卐卍 : 2017-06-02 09:39:59
+这个递归写的有什么问题？
+魔理沙 : 2017-06-02 09:40:35
+()
+卐卍 : 2017-06-02 09:40:51
+？啥意思？
+空心菜 : 2017-06-02 09:43:14
+n-1加个括号
+卐卍 : 2017-06-02 09:43:36
+哦，
+卐卍 : 2017-06-02 09:43:59
+谢谢了，
+橙月雪离子 : 2017-06-02 09:51:55
+你不加个非正数判断啥的？
+魔理沙 : 2017-06-02 09:53:04
+从0开始
+迎着小风尿尿 : 2017-06-02 09:55:23
+大佬
+橙月雪离子 : 2017-06-02 09:57:46
+最近做并行执行aoe网络的一个库，然后很好奇rts是怎么判断出block on MVar/STM indefinitely这样的错误的
+寒东 : 2017-06-02 11:05:20
+靠gc啦 tso也是普通的heap closure
+橙月雪离子 : 2017-06-02 11:34:56</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170601</title>
+      <link>http://qq.haskellchina.org/2017/06/01/qq-group-log-of-haskellchina-20170601/</link>
+      <pubDate>Thu, 01 Jun 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/06/01/qq-group-log-of-haskellchina-20170601/</guid>
+      <description>Jin : 2017-06-01 17:22:11
+Jin : 2017-06-01 17:22:17
+没在stack上？
+Jin : 2017-06-01 17:24:10
+Jin : 2017-06-01 17:24:14
+寒东 : 2017-06-01 19:35:53
+额
+寒东 : 2017-06-01 19:36:05
+extra dep吧。。。
+Jin : 2017-06-01 19:48:15
+求更新😂
+寒东 : 2017-06-01 19:50:05
+好的 忘了为啥最新的版本和stackage snapshot不兼容了 回去看看
+以上内容来自 [Haskell函数式编程] QQ 群。</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170531</title>
+      <link>http://qq.haskellchina.org/2017/05/31/qq-group-log-of-haskellchina-20170531/</link>
+      <pubDate>Wed, 31 May 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/05/31/qq-group-log-of-haskellchina-20170531/</guid>
+      <description>第七页 : 2017-05-31 01:08:20
+newtype Compose f g a = Compose (f (g a))
+这个里面的 Compose 的构造参数 是什么？ 为什么看不懂呢？
+大笨蛋千里冰封 : 2017-05-31 01:10:20
+是一个类似
+大笨蛋千里冰封 : 2017-05-31 01:10:38
+Maybe (Maybe 1)的东西
+安静 : 2017-05-31 06:32:04
+弱弱的问一句，内存耗尽以后，haskell程序会怎么样？崩溃吗？卡死？
+Liqueur Librazy : 2017-05-31 06:39:26
+oom的话什么语言都没法救吧
+昵称未知 : 2017-05-31 09:26:30
+大家好，我是迎着小风尿尿。
+饼干先生 : 2017-05-31 09:26:44
+@迎着小风尿尿 来。自我介绍下吧
+昵称未知 : 2017-05-31 09:27:27
+两年过去了，你们水平怎么样了😂
+第七页 : 2017-05-31 09:28:25
+感觉很奇怪 还能这样定义类型
+蕝吥犹豫 : 2017-05-31 09:48:41
+f :: * -&amp;gt; *，g :: * -&amp;gt; *， a :: * ，这样看吧</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170530</title>
+      <link>http://qq.haskellchina.org/2017/05/30/qq-group-log-of-haskellchina-20170530/</link>
+      <pubDate>Tue, 30 May 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/05/30/qq-group-log-of-haskellchina-20170530/</guid>
+      <description>橙月雪离子 : 2017-05-30 15:13:52
+橙月雪离子 : 2017-05-30 15:13:57
+求助[惊讶]
+橙月雪离子 : 2017-05-30 15:14:11
+我加了forever就报这个错
+橙月雪离子 : 2017-05-30 15:15:34
+诶不对，好像和forever无关
+Canto Ostinato : 2017-05-30 15:15:58
+你的bus里有producer放数据吗
+橙月雪离子 : 2017-05-30 15:17:28
+橙月雪离子 : 2017-05-30 15:17:35
+上面那个相当于main
+橙月雪离子 : 2017-05-30 15:17:43
+就放了一个debug gg
+橙月雪离子 : 2017-05-30 15:23:03
+[惊讶]
+橙月雪离子 : 2017-05-30 15:23:21
+其实并不是很会用stm
+Canto Ostinato : 2017-05-30 15:24:04
+去掉forever还有问题吗
+Canto Ostinato : 2017-05-30 15:24:34
+说起Channel的话，用MVar实现的overhead会更低
+橙月雪离子 : 2017-05-30 15:25:30
+刚才第二张图里已经把原来defaultDispatcher里的forever去掉了
+橙月雪离子 : 2017-05-30 15:25:35</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170527</title>
+      <link>http://qq.haskellchina.org/2017/05/27/qq-group-log-of-haskellchina-20170527/</link>
+      <pubDate>Sat, 27 May 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/05/27/qq-group-log-of-haskellchina-20170527/</guid>
+      <description>f : 2017-05-27 00:52:31
+haskell中()是什么都可以匹配吗？
+f : 2017-05-27 00:53:43
+IO ()
+Yaegaki Erika : 2017-05-27 00:58:24
+不是
+Canto Ostinato : 2017-05-27 01:06:38
+没有这种操作
+(ーー゛)be5 : 2017-05-27 01:08:12
+hs 里面 () 表示 Unit type 或者 Unit value
+(ーー゛)be5 : 2017-05-27 01:08:21
+啥都匹配的 pattern 是 _
+(ーー゛)be5 : 2017-05-27 01:10:13
+我们当中混进了二五仔（
+y=mx+⑨ : 2017-05-27 01:10:29
+啥都匹配的不一定是 _
+y=mx+⑨ : 2017-05-27 01:11:12
+正確來說 不是已定義的詞都是wildcard
+y=mx+⑨ : 2017-05-27 01:11:20
+不過通常用_表示而已
+(ーー゛)be5 : 2017-05-27 01:11:28</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170526</title>
+      <link>http://qq.haskellchina.org/2017/05/26/qq-group-log-of-haskellchina-20170526/</link>
+      <pubDate>Fri, 26 May 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/05/26/qq-group-log-of-haskellchina-20170526/</guid>
+      <description>高佳欣 : 2017-05-26 09:26:31
+计算的时候, 为什么最后能够丢了上下文呢?
+高佳欣 : 2017-05-26 09:26:59
+M(M a) -&amp;gt; M a这个函数的作用不就是丢了一层上下文
+魔理沙 : 2017-05-26 09:27:35
+啥叫上下文？
+高佳欣 : 2017-05-26 09:28:33
+就是a -&amp;gt; M a加的&amp;rdquo;容器&amp;rdquo;
+魔理沙 : 2017-05-26 09:29:02
+啥叫容器？
+我行我素(loaba) : 2017-05-26 09:30:36
+好抽象的问题
+高佳欣 : 2017-05-26 09:30:40
+好吗,我不专业也不会专业的名词
+高佳欣 : 2017-05-26 09:30:54
+我问的问题太不专业了
+高佳欣 : 2017-05-26 09:32:20
+@魔理沙 我的意思就是为什么能够将M (M a) -&amp;gt; M a
+高佳欣 : 2017-05-26 09:32:30
+这不是明显少了一个M
+饼干先生 : 2017-05-26 09:34:26
+一个集合的子集的子集 也是 这个集合的子集</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170525</title>
+      <link>http://qq.haskellchina.org/2017/05/25/qq-group-log-of-haskellchina-20170525/</link>
+      <pubDate>Thu, 25 May 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/05/25/qq-group-log-of-haskellchina-20170525/</guid>
+      <description>HrvvI : 2017-05-25 14:12:31
+碰到一个关于Integral与Int的问题，如下图，请问是什么原因
+HrvvI : 2017-05-25 14:13:16
+大衍 : 2017-05-25 14:31:57
+xs是怎么弄出来的
+HrvvI : 2017-05-25 14:33:17
+不在电脑前，不好贴图，是从一个scanl的结果take出来的
+Jin : 2017-05-25 14:34:00
+神奇
+大衍 : 2017-05-25 14:34:20
+神奇，想看看代码
+HrvvI : 2017-05-25 14:35:08
+我等下到电脑前，贴完整的
+HrvvI : 2017-05-25 14:38:31
+是在做HackerRank的https://www.hackerrank.com/challenges/summing-pieces时碰到的
+HrvvI : 2017-05-25 16:04:58
+问题应该与类型推导有关，可简化如下https://paste.ofcode.org/mVSezAqDVtVD6j4c8H9ftr
+HrvvI : 2017-05-25 16:05:15
+sqd : 2017-05-25 16:18:50
+2^79溢出了
+大衍 : 2017-05-25 16:51:39
+如果你把base申明为Int，你中间的全部都是Int
+大衍 : 2017-05-25 16:52:09
+一步溢出了就溢出了
+大衍 : 2017-05-25 16:53:19
+爪机无力。。
+大笨蛋千里冰封 : 2017-05-25 16:53:32</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170524</title>
+      <link>http://qq.haskellchina.org/2017/05/24/qq-group-log-of-haskellchina-20170524/</link>
+      <pubDate>Wed, 24 May 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/05/24/qq-group-log-of-haskellchina-20170524/</guid>
+      <description>茶几之友 : 2017-05-24 08:46:46
+手持两把锟斤拷，口中疾呼烫烫烫。
+脚踏千朵屯屯屯，笑看万物锘锘锘。
+大魔头 : 2017-05-24 09:42:13
+@ 茶几之友 以后不要再发无关信息
+茶几之友 : 2017-05-24 09:42:21
+OK
+大魔头 : 2017-05-24 09:42:24
+本群禁水
+以上内容来自 [Haskell函数式编程] QQ 群。</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170523</title>
+      <link>http://qq.haskellchina.org/2017/05/23/qq-group-log-of-haskellchina-20170523/</link>
+      <pubDate>Tue, 23 May 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/05/23/qq-group-log-of-haskellchina-20170523/</guid>
+      <description>haskell (=^v^=) : 2017-05-23 12:03:26
+@Michael ok
+刘笑天 : 2017-05-23 12:32:12
+https://github.com/fc01/game1k
+我的 js1k game
+茶几之友 : 2017-05-23 17:47:27
+https://www.zhihu.com/question/20034686/answer/52063718
+逛知乎看见沙沙的足迹
+我行我素(loaba) : 2017-05-23 17:55:15
+大神无处不在啊
+暧月ō.ō猫 : 2017-05-23 18:08:11
+帅气可爱 所以是她还是他
+(:з」∠) : 2017-05-23 18:16:23
+这重要么
+y=mx+⑨ : 2017-05-23 18:16:43
+性別魔理沙
+tennix : 2017-05-23 18:17:55
+这个时代她和他还有区别么
+月光寒 : 2017-05-23 18:46:46
+虵
+第七页 : 2017-05-23 18:51:29
+叼叼的
+lambda : 2017-05-23 19:22:30
+性别不是重点，重点是帅气可爱
+以上内容来自 [Haskell函数式编程] QQ 群。</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170511</title>
+      <link>http://qq.haskellchina.org/2017/05/11/qq-group-log-of-haskellchina-20170511/</link>
+      <pubDate>Thu, 11 May 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/05/11/qq-group-log-of-haskellchina-20170511/</guid>
+      <description>阅千人而惜知己 : 2017-05-11 09:57:31
+@ezksd liftIO就好了
+以上内容来自 [Haskell函数式编程] QQ 群。</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170509</title>
+      <link>http://qq.haskellchina.org/2017/05/09/qq-group-log-of-haskellchina-20170509/</link>
+      <pubDate>Tue, 09 May 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/05/09/qq-group-log-of-haskellchina-20170509/</guid>
+      <description>Neo : 2017-05-09 15:51:32
+这是一个面向猎头的网站，如果你们申请一些美国本土的公司，80%以上的可能性，猎头或公司都会让你去做一下，这些公司包括并且不限于amazon, apple, 和其它大企业
+以上内容来自 [Haskell函数式编程] QQ 群。</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170427</title>
+      <link>http://qq.haskellchina.org/2017/04/27/qq-group-log-of-haskellchina-20170427/</link>
+      <pubDate>Thu, 27 Apr 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/04/27/qq-group-log-of-haskellchina-20170427/</guid>
+      <description>Nicekingwei : 2017-04-27 22:21:11
+感觉重新构造开销太大&amp;hellip;
+Nicekingwei : 2017-04-27 22:21:11
+求助，有没有什么办法可以原地更新数组[疑问]例如找出一个数组的最大值，然后设为0[疑问]
+晴川·后缀自动机·张 : 2017-04-27 22:21:33
+主席树！
+Nicekingwei : 2017-04-27 22:22:37
+[系统表情][系统表情]我是说在Haskell里的实现方案，至于查找，线性遍历就可以接受了
+晴川·后缀自动机·张 : 2017-04-27 22:22:51
+主席树有hs实现吧？
+Nicekingwei : 2017-04-27 22:25:10
+好的，我去查查，谢谢[系统表情]
+晴川·后缀自动机·张 : 2017-04-27 22:25:32
+（窝瞎猜的
+晴川·后缀自动机·张 : 2017-04-27 22:25:39
+（没找到不要怪我
+danihao123 : 2017-04-27 22:26:21
+函数式线段树Haskell实现不太难吧
+随便 : 2017-04-27 22:27:42
+函数式线段树。。。好像真没见过haskell版本的
+乖戾味 : 2017-04-27 22:44:37
+函数式线段树是指可持续化线段树？
+AFO : 2017-04-27 22:44:44
+嗯
+晴川·后缀自动机·张 : 2017-04-27 22:44:52
+可续线段树（
+乖戾味 : 2017-04-27 22:45:08</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170424</title>
+      <link>http://qq.haskellchina.org/2017/04/24/qq-group-log-of-haskellchina-20170424/</link>
+      <pubDate>Mon, 24 Apr 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/04/24/qq-group-log-of-haskellchina-20170424/</guid>
+      <description>☺今天休息 : 2017-04-24 00:08:12
+话说, 想要随机生成100个id不冲突, 这个在1e9次重复实验中均成立的概率大于99%, 那么生成随机ID需要多大的取值空间啊?
+以上内容来自 [Haskell函数式编程] QQ 群。</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170423</title>
+      <link>http://qq.haskellchina.org/2017/04/23/qq-group-log-of-haskellchina-20170423/</link>
+      <pubDate>Sun, 23 Apr 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/04/23/qq-group-log-of-haskellchina-20170423/</guid>
+      <description>魔理沙 : 2017-04-23 02:15:55
+https://hackage.haskell.org/package/base-4.9.1.0/docs/Data-List.html话说为啥这些函数中（比如elemIndex）数据结构都最后输入？
+风吹过的冬天 : 2017-04-23 02:16:07
+haiyouren .
+风吹过的冬天 : 2017-04-23 02:16:09
+还有人。
+寒东 : 2017-04-23 02:25:13
+eliminator 原则吧
+寒东 : 2017-04-23 02:25:35
+待操作的数据结构放在最后一个参数的位置
+刘闽晟 : 2017-04-23 02:38:01
+@魔理沙 方便 curry 了用吧
+刘闽晟 : 2017-04-23 02:38:10
+跟 map f list 一个道理
+[[[[[[[[[[[[[[[[[[[[[[[[ : 2017-04-23 04:10:04
+@橙月雪离子 你需要traversé ? 还是sequenceA？
+举个栗子 : 2017-04-23 10:01:36
+这里的竖线是什么意思
+举个栗子 : 2017-04-23 10:04:58
+哦懂了。。
+GodfreyGyz : 2017-04-23 14:30:28
+大家有没有什么haskell书籍或者项目的推荐
+miyo.👉🏻[17|16|嗨] : 2017-04-23 14:31:04</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170422</title>
+      <link>http://qq.haskellchina.org/2017/04/22/qq-group-log-of-haskellchina-20170422/</link>
+      <pubDate>Sat, 22 Apr 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/04/22/qq-group-log-of-haskellchina-20170422/</guid>
+      <description>Abel-Abel : 2017-04-22 06:30:24
+Windows下面的Emacs里面的haskell-mode的haskell-program-name变量是怎么设置的，我这里有点问题。Emacs里面启动ghci的时候总是出现这个：然后，我的两个变量的设置是这样的：试了一下，都设置成这样，也还是同样的问题：
+Abel-Abel : 2017-04-22 06:30:24
+你们是怎么设置的咧？
+E#1&amp;frasl;137 : 2017-04-22 08:59:34
+@左新宇 Von Neumann 有另外一套自然数的形式化定义方法，给予集合的形式。
+E#1&amp;frasl;137 : 2017-04-22 08:59:41
+https://en.wikipedia.org/wiki/Ordinal_number#Von_Neumann_definition_of_ordinals
+E#1&amp;frasl;137 : 2017-04-22 09:01:37
+然后你可以用lambda演算的方式定义出集合结构（其实搞个列表就够了），然后把VN数用它表示出来就好了。
+E#1&amp;frasl;137 : 2017-04-22 09:02:11
+我没提运算，不过不能忘了要表达运算哦。
+E#1&amp;frasl;137 : 2017-04-22 09:04:23
+其实直觉上我感觉似乎有无穷多种lambda演算形式下的自然数形式化定义。当然只是猜猜而已。
+L喵 : 2017-04-22 09:04:34
+话说 Peano Number 和 Church Encoding 有啥特定关系吗……？
+L喵 : 2017-04-22 09:05:04
+我记得有人说过 Scala 的 Shapeless 那个 Succ[Nat] 那种是 Church Encoding 不知道是口误还是真的关系挺大的……
+E#1&amp;frasl;137 : 2017-04-22 09:06:33
+Peano公理是自然数的本质特征，具体各种形式化表示仅仅是满足Peano公理的一个具体实例而已。
+E#1&amp;frasl;137 : 2017-04-22 09:07:17</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170418</title>
+      <link>http://qq.haskellchina.org/2017/04/18/qq-group-log-of-haskellchina-20170418/</link>
+      <pubDate>Tue, 18 Apr 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/04/18/qq-group-log-of-haskellchina-20170418/</guid>
+      <description>橙月雪离子 : 2017-04-18 00:49:51
+IRC里有人建议用shows拼接再统一putStr，快了1/4，内存分配减少一半
+橙月雪离子 : 2017-04-18 00:50:02
+然而还是超时。。。我怀疑代码还是有bug
+橙月雪离子 : 2017-04-18 00:52:17
+我就问了个单元测试的问题ek就开始喋喋喋不休。。。我又不敢回
+The Fool : 2017-04-18 02:09:03
+freenode的haskell频道么&amp;hellip;?
+forever : 2017-04-18 07:49:32
+@橙月雪离子 好像已经晚了，但是你要看 ek 说啥看不懂直接问就行了
+forever : 2017-04-18 07:50:17
+他用到什么概念一定准备好去讲的
+[[[[[[[[[[[[[[[[[[[[[[[[ : 2017-04-18 07:53:03
+话说爆IO是输出什么量级的数据啊
+昵称未知 : 2017-04-18 13:49:20
+新人虚心求教
+Wayne : 2017-04-18 13:59:41
+老人傲娇不教[右哼哼]
+泉彼方 : 2017-04-18 14:00:13
+？？？？
+安静 : 2017-04-18 14:26:41
+请教个问题。
+cpp里面，
+template class &amp;hellip;，给不同的N可以产生不同的class类型，haskell里面有没有实现类似效果的方法？
+橙月雪离子 : 2017-04-18 14:27:18
+set -XMultiParamTypeClasses</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170417</title>
+      <link>http://qq.haskellchina.org/2017/04/17/qq-group-log-of-haskellchina-20170417/</link>
+      <pubDate>Mon, 17 Apr 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/04/17/qq-group-log-of-haskellchina-20170417/</guid>
+      <description>[[[[[[[[[[[[[[[[[[[[[[[[ : 2017-04-17 05:53:57
+对于这种形式的type class应该如何简化书写呢？
+forever : 2017-04-17 07:36:44
+data Location
+= Location
+{ &amp;hellip;
+}
+class HasLocation a where
+toLocation :: a -&amp;gt; Location
+[[[[[[[[[[[[[[[[[[[[[[[[ : 2017-04-17 07:55:04
+除此以外呢 就没有什么特殊type class可以套吗 类似reify之类的
+forever : 2017-04-17 08:00:11
+你想简化成什么样
+forever : 2017-04-17 08:00:25
+哦，等等，R 是什么意思？取长度？
+[[[[[[[[[[[[[[[[[[[[[[[[ : 2017-04-17 08:00:37
+Rotation而已
+forever : 2017-04-17 08:00:44
+哦哦
+forever : 2017-04-17 08:00:50
+你想简化成什么样
+[[[[[[[[[[[[[[[[[[[[[[[[ : 2017-04-17 08:02:46
+我觉得每个里面都有通用部分 应该可以套上某种type class 比如 Has Location a</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170414</title>
+      <link>http://qq.haskellchina.org/2017/04/14/qq-group-log-of-haskellchina-20170414/</link>
+      <pubDate>Fri, 14 Apr 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/04/14/qq-group-log-of-haskellchina-20170414/</guid>
+      <description>橙月雪离子 : 2017-04-14 10:33:42
+说使用7.6的前端
+橙月雪离子 : 2017-04-14 10:33:52
+让人疲软
+以上内容来自 [Haskell函数式编程] QQ 群。</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170413</title>
+      <link>http://qq.haskellchina.org/2017/04/13/qq-group-log-of-haskellchina-20170413/</link>
+      <pubDate>Thu, 13 Apr 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/04/13/qq-group-log-of-haskellchina-20170413/</guid>
+      <description>forever : 2017-04-13 00:08:12
+一直永远超过时代潮流的邵司机
+L喵 : 2017-04-13 00:08:29
+…… 可怕
+Silent TNT : 2017-04-13 00:09:07
+…… 可怕
+&amp;rdquo;&amp;rsquo; ⃢・ ・ ⃢&amp;rdquo;&amp;rsquo; : 2017-04-13 00:13:31
+…… 可怕
+forever : 2017-04-13 00:13:58
+好啦别刷了
+L喵 : 2017-04-13 00:18:48
+meta 可怕
+L喵 : 2017-04-13 00:19:09
+唉不过我觉得我不玩 Linux Subsystem 都感觉我不是学 CS 的……
+大笨蛋千里冰封 : 2017-04-13 00:21:36
+我不玩，我不是学CS的
+Yaegaki Erika : 2017-04-13 00:21:54
+我不玩
+&amp;rdquo;&amp;rsquo; ⃢・ ・ ⃢&amp;rdquo;&amp;rsquo; : 2017-04-13 00:22:03
+我不玩，我不是学CS的
+Yaegaki Erika : 2017-04-13 00:22:05</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170412</title>
+      <link>http://qq.haskellchina.org/2017/04/12/qq-group-log-of-haskellchina-20170412/</link>
+      <pubDate>Wed, 12 Apr 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/04/12/qq-group-log-of-haskellchina-20170412/</guid>
+      <description>The Fool : 2017-04-12 20:40:34
+所以Racket引入了方括号(
+: 2017-04-12 20:40:39
+http://www.paulgraham.com/arcll1.html
+: 2017-04-12 20:40:57
+McCarthy,
+who wanted to keep his axioms to a minimum, buried
+progn within cond. That worked for his examples, but for programming in general you soon find you need a
+progn separate from the implicit progn of cond.
+: 2017-04-12 20:41:18
+Having an implicit progn in cond means every cond
+clause has to have an extra pair of parentheses.</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170409</title>
+      <link>http://qq.haskellchina.org/2017/04/09/qq-group-log-of-haskellchina-20170409/</link>
+      <pubDate>Sun, 09 Apr 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/04/09/qq-group-log-of-haskellchina-20170409/</guid>
+      <description>izgzhen : 2017-04-09 13:14:34
+id
+haskell (=^v^=) : 2017-04-09 13:23:34
+id what
+Yaegaki Erika : 2017-04-09 13:24:11
+进群问题
+Yaegaki Erika : 2017-04-09 13:24:25
+? :: a → a
+haskell (=^v^=) : 2017-04-09 13:24:41
+oh&amp;hellip;my god
+foreverbell : 2017-04-09 14:50:10
+summer.haskell.org
+foreverbell : 2017-04-09 14:50:19
+hsoc 要开始了
+▽ : 2017-04-09 14:57:14
+stack connection timeout
+碧海戏潮生 : 2017-04-09 14:57:58
+镜像？
+碧海戏潮生 : 2017-04-09 14:58:05
+翻墙？
+▽ : 2017-04-09 14:58:08
+stack ghci</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170408</title>
+      <link>http://qq.haskellchina.org/2017/04/08/qq-group-log-of-haskellchina-20170408/</link>
+      <pubDate>Sat, 08 Apr 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/04/08/qq-group-log-of-haskellchina-20170408/</guid>
+      <description>天才麻将魔法少女Cosmia : 2017-04-08 10:46:58
+准确的说，不是getLine每次得到一个String，而是你可以塞给getLine一个String -&amp;gt; IO a的continuation
+galaxy : 2017-04-08 10:47:28
+是个action?
+天才麻将魔法少女Cosmia : 2017-04-08 10:48:15
+(&amp;gt;&amp;gt;=) getLine = (String -&amp;gt; IO a) -&amp;gt; IO a
+天才麻将魔法少女Cosmia : 2017-04-08 10:48:50
+你没法把这个String真正拿出来
+haskell (=^v^=) : 2017-04-08 10:49:05
+如果不用io monad ，副作用在哪
+. : 2017-04-08 10:49:07
+其实这种IO的实现方式就相当于是
+. : 2017-04-08 10:49:17
+getLine putStrLn一类的相当于指令
+寒东 : 2017-04-08 10:49:19
+IO a 的背后是个 RealWorld -&amp;gt; (a, RealWorld) 的函数 建议翻翻spj的 tackling the awkward squad
+. : 2017-04-08 10:49:23</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170406</title>
+      <link>http://qq.haskellchina.org/2017/04/06/qq-group-log-of-haskellchina-20170406/</link>
+      <pubDate>Thu, 06 Apr 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/04/06/qq-group-log-of-haskellchina-20170406/</guid>
+      <description>大笨蛋千里冰封 : 2017-04-06 00:19:28
+各位大佬这里是萌新提问
+大笨蛋千里冰封 : 2017-04-06 00:20:13
+我现在想弄一个函数，（拿Java类比一下）接收一个Option，返回拆出来的String，或者&amp;rdquo;null&amp;rdquo;
+大笨蛋千里冰封 : 2017-04-06 00:20:32
+然后我没看懂报错
+Yaegaki Erika : 2017-04-06 00:20:38
+不是
+forever : 2017-04-06 00:20:39
+直接 Option String
+Yaegaki Erika : 2017-04-06 00:20:50
+没有(String e)这种东西
+大笨蛋千里冰封 : 2017-04-06 00:20:56
+哦
+Neuromancer : 2017-04-06 00:21:09
+fromMaybe
+forever : 2017-04-06 00:21:31
+@大笨蛋千里冰封 * -&amp;gt; Constraint 表示像 Num 这样的接受一个类型变成一个约束的
+大笨蛋千里冰封 : 2017-04-06 00:21:35
+String是一个实在的类型，而如果要加约束，应该是一个类似Functor/Applicative的东西？
+forever : 2017-04-06 00:21:41
+对喽
+大笨蛋千里冰封 : 2017-04-06 00:21:46</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170405</title>
+      <link>http://qq.haskellchina.org/2017/04/05/qq-group-log-of-haskellchina-20170405/</link>
+      <pubDate>Wed, 05 Apr 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/04/05/qq-group-log-of-haskellchina-20170405/</guid>
+      <description>&amp;rdquo;&amp;rsquo; ⃢・ ・ ⃢&amp;rdquo;&amp;rsquo; : 2017-04-05 17:16:29
+dash
+橙月雪离子 : 2017-04-05 17:17:36
+zeal is for win[闪电]nux what dash is for macos
+天才麻将魔法少女Cosmia : 2017-04-05 17:18:09
+好贵啊
+&amp;rdquo;&amp;rsquo; ⃢・ ・ ⃢&amp;rdquo;&amp;rsquo; : 2017-04-05 17:18:36
+你可以用zeal for macos
+橙月雪离子 : 2017-04-05 17:23:55
+thus no official macos support. one gotta build his own copy
+steven : 2017-04-05 17:56:22
+@寒东 我去美洽那他给我二面，不过我没提你
+寒东 : 2017-04-05 17:57:07
+啊哈 不太了解那边的情况～祝顺利了
+steven : 2017-04-05 17:58:06
+已经顺利了..
+寒东 : 2017-04-05 17:59:14</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170401</title>
+      <link>http://qq.haskellchina.org/2017/04/01/qq-group-log-of-haskellchina-20170401/</link>
+      <pubDate>Sat, 01 Apr 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/04/01/qq-group-log-of-haskellchina-20170401/</guid>
+      <description>snowXman : 2017-04-01 10:18:35
+已加群
+Jin : 2017-04-01 10:22:33
+问一下irc.haskellchina.com这个服务有tls吗
+LambdaBot : 2017-04-01 10:24:47
+hi
+talos : 2017-04-01 10:27:22
+来自irc用户这么怎么搞的
+LambdaBot : 2017-04-01 10:27:45
+是从irc端发的消息
+LambdaBot : 2017-04-01 10:28:08
+有个irc频道和qq群对接
+LambdaBot : 2017-04-01 10:28:25
+@swconnect joingroup group-0
+LambdaBot : 2017-04-01 10:28:28
+joined group-0
+LambdaBot : 2017-04-01 10:28:44
+hello
+talos : 2017-04-01 10:28:54
+真会玩
+LambdaBot : 2017-04-01 10:29:07
+[jin] 动作好快。。
+LambdaBot : 2017-04-01 10:29:15
+[jin] 这么快就对接好了。。
+LambdaBot : 2017-04-01 10:29:43</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170331</title>
+      <link>http://qq.haskellchina.org/2017/03/31/qq-group-log-of-haskellchina-20170331/</link>
+      <pubDate>Fri, 31 Mar 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/03/31/qq-group-log-of-haskellchina-20170331/</guid>
+      <description>Ryan : 2017-03-31 00:00:02
+我觉得Hs目前只适合当作…兴趣爱好
+forever : 2017-03-31 00:00:31
+这当然取决于你是做什么的
+forever : 2017-03-31 00:01:05
+https://github.com/Gabriel439/post-rfc/blob/master/sotu.md
+张智城 : 2017-03-31 00:03:03
+问一个比较纠结的问题 haskell学到什么程度转scala比较合适
+forever : 2017-03-31 00:03:31
+你就直接去学 scala 吧
+张智城 : 2017-03-31 00:03:40
+嗯嗯
+李想 : 2017-03-31 00:08:17
+直接學scala
+橙月雪离子 : 2017-03-31 00:11:40
+stackage镜像按tuna上的说明配了一下没卵用额。。
+forever : 2017-03-31 00:12:09
+stack 版本？
+Ryan : 2017-03-31 00:12:20
+讲真，我不认为平行使用或学习多个语言会构成什么问题
+橙月雪离子 : 2017-03-31 00:12:32
+1.4.0
+forever : 2017-03-31 00:12:59
+奇了怪了
+李想 : 2017-03-31 00:13:04
+我也不認為會有什麼問題</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170330</title>
+      <link>http://qq.haskellchina.org/2017/03/30/qq-group-log-of-haskellchina-20170330/</link>
+      <pubDate>Thu, 30 Mar 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/03/30/qq-group-log-of-haskellchina-20170330/</guid>
+      <description>举个栗子 : 2017-03-30 08:37:15
+非尾递归的可以先用cps转成尾递归
+举个栗子 : 2017-03-30 08:38:30
+这个就跟statemonad有点差不多的意思，一长串计算拆成一步步的，然后外面套个while
+第七页 : 2017-03-30 09:24:02
+用脑图可以描绘出思路 但是不方便存储 有没有有文本描绘思路的？
+大笨蛋千里冰封 : 2017-03-30 09:24:25
+脑图生成文本
+第七页 : 2017-03-30 09:25:34
+那个也得依赖脑图工具的
+怀谷 : 2017-03-30 09:36:26
+@第七页 你需要的不就是伪代码而已么[冷汗]
+第七页 : 2017-03-30 09:36:54
+如何设计这样的伪代码呢
+怀谷 : 2017-03-30 09:38:53
+然后这个问题就变成，如何设计dsl了。。。
+[[[[[[[[[[[[[[[[[[[[[[[[ : 2017-03-30 09:39:27
+脑图是树状的？
+大笨蛋千里冰封 : 2017-03-30 09:39:58
+树状可以用yml
+橙月雪离子 : 2017-03-30 09:40:38
+脑图要反映直觉
+橙月雪离子 : 2017-03-30 09:40:42
+不如用工具
+[[[[[[[[[[[[[[[[[[[[[[[[ : 2017-03-30 09:41:32
+这样说，其实ps或者krita最合适，如果有板子
+橙月雪离子 : 2017-03-30 09:41:34</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170329</title>
+      <link>http://qq.haskellchina.org/2017/03/29/qq-group-log-of-haskellchina-20170329/</link>
+      <pubDate>Wed, 29 Mar 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/03/29/qq-group-log-of-haskellchina-20170329/</guid>
+      <description>雾满拦江 : 2017-03-29 10:20:08
+类成员函数可以显式地拿第一个参数传对象的this，魔板函数可以拿TH搞
+雾满拦江 : 2017-03-29 10:23:09
+记得有个叫 cxxffi 还是 fficxx 的，可以直接生成这些 bindings
+雾满拦江 : 2017-03-29 10:24:09
+但我觉得，要想把生成的函数名搞得比较正常，少不了大量的人工工作
+雾满拦江 : 2017-03-29 10:24:21
+比如各种llvm的binding&amp;hellip;
+第七页 : 2017-03-29 11:12:37
+data Type a = X a | Y a
+我如果想限定这个 a是 Eq的实例 应该怎么写呢？
+Yaegaki Erika : 2017-03-29 11:14:29
+forall a. (Eq a) =&amp;gt;
+Yaegaki Erika : 2017-03-29 11:14:32
+这样？
+undefined : 2017-03-29 11:15:01
+hs支持这样限定吗…
+Neuromancer : 2017-03-29 11:15:18
+data Eq a =&amp;gt; Type a</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170321</title>
+      <link>http://qq.haskellchina.org/2017/03/21/qq-group-log-of-haskellchina-20170321/</link>
+      <pubDate>Tue, 21 Mar 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/03/21/qq-group-log-of-haskellchina-20170321/</guid>
+      <description>senge : 2017-03-21 07:52:01
+看下peng li和zdancewic的paper a language based approach to unifying events and threads
+以上内容来自 [Haskell函数式编程] QQ 群。</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170320</title>
+      <link>http://qq.haskellchina.org/2017/03/20/qq-group-log-of-haskellchina-20170320/</link>
+      <pubDate>Mon, 20 Mar 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/03/20/qq-group-log-of-haskellchina-20170320/</guid>
+      <description>くまちゃん : 2017-03-20 00:08:25
+答案是泛型么，我OOP出身的初学者— —
+haskell (=^v^=) : 2017-03-20 00:11:11
+id
+此人已放弃治疗 : 2017-03-20 01:39:00
+其实吧
+此人已放弃治疗 : 2017-03-20 01:39:14
+我随便瞅了一下perl
+此人已放弃治疗 : 2017-03-20 01:39:20
+哈哈哈哈笑死了
+VON : 2017-03-20 01:39:43
+。。。
+此人已放弃治疗 : 2017-03-20 01:42:10
+这速度- -
+LR : 2017-03-20 03:02:51
+大家好
+a_a : 2017-03-20 20:43:43
+函数式语言要怎样声明和操作一个流程呢?比如一个简单流程：用户新建一个提醒——显示在屏幕上→然后有两个情况：1是用户关闭这个提醒；2是用户创建了另一条体型——自动关闭上一条面向对象的话 大概就写一个提醒类 写一个关闭方法 再写个“另一条提醒被创建”的delegate 每次启动程序时读取数据加载这个提醒类函数式语言里面该怎样写好呢？
+forever : 2017-03-20 20:47:11
+除了不是组织成“类”以外，你说的每一个都是完全可以实现
+forever : 2017-03-20 20:47:44
+比如可以用 IORef 保存数据http://hackage.haskell.org/package/base-4.9.1.0/docs/Data-IORef.html
+Yaegaki Erika : 2017-03-20 20:48:03</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170314</title>
+      <link>http://qq.haskellchina.org/2017/03/14/qq-group-log-of-haskellchina-20170314/</link>
+      <pubDate>Tue, 14 Mar 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/03/14/qq-group-log-of-haskellchina-20170314/</guid>
+      <description>Yaegaki Erika : 2017-03-14 14:17:45
+wtf
+. : 2017-03-14 14:21:08
+[系统表情]
+？ : 2017-03-14 14:21:23
+昵称未知 : 2017-03-14 14:38:54
+？(754049422) 被管理员禁言1分钟
+此人已放弃治疗 : 2017-03-14 14:53:27
+请问一下谁能下载这个chez scheme编译器？ https://github.com/cisco/ChezScheme
+此人已放弃治疗 : 2017-03-14 14:53:35
+我下载不了，[系统表情]
+Ryan : 2017-03-14 14:53:44
+没问题啊。。。
+Ryan : 2017-03-14 14:53:47
+开代理。。
+李想 : 2017-03-14 18:54:53
+我能
+碧海戏潮生 : 2017-03-14 21:18:57
+ghc怎么静态链接？
+碧海戏潮生 : 2017-03-14 21:19:21
+为什么有时候成功有时候报错
+碧海戏潮生 : 2017-03-14 21:53:33
+我居然找到规律了，不加static编译一次（用stack），再加上static就不会有问题，只是会有些警告
+以上内容来自 [Haskell函数式编程] QQ 群。</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170313</title>
+      <link>http://qq.haskellchina.org/2017/03/13/qq-group-log-of-haskellchina-20170313/</link>
+      <pubDate>Mon, 13 Mar 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/03/13/qq-group-log-of-haskellchina-20170313/</guid>
+      <description>昰生娃 : 2017-03-13 10:16:27
+函数是I
+第七页 : 2017-03-13 10:19:47
+如何能看到 haskell 中内置类型的源码 比如 bool
+miyo.👉🏻[17|16|嗨] : 2017-03-13 10:23:28
+data Bool =True|False
+BalterNotz : 2017-03-13 10:23:45
+@第七页 这个要去看ghc源码
+第七页 : 2017-03-13 10:23:46
+我要看它怎么 instance Typeable 的
+橙月雪离子 : 2017-03-13 10:27:19
+猜想一下不是内置的就是用Generics实现的吧
+寒东 : 2017-03-13 10:41:53
+Typeable的实例都必须是空的 实现是编译器来填的
+寒东 : 2017-03-13 10:42:32
+fingerprint这种东西用户也提供不来
+第七页 : 2017-03-13 10:52:29
+恩，
+forever : 2017-03-13 11:37:29
+用 typeclass 实现的 rtti
+橙月雪离子 : 2017-03-13 12:03:47
+这种代码有没有办法自动生成</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170304</title>
+      <link>http://qq.haskellchina.org/2017/03/04/qq-group-log-of-haskellchina-20170304/</link>
+      <pubDate>Sat, 04 Mar 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/03/04/qq-group-log-of-haskellchina-20170304/</guid>
+      <description>[[[[[[[[[[[[[[[[[[[[[[[[ : 2017-03-04 00:37:08
+多谢了 昨天问的问题解决了 最后靠constructN 递归ok了 果然和fib相同问题
+熊▎ : 2017-03-04 09:49:06
+Functor的map是一元的态射，Foldable是二元的态射。可以这样理解吗？[抱拳][抱拳]
+forever : 2017-03-04 09:50:39
+不可以，“理解”这件事本身是错的，会让你误入歧途
+熊▎ : 2017-03-04 09:52:28
+[难过][难过]fp好难。
+十六 : 2017-03-04 09:52:50
+dram！
+十六 : 2017-03-04 09:53:12
+dram的理论有点迷迷的，必须要好好理解…
+forever : 2017-03-04 09:53:14
+@x 你是好多东西不知道怎么理解对吧
+十六 : 2017-03-04 09:53:17
+【
+forever : 2017-03-04 09:53:20
+那就别理解了
+forever : 2017-03-04 09:53:34
+因为很可能就是没有什么可理解的
+魔理沙 : 2017-03-04 09:53:37
+@dram 读过on the cruelty of really teaching computer science吗？你肯定会喜欢
+魔理沙 : 2017-03-04 09:53:54</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170303</title>
+      <link>http://qq.haskellchina.org/2017/03/03/qq-group-log-of-haskellchina-20170303/</link>
+      <pubDate>Fri, 03 Mar 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/03/03/qq-group-log-of-haskellchina-20170303/</guid>
+      <description>ds : 2017-03-03 01:52:50
+succ
+ds : 2017-03-03 02:06:30
+succ
+昵称未知 : 2017-03-03 02:37:52
+手残怪蜀黍(3195366513) 被管理员禁言1小时
+[[[[[[[[[[[[[[[[[[[[[[[[ : 2017-03-03 08:40:44
+为何我计算legendre勒让德多项式会爆内存啊 我就是按照递归式写的 p n x = a * p (n - 1) x * x + b* p (n-2) x 其中a b是关于n的常数 算几十还好 算到一百以上 8g内存就炸了
+[[[[[[[[[[[[[[[[[[[[[[[[ : 2017-03-03 08:43:04
+请问下 如何改进 haskell内部不会自动cps吗 是要按照类似fold&amp;rsquo; 重构吗
+forever : 2017-03-03 08:43:57
+cps 救不了国人
+forever : 2017-03-03 08:44:08
+你这个可以参考算 fibonacci 的代码改进
+叶绿素 : 2017-03-03 08:56:27</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170302</title>
+      <link>http://qq.haskellchina.org/2017/03/02/qq-group-log-of-haskellchina-20170302/</link>
+      <pubDate>Thu, 02 Mar 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/03/02/qq-group-log-of-haskellchina-20170302/</guid>
+      <description>高佳欣 : 2017-03-02 11:34:49
+我的问题只有华华一个人回答吗?
+高佳欣 : 2017-03-02 11:34:54
+还是我的想法不对
+The Fool : 2017-03-02 11:36:26
+模式匹配可以用car和cdr写啊
+The Fool : 2017-03-02 11:36:36
+列表结构本身就有顺序
+高佳欣 : 2017-03-02 11:37:14
+我的意思是它的字面表达应该和数学保持一致, Lambda算子里面是没有顺序这个概念的
+高佳欣 : 2017-03-02 11:37:18
+H
+高佳欣 : 2017-03-02 11:37:26
+本质上应该也没有
+高佳欣 : 2017-03-02 11:37:52
+那么HS现在有, 是不是只是做了一个语法糖的处理
+天才麻将魔法少女Cosmia : 2017-03-02 11:38:24
+你可以假装pattern matching是一个嵌套的if
+The Fool : 2017-03-02 11:38:47
+你可以去看Racket
+The Fool : 2017-03-02 11:39:09
+那里面的模式匹配似乎是用纯macro实现的
+高佳欣 : 2017-03-02 11:39:37
+好吧
+forever : 2017-03-02 12:28:47</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170224</title>
+      <link>http://qq.haskellchina.org/2017/02/24/qq-group-log-of-haskellchina-20170224/</link>
+      <pubDate>Fri, 24 Feb 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/02/24/qq-group-log-of-haskellchina-20170224/</guid>
+      <description>Glow : 2017-02-24 00:00:41
+用stack和haskell platform安装有什么区别吗？
+zy : 2017-02-24 07:06:47
+NOTE: GHC will be installed to your global stack root directory, so calling ghc on the command line won&amp;rsquo;t work. See the stack exec, stack ghc, and stack runghc commands below for more information.
+此人已放弃治疗 : 2017-02-24 07:07:20
+[系统表情]
+mushroom : 2017-02-24 09:26:33
+calling ghc on the command line won&amp;rsquo;t work?
+mushroom : 2017-02-24 09:26:41
+really?
+mushroom : 2017-02-24 09:28:08</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170223</title>
+      <link>http://qq.haskellchina.org/2017/02/23/qq-group-log-of-haskellchina-20170223/</link>
+      <pubDate>Thu, 23 Feb 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/02/23/qq-group-log-of-haskellchina-20170223/</guid>
+      <description>☺今天休息 : 2017-02-23 00:49:09
+这问题咋解决啊? 我已经 stack upgrade &amp;ndash;git 了, 还是没用
+☺今天休息 : 2017-02-23 00:49:54
+https://github.com/commercialhaskell/stack/issues/1758因为有人在这里说
+☺今天休息 : 2017-02-23 00:54:53
+发现似乎有人Ubuntu也出现类似问题, 看起来不像是windows的原因 https://github.com/joeyh/github-backup/issues/63
+☺今天休息 : 2017-02-23 00:57:00
+@Canto Ostinato 还有, 为什么说 urls 是不识别的配置字段啊?
+☺今天休息 : 2017-02-23 01:51:06
+我逗逼了&amp;hellip; 这个坑了我好久.. 发现真相的瞬间泪流满面
+(:з」∠) : 2017-02-23 05:54:21
+你是不是用stack更新了stack
+mushroom : 2017-02-23 09:11:07
+我也是在用xmonad,真是最好用的wm,没有之一
+97 : 2017-02-23 09:30:14
+xmonad 可以mac上用么?
+mushroom : 2017-02-23 09:31:04
+应该可以吧,npm一下看看
+mushroom : 2017-02-23 09:31:33
+mac 不是npm,用其他的安装工具
+☺今天休息 : 2017-02-23 09:33:13</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170222</title>
+      <link>http://qq.haskellchina.org/2017/02/22/qq-group-log-of-haskellchina-20170222/</link>
+      <pubDate>Wed, 22 Feb 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/02/22/qq-group-log-of-haskellchina-20170222/</guid>
+      <description>mushroom : 2017-02-22 10:39:43
+这个显示乱码,各位有没有喷到过?
+wuli华华 : 2017-02-22 10:47:53
+没有
+wuli华华 : 2017-02-22 10:50:55
+chcp 936?
+mushroom : 2017-02-22 10:51:50
+用的是mintty
+NULL : 2017-02-22 11:01:48
+你看一下你mintty的字体配置- -这个问题和haskell应该没有关系
+mushroom : 2017-02-22 11:02:47
+是的,跟haskell肯定没有关系,在windows, cmd下面显示是正常的
+BalterNotz : 2017-02-22 11:02:59
+一般有两个步骤。
+BalterNotz : 2017-02-22 11:03:05
+第一是编码要选对。
+BalterNotz : 2017-02-22 11:03:10
+第二是，字体要选对。
+mushroom : 2017-02-22 11:03:17
+中文显示正常
+BalterNotz : 2017-02-22 11:03:21
+编码对，字体不对，也会乱码。
+mushroom : 2017-02-22 11:04:53
+字体一般用consolas
+mushroom : 2017-02-22 11:05:04
+这个字体感觉比较好看 点</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170214</title>
+      <link>http://qq.haskellchina.org/2017/02/14/qq-group-log-of-haskellchina-20170214/</link>
+      <pubDate>Tue, 14 Feb 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/02/14/qq-group-log-of-haskellchina-20170214/</guid>
+      <description>&amp;rdquo;&amp;rsquo; ⃢・ ・ ⃢&amp;rdquo;&amp;rsquo; : 2017-02-14 01:21:07
+若子的校友👀
+forever : 2017-02-14 01:21:13
+这位同学能说明一下情况么？
+（眼神不好列表里没找到。。。）
+Mislanka Nova : 2017-02-14 01:21:54
+i
+负一の平方根 : 2017-02-14 01:28:32
+大家好，我是负一の平方根。
+？ : 2017-02-14 08:12:55
+活捉一只涵神
+？ : 2017-02-14 08:16:21
+话说用stack+tuna源装ghc，下载msys2时校验失败是什么情况👀
+Jo Jo : 2017-02-14 13:00:53
+curry 这函数有什么作用
+[[[[[[[[[[[[[[[[[[[[[[[[ : 2017-02-14 16:47:57
+多了，理论上讲curry是closed category 的基础性质。实践上讲，arrow中函数组合，ffi绑定，等都有用到
+☺今天休息 : 2017-02-14 17:36:52
+请问, 用stack安装某些包失败后该怎么办? 我尝试安装 stack install vacuum-cairo 和 stack install SourceGraph 都没有成功
+☺今天休息 : 2017-02-14 17:37:15
+用的是最新的LTS, win10系统</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170213</title>
+      <link>http://qq.haskellchina.org/2017/02/13/qq-group-log-of-haskellchina-20170213/</link>
+      <pubDate>Mon, 13 Feb 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/02/13/qq-group-log-of-haskellchina-20170213/</guid>
+      <description>饼干 : 2017-02-13 08:56:21
+欢迎新人
+高佳欣 : 2017-02-13 10:10:46
+重回Haskell
+MarshR : 2017-02-13 10:32:48
+大家好&amp;hellip;
+MarshR : 2017-02-13 10:33:06
+刚学haskell, 很好玩, 找组织打酱油&amp;hellip;
+L喵 : 2017-02-13 10:33:33
+…… 你好
+MarshR : 2017-02-13 10:34:20
+~.~
+mushroom : 2017-02-13 10:35:39
+[鼓掌]
+mushroom : 2017-02-13 10:36:39
+有什么问题就放出来吧
+mushroom : 2017-02-13 10:36:57
+有什么建议就提出来吧
+mushroom : 2017-02-13 10:37:06
+有什么想法就说出来吧
+第七页 : 2017-02-13 10:42:06
+有这样一个场景
+封装一个类型A 包括以下功能
+传入数据 可以渲染出UI
+UI的功能可以进行定制
+跟UI的交互可以执行响应（跟事件系统类似）
+A的instance之间可以进行组合
+如果存在haskell中这样的场景 应该会如何设计？
+forever : 2017-02-13 10:48:50</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170208</title>
+      <link>http://qq.haskellchina.org/2017/02/08/qq-group-log-of-haskellchina-20170208/</link>
+      <pubDate>Wed, 08 Feb 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/02/08/qq-group-log-of-haskellchina-20170208/</guid>
+      <description>BalterNotz : 2017-02-08 00:37:48
+(&amp;lt;$) 函数，的实现 (&amp;lt;$) = fmap . const 给人的第一感觉是这样子的：(&amp;lt;$) = \x y -&amp;gt; fmap (const x y) 但，实际是：(&amp;lt;$) = \x y -&amp;gt; fmap (const x) y 这里有点理解不了。GHC是怎样做到的？
+BalterNotz : 2017-02-08 00:39:18
+就是根据，fmap的类型 ：： (a-&amp;gt;b) -&amp;gt; f a -&amp;gt; f b，就推断出，const函数应当只应用第一个参数x，而不是将两个参数x y都应用到const上面？
+forever : 2017-02-08 00:39:26
+对
+forever : 2017-02-08 00:39:35
+f x y = (f x) y
+BalterNotz : 2017-02-08 00:39:50
+好神奇
+forever : 2017-02-08 00:40:03</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170207</title>
+      <link>http://qq.haskellchina.org/2017/02/07/qq-group-log-of-haskellchina-20170207/</link>
+      <pubDate>Tue, 07 Feb 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/02/07/qq-group-log-of-haskellchina-20170207/</guid>
+      <description>pigeon_t : 2017-02-07 00:22:33
+那这句话中的algebraic data type又是什么呢，我意思是说和里面的List Int有啥区别美
+大魔头 : 2017-02-07 00:28:38
+仔细阅读我发的链接
+pigeon_t : 2017-02-07 00:34:33
+看了这个，不过没明白。你的意思是说algebraic data type就是在hs里面可以实现abstract的一种是吗
+forever : 2017-02-07 00:37:45
+这两个概念没关系
+pigeon_t : 2017-02-07 00:38:36
+那这个不对？
+forever : 2017-02-07 00:38:48
+没说这个不对啊
+forever : 2017-02-07 00:39:12
+“中国”和“米饭”没关系不代表中国人不吃米饭
+pigeon_t : 2017-02-07 00:39:58
+我可不可以这样理解，是一个东西的两种描述？
+forever : 2017-02-07 00:40:12
+根本就是两个东西
+pigeon_t : 2017-02-07 00:40:12
+一个从代数，一个从抽象数据
+pigeon_t : 2017-02-07 00:40:21
+比如Stack
+pigeon_t : 2017-02-07 00:40:33
+在cpp可以定义为一个adt
+pigeon_t : 2017-02-07 00:40:37</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170206</title>
+      <link>http://qq.haskellchina.org/2017/02/06/qq-group-log-of-haskellchina-20170206/</link>
+      <pubDate>Mon, 06 Feb 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/02/06/qq-group-log-of-haskellchina-20170206/</guid>
+      <description>Jin : 2017-02-05 11:13:08
+值编程？
+左新宇 : 2017-02-06 22:52:53
+lex&amp;rsquo;::[Token] -&amp;gt; String -&amp;gt; [Token]lex ::[Token] -&amp;gt; String -&amp;gt; [Token]lex tokens st = reverse $ lex&amp;rsquo; tokens st这样怎么化简呢？
+大魔头 : 2017-02-06 23:12:28
+
+很多地方都看到这两个词替换着用
+大魔头 : 2017-02-06 23:14:59
+https://wiki.haskell.org/Abstract_data_type
+根据这个文档的说法抽象数据类型是相对于具体数据类型(concrete data type)的。
+大魔头 : 2017-02-06 23:15:19
+举例来说就是那些带类型参数的类型
+大魔头 : 2017-02-06 23:15:35
+比如List是个抽象类型 List Int才是具体类型
+大魔头 : 2017-02-06 23:16:25
+只是在haskell里经常用algebraic data type来实现abstract data type
+大魔头 : 2017-02-06 23:17:00
+https://wiki.haskell.org/Algebraic_data_type
+Silent TNT : 2017-02-06 23:18:30</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170205</title>
+      <link>http://qq.haskellchina.org/2017/02/05/qq-group-log-of-haskellchina-20170205/</link>
+      <pubDate>Sun, 05 Feb 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/02/05/qq-group-log-of-haskellchina-20170205/</guid>
+      <description>寒东 : 2017-02-05 00:00:01
+记得syb有个slide上还嘲讽Generics是for phd来着。。。
+Silent TNT : 2017-02-05 00:00:23
+syb那个类型签名好难读的
+阅千人而惜知己 : 2017-02-05 00:00:32
+是的，它的那个gfoldl绝逼不是一般人能想出来的。
+寒东 : 2017-02-05 00:00:44
+必须推荐那个slide啊
+Silent TNT : 2017-02-05 00:00:52
+Generics for phd？lmao
+寒东 : 2017-02-05 00:00:53
+我翻翻 讲的特别好
+Silent TNT : 2017-02-05 00:02:03
+嘛Generics还比较弱。。GADT，existential，contravariant datatype都搞不了
+阅千人而惜知己 : 2017-02-05 00:02:42
+contravariant datatype需要加:-&amp;gt;:，以后会有。
+阅千人而惜知己 : 2017-02-05 00:02:50
+如果我没记错。
+Silent TNT : 2017-02-05 00:03:00
+恩，有个ticket
+阅千人而惜知己 : 2017-02-05 00:03:03
+@寒东 发我看看。
+寒东 : 2017-02-05 00:04:33</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170204</title>
+      <link>http://qq.haskellchina.org/2017/02/04/qq-group-log-of-haskellchina-20170204/</link>
+      <pubDate>Sat, 04 Feb 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/02/04/qq-group-log-of-haskellchina-20170204/</guid>
+      <description>forever : 2017-02-04 00:43:37
+a b c 是什么类型是调用者说了算
+zypeh : 2017-02-04 00:47:03
+👀 感觉 records，tuples，list 毫无违和感，原来是在 Python 里看过
+. : 2017-02-04 00:47:21
+然而不要依赖这样的先验知识
+zypeh : 2017-02-04 00:47:31
+👀 嗯…
+. : 2017-02-04 00:47:43
+能暂时忘了就暂时忘了
+zypeh : 2017-02-04 00:48:05
+👌 理解
+forever : 2017-02-04 00:48:50
+如果你学过几个编程语言的话，你很可能已经习惯了“xxx 语言里的 aaa 就是 yyy 语言里的 bbb”
+forever : 2017-02-04 00:49:00
+然而 haskell 这么着是永远不可能入门的
+zypeh : 2017-02-04 00:49:04
+sml 多参数函数其实是 pattern matching 得到的？
+zypeh : 2017-02-04 00:49:59</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170203</title>
+      <link>http://qq.haskellchina.org/2017/02/03/qq-group-log-of-haskellchina-20170203/</link>
+      <pubDate>Fri, 03 Feb 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/02/03/qq-group-log-of-haskellchina-20170203/</guid>
+      <description>魔理沙 : 2017-02-03 15:22:15
+@寒东 啥？给个地址
+寒东 : 2017-02-03 15:25:20
+额 就是reddit上面关于join point带来的性能提升的帖子
+寒东 : 2017-02-03 15:25:40
+应该在haskell频道的首页
+寒东 : 2017-02-03 15:26:06
+好几个测试内存减了99%
+魔理沙 : 2017-02-03 15:26:53
+这很魔法
+寒东 : 2017-02-03 15:27:18
+是的 论文翻了下 感觉吊吊吊
+Sicus Aduialion : 2017-02-03 15:30:56
+OMG&amp;hellip;.
+Unsafe : 2017-02-03 15:33:46
+99%&amp;hellip;
+天才麻将魔法少女Cosmia : 2017-02-03 15:41:18
+99???
+魔理沙 : 2017-02-03 15:42:31
+这算啥，DDF中我已经三次把O(2^N)改成nonexponential了（自豪脸）
+天才麻将魔法少女Cosmia : 2017-02-03 15:42:58
+好烦人啊
+F# Minor : 2017-02-03 15:43:10
+(f o g)(x) = f (g (x))这么看起来很顺</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170201</title>
+      <link>http://qq.haskellchina.org/2017/02/01/qq-group-log-of-haskellchina-20170201/</link>
+      <pubDate>Wed, 01 Feb 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/02/01/qq-group-log-of-haskellchina-20170201/</guid>
+      <description>昵称未知 : 2017-02-01 11:30:53
+弱弱问一句， eee bah gum*2 means ( (eee bah) gum )*2
+. : 2017-02-01 11:31:23
+这是什么语言的foo bar baz
+昵称未知 : 2017-02-01 11:31:50
+他说是 functional application, which has higher precedence than any other operator, also associates to the left
+昵称未知 : 2017-02-01 11:31:53
+Haskell
+. : 2017-02-01 11:32:01
+我知道是hs
+. : 2017-02-01 11:32:10
+你那个理解是对的
+昵称未知 : 2017-02-01 11:32:20
+这是数还是函数啊
+. : 2017-02-01 11:32:24
+我是说变量名的语言(
+. : 2017-02-01 11:32:32</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170131</title>
+      <link>http://qq.haskellchina.org/2017/01/31/qq-group-log-of-haskellchina-20170131/</link>
+      <pubDate>Tue, 31 Jan 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/01/31/qq-group-log-of-haskellchina-20170131/</guid>
+      <description>: 2017-01-31 12:22:39
+大家好，请教一个弱智数学问题，一个扇形，把它平均分成两份，分成两个扇形的线叫做什么？
+十六 : 2017-01-31 12:24:45
+直线？
+天才麻将魔法少女Cosmia : 2017-01-31 12:26:06
+角平分线？
+十六 : 2017-01-31 12:26:57
+可能是横着来一刀啊
+十六 : 2017-01-31 12:27:09
+不见得平分那个圆心角
+天才麻将魔法少女Cosmia : 2017-01-31 12:27:45
+别的线没有特殊名字吧
+天才麻将魔法少女Cosmia : 2017-01-31 12:27:46
+= =
+天才麻将魔法少女Cosmia : 2017-01-31 12:28:03
+或者叫「过重心的一条直线」
+第七页 : 2017-01-31 12:28:34
+扇形分割线
+: 2017-01-31 12:30:59
+渣画质，就是这条红线有专业名词吗？
+天才麻将魔法少女Cosmia : 2017-01-31 12:31:10
+那不就是角平分线吗
+&amp;rdquo;&amp;rsquo; ⃢・ ・ ⃢&amp;rdquo;&amp;rsquo; : 2017-01-31 12:32:32
+@pure 还有中垂线
+十六 : 2017-01-31 12:32:38
+叫半径【
+十六 : 2017-01-31 12:33:04</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170130</title>
+      <link>http://qq.haskellchina.org/2017/01/30/qq-group-log-of-haskellchina-20170130/</link>
+      <pubDate>Mon, 30 Jan 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/01/30/qq-group-log-of-haskellchina-20170130/</guid>
+      <description>naivehgz : 2017-01-30 23:59:15
+https://youtu.be/I8LbkfSSR58 有人看过这个吗？讲的咋样啊？
+以上内容来自 [Haskell函数式编程] QQ 群。</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170129</title>
+      <link>http://qq.haskellchina.org/2017/01/29/qq-group-log-of-haskellchina-20170129/</link>
+      <pubDate>Sun, 29 Jan 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/01/29/qq-group-log-of-haskellchina-20170129/</guid>
+      <description>南不暖 : 2017-01-29 12:49:14
+@寒东 滴滴跟运营商合作防止私下联系绕过滴滴了？
+南不暖 : 2017-01-29 12:50:21
+今天我们回老家，司机把订单取消了，让我们私下联系，结果电话就一直被拦截了
+rational : 2017-01-29 12:51:04
+勿水
+rational : 2017-01-29 12:51:08
+技术群
+南不暖 : 2017-01-29 12:51:26
+这不是水啊
+南不暖 : 2017-01-29 12:51:56
+你做软件不涉及领域知识？
+此人已放弃治疗 : 2017-01-29 12:52:11
+大过年别说程序来
+rational : 2017-01-29 12:52:16
+误会了，不好意思
+rational : 2017-01-29 12:52:18
+[呲牙]
+此人已放弃治疗 : 2017-01-29 12:52:28
+看看习大大
+rational : 2017-01-29 12:52:51
+我做纯研发的，不涉及业务
+南不暖 : 2017-01-29 12:53:08
+研发编程语言？
+rational : 2017-01-29 12:53:20
+通讯协议
+南不暖 : 2017-01-29 12:54:07</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170128</title>
+      <link>http://qq.haskellchina.org/2017/01/28/qq-group-log-of-haskellchina-20170128/</link>
+      <pubDate>Sat, 28 Jan 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/01/28/qq-group-log-of-haskellchina-20170128/</guid>
+      <description>此人已放弃治疗 : 2017-01-28 10:25:44
+Hi，我正在使用百度云，给大家分享&amp;rdquo;毛泽东选集_1-5卷.mobi&amp;rdquo;，快来看看吧~http://pan.baidu.com/share/link?shareid=1537206130&amp;amp;uk=505738041
+以上内容来自 [Haskell函数式编程] QQ 群。</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170127</title>
+      <link>http://qq.haskellchina.org/2017/01/27/qq-group-log-of-haskellchina-20170127/</link>
+      <pubDate>Fri, 27 Jan 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/01/27/qq-group-log-of-haskellchina-20170127/</guid>
+      <description>天才麻将魔法少女Cosmia : 2017-01-27 21:38:09
+&amp;hellip;&amp;hellip;
+天才麻将魔法少女Cosmia : 2017-01-27 21:38:36
+intelliJ-Haskell 为何要把依赖的包源码全copy过来。。。
+pengpengche : 2017-01-27 21:39:09
+显而易见，方便你查
+天才麻将魔法少女Cosmia : 2017-01-27 21:40:04
+问题是。。。
+天才麻将魔法少女Cosmia : 2017-01-27 21:40:12
+太他妈多了啊
+天才麻将魔法少女Cosmia : 2017-01-27 21:40:28
+而且STACK_ROOT本来就有一份copy
+CJ : 2017-01-27 22:13:11
+今天看见一篇《The expression problem, trivially!》，感觉好水好水，还是 modularity best paper，modularity conf 是个什么组织？我没搞错吧[晕]
+邱焜 : 2017-01-27 22:14:07
+@天才麻将魔法少女Cosmia intelij 系列惯用套路，布吉岛为啥
+天才麻将魔法少女Cosmia : 2017-01-27 22:16:11
+黑人问号？
+天才麻将魔法少女Cosmia : 2017-01-27 22:16:27
+然而我装上了，而且表现还不错
+forever : 2017-01-27 22:18:27
+我去
+forever : 2017-01-27 22:18:41</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170125</title>
+      <link>http://qq.haskellchina.org/2017/01/25/qq-group-log-of-haskellchina-20170125/</link>
+      <pubDate>Wed, 25 Jan 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/01/25/qq-group-log-of-haskellchina-20170125/</guid>
+      <description>Steven : 2017-01-25 11:17:05
+求敬业
+饼干 : 2017-01-25 11:32:14
+@Steven 勿水
+第七页 : 2017-01-25 11:42:06
+肉偿给敬业
+十六 : 2017-01-25 12:18:42
+py交易？
+Unsafe : 2017-01-25 12:19:11
+GHC has begun to accept Pull Requests on Github
+https://www.reddit.com/r/haskell/comments/5pumm3/ghc_has_begun_to_accept_pull_requests_on_github/
+天才麻将魔法少女Cosmia : 2017-01-25 14:38:27
+能不能把一个function promote成 type family？
+天才麻将魔法少女Cosmia : 2017-01-25 14:39:53
+比如 data A ; funA :: A -&amp;gt; A 直接生成 type family FunA (a :: A) :: A
+魔理沙 : 2017-01-25 14:40:15</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170124</title>
+      <link>http://qq.haskellchina.org/2017/01/24/qq-group-log-of-haskellchina-20170124/</link>
+      <pubDate>Tue, 24 Jan 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/01/24/qq-group-log-of-haskellchina-20170124/</guid>
+      <description>forever : 2017-01-24 10:47:13
+http://mpickering.github.io/posts/2015-12-12-pattern-synonyms-8.html
+好神奇。。。。
+饼干 : 2017-01-24 10:49:01
+不神奇啊。。差不多是这样哩
+天才麻将魔法少女Cosmia : 2017-01-24 10:49:13
+这好几个版本前的了吧
+forever : 2017-01-24 10:50:22
+说的是 8 里面更新的内容
+天才麻将魔法少女Cosmia : 2017-01-24 10:50:28
+并不是
+天才麻将魔法少女Cosmia : 2017-01-24 10:50:32
+我很负责的说
+天才麻将魔法少女Cosmia : 2017-01-24 10:50:37
+至少7.10有
+forever : 2017-01-24 10:50:39
+pattern MyPoint :: Int -&amp;gt; Int -&amp;gt; (Int, Int)
+pattern MyPoint{x, y} = (x,y)
+天才麻将魔法少女Cosmia : 2017-01-24 10:50:45
+前面的年代过于久远忘了
+forever : 2017-01-24 10:50:50
+7.10 里面有这个？
+天才麻将魔法少女Cosmia : 2017-01-24 10:50:58</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170123</title>
+      <link>http://qq.haskellchina.org/2017/01/23/qq-group-log-of-haskellchina-20170123/</link>
+      <pubDate>Mon, 23 Jan 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/01/23/qq-group-log-of-haskellchina-20170123/</guid>
+      <description>饼干 : 2017-01-23 09:27:50
+这个怎么理解？
+饼干 : 2017-01-23 09:28:29
+[强]感谢！
+南不暖 : 2017-01-23 11:12:30
+群里好多在rust群里的
+老农 : 2017-01-23 11:12:46
+求rust群群号
+Jin : 2017-01-23 11:13:05
+因为有rust大神在群里[阴险]
+南不暖 : 2017-01-23 11:13:23
+欢迎加入Rust编程语言社区2群，群号码：303838735
+饼干 : 2017-01-23 11:13:45
+@南不暖 你是来讨论Haskell的还是来拉人的？
+老农 : 2017-01-23 11:13:53
+感谢
+Ryan : 2017-01-23 11:13:59
+可以反拉啊
+forever : 2017-01-23 11:14:07
+@饼干 上面有个问 rust 群群号的
+南不暖 : 2017-01-23 11:14:21
+嗯，对
+饼干 : 2017-01-23 11:14:21
+我看到的第一条是这样的
+南不暖 : 2017-01-23 11:14:49
+因为这确实是事实</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170122</title>
+      <link>http://qq.haskellchina.org/2017/01/22/qq-group-log-of-haskellchina-20170122/</link>
+      <pubDate>Sun, 22 Jan 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/01/22/qq-group-log-of-haskellchina-20170122/</guid>
+      <description>مسرورة خوشحال (jw2c-1) : 2017-01-22 08:58:38
+http://url.cn/441wAj0
+饼干 : 2017-01-22 09:00:08
+@مسرورة خوشحال (jw2c-1) Haskell是什么
+信长 : 2017-01-22 09:01:27
+乱码
+饼干 : 2017-01-22 09:02:23
+已T
+魔理沙 : 2017-01-22 09:03:32
+Sry
+饼干 : 2017-01-22 09:08:34
+@魔理沙 进群要回答问题的。。没回答或者不是邀请的一律不放
+饼干 : 2017-01-22 09:09:02
+还有一看就是小号的也不用放。真想进来的会多次申请的
+魔理沙 : 2017-01-22 09:09:46
+OK。。
+Lambdaλx.x : 2017-01-22 16:46:19
+ghc 8.0.2发布
+pigeon_t : 2017-01-22 16:55:35
+Just 3 &amp;gt;&amp;gt; Nothing 我懂返回Nothing
+Nothing &amp;gt;&amp;gt; Just 3 返回Nothing不懂啊，
+pigeon_t : 2017-01-22 16:55:42</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170119</title>
+      <link>http://qq.haskellchina.org/2017/01/19/qq-group-log-of-haskellchina-20170119/</link>
+      <pubDate>Thu, 19 Jan 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/01/19/qq-group-log-of-haskellchina-20170119/</guid>
+      <description>橙月雪离子 : 2017-01-19 00:03:01
+我要爆炸了
+橙月雪离子 : 2017-01-19 00:03:15
+干 死ghc
+橙月雪离子 : 2017-01-19 00:27:26
+max&amp;hellip;该咋写
+橙月雪离子 : 2017-01-19 00:32:35
+我试试自己定义一个
+pigeon_t : 2017-01-19 00:33:09
+你上面用的那个插件叫啥，挺好看的
+pigeon_t : 2017-01-19 00:33:16
+terminal 里面的那个py插件
+橙月雪离子 : 2017-01-19 00:37:00
+py插件？
+pigeon_t : 2017-01-19 00:38:28
+很好看，是啥？
+tennix : 2017-01-19 00:38:58
+powerline
+pigeon_t : 2017-01-19 00:39:37
+have a loot
+pigeon_t : 2017-01-19 00:39:39
+look
+pigeon_t : 2017-01-19 00:39:43
+[系统表情]
+forever : 2017-01-19 00:40:57
+http://hackage.haskell.org/package/base-4.9.1.0/docs/GHC-TypeLits.html</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170118</title>
+      <link>http://qq.haskellchina.org/2017/01/18/qq-group-log-of-haskellchina-20170118/</link>
+      <pubDate>Wed, 18 Jan 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/01/18/qq-group-log-of-haskellchina-20170118/</guid>
+      <description>矽砂 : 2017-01-18 00:05:29
+能不能把monad看做绑定链，把普通数据和某些其他的东西绑定在一起就变成一个monad，
+forever : 2017-01-18 00:06:00
+不能
+矽砂 : 2017-01-18 00:07:26
+[发呆]
+Yaegaki Erika : 2017-01-18 00:08:46
+不能
+矽砂 : 2017-01-18 00:11:30
+为嘛
+forever : 2017-01-18 00:12:16
+这样，你希望理解什么？
+forever : 2017-01-18 00:19:04
+那 IO 怎么解释？State 怎么解释？
+第七页 : 2017-01-18 00:19:10
+不是 严格的说应该是在容器里面完成的
+forever : 2017-01-18 00:19:25
+为什么不能接受单个 monad 的具体解释呢？
+第七页 : 2017-01-18 00:19:26
+我觉得不存在取出来
+forever : 2017-01-18 00:19:57
+肯定是要取出来的，要不
+m a -&amp;gt; (a -&amp;gt; m b) -&amp;gt; m b</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170117</title>
+      <link>http://qq.haskellchina.org/2017/01/17/qq-group-log-of-haskellchina-20170117/</link>
+      <pubDate>Tue, 17 Jan 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/01/17/qq-group-log-of-haskellchina-20170117/</guid>
+      <description>pigeon_t : 2017-01-17 20:37:47
+functor 只接受仅有一个参数的type constructor有什么原因么
+pigeon_t : 2017-01-17 20:37:54
+还是钦定的？
+forever : 2017-01-17 20:40:53
+@pigeon_t 有，要不呢？
+forever : 2017-01-17 20:40:56
+类型写不出来啊
+pigeon_t : 2017-01-17 20:42:30
+哈，就是class Functor m where fmap :: (a -&amp;gt; b) -&amp;gt; f a -&amp;gt; f b
+pigeon_t : 2017-01-17 20:42:40
+是定义了f接受一个a
+forever : 2017-01-17 20:43:06
+yes，（你把 f 写成 m 了
+forever : 2017-01-17 20:43:17
+）
+所以你想要几个？
+pigeon_t : 2017-01-17 20:44:00
+有没有什么原因呢，有没有更高阶的, class HighOrderFunctor f where</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170116</title>
+      <link>http://qq.haskellchina.org/2017/01/16/qq-group-log-of-haskellchina-20170116/</link>
+      <pubDate>Mon, 16 Jan 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/01/16/qq-group-log-of-haskellchina-20170116/</guid>
+      <description>叶绿素 : 2017-01-16 00:00:38
+是啊
+Mr.L 槑槑 : 2017-01-16 00:16:40
+是啊
+云卷花开 : 2017-01-16 00:17:35
+是啊
+pigeon_t : 2017-01-16 00:21:03
+是啊
+饼干 : 2017-01-16 00:34:07
+你们不要这样
+rational : 2017-01-16 07:57:20
+你们怎么可以这么熟练呀
+Jin : 2017-01-16 08:45:59
+手机
+Jin : 2017-01-16 08:46:11
+qq的+1功能
+饼干 : 2017-01-16 08:47:46
+勿水
+以上内容来自 [Haskell函数式编程] QQ 群。</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170115</title>
+      <link>http://qq.haskellchina.org/2017/01/15/qq-group-log-of-haskellchina-20170115/</link>
+      <pubDate>Sun, 15 Jan 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/01/15/qq-group-log-of-haskellchina-20170115/</guid>
+      <description>forever : 2017-01-15 00:07:26
+irc 上看到的一个有意思的（假的）问题
+maybeDo :: Maybe (IO ()) -&amp;gt; IO ()
+maybeDo (Just x) = x
+maybeDo Nothing = pure ()
+来简化😂
+forever : 2017-01-15 00:08:15
+maybeDo = ?
+第七页 : 2017-01-15 00:08:44
+join ?
+forever : 2017-01-15 00:10:42
+貌似 类型匹配不上
+(:з」∠) : 2017-01-15 00:10:45
+maybeDo _ = return ()
+第七页 : 2017-01-15 00:11:48
+IO 的值构造器是啥？
+Sicus Elbedor : 2017-01-15 00:13:13
+maybeDo = void . sequence</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170114</title>
+      <link>http://qq.haskellchina.org/2017/01/14/qq-group-log-of-haskellchina-20170114/</link>
+      <pubDate>Sat, 14 Jan 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/01/14/qq-group-log-of-haskellchina-20170114/</guid>
+      <description>旧时月色 : 2017-01-14 11:45:25
+Haskell编程语言
+蓝程 : 2017-01-14 13:23:40
+大家好，我是Janli
+第七页 : 2017-01-14 14:24:18
+像这种代码 如何用 $ 消灭括号 好像不行
+forever : 2017-01-14 14:25:37
+$ 也并没有那么好使啊
+第七页 : 2017-01-14 14:25:51
+ghci中 打印的换行 都是 \n 有没有办法让换行显示成换行呢？
+第七页 : 2017-01-14 14:25:52
+恩
+forever : 2017-01-14 14:26:02
+putStrLn
+叶绿素 : 2017-01-14 14:26:04
+用putStrLn
+第七页 : 2017-01-14 14:27:28
+[抱拳]
+[[[[[[[[[[[[[[[[[[[[[[[[ : 2017-01-14 16:30:29
+@第七页 怎么不能 hello1 = Hello&amp;lt;$&amp;gt;head&amp;lt;&amp;gt;body&amp;lt;&amp;gt;foot
+第七页 : 2017-01-14 16:30:55
+那个是应用函子的写法了 我是在写例子练习</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170113</title>
+      <link>http://qq.haskellchina.org/2017/01/13/qq-group-log-of-haskellchina-20170113/</link>
+      <pubDate>Fri, 13 Jan 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/01/13/qq-group-log-of-haskellchina-20170113/</guid>
+      <description>Jin : 2017-01-13 09:48:17
+vscode终于有haskell的补全插件了
+饼干 : 2017-01-13 09:48:41
+[强]
+. : 2017-01-13 09:49:27
+vsc我都没怎么用过补全插件
+. : 2017-01-13 09:49:36
+除了默认的前端补全
+. : 2017-01-13 09:49:44
+这个不装也有 不关就自动提示了
+Jin : 2017-01-13 09:50:50
+有总好过没有
+. : 2017-01-13 09:51:05
+我也不用补全啊
+Jin : 2017-01-13 09:51:17
+我用啊。。
+. : 2017-01-13 09:53:25
+为什么要依赖补全
+. : 2017-01-13 09:53:30
+虽然各人习惯不一样
+hyrious : 2017-01-13 10:03:13
+工具比脑子快 (x
+. : 2017-01-13 10:04:32
+但是工具进化的速度不如阿狗
+. : 2017-01-13 10:04:40
+我是说在你电脑里面自我进化的速度
+L喵 : 2017-01-13 10:11:22</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170112</title>
+      <link>http://qq.haskellchina.org/2017/01/12/qq-group-log-of-haskellchina-20170112/</link>
+      <pubDate>Thu, 12 Jan 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/01/12/qq-group-log-of-haskellchina-20170112/</guid>
+      <description>Sirius : 2017-01-12 00:00:10
+可以先定一个Shape类型类吧
+矽砂 : 2017-01-12 00:01:16
+data Shape = Circle {x:: Float, y:: Float} | Rect {x:: Float, y:: Float, h:: Float, w:: Float} deriving (Show)
+Sirius : 2017-01-12 00:03:30
+哦，原来可以这样啊，以为不可以呢
+pigeon_t : 2017-01-12 00:03:52
+可以这样吗还
+pigeon_t : 2017-01-12 00:03:57
+给力
+pigeon_t : 2017-01-12 00:05:10
+这样不行吧
+#c0c0c0 : 2017-01-12 00:07:40
+要大写首字母的吧。。
+矽砂 : 2017-01-12 00:08:47
+对呀构造器首字母要大写
+pigeon_t : 2017-01-12 00:11:15
+还真是
+pigeon_t : 2017-01-12 00:11:34
+value constructor , type constructor首字母都要大写？</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170111</title>
+      <link>http://qq.haskellchina.org/2017/01/11/qq-group-log-of-haskellchina-20170111/</link>
+      <pubDate>Wed, 11 Jan 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/01/11/qq-group-log-of-haskellchina-20170111/</guid>
+      <description>饼干 : 2017-01-11 10:12:42
+这个k是什么东西。。
+魔理沙 : 2017-01-11 10:14:41
+s -&amp;gt; (a, s)
+饼干 : 2017-01-11 10:16:20
+[强]理解了。找到一篇文章
+http://stackoverflow.com/questions/36609288/functor-instance-of-state
+超级班长 : 2017-01-11 10:41:43
+请教一个问题， data State s a= State ( s-&amp;gt; (a,s) ), 可不可以写成 data State s a= State( s-&amp;gt;( s , a) )
+魔理沙 : 2017-01-11 10:43:33
+可以啊当然，所有代码都要改一下，不过一样能写出来
+超级班长 : 2017-01-11 10:45:37
+谢谢
+LambdaBot : 2017-01-11 11:01:01
+谁能/invite realbot一下(:з」∠)
+LambdaBot : 2017-01-11 11:01:25
+完犊子。。
+橙月雪离子 : 2017-01-11 11:04:10</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170110</title>
+      <link>http://qq.haskellchina.org/2017/01/10/qq-group-log-of-haskellchina-20170110/</link>
+      <pubDate>Tue, 10 Jan 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/01/10/qq-group-log-of-haskellchina-20170110/</guid>
+      <description>pigeon_t : 2017-01-10 04:39:41
+这句话数学上如果写集合怎么表示？
+天才麻将魔法少女Cosmia : 2017-01-10 08:45:31
+然而这不是集合= =
+Mr.W : 2017-01-10 09:02:45
+然而这不是集合= = +1
+SnowOnion : 2017-01-10 11:57:23
+@pigeon_t 如果不管列表和集合的区别，大概是
+{f(x)|x∈xs,odd(x)} 其中 f(x)=一个分段函数
+SnowOnion : 2017-01-10 12:00:30
+提问……
+我有两个ghc环境，8.0.1 和 6.12.1
+cabal安的package能被8.0.1用。怎样让那些package能被6.12.1用呀？
+➜ ~ /usr/local/bin/ghc -V
+The Glorious Glasgow Haskell Compilation System, version 8.0.1
+➜ ~ ~/ghcDist/bin/ghc -V
+The Glorious Glasgow Haskell Compilation System, version 6.12.1
+➜ ~ which cabal
+/usr/local/bin/cabal
+超级班长 : 2017-01-10 12:29:26</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170109</title>
+      <link>http://qq.haskellchina.org/2017/01/09/qq-group-log-of-haskellchina-20170109/</link>
+      <pubDate>Mon, 09 Jan 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/01/09/qq-group-log-of-haskellchina-20170109/</guid>
+      <description>☺今天休息 : 2017-01-09 00:00:10
+Foldable 的这个 instance 有啥用?
+forever : 2017-01-09 00:00:33
+和 Functor 相对应的
+☺今天休息 : 2017-01-09 00:00:44
+感觉如果没有很大的用途的话, 定义这么个 instance 引起这种误会, 反而得不偿失
+☺今天休息 : 2017-01-09 00:01:05
+还不如要用的人自己临时处理一下
+阅千人而惜知己 : 2017-01-09 00:01:07
+@今天休息 没有很大用途，IRC上很多人反对的。
+forever : 2017-01-09 00:01:13
+问题是当时好像也没人反对啊（reddit 上吵起来的时候是这么解释的）
+Silent TNT : 2017-01-09 00:04:14
+/r/haskell上emkett解释过。。忘了哪个帖子
+Silent TNT : 2017-01-09 00:04:37
+还跟eric meijer吵过
+阅千人而惜知己 : 2017-01-09 00:05:24
+有个人因为这个还撂挑子不干了
+Sicus Elbedor : 2017-01-09 00:05:39
+这个有什么学术上的意义吗？Orz
+阅千人而惜知己 : 2017-01-09 00:05:41</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170108</title>
+      <link>http://qq.haskellchina.org/2017/01/08/qq-group-log-of-haskellchina-20170108/</link>
+      <pubDate>Sun, 08 Jan 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/01/08/qq-group-log-of-haskellchina-20170108/</guid>
+      <description>☺今天休息 : 2017-01-08 00:16:28
+有木有人知道 skillsmatter.com 上的视频怎么下载啊?
+何幻 : 2017-01-08 00:17:00
+[鼓掌]
+hyrious : 2017-01-08 00:20:02
+http://www.vdigger.com/skillsmatter.com-downloader/index.htm ？
+☺今天休息 : 2017-01-08 00:22:29
+好贵&amp;hellip;
+hyrious : 2017-01-08 00:22:46
+https://github.com/rg3/youtube-dl/issues/1602
+hyrious : 2017-01-08 00:23:08
+youtube-dl可以下载一部分不需要登录的视频
+☺今天休息 : 2017-01-08 00:24:18
+额, https://skillsmatter.com/skillscasts/3241-haskell-cloud 这个好像是要登录的?
+☺今天休息 : 2017-01-08 00:26:33
+看起来得知道浏览器的cookies放哪个文件了才能尝试一下..
+dragonfalls : 2017-01-08 01:06:53
+Haskell爱好者
+tennix : 2017-01-08 10:00:49
+用 Idris 写 Android app http://mmhelloworld.github.io/blog/2017/01/06/introducing-idris-on-the-jvm-and-an-idris-android-example/
+徵羽 : 2017-01-08 10:05:05
+學Haskell過程中有甚麼題刷
+天才麻将魔法少女Cosmia : 2017-01-08 10:16:13</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170107</title>
+      <link>http://qq.haskellchina.org/2017/01/07/qq-group-log-of-haskellchina-20170107/</link>
+      <pubDate>Sat, 07 Jan 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/01/07/qq-group-log-of-haskellchina-20170107/</guid>
+      <description>forever : 2017-01-07 17:55:13
+@今天休息 不同 module 里的相同名字是不同的
+forever : 2017-01-07 17:55:49
+上面说让你 qualify 了
+你说的兼容性问题是。。。？
+天才麻将魔法少女Cosmia : 2017-01-07 17:56:24
+昨天发的，我觉得他现在肯可能没在看QQ
+forever : 2017-01-07 17:56:40
+没事，async
+天才麻将魔法少女Cosmia : 2017-01-07 17:56:51
+噗
+PPAP ✏️🍍🍎✏️ : 2017-01-07 18:05:38
+可能昨天恰好客户端退出了。。。 但大多数的会话都会记录 http://qq.haskellchina.org
+PPAP ✏️🍍🍎✏️ : 2017-01-07 18:06:02
+[坏笑]
+PPAP ✏️🍍🍎✏️ : 2017-01-07 18:07:01
+hope no offence
+PPAP ✏️🍍🍎✏️ : 2017-01-07 18:08:35
+所以我觉得其实可以在下面 disqus 的评论里回复～
+forever : 2017-01-07 18:09:42
+回完了这里看不到啊
+forever : 2017-01-07 19:59:34</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170106</title>
+      <link>http://qq.haskellchina.org/2017/01/06/qq-group-log-of-haskellchina-20170106/</link>
+      <pubDate>Fri, 06 Jan 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/01/06/qq-group-log-of-haskellchina-20170106/</guid>
+      <description>橙子圆 : 2017-01-06 00:37:15
+要实现
+[Array Int (MatchOffset, MatchLength)] -&amp;gt; [MatchOffset]
+不用fold怎么写呀？
+:Explorer: : 2017-01-06 01:24:35
+map$ fst . (!0)这个意思？
+以上内容来自 [Haskell函数式编程] QQ 群。</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170105</title>
+      <link>http://qq.haskellchina.org/2017/01/05/qq-group-log-of-haskellchina-20170105/</link>
+      <pubDate>Thu, 05 Jan 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/01/05/qq-group-log-of-haskellchina-20170105/</guid>
+      <description>王旭林 : 2017-01-05 08:44:24
+@zhu~ 这文档不错 ：)
+饼干 : 2017-01-05 16:12:36
+List[Maybe Int] 怎么转成Maybe[List Int] ..求手动实现代码
+天才麻将魔法少女Cosmia : 2017-01-05 16:15:29
+不懂你要干嘛。。。
+魔理沙 : 2017-01-05 16:16:40
+sequence
+晴川·后缀自动机·张 : 2017-01-05 16:16:40
+你要他有什么行为啊
+魔理沙 : 2017-01-05 16:17:31
+手写的话，先对xs递归，match on it（或者bind/do），然后串起来返回
+饼干 : 2017-01-05 16:17:39
+这样OK么
+饼干 : 2017-01-05 16:18:21
+我是在做题
+https://github.com/NICTA/course/blob/master/src/Course/List.hs
+魔理沙 : 2017-01-05 16:18:43
+就是这样
+天才麻将魔法少女Cosmia : 2017-01-05 16:19:14
+。。。。。。我不清楚你是不是知道，不过如果你import Prelude ()的话，你可以用 Maybe的名字的
+饼干 : 2017-01-05 16:19:49
+@魔理沙 好的
+@天才麻将魔法少女Cosmia 主要是需要自己实现，不能用现成的。</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170104</title>
+      <link>http://qq.haskellchina.org/2017/01/04/qq-group-log-of-haskellchina-20170104/</link>
+      <pubDate>Wed, 04 Jan 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/01/04/qq-group-log-of-haskellchina-20170104/</guid>
+      <description>vritser : 2017-01-04 08:23:25
+factorial n﹦product [1..n]
+vritser : 2017-01-04 08:23:48
+这叫做等式？
+. : 2017-01-04 08:27:17
+当然是等式
+. : 2017-01-04 08:27:41
+factorial n的出现可以用product [1..n]来替换
+. : 2017-01-04 08:27:45
+反过来也一样
+. : 2017-01-04 08:27:56
+当然factorial必须是相同scope含义
+vritser : 2017-01-04 08:28:32
+哦，谢谢
+Logic : 2017-01-04 09:59:44
+叫做绑定和约束感觉更好一点
+Logic : 2017-01-04 10:00:14
+和-&amp;gt;或
+senge : 2017-01-04 11:23:24
+捆绑和束缚
+naivehgz : 2017-01-04 15:52:23
+请问这个class是啥意思？那个 | 怎么理解？
+汪先森 づ : 2017-01-04 15:55:58
+这个是functional dependency？
+naivehgz : 2017-01-04 15:56:47</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170103</title>
+      <link>http://qq.haskellchina.org/2017/01/03/qq-group-log-of-haskellchina-20170103/</link>
+      <pubDate>Tue, 03 Jan 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/01/03/qq-group-log-of-haskellchina-20170103/</guid>
+      <description>LambdaBot : 2017-01-03 10:31:28
+-_,-
+信长 : 2017-01-03 10:48:04
+哈哈哈
+左新宇 : 2017-01-03 11:54:01
+类型的kind就是指的类型类么？
+lightgray : 2017-01-03 11:54:37
+不……应该叫 类型的类型
+左新宇 : 2017-01-03 11:55:09
+嗯？和类型类不一样吗？
+汪先森 づ : 2017-01-03 11:55:38
+好像没什么关系啊？
+汪先森 づ : 2017-01-03 11:57:31
+你可以理解成可以对一个type :t type
+汪先森 づ : 2017-01-03 11:58:45
+然后实际上你要用:k来做这件事情
+左新宇 : 2017-01-03 12:02:14
+我看的是张淞的《haskell函数式编程入门》，在第8章11节这里举的一个例子：data Triple a b c = Triple a b
+左新宇 : 2017-01-03 12:02:55
+这里的第一个Triple指的是类型构造器，第二个Triple指的是数据构造器吧？
+左新宇 :  2017-01-03 12:04:43  :k Triple得出的 Triple:: * -&amp;gt; * -&amp;gt; * -&amp;gt; 这个信息有什么意义吗？</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170102</title>
+      <link>http://qq.haskellchina.org/2017/01/02/qq-group-log-of-haskellchina-20170102/</link>
+      <pubDate>Mon, 02 Jan 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/01/02/qq-group-log-of-haskellchina-20170102/</guid>
+      <description>snowXman : 2017-01-02 00:03:28
+不知道这位新年第一天用来做了什么
+此人已放弃治疗 : 2017-01-02 00:05:18
+一个月没写代码
+此人已放弃治疗 : 2017-01-02 00:05:51
+想写点又不知道这写啥子
+greato : 2017-01-02 00:13:41
+正则引擎
+Yaegaki Erika : 2017-01-02 00:35:13
+……
+Yaegaki Erika : 2017-01-02 00:35:21
+为了考试复习了一天的操作系统
+. : 2017-01-02 00:38:16
+写个游戏引擎胚
+. : 2017-01-02 00:38:27
+通过胚来生成各种游戏引擎
+. : 2017-01-02 00:38:37
+号称scalable
+pigeon_t : 2017-01-02 03:30:24
+有个问题，trait 或者mixin 可以算是subtype嘛
+greato : 2017-01-02 03:31:37
+不算
+greato : 2017-01-02 03:31:51
+属于 reified type
+pigeon_t : 2017-01-02 03:33:57</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170101</title>
+      <link>http://qq.haskellchina.org/2017/01/01/qq-group-log-of-haskellchina-20170101/</link>
+      <pubDate>Sun, 01 Jan 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/01/01/qq-group-log-of-haskellchina-20170101/</guid>
+      <description>Hulk : 2017-01-01 00:14:46
+新年快乐
+第七页 : 2017-01-01 00:16:06
+Haskell 新年快乐
+pigeon_t : 2017-01-01 00:25:01
+if(new Date().getFullYear() === 2017) {
+console.log(&amp;ldquo;Happy new year and every thing would be awesome!&amp;rdquo;);
+}
+. : 2017-01-01 00:25:24
+你应该hack一点
+. : 2017-01-01 00:25:29
+getYear() == 117
+hyrious : 2017-01-01 00:26:09
+new Date().get
+乖戾味 : 2017-01-01 00:26:14
+这是Haskell群，为啥不写Haskell
+hyrious : 2017-01-01 00:26:26
+语义好别扭
+. : 2017-01-01 00:26:36
+没问题啊
+. : 2017-01-01 00:26:42
+还有new (Date().get)的</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20161231</title>
+      <link>http://qq.haskellchina.org/2016/12/31/qq-group-log-of-haskellchina-20161231/</link>
+      <pubDate>Sat, 31 Dec 2016 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2016/12/31/qq-group-log-of-haskellchina-20161231/</guid>
+      <description>Hulk : 2016-12-31 12:45:08 大家好，我是Hulk。
+Hulk : 2016-12-31 12:45:50 大家好，新人刚开始接触haskell，请多多指教
+Matrixbirds : 2016-12-31 12:58:10 欢迎萌新
+吃睡玩三连击 : 2016-12-31 13:00:13 欢迎~
+Hulk : 2016-12-31 13:24:55 windows系统，cabal安装ghc mod错误
+Hulk : 2016-12-31 13:25:35 要怎么继续
+Hulk : 2016-12-31 13:26:25 哎…不是这个，怎么变又回去了
+\ : 2016-12-31 13:27:02 装msys
+吃睡玩三连击 : 2016-12-31 13:27:10 看输出好像是cabal install ghc-mod这个指令不支持windows的CMD，下个Cygwin试试
+Hulk : 2016-12-31 13:27:15 这个问题我已经解决了
+Hulk : 2016-12-31 13:27:25 然后出了新问题
+Hulk : 2016-12-31 13:27:35 不知道怎么又回去了
+吃睡玩三连击 : 2016-12-31 13:27:55 新问题是什么？
+Hulk : 2016-12-31 13:28:16 我调一下，之后拍个照</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20161230</title>
+      <link>http://qq.haskellchina.org/2016/12/30/qq-group-log-of-haskellchina-20161230/</link>
+      <pubDate>Fri, 30 Dec 2016 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2016/12/30/qq-group-log-of-haskellchina-20161230/</guid>
+      <description>老农 : 2016-12-30 10:07:51 这图不是p的？[流汗]
+forever : 2016-12-30 10:09:42 不是
+forever : 2016-12-30 10:10:04 他们好像在玩一些有趣的事情
+☆飞翔的蘑菇 : 2016-12-30 10:10:30 是真的
+饼干 : 2016-12-30 12:30:24 为啥这两个地方不一样啊
+饼干 : 2016-12-30 12:31:13 是因为这个？
+forever : 2016-12-30 12:35:10 lambdabot 功能特别杂
+橙月雪离子 : 2016-12-30 12:35:15 [系统表情]
+魔理沙 : 2016-12-30 12:37:08 实时map上imgur?
+forever : 2016-12-30 12:43:51 test[强][强]
+PPAP ✏️🍍🍎✏️ : 2016-12-30 13:01:36 目前是因为 Perl 这个模块完全接收不到图片消息，不知道是腾讯的接口还是模块本身的问题，还没深究～
+PPAP ✏️🍍🍎✏️ : 2016-12-30 13:02:29 所以还没有办法发送 [图片] 这种提示消息
+第七页 : 2016-12-30 13:24:18 看了一个 IO Monad 的定义 type IO a = World -&amp;gt; (a,World) 这个里面的类型构造器是什么？</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,1555 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.30.2" />
+
+
+<title>QQ Group Log of HaskellChina: 20170418 - QQGroup Log of HaskellChina</title>
+<meta property="og:title" content="QQ Group Log of HaskellChina: 20170418 - QQGroup Log of HaskellChina">
+
+
+
+  
+
+
+
+<meta property="keywords" content ="Haskell,, HaskellChina">
+
+
+
+
+<link rel="stylesheet" href="http://qq.haskellchina.org/css/main.css" media="all">
+<link rel="stylesheet" href="//fonts.lug.ustc.edu.cn/css?family=Merriweather:400|Lato:400,400italic,700">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="http://qq.haskellchina.org/" class="nav-logo">
+    <img src="http://qq.haskellchina.org/images/logo.png" 
+         width="50" 
+         height="50" 
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="https://github.com/gingerhot/QQLog-HaskellChina">GitHub</a></li>
+    
+    <li><a href="/about/">关于</a></li>
+    
+    <li><a href="http://haskellchina.org/">社区首页</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">5 min read</span>
+    
+
+    <h1 class="article-title">QQ Group Log of HaskellChina: 20170418</h1>
+
+    
+    <span class="article-date">April 18, 2017</span>
+    
+
+    <div class="article-content">
+      
+
+<h4 id="橙月雪离子">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-18 00:49:51</span></p>
+
+<p>IRC里有人建议用shows拼接再统一putStr，快了1/4，内存分配减少一半</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-1">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-18 00:50:02</span></p>
+
+<p>然而还是超时。。。我怀疑代码还是有bug</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-2">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-18 00:52:17</span></p>
+
+<p>我就问了个单元测试的问题ek就开始喋喋喋不休。。。我又不敢回</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="the-fool">The Fool  :</h4>
+
+<p><span class="article-duration">2017-04-18 02:09:03</span></p>
+
+<p>freenode的haskell频道么&hellip;?</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever">forever :</h4>
+
+<p><span class="article-duration">2017-04-18 07:49:32</span></p>
+
+<p>@橙月雪离子 好像已经晚了，但是你要看 ek 说啥看不懂直接问就行了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-1">forever :</h4>
+
+<p><span class="article-duration">2017-04-18 07:50:17</span></p>
+
+<p>他用到什么概念一定准备好去讲的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_6">[[[[[[[[[[[[[[[[[[[[[[[[ :</h4>
+
+<p><span class="article-duration">2017-04-18 07:53:03</span></p>
+
+<p>话说爆IO是输出什么量级的数据啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="昵称未知">昵称未知 :</h4>
+
+<p><span class="article-duration">2017-04-18 13:49:20</span></p>
+
+<p>新人虚心求教</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="wayne">Wayne :</h4>
+
+<p><span class="article-duration">2017-04-18 13:59:41</span></p>
+
+<p>老人傲娇不教[右哼哼]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="泉彼方">泉彼方 :</h4>
+
+<p><span class="article-duration">2017-04-18 14:00:13</span></p>
+
+<p>？？？？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="安静">安静 :</h4>
+
+<p><span class="article-duration">2017-04-18 14:26:41</span></p>
+
+<p>请教个问题。<br />cpp里面，<br />template <size_t n="n"> class &hellip;，给不同的N可以产生不同的class类型，haskell里面有没有实现类似效果的方法？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-3">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-18 14:27:18</span></p>
+
+<p>set -XMultiParamTypeClasses</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-4">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-18 14:27:47</span></p>
+
+<p>是这意思么。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-5">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-18 14:27:56</span></p>
+
+<p>好像不是。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="安静-1">安静 :</h4>
+
+<p><span class="article-duration">2017-04-18 14:28:10</span></p>
+
+<p>[系统表情]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-6">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-18 14:31:06</span></p>
+
+<p>type family?</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="sirius">Sirius :</h4>
+
+<p><span class="article-duration">2017-04-18 14:31:06</span></p>
+
+<p>这不是dependent type吗？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="安静-2">安静 :</h4>
+
+<p><span class="article-duration">2017-04-18 14:33:50</span></p>
+
+<p>不是很懂dependent type，貌似比较麻烦。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="今天休息">☺今天休息 :</h4>
+
+<p><span class="article-duration">2017-04-18 14:34:10</span></p>
+
+<p>@安静 有的， 只是这个n 在haskell里需要在类型层面去实现。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="安静-3">安静 :</h4>
+
+<p><span class="article-duration">2017-04-18 14:35:39</span></p>
+
+<p>所以，我该往哪走？？dependent type？？？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="forever-2">forever :</h4>
+
+<p><span class="article-duration">2017-04-18 14:36:21</span></p>
+
+<p>你需要用 template Haskell 生成一段代码么</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="安静-4">安静 :</h4>
+
+<p><span class="article-duration">2017-04-18 14:37:06</span></p>
+
+<p>其实我想用这种办法做一个type safe的matrix</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="今天休息-1">☺今天休息 :</h4>
+
+<p><span class="article-duration">2017-04-18 14:37:27</span></p>
+
+<p>@安静 来玩idris吧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="安静-5">安静 :</h4>
+
+<p><span class="article-duration">2017-04-18 14:37:28</span></p>
+
+<p>然后实现applicative的接口。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-7">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-18 14:37:40</span></p>
+
+<p>我才知道size_t是个啥。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-8">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-18 14:37:47</span></p>
+
+<p>好吧，dependent types</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="安静-6">安静 :</h4>
+
+<p><span class="article-duration">2017-04-18 14:38:37</span></p>
+
+<p>idris不是不打算用来生产东西吗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="今天休息-2">☺今天休息 :</h4>
+
+<p><span class="article-duration">2017-04-18 14:39:35</span></p>
+
+<p>只是没有准备好吧， 没说不打算把。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="haskell-v">haskell (=^v^=) :</h4>
+
+<p><span class="article-duration">2017-04-18 14:40:10</span></p>
+
+<p>请问idRiS 是谁设计的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="yaegaki-erika">Yaegaki Erika :</h4>
+
+<p><span class="article-duration">2017-04-18 14:42:53</span></p>
+
+<p>edwin brady</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="今天休息-3">☺今天休息 :</h4>
+
+<p><span class="article-duration">2017-04-18 14:42:59</span></p>
+
+<p>@安静</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="haskell-v-1">haskell (=^v^=) :</h4>
+
+<p><span class="article-duration">2017-04-18 14:46:45</span></p>
+
+<p>我还以为是中国人设计的，</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="安静-7">安静 :</h4>
+
+<p><span class="article-duration">2017-04-18 14:48:59</span></p>
+
+<p>@今天休息 所以？？？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="安静-8">安静 :</h4>
+
+<p><span class="article-duration">2017-04-18 14:49:24</span></p>
+
+<p>我就是要这种效果，</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="安静-9">安静 :</h4>
+
+<p><span class="article-duration">2017-04-18 14:49:52</span></p>
+
+<p>矩阵的维度直接由类型反应出来</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="今天休息-4">☺今天休息 :</h4>
+
+<p><span class="article-duration">2017-04-18 14:50:33</span></p>
+
+<p>所以来玩idris啊。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-9">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-18 14:51:18</span></p>
+
+<p>这种？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="安静-10">安静 :</h4>
+
+<p><span class="article-duration">2017-04-18 14:54:45</span></p>
+
+<p>@今天休息 我用haskell的ad写了一个简单的神经网络，里面用matrix我觉得不爽，想改成我上面说的那样。如果我换idris，matrix是有了，ad呢？我要自己造一套？？？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="安静-11">安静 :</h4>
+
+<p><span class="article-duration">2017-04-18 14:55:39</span></p>
+
+<p>@橙月雪离子 这是haskell吗？这是什么？？？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-10">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-18 14:55:54</span></p>
+
+<p>这是Haskell</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="刘笑天">刘笑天 :</h4>
+
+<p><span class="article-duration">2017-04-18 14:55:57</span></p>
+
+<p><br />这样可以吗？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="今天休息-5">☺今天休息 :</h4>
+
+<p><span class="article-duration">2017-04-18 14:55:57</span></p>
+
+<p>那你只能用Haskell折腾了咯。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="安静-12">安静 :</h4>
+
+<p><span class="article-duration">2017-04-18 14:57:57</span></p>
+
+<p>@橙月雪离子 姐姐指条明路</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-11">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-18 14:58:22</span></p>
+
+<p>GADTsKindSignaturesDataKinds</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-12">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-18 14:58:31</span></p>
+
+<p><a href="https://www.schoolofhaskell.com/user/konn/prove-your-haskell-for-great-safety/dependent-types-in-haskell">https://www.schoolofhaskell.com/user/konn/prove-your-haskell-for-great-safety/dependent-types-in-haskell</a></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="安静-13">安静 :</h4>
+
+<p><span class="article-duration">2017-04-18 14:58:50</span></p>
+
+<p>thanks</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-13">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-18 15:52:50</span></p>
+
+<p>npm真是一坨屎一样的东西，不知道足彩过多少次坑了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 15:54:49</span></p>
+
+<p>npm不是node的吗？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-14">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-18 15:55:30</span></p>
+
+<p>是的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pengpengche">pengpengche :</h4>
+
+<p><span class="article-duration">2017-04-18 15:56:15</span></p>
+
+<p>这个错误和npm的关系在哪里</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-15">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-18 15:58:00</span></p>
+
+<p>其实并没有。但是只要npm install发生问题我都会惯性地说npm屎</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-16">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-18 15:58:12</span></p>
+
+<p>因为出现的错误太多了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pengpengche-1">pengpengche :</h4>
+
+<p><span class="article-duration">2017-04-18 15:59:47</span></p>
+
+<p>我觉得node npm 本身还是很健壮的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pengpengche-2">pengpengche :</h4>
+
+<p><span class="article-duration">2017-04-18 16:00:03</span></p>
+
+<p>好好玩几乎没任何故障</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="pengpengche-3">pengpengche :</h4>
+
+<p><span class="article-duration">2017-04-18 16:00:22</span></p>
+
+<p>包的质量就不好说了,</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_55">. :</h4>
+
+<p><span class="article-duration">2017-04-18 16:01:48</span></p>
+
+<p>嗯 isArray</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-04-18 16:02:26</span></p>
+
+<p>自己造ad啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-1">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-04-18 16:02:43</span></p>
+
+<p><a href="https://github.com/ThoughtWorksInc/DeepDarkFantasy/">https://github.com/ThoughtWorksInc/DeepDarkFantasy/</a></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-2">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-04-18 16:02:54</span></p>
+
+<p>ad很简单的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="今天休息-6">☺今天休息 :</h4>
+
+<p><span class="article-duration">2017-04-18 16:03:20</span></p>
+
+<p>莎莎好棒 [强]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="手残怪蜀黍">手残怪蜀黍 :</h4>
+
+<p><span class="article-duration">2017-04-18 16:03:39</span></p>
+
+<p>厉害了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-3">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-04-18 16:10:42</span></p>
+
+<p><a href="https://github.com/mstksg/tensor-ops">https://github.com/mstksg/tensor-ops</a></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="安静-14">安静 :</h4>
+
+<p><span class="article-duration">2017-04-18 16:12:46</span></p>
+
+<p>厉害了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="手残怪蜀黍-1">手残怪蜀黍 :</h4>
+
+<p><span class="article-duration">2017-04-18 16:13:01</span></p>
+
+<p>厉害了。我的沙</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="haskell-v-2">haskell (=^v^=) :</h4>
+
+<p><span class="article-duration">2017-04-18 16:14:41</span></p>
+
+<p>莎莎 在搞啥</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-1">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 16:41:23</span></p>
+
+<p>我忽然想到一个问题  不知道haskell有没有闭包的概念（我觉得是有的）  那如果我一个函数 调用 函数外的函数 是不是这个函数就不纯了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-2">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 16:41:58</span></p>
+
+<p>js写的像这样</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往">随心所往 :</h4>
+
+<p><span class="article-duration">2017-04-18 16:42:06</span></p>
+
+<p>当然有闭包啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-3">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 16:42:21</span></p>
+
+<p>这样a还是纯的吗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-17">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-18 16:42:26</span></p>
+
+<p>是</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-1">随心所往 :</h4>
+
+<p><span class="article-duration">2017-04-18 16:42:35</span></p>
+
+<p>只要b是纯的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-4">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 16:42:36</span></p>
+
+<p>还是说a纯不纯依赖b纯不纯？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-5">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 16:42:39</span></p>
+
+<p>哦</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-2">随心所往 :</h4>
+
+<p><span class="article-duration">2017-04-18 16:42:56</span></p>
+
+<p>如果b不纯，a的类型就无法声明为纯</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-18">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-18 16:43:02</span></p>
+
+<p>如果b是不纯的你怎么能在a中调用它</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-3">随心所往 :</h4>
+
+<p><span class="article-duration">2017-04-18 16:43:13</span></p>
+
+<p>类型检查会报错</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-6">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 16:44:10</span></p>
+
+<p>这个问题是我想测试的时候想到的  如果我要测试a本来我只用测试a的输入和输出但是现在a在方法内偷偷的掉用了b 那b的行为好像我就没办法测试到了啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-7">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 16:45:01</span></p>
+
+<p>如果说b是从a参数中传入的 我还可以参数到 但是b是闭包上的一个量 我在外面根本都不知道有b存在啊</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-8">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 16:45:22</span></p>
+
+<p>这是可测的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-4">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-04-18 16:45:31</span></p>
+
+<p>没懂，啥是函数外的函数</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-19">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-18 16:45:59</span></p>
+
+<p>let a :: Int -&gt; Inta = (+3)</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-9">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 16:46:05</span></p>
+
+<p>就是这样  a调用外面的b</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-20">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-18 16:46:09</span></p>
+
+<p>+不是也在a中调用了么</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-5">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-04-18 16:46:33</span></p>
+
+<p>haskell中一切都是纯的啊，排除bottom&amp;unsafe以后</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-10">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 16:47:30</span></p>
+
+<p>js和haskell还是好难类比啊= =</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-11">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 16:47:46</span></p>
+
+<p>@橙月雪离子 这样a的行为还是很好预测的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="茶几之友">茶几之友  :</h4>
+
+<p><span class="article-duration">2017-04-18 16:48:24</span></p>
+
+<p>闭包概念是因为没有类型系统对纯函数的支持</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="茶几之友-1">茶几之友  :</h4>
+
+<p><span class="article-duration">2017-04-18 16:49:08</span></p>
+
+<p>haskell 里无需这个是因为你不使用某种技巧就无法定义“不纯”的函数</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="请问您今天要来点兔子吗">请问您今天要来点兔子吗？ :</h4>
+
+<p><span class="article-duration">2017-04-18 16:49:24</span></p>
+
+<p>所有函数都是纯的，怎么调外面的都是纯的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="请问您今天要来点兔子吗-1">请问您今天要来点兔子吗？ :</h4>
+
+<p><span class="article-duration">2017-04-18 16:49:43</span></p>
+
+<p>副作用相关的也会被传染上IO之类的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_90">. :</h4>
+
+<p><span class="article-duration">2017-04-18 16:50:07</span></p>
+
+<p>IO也是纯的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_91">. :</h4>
+
+<p><span class="article-duration">2017-04-18 16:50:13</span></p>
+
+<p>(除掉IO a -&gt; a之类的)</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="请问您今天要来点兔子吗-2">请问您今天要来点兔子吗？ :</h4>
+
+<p><span class="article-duration">2017-04-18 16:50:32</span></p>
+
+<p>至少你写下去的代码，都是纯的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="茶几之友-2">茶几之友  :</h4>
+
+<p><span class="article-duration">2017-04-18 16:50:33</span></p>
+
+<p>BTW，闭包引入是封闭隔离了传统的全局变量后的语法糖而已</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="茶几之友-3">茶几之友  :</h4>
+
+<p><span class="article-duration">2017-04-18 16:53:51</span></p>
+
+<p>而我猜测传统语言没有纯函数的支持是因为那会还没有折腾好“纯”的概念</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="toc_95">. :</h4>
+
+<p><span class="article-duration">2017-04-18 16:54:15</span></p>
+
+<p><strong>attribute</strong>((pure))(不</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="茶几之友-4">茶几之友  :</h4>
+
+<p><span class="article-duration">2017-04-18 16:54:38</span></p>
+
+<p>ANSI C 没这东东吧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="茶几之友-5">茶几之友  :</h4>
+
+<p><span class="article-duration">2017-04-18 16:55:48</span></p>
+
+<p>以及即使现在，是不是大多数 C 编译器都可以支持这个呢</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="茶几之友-6">茶几之友  :</h4>
+
+<p><span class="article-duration">2017-04-18 16:57:24</span></p>
+
+<p>话说我真不会聊天，又把话题杀死了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-21">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-18 16:57:53</span></p>
+
+<p>。。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-12">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 16:59:09</span></p>
+
+<p>是因为我感觉我的问题不在于函数的纯不纯上</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-13">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 16:59:14</span></p>
+
+<p>而是在于测试上</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="请问您今天要来点兔子吗-3">请问您今天要来点兔子吗？ :</h4>
+
+<p><span class="article-duration">2017-04-18 16:59:45</span></p>
+
+<p>都一样吧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-14">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:00:09</span></p>
+
+<p>简单的概括一下haskell有没有TDD 如果有TDD的话 haskell怎么测试一个函数 内部的函数被调用了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="请问您今天要来点兔子吗-4">请问您今天要来点兔子吗？ :</h4>
+
+<p><span class="article-duration">2017-04-18 17:00:25</span></p>
+
+<p>a代码里是 x * x 还是 pow x 2 ，对测试有啥影响？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-15">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:01:10</span></p>
+
+<p>我希望当情况是a的时候  A函数被调用是情况是b的时候B函数被调用</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="请问您今天要来点兔子吗-5">请问您今天要来点兔子吗？ :</h4>
+
+<p><span class="article-duration">2017-04-18 17:01:28</span></p>
+
+<p>你是想调用一个有副作用的B？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-16">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:01:30</span></p>
+
+<p>或者说当情况为a的时候 a 参数xx被调用</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="请问您今天要来点兔子吗-6">请问您今天要来点兔子吗？ :</h4>
+
+<p><span class="article-duration">2017-04-18 17:02:02</span></p>
+
+<p>不明白你纠结的点在哪里</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-17">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:02:30</span></p>
+
+<p>我要测试a</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-18">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:02:41</span></p>
+
+<p>呃 等下  这还是有一点好测试的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="茶几之友-7">茶几之友  :</h4>
+
+<p><span class="article-duration">2017-04-18 17:02:44</span></p>
+
+<p>测试方法的问题。。在纯函数里的解决方式就是 QuickCheck 和另外一个叫啥来着</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="silent-tnt">Silent TNT :</h4>
+
+<p><span class="article-duration">2017-04-18 17:02:55</span></p>
+
+<p>你可以给内部那个函数挂上一个trace</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="silent-tnt-1">Silent TNT :</h4>
+
+<p><span class="article-duration">2017-04-18 17:03:12</span></p>
+
+<p>每次被调用时输出到stdout</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="silent-tnt-2">Silent TNT :</h4>
+
+<p><span class="article-duration">2017-04-18 17:03:18</span></p>
+
+<p>并不推荐这么做</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-19">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:03:33</span></p>
+
+<p>a的调用并不关心返回值</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-20">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:03:54</span></p>
+
+<p>a的调用只关心x1和x2谁被调用  或者被什么参数调用了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-22">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:04:29</span></p>
+
+<p>你想测试：如果我调用a(5)，x1是不是被调用了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-21">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:04:29</span></p>
+
+<p>比如x1是发出event1事件 x2是发出event2事件</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-22">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:04:42</span></p>
+
+<p>可以这么说</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-23">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:04:52</span></p>
+
+<p>我a(5)的时候   这个函数发出了什么事件</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="请问您今天要来点兔子吗-7">请问您今天要来点兔子吗？ :</h4>
+
+<p><span class="article-duration">2017-04-18 17:04:55</span></p>
+
+<p>发出事件，这不是副作用么</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-23">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:05:12</span></p>
+
+<p>这种副作用还是不同的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-24">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:06:25</span></p>
+
+<p>其实我是很不赞同事件编程的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-25">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:06:30</span></p>
+
+<p>但是现在遇到了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-26">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:06:37</span></p>
+
+<p>redux</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-24">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:06:40</span></p>
+
+<p>可能用下类似traceEvent这种</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-27">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:06:59</span></p>
+
+<p>我不是搞 haskell的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-28">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:07:12</span></p>
+
+<p>你们告诉我名字我还是不能马上联想到我该怎么做</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="饼干">饼干 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:07:22</span></p>
+
+<p>纯函数都是里式替换的。。不存在事件一说吧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-25">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:07:30</span></p>
+
+<p>没什么特别好的办法，我是不赞同为了迎合测试去修改程序代码</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-26">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:08:35</span></p>
+
+<p>对于纯函数来说，我觉得就不要去关心调用x1和调用x2了，只关心a是不是返回正确的结果</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-4">随心所往 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:08:54</span></p>
+
+<p>对的，这个根本不重要啊，只要函数行为是符合预期的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-29">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:08:59</span></p>
+
+<p>@橙月雪离子 是为了不改变代码的情况下去写测试用例</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-5">随心所往 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:09:03</span></p>
+
+<p>为什么要关系他的实现</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-6">随心所往 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:09:07</span></p>
+
+<p>关心</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-30">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:09:14</span></p>
+
+<p>a返回的结果是没有意义的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-7">随心所往 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:09:42</span></p>
+
+<p>返回结果没有意义的函数本身就没有意义了</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-31">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:09:54</span></p>
+
+<p>除非改成这样</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-32">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:10:15</span></p>
+
+<p>这就不关心内部的实现了  因为最终要dispatch的是返回值</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-27">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:10:16</span></p>
+
+<p>这样不就好测试了么</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-33">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:10:33</span></p>
+
+<p>是啊  不是说不推荐为了测试改代码吗</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-34">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:10:40</span></p>
+
+<p>如果真的有那种代码 怎么办</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="请问您今天要来点兔子吗-8">请问您今天要来点兔子吗？ :</h4>
+
+<p><span class="article-duration">2017-04-18 17:10:41</span></p>
+
+<p>你把你的x1、x2概念替换成putStr<br />然后以此为出发搜索</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-28">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:10:47</span></p>
+
+<p>如果你把dispatch放在内部，那还是非纯函数，按照昨天ek的说法，有特殊的处理方法</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="请问您今天要来点兔子吗-9">请问您今天要来点兔子吗？ :</h4>
+
+<p><span class="article-duration">2017-04-18 17:11:01</span></p>
+
+<p>这是明显的副作用，你的a应该是 IO</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-35">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:11:33</span></p>
+
+<p>a为什么是io</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-29">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:11:48</span></p>
+
+<p>比如。。。class Monad m =&gt; MonadEvent where  dispatchEvent :: m ()instance MonadEvent IO where  dispatchEvent = xxx</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-36">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:11:59</span></p>
+
+<p>我一直以为io至少应该跟操作系统或者硬盘操作的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-37">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:12:08</span></p>
+
+<p>或者网络 或者 控制台</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="请问您今天要来点兔子吗-10">请问您今天要来点兔子吗？ :</h4>
+
+<p><span class="article-duration">2017-04-18 17:12:47</span></p>
+
+<p>Random也是IO([系统表情]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-38">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:13:34</span></p>
+
+<p>因为random内部读了时间当种子</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-8">随心所往 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:13:56</span></p>
+
+<p>你的那两个event如果没有对外操作，那么不就是本身就无意义了吗？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-39">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:14:22</span></p>
+
+<p>观察者模式</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-6">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:14:28</span></p>
+
+<p>我还是不明白你为啥要关心一个函数调用了啥</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-40">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:14:40</span></p>
+
+<p>event是要被另一个system catch到的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-9">随心所往 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:14:54</span></p>
+
+<p>对啊，绝对IO</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-41">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:15:01</span></p>
+
+<p>讨厌的事件编程= =</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="请问您今天要来点兔子吗-11">请问您今天要来点兔子吗？ :</h4>
+
+<p><span class="article-duration">2017-04-18 17:15:23</span></p>
+
+<p>你基本概念还没建立&hellip;&hellip;</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-42">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:16:10</span></p>
+
+<p>所以我觉得 这个问题到此为止吧</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-43">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:16:16</span></p>
+
+<p>我也是随便问问的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-44">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:16:22</span></p>
+
+<p>不是遇到了问题才问的</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-30">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:16:26</span></p>
+
+<p>最后说一嘴，如果你的event和业务逻辑相关，那100%属于IO</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-10">随心所往 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:16:50</span></p>
+
+<p>还是并发IO</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-31">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:16:59</span></p>
+
+<p>如果仅仅是为了测试，那你可以仿照Debug.Trace自己搞一套外部系统去处理这些event</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-32">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:17:10</span></p>
+
+<p>（用unsafePerformIO</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-11">随心所往 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:17:43</span></p>
+
+<p>不是应该由EVENT框架本身提高测试方案吗？</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="随心所往-12">随心所往 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:17:46</span></p>
+
+<p>提供</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-33">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:18:13</span></p>
+
+<p>那event框架一定是IO</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-45">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:18:37</span></p>
+
+<p>不用继续讨论了[衰]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="yaegaki-erika-1">Yaegaki Erika :</h4>
+
+<p><span class="article-duration">2017-04-18 17:19:34</span></p>
+
+<p>我很好奇为什么那个会跟闭包和纯不纯扯上关系……</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-34">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:20:52</span></p>
+
+<p>纯与不纯的测试方法确实有区别。。</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-46">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:21:02</span></p>
+
+<p>闭包只是为了描述一下场景  纯不纯是我是我想可能是因为不纯所以导致了测试困难</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-35">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:21:07</span></p>
+
+<p>你不希望非纯函数在测试的时候真的发了个导弹出去</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="暧月ō-ō猫-47">暧月ō.ō猫 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:21:33</span></p>
+
+<p>@橙月雪离子 主要是导弹的行为很难捕获</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="魔理沙-7">魔理沙 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:27:55</span></p>
+
+<p>用Free啊，baka</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-36">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:28:33</span></p>
+
+<p>@魔理沙 刚好ek提供的第二种方案[系统表情]</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-37">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:28:37</span></p>
+
+<p>你们果然都是牛人</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-38">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:34:34</span></p>
+
+<p><a href="https://gist.github.com/kazu-yamamoto/4064634">https://gist.github.com/kazu-yamamoto/4064634</a></p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<h4 id="橙月雪离子-39">橙月雪离子 :</h4>
+
+<p><span class="article-duration">2017-04-18 17:34:37</span></p>
+
+<p>这个例子不错</p>
+
+<hr style="border-top: 1px dotted grey;width:99%"/>
+
+<p>以上内容来自 [Haskell函数式编程] QQ 群。</p>
+
+    </div>
+  </article>
+
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "binjoy" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="http://qq.haskellchina.org/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="http://qq.haskellchina.org/images/hugo-logo.png" width="22" height="22"></a>
+            <div style="display:none">
+                <script src="http://s95.cnzz.com/stat.php?id=1261078931&web_id=1261078931" language="JavaScript"></script>
+            </div>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
+

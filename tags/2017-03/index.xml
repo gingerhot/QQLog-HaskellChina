@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2017 03 on QQGroup Log of HaskellChina</title>
+    <link>http://qq.haskellchina.org/tags/2017-03/</link>
+    <description>Recent content in 2017 03 on QQGroup Log of HaskellChina</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 31 Mar 2017 00:55:32 +0800</lastBuildDate>
+    
+	<atom:link href="http://qq.haskellchina.org/tags/2017-03/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170331</title>
+      <link>http://qq.haskellchina.org/2017/03/31/qq-group-log-of-haskellchina-20170331/</link>
+      <pubDate>Fri, 31 Mar 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/03/31/qq-group-log-of-haskellchina-20170331/</guid>
+      <description>Ryan : 2017-03-31 00:00:02
+我觉得Hs目前只适合当作…兴趣爱好
+forever : 2017-03-31 00:00:31
+这当然取决于你是做什么的
+forever : 2017-03-31 00:01:05
+https://github.com/Gabriel439/post-rfc/blob/master/sotu.md
+张智城 : 2017-03-31 00:03:03
+问一个比较纠结的问题 haskell学到什么程度转scala比较合适
+forever : 2017-03-31 00:03:31
+你就直接去学 scala 吧
+张智城 : 2017-03-31 00:03:40
+嗯嗯
+李想 : 2017-03-31 00:08:17
+直接學scala
+橙月雪离子 : 2017-03-31 00:11:40
+stackage镜像按tuna上的说明配了一下没卵用额。。
+forever : 2017-03-31 00:12:09
+stack 版本？
+Ryan : 2017-03-31 00:12:20
+讲真，我不认为平行使用或学习多个语言会构成什么问题
+橙月雪离子 : 2017-03-31 00:12:32
+1.4.0
+forever : 2017-03-31 00:12:59
+奇了怪了
+李想 : 2017-03-31 00:13:04
+我也不認為會有什麼問題</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170330</title>
+      <link>http://qq.haskellchina.org/2017/03/30/qq-group-log-of-haskellchina-20170330/</link>
+      <pubDate>Thu, 30 Mar 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/03/30/qq-group-log-of-haskellchina-20170330/</guid>
+      <description>举个栗子 : 2017-03-30 08:37:15
+非尾递归的可以先用cps转成尾递归
+举个栗子 : 2017-03-30 08:38:30
+这个就跟statemonad有点差不多的意思，一长串计算拆成一步步的，然后外面套个while
+第七页 : 2017-03-30 09:24:02
+用脑图可以描绘出思路 但是不方便存储 有没有有文本描绘思路的？
+大笨蛋千里冰封 : 2017-03-30 09:24:25
+脑图生成文本
+第七页 : 2017-03-30 09:25:34
+那个也得依赖脑图工具的
+怀谷 : 2017-03-30 09:36:26
+@第七页 你需要的不就是伪代码而已么[冷汗]
+第七页 : 2017-03-30 09:36:54
+如何设计这样的伪代码呢
+怀谷 : 2017-03-30 09:38:53
+然后这个问题就变成，如何设计dsl了。。。
+[[[[[[[[[[[[[[[[[[[[[[[[ : 2017-03-30 09:39:27
+脑图是树状的？
+大笨蛋千里冰封 : 2017-03-30 09:39:58
+树状可以用yml
+橙月雪离子 : 2017-03-30 09:40:38
+脑图要反映直觉
+橙月雪离子 : 2017-03-30 09:40:42
+不如用工具
+[[[[[[[[[[[[[[[[[[[[[[[[ : 2017-03-30 09:41:32
+这样说，其实ps或者krita最合适，如果有板子
+橙月雪离子 : 2017-03-30 09:41:34</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170329</title>
+      <link>http://qq.haskellchina.org/2017/03/29/qq-group-log-of-haskellchina-20170329/</link>
+      <pubDate>Wed, 29 Mar 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/03/29/qq-group-log-of-haskellchina-20170329/</guid>
+      <description>雾满拦江 : 2017-03-29 10:20:08
+类成员函数可以显式地拿第一个参数传对象的this，魔板函数可以拿TH搞
+雾满拦江 : 2017-03-29 10:23:09
+记得有个叫 cxxffi 还是 fficxx 的，可以直接生成这些 bindings
+雾满拦江 : 2017-03-29 10:24:09
+但我觉得，要想把生成的函数名搞得比较正常，少不了大量的人工工作
+雾满拦江 : 2017-03-29 10:24:21
+比如各种llvm的binding&amp;hellip;
+第七页 : 2017-03-29 11:12:37
+data Type a = X a | Y a
+我如果想限定这个 a是 Eq的实例 应该怎么写呢？
+Yaegaki Erika : 2017-03-29 11:14:29
+forall a. (Eq a) =&amp;gt;
+Yaegaki Erika : 2017-03-29 11:14:32
+这样？
+undefined : 2017-03-29 11:15:01
+hs支持这样限定吗…
+Neuromancer : 2017-03-29 11:15:18
+data Eq a =&amp;gt; Type a</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170321</title>
+      <link>http://qq.haskellchina.org/2017/03/21/qq-group-log-of-haskellchina-20170321/</link>
+      <pubDate>Tue, 21 Mar 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/03/21/qq-group-log-of-haskellchina-20170321/</guid>
+      <description>senge : 2017-03-21 07:52:01
+看下peng li和zdancewic的paper a language based approach to unifying events and threads
+以上内容来自 [Haskell函数式编程] QQ 群。</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170320</title>
+      <link>http://qq.haskellchina.org/2017/03/20/qq-group-log-of-haskellchina-20170320/</link>
+      <pubDate>Mon, 20 Mar 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/03/20/qq-group-log-of-haskellchina-20170320/</guid>
+      <description>くまちゃん : 2017-03-20 00:08:25
+答案是泛型么，我OOP出身的初学者— —
+haskell (=^v^=) : 2017-03-20 00:11:11
+id
+此人已放弃治疗 : 2017-03-20 01:39:00
+其实吧
+此人已放弃治疗 : 2017-03-20 01:39:14
+我随便瞅了一下perl
+此人已放弃治疗 : 2017-03-20 01:39:20
+哈哈哈哈笑死了
+VON : 2017-03-20 01:39:43
+。。。
+此人已放弃治疗 : 2017-03-20 01:42:10
+这速度- -
+LR : 2017-03-20 03:02:51
+大家好
+a_a : 2017-03-20 20:43:43
+函数式语言要怎样声明和操作一个流程呢?比如一个简单流程：用户新建一个提醒——显示在屏幕上→然后有两个情况：1是用户关闭这个提醒；2是用户创建了另一条体型——自动关闭上一条面向对象的话 大概就写一个提醒类 写一个关闭方法 再写个“另一条提醒被创建”的delegate 每次启动程序时读取数据加载这个提醒类函数式语言里面该怎样写好呢？
+forever : 2017-03-20 20:47:11
+除了不是组织成“类”以外，你说的每一个都是完全可以实现
+forever : 2017-03-20 20:47:44
+比如可以用 IORef 保存数据http://hackage.haskell.org/package/base-4.9.1.0/docs/Data-IORef.html
+Yaegaki Erika : 2017-03-20 20:48:03</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170314</title>
+      <link>http://qq.haskellchina.org/2017/03/14/qq-group-log-of-haskellchina-20170314/</link>
+      <pubDate>Tue, 14 Mar 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/03/14/qq-group-log-of-haskellchina-20170314/</guid>
+      <description>Yaegaki Erika : 2017-03-14 14:17:45
+wtf
+. : 2017-03-14 14:21:08
+[系统表情]
+？ : 2017-03-14 14:21:23
+昵称未知 : 2017-03-14 14:38:54
+？(754049422) 被管理员禁言1分钟
+此人已放弃治疗 : 2017-03-14 14:53:27
+请问一下谁能下载这个chez scheme编译器？ https://github.com/cisco/ChezScheme
+此人已放弃治疗 : 2017-03-14 14:53:35
+我下载不了，[系统表情]
+Ryan : 2017-03-14 14:53:44
+没问题啊。。。
+Ryan : 2017-03-14 14:53:47
+开代理。。
+李想 : 2017-03-14 18:54:53
+我能
+碧海戏潮生 : 2017-03-14 21:18:57
+ghc怎么静态链接？
+碧海戏潮生 : 2017-03-14 21:19:21
+为什么有时候成功有时候报错
+碧海戏潮生 : 2017-03-14 21:53:33
+我居然找到规律了，不加static编译一次（用stack），再加上static就不会有问题，只是会有些警告
+以上内容来自 [Haskell函数式编程] QQ 群。</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170313</title>
+      <link>http://qq.haskellchina.org/2017/03/13/qq-group-log-of-haskellchina-20170313/</link>
+      <pubDate>Mon, 13 Mar 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/03/13/qq-group-log-of-haskellchina-20170313/</guid>
+      <description>昰生娃 : 2017-03-13 10:16:27
+函数是I
+第七页 : 2017-03-13 10:19:47
+如何能看到 haskell 中内置类型的源码 比如 bool
+miyo.👉🏻[17|16|嗨] : 2017-03-13 10:23:28
+data Bool =True|False
+BalterNotz : 2017-03-13 10:23:45
+@第七页 这个要去看ghc源码
+第七页 : 2017-03-13 10:23:46
+我要看它怎么 instance Typeable 的
+橙月雪离子 : 2017-03-13 10:27:19
+猜想一下不是内置的就是用Generics实现的吧
+寒东 : 2017-03-13 10:41:53
+Typeable的实例都必须是空的 实现是编译器来填的
+寒东 : 2017-03-13 10:42:32
+fingerprint这种东西用户也提供不来
+第七页 : 2017-03-13 10:52:29
+恩，
+forever : 2017-03-13 11:37:29
+用 typeclass 实现的 rtti
+橙月雪离子 : 2017-03-13 12:03:47
+这种代码有没有办法自动生成</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170304</title>
+      <link>http://qq.haskellchina.org/2017/03/04/qq-group-log-of-haskellchina-20170304/</link>
+      <pubDate>Sat, 04 Mar 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/03/04/qq-group-log-of-haskellchina-20170304/</guid>
+      <description>[[[[[[[[[[[[[[[[[[[[[[[[ : 2017-03-04 00:37:08
+多谢了 昨天问的问题解决了 最后靠constructN 递归ok了 果然和fib相同问题
+熊▎ : 2017-03-04 09:49:06
+Functor的map是一元的态射，Foldable是二元的态射。可以这样理解吗？[抱拳][抱拳]
+forever : 2017-03-04 09:50:39
+不可以，“理解”这件事本身是错的，会让你误入歧途
+熊▎ : 2017-03-04 09:52:28
+[难过][难过]fp好难。
+十六 : 2017-03-04 09:52:50
+dram！
+十六 : 2017-03-04 09:53:12
+dram的理论有点迷迷的，必须要好好理解…
+forever : 2017-03-04 09:53:14
+@x 你是好多东西不知道怎么理解对吧
+十六 : 2017-03-04 09:53:17
+【
+forever : 2017-03-04 09:53:20
+那就别理解了
+forever : 2017-03-04 09:53:34
+因为很可能就是没有什么可理解的
+魔理沙 : 2017-03-04 09:53:37
+@dram 读过on the cruelty of really teaching computer science吗？你肯定会喜欢
+魔理沙 : 2017-03-04 09:53:54</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170303</title>
+      <link>http://qq.haskellchina.org/2017/03/03/qq-group-log-of-haskellchina-20170303/</link>
+      <pubDate>Fri, 03 Mar 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/03/03/qq-group-log-of-haskellchina-20170303/</guid>
+      <description>ds : 2017-03-03 01:52:50
+succ
+ds : 2017-03-03 02:06:30
+succ
+昵称未知 : 2017-03-03 02:37:52
+手残怪蜀黍(3195366513) 被管理员禁言1小时
+[[[[[[[[[[[[[[[[[[[[[[[[ : 2017-03-03 08:40:44
+为何我计算legendre勒让德多项式会爆内存啊 我就是按照递归式写的 p n x = a * p (n - 1) x * x + b* p (n-2) x 其中a b是关于n的常数 算几十还好 算到一百以上 8g内存就炸了
+[[[[[[[[[[[[[[[[[[[[[[[[ : 2017-03-03 08:43:04
+请问下 如何改进 haskell内部不会自动cps吗 是要按照类似fold&amp;rsquo; 重构吗
+forever : 2017-03-03 08:43:57
+cps 救不了国人
+forever : 2017-03-03 08:44:08
+你这个可以参考算 fibonacci 的代码改进
+叶绿素 : 2017-03-03 08:56:27</description>
+    </item>
+    
+    <item>
+      <title>QQ Group Log of HaskellChina: 20170302</title>
+      <link>http://qq.haskellchina.org/2017/03/02/qq-group-log-of-haskellchina-20170302/</link>
+      <pubDate>Thu, 02 Mar 2017 00:55:32 +0800</pubDate>
+      
+      <guid>http://qq.haskellchina.org/2017/03/02/qq-group-log-of-haskellchina-20170302/</guid>
+      <description>高佳欣 : 2017-03-02 11:34:49
+我的问题只有华华一个人回答吗?
+高佳欣 : 2017-03-02 11:34:54
+还是我的想法不对
+The Fool : 2017-03-02 11:36:26
+模式匹配可以用car和cdr写啊
+The Fool : 2017-03-02 11:36:36
+列表结构本身就有顺序
+高佳欣 : 2017-03-02 11:37:14
+我的意思是它的字面表达应该和数学保持一致, Lambda算子里面是没有顺序这个概念的
+高佳欣 : 2017-03-02 11:37:18
+H
+高佳欣 : 2017-03-02 11:37:26
+本质上应该也没有
+高佳欣 : 2017-03-02 11:37:52
+那么HS现在有, 是不是只是做了一个语法糖的处理
+天才麻将魔法少女Cosmia : 2017-03-02 11:38:24
+你可以假装pattern matching是一个嵌套的if
+The Fool : 2017-03-02 11:38:47
+你可以去看Racket
+The Fool : 2017-03-02 11:39:09
+那里面的模式匹配似乎是用纯macro实现的
+高佳欣 : 2017-03-02 11:39:37
+好吧
+forever : 2017-03-02 12:28:47</description>
+    </item>
+    
+  </channel>
+</rss>
